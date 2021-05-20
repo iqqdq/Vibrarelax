@@ -1,0 +1,6 @@
+framework module Blurberry {
+  umbrella header "Blurberry-umbrella.h"
+
+  export *
+  module * { export * }
+}

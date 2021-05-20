@@ -24,12 +24,18 @@
 		100AE3E826568FE0004E0C26 /* Nunito-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 100AE3D926568FDF004E0C26 /* Nunito-BoldItalic.ttf */; };
 		100AE3E926568FE0004E0C26 /* Nunito-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 100AE3DA26568FE0004E0C26 /* Nunito-ExtraBoldItalic.ttf */; };
 		1029EE222656968B00BD9230 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1029EE212656968B00BD9230 /* OnboardingCollectionViewCell.swift */; };
+		103E642026570F4700E12B68 /* VibroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103E641F26570F4700E12B68 /* VibroViewController.swift */; };
+		103F4FF22657247600C6D7CB /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103F4FF12657247600C6D7CB /* SettingsViewController.swift */; };
+		103F4FF82657280600C6D7CB /* VibroSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103F4FF72657280600C6D7CB /* VibroSheetViewController.swift */; };
 		1070E561265678720059CAD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1070E560265678720059CAD0 /* AppDelegate.swift */; };
 		1070E568265678720059CAD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1070E566265678720059CAD0 /* Main.storyboard */; };
 		1070E56A265678720059CAD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1070E569265678720059CAD0 /* Assets.xcassets */; };
 		1070E56D265678720059CAD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1070E56B265678720059CAD0 /* LaunchScreen.storyboard */; };
 		1070E578265678730059CAD0 /* VibrarelaxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1070E577265678730059CAD0 /* VibrarelaxTests.swift */; };
 		1070E583265678730059CAD0 /* VibrarelaxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1070E582265678730059CAD0 /* VibrarelaxUITests.swift */; };
+		1075FF022656AE21007BC81D /* ModesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1075FF012656AE21007BC81D /* ModesViewController.swift */; };
+		1075FF082656AF96007BC81D /* ModeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1075FF072656AF96007BC81D /* ModeCollectionViewCell.swift */; };
+		1091EEF72657294B00B09D43 /* Extensioons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1091EEF62657294B00B09D43 /* Extensioons.swift */; };
 		10C31E652656A553005BCF4A /* BottomNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C31E642656A553005BCF4A /* BottomNavigationViewController.swift */; };
 		2294459611190EA79144B172 /* Pods_VibrarelaxTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43039D56605110E36F769242 /* Pods_VibrarelaxTests.framework */; };
 		8C5422B96F04D143E34D0C07 /* Pods_Vibrarelax_VibrarelaxUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D30E5EBACA153EE98254A4D /* Pods_Vibrarelax_VibrarelaxUITests.framework */; };
@@ -72,6 +78,9 @@
 		100AE3D926568FDF004E0C26 /* Nunito-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-BoldItalic.ttf"; sourceTree = "<group>"; };
 		100AE3DA26568FE0004E0C26 /* Nunito-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
 		1029EE212656968B00BD9230 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
+		103E641F26570F4700E12B68 /* VibroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibroViewController.swift; sourceTree = "<group>"; };
+		103F4FF12657247600C6D7CB /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		103F4FF72657280600C6D7CB /* VibroSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibroSheetViewController.swift; sourceTree = "<group>"; };
 		1070E55D265678720059CAD0 /* Vibrarelax.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vibrarelax.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1070E560265678720059CAD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1070E567265678720059CAD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -84,6 +93,9 @@
 		1070E57E265678730059CAD0 /* VibrarelaxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VibrarelaxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1070E582265678730059CAD0 /* VibrarelaxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibrarelaxUITests.swift; sourceTree = "<group>"; };
 		1070E584265678730059CAD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1075FF012656AE21007BC81D /* ModesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModesViewController.swift; sourceTree = "<group>"; };
+		1075FF072656AF96007BC81D /* ModeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeCollectionViewCell.swift; sourceTree = "<group>"; };
+		1091EEF62657294B00B09D43 /* Extensioons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensioons.swift; sourceTree = "<group>"; };
 		10C31E642656A553005BCF4A /* BottomNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomNavigationViewController.swift; sourceTree = "<group>"; };
 		31673E743844F4516907F3F3 /* Pods-Vibrarelax.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vibrarelax.release.xcconfig"; path = "Target Support Files/Pods-Vibrarelax/Pods-Vibrarelax.release.xcconfig"; sourceTree = "<group>"; };
 		3D26612F0A88C7C78A027DFC /* Pods-VibrarelaxTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VibrarelaxTests.debug.xcconfig"; path = "Target Support Files/Pods-VibrarelaxTests/Pods-VibrarelaxTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -178,6 +190,30 @@
 			path = OnboardingCollectionViewCell;
 			sourceTree = "<group>";
 		};
+		103E641E26570F2700E12B68 /* VibroViewController */ = {
+			isa = PBXGroup;
+			children = (
+				103E641F26570F4700E12B68 /* VibroViewController.swift */,
+			);
+			path = VibroViewController;
+			sourceTree = "<group>";
+		};
+		103F4FF02657246000C6D7CB /* SettingsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				103F4FF12657247600C6D7CB /* SettingsViewController.swift */,
+			);
+			path = SettingsViewController;
+			sourceTree = "<group>";
+		};
+		103F4FF6265727E300C6D7CB /* VibroSheetViewController */ = {
+			isa = PBXGroup;
+			children = (
+				103F4FF72657280600C6D7CB /* VibroSheetViewController.swift */,
+			);
+			path = VibroSheetViewController;
+			sourceTree = "<group>";
+		};
 		1070E554265678720059CAD0 = {
 			isa = PBXGroup;
 			children = (
@@ -210,6 +246,7 @@
 				1070E569265678720059CAD0 /* Assets.xcassets */,
 				1070E56B265678720059CAD0 /* LaunchScreen.storyboard */,
 				1070E56E265678720059CAD0 /* Info.plist */,
+				1091EEF62657294B00B09D43 /* Extensioons.swift */,
 			);
 			path = Vibrarelax;
 			sourceTree = "<group>";
@@ -232,6 +269,23 @@
 			path = VibrarelaxUITests;
 			sourceTree = "<group>";
 		};
+		1075FF002656ADF9007BC81D /* ModesViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1075FF062656AF7C007BC81D /* ModeCollectionViewCell */,
+				1075FF012656AE21007BC81D /* ModesViewController.swift */,
+			);
+			path = ModesViewController;
+			sourceTree = "<group>";
+		};
+		1075FF062656AF7C007BC81D /* ModeCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				1075FF072656AF96007BC81D /* ModeCollectionViewCell.swift */,
+			);
+			path = ModeCollectionViewCell;
+			sourceTree = "<group>";
+		};
 		10C31E632656A534005BCF4A /* BottomNavigationViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -243,6 +297,10 @@
 		10DB4A1526567EB9005ED0DB /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				103F4FF6265727E300C6D7CB /* VibroSheetViewController */,
+				103F4FF02657246000C6D7CB /* SettingsViewController */,
+				103E641E26570F2700E12B68 /* VibroViewController */,
+				1075FF002656ADF9007BC81D /* ModesViewController */,
 				10C31E632656A534005BCF4A /* BottomNavigationViewController */,
 				1029EE102656963800BD9230 /* OnboardingViewController */,
 			);
@@ -528,7 +586,13 @@
 				100AE3B7265681E4004E0C26 /* OnboardingViewController.swift in Sources */,
 				1070E561265678720059CAD0 /* AppDelegate.swift in Sources */,
 				1029EE222656968B00BD9230 /* OnboardingCollectionViewCell.swift in Sources */,
+				1091EEF72657294B00B09D43 /* Extensioons.swift in Sources */,
+				103F4FF82657280600C6D7CB /* VibroSheetViewController.swift in Sources */,
+				1075FF022656AE21007BC81D /* ModesViewController.swift in Sources */,
 				10C31E652656A553005BCF4A /* BottomNavigationViewController.swift in Sources */,
+				103E642026570F4700E12B68 /* VibroViewController.swift in Sources */,
+				1075FF082656AF96007BC81D /* ModeCollectionViewCell.swift in Sources */,
+				103F4FF22657247600C6D7CB /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

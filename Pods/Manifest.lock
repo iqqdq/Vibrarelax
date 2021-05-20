@@ -1,24 +1,28 @@
 PODS:
+  - Blurberry (0.1.0)
   - FittedSheets (2.4.0)
   - GRView (1.0.0)
   - WaveAnimationView (1.0.2)
 
 DEPENDENCIES:
+  - Blurberry
   - FittedSheets
   - GRView
   - WaveAnimationView
 
 SPEC REPOS:
   trunk:
+    - Blurberry
     - FittedSheets
     - GRView
     - WaveAnimationView
 
 SPEC CHECKSUMS:
+  Blurberry: 361c1a4778ea0c46da25716b03d1344a4cf8fe01
   FittedSheets: 470a7740a083156d711ab6ccd37d1d539005e6aa
   GRView: a88cee402471baec1780eece92cd8646b43ffe02
   WaveAnimationView: 1ffdf3184884eb3270f4b19cc2e69893fec16b9d
 
-PODFILE CHECKSUM: 190698c778f923d786055a7694fc7da13878c81e
+PODFILE CHECKSUM: 934764c771202fb8b2fea15eb0c0a7fa01299864
 
 COCOAPODS: 1.10.1

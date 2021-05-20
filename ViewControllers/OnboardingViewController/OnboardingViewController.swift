@@ -45,7 +45,7 @@ class OnboardingViewController: UIViewController {
     @IBAction func continueButtonAction(_ sender: UIButton) {
         if (sender.tag == 2) {
             UserDefaults.standard.setValue(true, forKey: "onboarding")
-            navigationController?.pushViewController(BottomNavigationViewController(), animated: true)
+            navigationController?.pushViewController(UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier:  "BottomNavigationViewController"), animated: true)
         } else {
             collectionView.scrollToItem(at: IndexPath(item: sender.tag + 1, section: 0), at: .centeredHorizontally, animated: true)
             sender.tag += 1
