@@ -1,0 +1,1414 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		016CF284FE30B7C74B4256D8AE74BC63 /* Pods-Vibrarelax-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D5121A82C83ED66BF162FA6013042FA3 /* Pods-Vibrarelax-dummy.m */; };
+		11D817B6A282C2D60B1CF78CA9FFB628 /* Yalta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43079695187CD099C64DB24304CD2103 /* Yalta.swift */; };
+		136D4451BD94ED473CE229F04A638A55 /* SheetContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4771D3AD9BA9B861D96DECE9E358761B /* SheetContentViewController.swift */; };
+		26760843DDB86C34C81772E573284E23 /* SheetSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2C2D5DF36DF25969405AA183C44368 /* SheetSize.swift */; };
+		28EC8DF515BA8EA5251A9D5806F003F4 /* SheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5794F42EE6DFAB59A207015F97A2DC70 /* SheetViewController.swift */; };
+		3BEF28CFE23B1EEFBF0C49793BCA1223 /* SheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100E0BB2FD788339720682864D04CF7D /* SheetView.swift */; };
+		3CEBF7A556FF3EA599CE0F7BC819FC5C /* GRView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EFD6AE21B984A536827671D783FD70AB /* GRView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3E49FCB2C5D09A174DCAF377B1EE2B06 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		3FD59E47C22ABB6FADC0CDEA902E6927 /* GRView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F77BA3FC9E2B71745E426B92F04DF274 /* GRView-dummy.m */; };
+		44C27C2AD182013088203CA6ED02B9B0 /* Localize.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F2B76A45D960460C8383B96AD5C50D /* Localize.swift */; };
+		4844B9EAC1D5D197B1D8CE0E2E93480B /* SheetViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C625A69DB921D7A311352834EE1107 /* SheetViewDelegate.swift */; };
+		509A14D6C38DEB1EE69A0FEAEAB44B72 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		7487DD219A646997809F15DC74825E6C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		80329703B2E80C51A98F80D4481AA612 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		82AA2216EEA1A8A44A11068F515337EA /* Pods-Vibrarelax-VibrarelaxUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B722E03B79EB5654358BA54996F520FE /* Pods-Vibrarelax-VibrarelaxUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		860A5ADF3E3E14BEBA6017DDA340AAAF /* Pods-Vibrarelax-VibrarelaxUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF50238ACB090A5CFAF1A6A98B7768F /* Pods-Vibrarelax-VibrarelaxUITests-dummy.m */; };
+		92CF8346F1812D173F93CB02AE44254E /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451C60128F69FCE4D0786E18BDA3EE4C /* UIViewControllerExtension.swift */; };
+		A002D914A3FA7D56B790DA17383A9F4F /* WaveAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0671D79D4B02ED8FCBD01A30FBDE35A /* WaveAnimationView.swift */; };
+		A2450871FABB8A2953233A87A8B98104 /* WaveAnimationView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8421E3358470638064DB1378CF425921 /* WaveAnimationView-dummy.m */; };
+		A276A9C8230EA918BA27B4E5B569EF32 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646A58A586EA9F46B82357B55B1F23B3 /* UIColorExtension.swift */; };
+		AA2F862DE1854CE0B286BFB507057BC6 /* FittedSheets-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 302ABB9174BFC9F947BE19D7F0CF043E /* FittedSheets-dummy.m */; };
+		B616A777A75451DA3B9FF43B4D4E6792 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		BF96FAF65759393BAC8C853CAE38224F /* Pods-VibrarelaxTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E1AABC29F23518FC9202A68957A2CB01 /* Pods-VibrarelaxTests-dummy.m */; };
+		C43ABC58247ABB64A97532ABFEE0EC3A /* SheetOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F467B16C1039F4F2C91BA2A0A4022D2B /* SheetOptions.swift */; };
+		CB0366E3F5FF9F105BAFE0DA5D5ED791 /* Pods-Vibrarelax-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F5BF95F5221D2A274DB4C0CC2BC29250 /* Pods-Vibrarelax-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1C977371C0D7540F25538763A0E8612 /* SheetContentViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920C51130BEACAD4243663D0223F1CEA /* SheetContentViewDelegate.swift */; };
+		D68D466E8071A60D28996D53BDC516FC /* GRView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640FB0CDC99292D9B68723BA4A61DA20 /* GRView.swift */; };
+		D9E1C00EE40F26DDE7FF9F3041F002B5 /* FittedSheets-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B70D56AC2C5992A6BF79CD181CD647E /* FittedSheets-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA6FE25A1021BFE704BC9481541BA7BE /* Pods-VibrarelaxTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 587415A450769BD2673A0AD7C45943EC /* Pods-VibrarelaxTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E41DA6420E1F81BE064C65E7CCB8A3E4 /* WaveAnimationView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 53AA9E8F93FB60ADD0B866902129EF37 /* WaveAnimationView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E7CE15CB2E9B5E409EE999C247BF7D15 /* GRButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B715509572215D426C9ACD3C551801 /* GRButton.swift */; };
+		F059FC9E88435CCA534220D2C6B387CF /* SheetTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BE6F2CF37E15AC546F9AB128A6E8A1 /* SheetTransition.swift */; };
+		F861F9F6D69F0B7F233ACA9CCE05B546 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		FAF784E7B390407144EBA9436373CAF0 /* InitialTouchPanGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BD9763FFBA763AE5814353A7EB61AF /* InitialTouchPanGestureRecognizer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		240D341BA4572D4AF6B9435BB9BA7528 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A7F25C591290F4B1DD089EA22A154FA;
+			remoteInfo = "Pods-Vibrarelax";
+		};
+		3CC4A17FADB3111F57E753331322CA7C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C8E64EB1CF11A61804ADD6D990751811;
+			remoteInfo = GRView;
+		};
+		5D489749E13F860A2E55750E6D0D6E8B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2B8C327B97C2E109468CAF89F32D2A76;
+			remoteInfo = WaveAnimationView;
+		};
+		9512C74B2DF6B6922B29D78A39728FDF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B71C614CBF9B1B690FE941C4DF44D040;
+			remoteInfo = FittedSheets;
+		};
+		9880C256D7ED2E4720283998F0EDA008 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2B8C327B97C2E109468CAF89F32D2A76;
+			remoteInfo = WaveAnimationView;
+		};
+		BF4ED7D17CE762C79F51124A351E5828 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C8E64EB1CF11A61804ADD6D990751811;
+			remoteInfo = GRView;
+		};
+		FDCA8EA2263004C8625B915DB706313B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B71C614CBF9B1B690FE941C4DF44D040;
+			remoteInfo = FittedSheets;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0D7A3D937176CBEDC83CE396808BB577 /* FittedSheets.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FittedSheets.modulemap; sourceTree = "<group>"; };
+		0FC021AB72AEEE15AEA2ED2A3638AAD3 /* Pods-Vibrarelax-VibrarelaxUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Vibrarelax-VibrarelaxUITests.release.xcconfig"; sourceTree = "<group>"; };
+		100E0BB2FD788339720682864D04CF7D /* SheetView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SheetView.swift; path = FittedSheets/SheetView.swift; sourceTree = "<group>"; };
+		151147E23723B55793A128DB116DE4EF /* WaveAnimationView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "WaveAnimationView-Info.plist"; sourceTree = "<group>"; };
+		21AAE79511133937606E376EE52BED4F /* FittedSheets.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FittedSheets.framework; path = FittedSheets.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		27C625A69DB921D7A311352834EE1107 /* SheetViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SheetViewDelegate.swift; path = FittedSheets/SheetViewDelegate.swift; sourceTree = "<group>"; };
+		2B1DE43D1254383FE97F8D0814BF2866 /* Pods_Vibrarelax.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Vibrarelax.framework; path = "Pods-Vibrarelax.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		302ABB9174BFC9F947BE19D7F0CF043E /* FittedSheets-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FittedSheets-dummy.m"; sourceTree = "<group>"; };
+		319FF37D99306F5A43BD760577FD71E8 /* Pods-Vibrarelax-VibrarelaxUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Vibrarelax-VibrarelaxUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		3E552BBC132157795B2072CC8C889062 /* GRView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GRView-prefix.pch"; sourceTree = "<group>"; };
+		3EF50238ACB090A5CFAF1A6A98B7768F /* Pods-Vibrarelax-VibrarelaxUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Vibrarelax-VibrarelaxUITests-dummy.m"; sourceTree = "<group>"; };
+		409D56D35A39A4B8F1C3288B7C29161D /* Pods-Vibrarelax-VibrarelaxUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Vibrarelax-VibrarelaxUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		41FCCD9AB55FE6D12F48FFB95FBE129E /* Pods_VibrarelaxTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_VibrarelaxTests.framework; path = "Pods-VibrarelaxTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		43079695187CD099C64DB24304CD2103 /* Yalta.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Yalta.swift; path = FittedSheets/Yalta.swift; sourceTree = "<group>"; };
+		43B1D2F576A88387770B95213072694E /* Pods-Vibrarelax-VibrarelaxUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Vibrarelax-VibrarelaxUITests.modulemap"; sourceTree = "<group>"; };
+		451C60128F69FCE4D0786E18BDA3EE4C /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIViewControllerExtension.swift; path = FittedSheets/UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		46DB4A51B2588B611A55856709FB0B47 /* GRView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GRView.debug.xcconfig; sourceTree = "<group>"; };
+		476398E4DE4CC0D9C3333375379D4952 /* Pods-Vibrarelax.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Vibrarelax.release.xcconfig"; sourceTree = "<group>"; };
+		4771D3AD9BA9B861D96DECE9E358761B /* SheetContentViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SheetContentViewController.swift; path = FittedSheets/SheetContentViewController.swift; sourceTree = "<group>"; };
+		49B635906A031134E29926D4793F7AEE /* GRView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GRView.framework; path = GRView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49C836E1E2F3D540ED556CA36B9D3B5F /* GRView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "GRView-Info.plist"; sourceTree = "<group>"; };
+		50BD9763FFBA763AE5814353A7EB61AF /* InitialTouchPanGestureRecognizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InitialTouchPanGestureRecognizer.swift; path = FittedSheets/InitialTouchPanGestureRecognizer.swift; sourceTree = "<group>"; };
+		53AA9E8F93FB60ADD0B866902129EF37 /* WaveAnimationView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WaveAnimationView-umbrella.h"; sourceTree = "<group>"; };
+		547234A159B1B89151F1D87BD1E10A62 /* Pods-VibrarelaxTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VibrarelaxTests-Info.plist"; sourceTree = "<group>"; };
+		55FC45E455A11EE921C82622E5C0BEF1 /* WaveAnimationView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WaveAnimationView-prefix.pch"; sourceTree = "<group>"; };
+		5794F42EE6DFAB59A207015F97A2DC70 /* SheetViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SheetViewController.swift; path = FittedSheets/SheetViewController.swift; sourceTree = "<group>"; };
+		587415A450769BD2673A0AD7C45943EC /* Pods-VibrarelaxTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VibrarelaxTests-umbrella.h"; sourceTree = "<group>"; };
+		5B70D56AC2C5992A6BF79CD181CD647E /* FittedSheets-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FittedSheets-umbrella.h"; sourceTree = "<group>"; };
+		5FE2566A19D27A993CADA9E09E1D90AA /* Pods-Vibrarelax-VibrarelaxUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Vibrarelax-VibrarelaxUITests-Info.plist"; sourceTree = "<group>"; };
+		640FB0CDC99292D9B68723BA4A61DA20 /* GRView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GRView.swift; path = GradientView/GRView.swift; sourceTree = "<group>"; };
+		646A58A586EA9F46B82357B55B1F23B3 /* UIColorExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIColorExtension.swift; path = FittedSheets/UIColorExtension.swift; sourceTree = "<group>"; };
+		654B71CEF599A59A5EC0AFB4BCE49226 /* FittedSheets-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FittedSheets-prefix.pch"; sourceTree = "<group>"; };
+		69466A7DDDB3710EF16383A4743A63F8 /* WaveAnimationView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WaveAnimationView.release.xcconfig; sourceTree = "<group>"; };
+		729B97BA912C4FAF300CA46BDD84A80A /* Pods-VibrarelaxTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VibrarelaxTests.debug.xcconfig"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		78ED0331237961B5CEE85AA59BDE5667 /* FittedSheets.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FittedSheets.debug.xcconfig; sourceTree = "<group>"; };
+		80B587C19E0049FA00705C4D20395B86 /* WaveAnimationView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WaveAnimationView.framework; path = WaveAnimationView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8421E3358470638064DB1378CF425921 /* WaveAnimationView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WaveAnimationView-dummy.m"; sourceTree = "<group>"; };
+		8E8804AFA087180AB75DF904210DBA90 /* Pods-VibrarelaxTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VibrarelaxTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		920C51130BEACAD4243663D0223F1CEA /* SheetContentViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SheetContentViewDelegate.swift; path = FittedSheets/SheetContentViewDelegate.swift; sourceTree = "<group>"; };
+		94375051FCE465FBC29BF36B890F4CE5 /* GRView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GRView.release.xcconfig; sourceTree = "<group>"; };
+		98260A661E8C80FE71570C59662D32FD /* WaveAnimationView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WaveAnimationView.modulemap; sourceTree = "<group>"; };
+		9B40C6051297B58D14690B279B8992E2 /* Pods-Vibrarelax-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Vibrarelax-Info.plist"; sourceTree = "<group>"; };
+		9D2C2D5DF36DF25969405AA183C44368 /* SheetSize.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SheetSize.swift; path = FittedSheets/SheetSize.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9DE5DCC8B9E58C00B47D391418D90F80 /* GRView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GRView.modulemap; sourceTree = "<group>"; };
+		A5819D0A9670BDBD4533E10E607A71D7 /* WaveAnimationView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WaveAnimationView.debug.xcconfig; sourceTree = "<group>"; };
+		A9C03A8A056DB26A1F4C37E5BD28CA6E /* Pods-Vibrarelax-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Vibrarelax-acknowledgements.plist"; sourceTree = "<group>"; };
+		B14E37B8A5C5C81C65C8D14D2CA8C25B /* Pods-Vibrarelax.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Vibrarelax.debug.xcconfig"; sourceTree = "<group>"; };
+		B627F9B04ACB502E4A582D3501D8A696 /* Pods-VibrarelaxTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VibrarelaxTests.release.xcconfig"; sourceTree = "<group>"; };
+		B65F96A5F9EDD1F9929FEA14144ED23E /* Pods-Vibrarelax-VibrarelaxUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Vibrarelax-VibrarelaxUITests-frameworks.sh"; sourceTree = "<group>"; };
+		B722E03B79EB5654358BA54996F520FE /* Pods-Vibrarelax-VibrarelaxUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Vibrarelax-VibrarelaxUITests-umbrella.h"; sourceTree = "<group>"; };
+		B83D53A4B57BF22CA5EA6BD2BE0D8484 /* Pods-Vibrarelax-VibrarelaxUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Vibrarelax-VibrarelaxUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BA22E874828577E0A4C9168D23694E39 /* Pods-VibrarelaxTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-VibrarelaxTests.modulemap"; sourceTree = "<group>"; };
+		BE7586626B977EA1FDA0C39FFC7B0303 /* FittedSheets-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FittedSheets-Info.plist"; sourceTree = "<group>"; };
+		C96A7FCF7FA9A8D49A2397B88753B308 /* Pods_Vibrarelax_VibrarelaxUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Vibrarelax_VibrarelaxUITests.framework; path = "Pods-Vibrarelax-VibrarelaxUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9B715509572215D426C9ACD3C551801 /* GRButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GRButton.swift; path = GradientView/GRButton.swift; sourceTree = "<group>"; };
+		D5121A82C83ED66BF162FA6013042FA3 /* Pods-Vibrarelax-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Vibrarelax-dummy.m"; sourceTree = "<group>"; };
+		D6FBC0591A5FC00D3701E5BDC9D1F83D /* FittedSheets.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FittedSheets.release.xcconfig; sourceTree = "<group>"; };
+		DFE073B527607688F3AFF2B622494DF1 /* Pods-Vibrarelax.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Vibrarelax.modulemap"; sourceTree = "<group>"; };
+		E1AABC29F23518FC9202A68957A2CB01 /* Pods-VibrarelaxTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VibrarelaxTests-dummy.m"; sourceTree = "<group>"; };
+		EFD6AE21B984A536827671D783FD70AB /* GRView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GRView-umbrella.h"; sourceTree = "<group>"; };
+		F0671D79D4B02ED8FCBD01A30FBDE35A /* WaveAnimationView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WaveAnimationView.swift; path = WaveAnimationView/WaveAnimationView.swift; sourceTree = "<group>"; };
+		F467B16C1039F4F2C91BA2A0A4022D2B /* SheetOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SheetOptions.swift; path = FittedSheets/SheetOptions.swift; sourceTree = "<group>"; };
+		F5BF95F5221D2A274DB4C0CC2BC29250 /* Pods-Vibrarelax-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Vibrarelax-umbrella.h"; sourceTree = "<group>"; };
+		F6F2B76A45D960460C8383B96AD5C50D /* Localize.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Localize.swift; path = FittedSheets/Localization/Localize.swift; sourceTree = "<group>"; };
+		F77BA3FC9E2B71745E426B92F04DF274 /* GRView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GRView-dummy.m"; sourceTree = "<group>"; };
+		F7BE6F2CF37E15AC546F9AB128A6E8A1 /* SheetTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SheetTransition.swift; path = FittedSheets/SheetTransition.swift; sourceTree = "<group>"; };
+		F89580B453D4997D9AFB6020E1C0737C /* Pods-Vibrarelax-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Vibrarelax-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F8F9C26FADC7C6533098E12D37BC820B /* Pods-Vibrarelax-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Vibrarelax-frameworks.sh"; sourceTree = "<group>"; };
+		F99965D998C9497A92E777A6DFA41C7A /* Pods-VibrarelaxTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VibrarelaxTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0D06C5E12A7E2FEB21C7C81B78ECCD87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				509A14D6C38DEB1EE69A0FEAEAB44B72 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		462B2F359063E734517BA03E4B7E2BB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80329703B2E80C51A98F80D4481AA612 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C088213B31E8B9CC8355FA0AB790DED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7487DD219A646997809F15DC74825E6C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		595F979263C864FFF572D13CDD45EF38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B616A777A75451DA3B9FF43B4D4E6792 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE5D3C9D2B9EB74A3DE092F50CBD0B8B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F861F9F6D69F0B7F233ACA9CCE05B546 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6B2BF5E8C259569BDA0346BD936A7E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E49FCB2C5D09A174DCAF377B1EE2B06 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		019B61A32A9D70267152CCAB8E852C01 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				929F8CFF2841906D03AF67C1D891039B /* Pods-Vibrarelax */,
+				AB6024063CABF427AC1515BD92DB1B9B /* Pods-Vibrarelax-VibrarelaxUITests */,
+				14520DA32FDC67B3D2A277FB6D28D553 /* Pods-VibrarelaxTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		14520DA32FDC67B3D2A277FB6D28D553 /* Pods-VibrarelaxTests */ = {
+			isa = PBXGroup;
+			children = (
+				BA22E874828577E0A4C9168D23694E39 /* Pods-VibrarelaxTests.modulemap */,
+				F99965D998C9497A92E777A6DFA41C7A /* Pods-VibrarelaxTests-acknowledgements.markdown */,
+				8E8804AFA087180AB75DF904210DBA90 /* Pods-VibrarelaxTests-acknowledgements.plist */,
+				E1AABC29F23518FC9202A68957A2CB01 /* Pods-VibrarelaxTests-dummy.m */,
+				547234A159B1B89151F1D87BD1E10A62 /* Pods-VibrarelaxTests-Info.plist */,
+				587415A450769BD2673A0AD7C45943EC /* Pods-VibrarelaxTests-umbrella.h */,
+				729B97BA912C4FAF300CA46BDD84A80A /* Pods-VibrarelaxTests.debug.xcconfig */,
+				B627F9B04ACB502E4A582D3501D8A696 /* Pods-VibrarelaxTests.release.xcconfig */,
+			);
+			name = "Pods-VibrarelaxTests";
+			path = "Target Support Files/Pods-VibrarelaxTests";
+			sourceTree = "<group>";
+		};
+		1CB35F0190BC845EBA7A4E3F7FB71A51 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				98260A661E8C80FE71570C59662D32FD /* WaveAnimationView.modulemap */,
+				8421E3358470638064DB1378CF425921 /* WaveAnimationView-dummy.m */,
+				151147E23723B55793A128DB116DE4EF /* WaveAnimationView-Info.plist */,
+				55FC45E455A11EE921C82622E5C0BEF1 /* WaveAnimationView-prefix.pch */,
+				53AA9E8F93FB60ADD0B866902129EF37 /* WaveAnimationView-umbrella.h */,
+				A5819D0A9670BDBD4533E10E607A71D7 /* WaveAnimationView.debug.xcconfig */,
+				69466A7DDDB3710EF16383A4743A63F8 /* WaveAnimationView.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/WaveAnimationView";
+			sourceTree = "<group>";
+		};
+		2921FE509D5D2122CB7CC558CA8461A8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9DE5DCC8B9E58C00B47D391418D90F80 /* GRView.modulemap */,
+				F77BA3FC9E2B71745E426B92F04DF274 /* GRView-dummy.m */,
+				49C836E1E2F3D540ED556CA36B9D3B5F /* GRView-Info.plist */,
+				3E552BBC132157795B2072CC8C889062 /* GRView-prefix.pch */,
+				EFD6AE21B984A536827671D783FD70AB /* GRView-umbrella.h */,
+				46DB4A51B2588B611A55856709FB0B47 /* GRView.debug.xcconfig */,
+				94375051FCE465FBC29BF36B890F4CE5 /* GRView.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GRView";
+			sourceTree = "<group>";
+		};
+		5309922CDFF0533324827D20C1824205 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0D7A3D937176CBEDC83CE396808BB577 /* FittedSheets.modulemap */,
+				302ABB9174BFC9F947BE19D7F0CF043E /* FittedSheets-dummy.m */,
+				BE7586626B977EA1FDA0C39FFC7B0303 /* FittedSheets-Info.plist */,
+				654B71CEF599A59A5EC0AFB4BCE49226 /* FittedSheets-prefix.pch */,
+				5B70D56AC2C5992A6BF79CD181CD647E /* FittedSheets-umbrella.h */,
+				78ED0331237961B5CEE85AA59BDE5667 /* FittedSheets.debug.xcconfig */,
+				D6FBC0591A5FC00D3701E5BDC9D1F83D /* FittedSheets.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FittedSheets";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		5EDB582E5F5A8D79BBE6E23A95E56ABB /* WaveAnimationView */ = {
+			isa = PBXGroup;
+			children = (
+				F0671D79D4B02ED8FCBD01A30FBDE35A /* WaveAnimationView.swift */,
+				1CB35F0190BC845EBA7A4E3F7FB71A51 /* Support Files */,
+			);
+			name = WaveAnimationView;
+			path = WaveAnimationView;
+			sourceTree = "<group>";
+		};
+		73A56B114D75F7B5F47210F52BD73C36 /* GRView */ = {
+			isa = PBXGroup;
+			children = (
+				C9B715509572215D426C9ACD3C551801 /* GRButton.swift */,
+				640FB0CDC99292D9B68723BA4A61DA20 /* GRView.swift */,
+				2921FE509D5D2122CB7CC558CA8461A8 /* Support Files */,
+			);
+			name = GRView;
+			path = GRView;
+			sourceTree = "<group>";
+		};
+		784BFDF30B713357FD21F083DE7DE859 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				21AAE79511133937606E376EE52BED4F /* FittedSheets.framework */,
+				49B635906A031134E29926D4793F7AEE /* GRView.framework */,
+				2B1DE43D1254383FE97F8D0814BF2866 /* Pods_Vibrarelax.framework */,
+				C96A7FCF7FA9A8D49A2397B88753B308 /* Pods_Vibrarelax_VibrarelaxUITests.framework */,
+				41FCCD9AB55FE6D12F48FFB95FBE129E /* Pods_VibrarelaxTests.framework */,
+				80B587C19E0049FA00705C4D20395B86 /* WaveAnimationView.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		929F8CFF2841906D03AF67C1D891039B /* Pods-Vibrarelax */ = {
+			isa = PBXGroup;
+			children = (
+				DFE073B527607688F3AFF2B622494DF1 /* Pods-Vibrarelax.modulemap */,
+				F89580B453D4997D9AFB6020E1C0737C /* Pods-Vibrarelax-acknowledgements.markdown */,
+				A9C03A8A056DB26A1F4C37E5BD28CA6E /* Pods-Vibrarelax-acknowledgements.plist */,
+				D5121A82C83ED66BF162FA6013042FA3 /* Pods-Vibrarelax-dummy.m */,
+				F8F9C26FADC7C6533098E12D37BC820B /* Pods-Vibrarelax-frameworks.sh */,
+				9B40C6051297B58D14690B279B8992E2 /* Pods-Vibrarelax-Info.plist */,
+				F5BF95F5221D2A274DB4C0CC2BC29250 /* Pods-Vibrarelax-umbrella.h */,
+				B14E37B8A5C5C81C65C8D14D2CA8C25B /* Pods-Vibrarelax.debug.xcconfig */,
+				476398E4DE4CC0D9C3333375379D4952 /* Pods-Vibrarelax.release.xcconfig */,
+			);
+			name = "Pods-Vibrarelax";
+			path = "Target Support Files/Pods-Vibrarelax";
+			sourceTree = "<group>";
+		};
+		AB6024063CABF427AC1515BD92DB1B9B /* Pods-Vibrarelax-VibrarelaxUITests */ = {
+			isa = PBXGroup;
+			children = (
+				43B1D2F576A88387770B95213072694E /* Pods-Vibrarelax-VibrarelaxUITests.modulemap */,
+				B83D53A4B57BF22CA5EA6BD2BE0D8484 /* Pods-Vibrarelax-VibrarelaxUITests-acknowledgements.markdown */,
+				319FF37D99306F5A43BD760577FD71E8 /* Pods-Vibrarelax-VibrarelaxUITests-acknowledgements.plist */,
+				3EF50238ACB090A5CFAF1A6A98B7768F /* Pods-Vibrarelax-VibrarelaxUITests-dummy.m */,
+				B65F96A5F9EDD1F9929FEA14144ED23E /* Pods-Vibrarelax-VibrarelaxUITests-frameworks.sh */,
+				5FE2566A19D27A993CADA9E09E1D90AA /* Pods-Vibrarelax-VibrarelaxUITests-Info.plist */,
+				B722E03B79EB5654358BA54996F520FE /* Pods-Vibrarelax-VibrarelaxUITests-umbrella.h */,
+				409D56D35A39A4B8F1C3288B7C29161D /* Pods-Vibrarelax-VibrarelaxUITests.debug.xcconfig */,
+				0FC021AB72AEEE15AEA2ED2A3638AAD3 /* Pods-Vibrarelax-VibrarelaxUITests.release.xcconfig */,
+			);
+			name = "Pods-Vibrarelax-VibrarelaxUITests";
+			path = "Target Support Files/Pods-Vibrarelax-VibrarelaxUITests";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				D85329EBEED0A5C2F30547B32DCAB740 /* Pods */,
+				784BFDF30B713357FD21F083DE7DE859 /* Products */,
+				019B61A32A9D70267152CCAB8E852C01 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D85329EBEED0A5C2F30547B32DCAB740 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E91FD49B5777887F63A6409AC971FF7E /* FittedSheets */,
+				73A56B114D75F7B5F47210F52BD73C36 /* GRView */,
+				5EDB582E5F5A8D79BBE6E23A95E56ABB /* WaveAnimationView */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E91FD49B5777887F63A6409AC971FF7E /* FittedSheets */ = {
+			isa = PBXGroup;
+			children = (
+				50BD9763FFBA763AE5814353A7EB61AF /* InitialTouchPanGestureRecognizer.swift */,
+				F6F2B76A45D960460C8383B96AD5C50D /* Localize.swift */,
+				4771D3AD9BA9B861D96DECE9E358761B /* SheetContentViewController.swift */,
+				920C51130BEACAD4243663D0223F1CEA /* SheetContentViewDelegate.swift */,
+				F467B16C1039F4F2C91BA2A0A4022D2B /* SheetOptions.swift */,
+				9D2C2D5DF36DF25969405AA183C44368 /* SheetSize.swift */,
+				F7BE6F2CF37E15AC546F9AB128A6E8A1 /* SheetTransition.swift */,
+				100E0BB2FD788339720682864D04CF7D /* SheetView.swift */,
+				5794F42EE6DFAB59A207015F97A2DC70 /* SheetViewController.swift */,
+				27C625A69DB921D7A311352834EE1107 /* SheetViewDelegate.swift */,
+				646A58A586EA9F46B82357B55B1F23B3 /* UIColorExtension.swift */,
+				451C60128F69FCE4D0786E18BDA3EE4C /* UIViewControllerExtension.swift */,
+				43079695187CD099C64DB24304CD2103 /* Yalta.swift */,
+				5309922CDFF0533324827D20C1824205 /* Support Files */,
+			);
+			name = FittedSheets;
+			path = FittedSheets;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0182F8606B55DEE6386E52D6B8839A64 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82AA2216EEA1A8A44A11068F515337EA /* Pods-Vibrarelax-VibrarelaxUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		458BDB9D79EA076815DC84D738B3C1A5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E41DA6420E1F81BE064C65E7CCB8A3E4 /* WaveAnimationView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8170A2D9338C39A6D965DDF4863DCA5F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB0366E3F5FF9F105BAFE0DA5D5ED791 /* Pods-Vibrarelax-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B11B4EAA363EAB3F1FF39D8B8469F750 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9E1C00EE40F26DDE7FF9F3041F002B5 /* FittedSheets-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7A4346DE962BBC44F447EE7802F9EBC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA6FE25A1021BFE704BC9481541BA7BE /* Pods-VibrarelaxTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0ECFB5742FEA9E302B8DF56A5E059D5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CEBF7A556FF3EA599CE0F7BC819FC5C /* GRView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		15BFB1517AC61057953E0DEC37F1F7A5 /* Pods-Vibrarelax-VibrarelaxUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2154DD503BD41A19D823AD98BE40445 /* Build configuration list for PBXNativeTarget "Pods-Vibrarelax-VibrarelaxUITests" */;
+			buildPhases = (
+				0182F8606B55DEE6386E52D6B8839A64 /* Headers */,
+				F440A7B32679FFE26403F37E8557E7C4 /* Sources */,
+				595F979263C864FFF572D13CDD45EF38 /* Frameworks */,
+				DE1CDB31322B9F423ABA44AD975C008A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4F5710DF812D06B088C858EB54712717 /* PBXTargetDependency */,
+				FAF2B84C9C8CBC99934DCE847D6061AB /* PBXTargetDependency */,
+				5DE043C0D30BCE5417D5011EA79695C5 /* PBXTargetDependency */,
+			);
+			name = "Pods-Vibrarelax-VibrarelaxUITests";
+			productName = "Pods-Vibrarelax-VibrarelaxUITests";
+			productReference = C96A7FCF7FA9A8D49A2397B88753B308 /* Pods_Vibrarelax_VibrarelaxUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2B8C327B97C2E109468CAF89F32D2A76 /* WaveAnimationView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EEFB99B595F0F3FC42C229F2C7EB157E /* Build configuration list for PBXNativeTarget "WaveAnimationView" */;
+			buildPhases = (
+				458BDB9D79EA076815DC84D738B3C1A5 /* Headers */,
+				3AAE8E89C9649605F3CF67D0FE493FFE /* Sources */,
+				F6B2BF5E8C259569BDA0346BD936A7E4 /* Frameworks */,
+				019C5185D6B976F198439AAEAC065C48 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WaveAnimationView;
+			productName = WaveAnimationView;
+			productReference = 80B587C19E0049FA00705C4D20395B86 /* WaveAnimationView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8A7F25C591290F4B1DD089EA22A154FA /* Pods-Vibrarelax */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C55502B9A5D2B9FDAFA001D7C4287B1D /* Build configuration list for PBXNativeTarget "Pods-Vibrarelax" */;
+			buildPhases = (
+				8170A2D9338C39A6D965DDF4863DCA5F /* Headers */,
+				7748952E38FEA0CCB9D85933FD514C64 /* Sources */,
+				4C088213B31E8B9CC8355FA0AB790DED /* Frameworks */,
+				1CCE560CBA346538FE3C7EFCEA0AA2CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DEDE75711F53405D274C278D12A80C5A /* PBXTargetDependency */,
+				2457411FE94E9333376099FDB20B9560 /* PBXTargetDependency */,
+				48CD77EF431E2EE735DCC872153EA818 /* PBXTargetDependency */,
+			);
+			name = "Pods-Vibrarelax";
+			productName = "Pods-Vibrarelax";
+			productReference = 2B1DE43D1254383FE97F8D0814BF2866 /* Pods_Vibrarelax.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B71C614CBF9B1B690FE941C4DF44D040 /* FittedSheets */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B45E3931E66E1703FA20E2679D376B8 /* Build configuration list for PBXNativeTarget "FittedSheets" */;
+			buildPhases = (
+				B11B4EAA363EAB3F1FF39D8B8469F750 /* Headers */,
+				4EBA3B88CB01CBC9D701D249E4CB1FD5 /* Sources */,
+				462B2F359063E734517BA03E4B7E2BB4 /* Frameworks */,
+				9544C34A04EB9CB2338A479211B5DE9E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FittedSheets;
+			productName = FittedSheets;
+			productReference = 21AAE79511133937606E376EE52BED4F /* FittedSheets.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C8E64EB1CF11A61804ADD6D990751811 /* GRView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D976AE9DD6ADCAFD3549B7664278660D /* Build configuration list for PBXNativeTarget "GRView" */;
+			buildPhases = (
+				E0ECFB5742FEA9E302B8DF56A5E059D5 /* Headers */,
+				713EB4876C4DDE68536D1E66DA34A659 /* Sources */,
+				0D06C5E12A7E2FEB21C7C81B78ECCD87 /* Frameworks */,
+				F9F5E61D4B4C98EA6F89D53A55C81AE7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GRView;
+			productName = GRView;
+			productReference = 49B635906A031134E29926D4793F7AEE /* GRView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EACDA3D9C43E36709576BC7A2A540A08 /* Pods-VibrarelaxTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DED817F814727700EAA264BA01256A53 /* Build configuration list for PBXNativeTarget "Pods-VibrarelaxTests" */;
+			buildPhases = (
+				B7A4346DE962BBC44F447EE7802F9EBC /* Headers */,
+				E747E1496EB3622E8A1CE815E6DE701D /* Sources */,
+				AE5D3C9D2B9EB74A3DE092F50CBD0B8B /* Frameworks */,
+				39F50BC493B3BDAD47B8C11265588F2A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF539188F667E2F430DB6656E8AC62E4 /* PBXTargetDependency */,
+			);
+			name = "Pods-VibrarelaxTests";
+			productName = "Pods-VibrarelaxTests";
+			productReference = 41FCCD9AB55FE6D12F48FFB95FBE129E /* Pods_VibrarelaxTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 784BFDF30B713357FD21F083DE7DE859 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B71C614CBF9B1B690FE941C4DF44D040 /* FittedSheets */,
+				C8E64EB1CF11A61804ADD6D990751811 /* GRView */,
+				8A7F25C591290F4B1DD089EA22A154FA /* Pods-Vibrarelax */,
+				15BFB1517AC61057953E0DEC37F1F7A5 /* Pods-Vibrarelax-VibrarelaxUITests */,
+				EACDA3D9C43E36709576BC7A2A540A08 /* Pods-VibrarelaxTests */,
+				2B8C327B97C2E109468CAF89F32D2A76 /* WaveAnimationView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		019C5185D6B976F198439AAEAC065C48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CCE560CBA346538FE3C7EFCEA0AA2CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39F50BC493B3BDAD47B8C11265588F2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9544C34A04EB9CB2338A479211B5DE9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE1CDB31322B9F423ABA44AD975C008A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9F5E61D4B4C98EA6F89D53A55C81AE7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3AAE8E89C9649605F3CF67D0FE493FFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2450871FABB8A2953233A87A8B98104 /* WaveAnimationView-dummy.m in Sources */,
+				A002D914A3FA7D56B790DA17383A9F4F /* WaveAnimationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4EBA3B88CB01CBC9D701D249E4CB1FD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA2F862DE1854CE0B286BFB507057BC6 /* FittedSheets-dummy.m in Sources */,
+				FAF784E7B390407144EBA9436373CAF0 /* InitialTouchPanGestureRecognizer.swift in Sources */,
+				44C27C2AD182013088203CA6ED02B9B0 /* Localize.swift in Sources */,
+				136D4451BD94ED473CE229F04A638A55 /* SheetContentViewController.swift in Sources */,
+				D1C977371C0D7540F25538763A0E8612 /* SheetContentViewDelegate.swift in Sources */,
+				C43ABC58247ABB64A97532ABFEE0EC3A /* SheetOptions.swift in Sources */,
+				26760843DDB86C34C81772E573284E23 /* SheetSize.swift in Sources */,
+				F059FC9E88435CCA534220D2C6B387CF /* SheetTransition.swift in Sources */,
+				3BEF28CFE23B1EEFBF0C49793BCA1223 /* SheetView.swift in Sources */,
+				28EC8DF515BA8EA5251A9D5806F003F4 /* SheetViewController.swift in Sources */,
+				4844B9EAC1D5D197B1D8CE0E2E93480B /* SheetViewDelegate.swift in Sources */,
+				A276A9C8230EA918BA27B4E5B569EF32 /* UIColorExtension.swift in Sources */,
+				92CF8346F1812D173F93CB02AE44254E /* UIViewControllerExtension.swift in Sources */,
+				11D817B6A282C2D60B1CF78CA9FFB628 /* Yalta.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		713EB4876C4DDE68536D1E66DA34A659 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7CE15CB2E9B5E409EE999C247BF7D15 /* GRButton.swift in Sources */,
+				3FD59E47C22ABB6FADC0CDEA902E6927 /* GRView-dummy.m in Sources */,
+				D68D466E8071A60D28996D53BDC516FC /* GRView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7748952E38FEA0CCB9D85933FD514C64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				016CF284FE30B7C74B4256D8AE74BC63 /* Pods-Vibrarelax-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E747E1496EB3622E8A1CE815E6DE701D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF96FAF65759393BAC8C853CAE38224F /* Pods-VibrarelaxTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F440A7B32679FFE26403F37E8557E7C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				860A5ADF3E3E14BEBA6017DDA340AAAF /* Pods-Vibrarelax-VibrarelaxUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2457411FE94E9333376099FDB20B9560 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GRView;
+			target = C8E64EB1CF11A61804ADD6D990751811 /* GRView */;
+			targetProxy = BF4ED7D17CE762C79F51124A351E5828 /* PBXContainerItemProxy */;
+		};
+		48CD77EF431E2EE735DCC872153EA818 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WaveAnimationView;
+			target = 2B8C327B97C2E109468CAF89F32D2A76 /* WaveAnimationView */;
+			targetProxy = 9880C256D7ED2E4720283998F0EDA008 /* PBXContainerItemProxy */;
+		};
+		4F5710DF812D06B088C858EB54712717 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FittedSheets;
+			target = B71C614CBF9B1B690FE941C4DF44D040 /* FittedSheets */;
+			targetProxy = FDCA8EA2263004C8625B915DB706313B /* PBXContainerItemProxy */;
+		};
+		5DE043C0D30BCE5417D5011EA79695C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WaveAnimationView;
+			target = 2B8C327B97C2E109468CAF89F32D2A76 /* WaveAnimationView */;
+			targetProxy = 5D489749E13F860A2E55750E6D0D6E8B /* PBXContainerItemProxy */;
+		};
+		DEDE75711F53405D274C278D12A80C5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FittedSheets;
+			target = B71C614CBF9B1B690FE941C4DF44D040 /* FittedSheets */;
+			targetProxy = 9512C74B2DF6B6922B29D78A39728FDF /* PBXContainerItemProxy */;
+		};
+		FAF2B84C9C8CBC99934DCE847D6061AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GRView;
+			target = C8E64EB1CF11A61804ADD6D990751811 /* GRView */;
+			targetProxy = 3CC4A17FADB3111F57E753331322CA7C /* PBXContainerItemProxy */;
+		};
+		FF539188F667E2F430DB6656E8AC62E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Vibrarelax";
+			target = 8A7F25C591290F4B1DD089EA22A154FA /* Pods-Vibrarelax */;
+			targetProxy = 240D341BA4572D4AF6B9435BB9BA7528 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0228428C73C5A5FA4C0AAC3E44B4280A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FC021AB72AEEE15AEA2ED2A3638AAD3 /* Pods-Vibrarelax-VibrarelaxUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Vibrarelax-VibrarelaxUITests/Pods-Vibrarelax-VibrarelaxUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Vibrarelax-VibrarelaxUITests/Pods-Vibrarelax-VibrarelaxUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		134CB13942DC82ED28504DC178F679C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 409D56D35A39A4B8F1C3288B7C29161D /* Pods-Vibrarelax-VibrarelaxUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Vibrarelax-VibrarelaxUITests/Pods-Vibrarelax-VibrarelaxUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Vibrarelax-VibrarelaxUITests/Pods-Vibrarelax-VibrarelaxUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1B6C02AEF7E28DF9C4FAC1F010A6D5C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46DB4A51B2588B611A55856709FB0B47 /* GRView.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GRView/GRView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GRView/GRView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/GRView/GRView.modulemap";
+				PRODUCT_MODULE_NAME = GRView;
+				PRODUCT_NAME = GRView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		22608FC039CEA0F44D5C974792A600DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94375051FCE465FBC29BF36B890F4CE5 /* GRView.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GRView/GRView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GRView/GRView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/GRView/GRView.modulemap";
+				PRODUCT_MODULE_NAME = GRView;
+				PRODUCT_NAME = GRView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		34817E235313A998AEF351EE0E035E69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B14E37B8A5C5C81C65C8D14D2CA8C25B /* Pods-Vibrarelax.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Vibrarelax/Pods-Vibrarelax-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Vibrarelax/Pods-Vibrarelax.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		71243899B61152433AAE34EE86456EE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		75D70EEEA0A456E14F7338A7F342964E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		AF644945EF5373F7008BE983D28423F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 729B97BA912C4FAF300CA46BDD84A80A /* Pods-VibrarelaxTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-VibrarelaxTests/Pods-VibrarelaxTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-VibrarelaxTests/Pods-VibrarelaxTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B8C215FA6614CEFA6FFEAF24548296A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B627F9B04ACB502E4A582D3501D8A696 /* Pods-VibrarelaxTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-VibrarelaxTests/Pods-VibrarelaxTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-VibrarelaxTests/Pods-VibrarelaxTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B9822CCBF14F48D0C7CDB82C668F43C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6FBC0591A5FC00D3701E5BDC9D1F83D /* FittedSheets.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FittedSheets/FittedSheets-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FittedSheets/FittedSheets-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/FittedSheets/FittedSheets.modulemap";
+				PRODUCT_MODULE_NAME = FittedSheets;
+				PRODUCT_NAME = FittedSheets;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BAB199E02A36785D2BF4FFD7BFF47BFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5819D0A9670BDBD4533E10E607A71D7 /* WaveAnimationView.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/WaveAnimationView/WaveAnimationView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WaveAnimationView/WaveAnimationView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/WaveAnimationView/WaveAnimationView.modulemap";
+				PRODUCT_MODULE_NAME = WaveAnimationView;
+				PRODUCT_NAME = WaveAnimationView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C832B18A5846DCE76791314427F08E90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69466A7DDDB3710EF16383A4743A63F8 /* WaveAnimationView.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/WaveAnimationView/WaveAnimationView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WaveAnimationView/WaveAnimationView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/WaveAnimationView/WaveAnimationView.modulemap";
+				PRODUCT_MODULE_NAME = WaveAnimationView;
+				PRODUCT_NAME = WaveAnimationView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DC284FEEC00BA1FEAF815D79F7ECDB20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 476398E4DE4CC0D9C3333375379D4952 /* Pods-Vibrarelax.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Vibrarelax/Pods-Vibrarelax-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Vibrarelax/Pods-Vibrarelax.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E70FE3B6F2C716A1F5ECC581EB1207AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78ED0331237961B5CEE85AA59BDE5667 /* FittedSheets.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FittedSheets/FittedSheets-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FittedSheets/FittedSheets-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/FittedSheets/FittedSheets.modulemap";
+				PRODUCT_MODULE_NAME = FittedSheets;
+				PRODUCT_NAME = FittedSheets;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0B45E3931E66E1703FA20E2679D376B8 /* Build configuration list for PBXNativeTarget "FittedSheets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E70FE3B6F2C716A1F5ECC581EB1207AC /* Debug */,
+				B9822CCBF14F48D0C7CDB82C668F43C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75D70EEEA0A456E14F7338A7F342964E /* Debug */,
+				71243899B61152433AAE34EE86456EE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2154DD503BD41A19D823AD98BE40445 /* Build configuration list for PBXNativeTarget "Pods-Vibrarelax-VibrarelaxUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				134CB13942DC82ED28504DC178F679C6 /* Debug */,
+				0228428C73C5A5FA4C0AAC3E44B4280A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C55502B9A5D2B9FDAFA001D7C4287B1D /* Build configuration list for PBXNativeTarget "Pods-Vibrarelax" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34817E235313A998AEF351EE0E035E69 /* Debug */,
+				DC284FEEC00BA1FEAF815D79F7ECDB20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D976AE9DD6ADCAFD3549B7664278660D /* Build configuration list for PBXNativeTarget "GRView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B6C02AEF7E28DF9C4FAC1F010A6D5C4 /* Debug */,
+				22608FC039CEA0F44D5C974792A600DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DED817F814727700EAA264BA01256A53 /* Build configuration list for PBXNativeTarget "Pods-VibrarelaxTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF644945EF5373F7008BE983D28423F3 /* Debug */,
+				B8C215FA6614CEFA6FFEAF24548296A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EEFB99B595F0F3FC42C229F2C7EB157E /* Build configuration list for PBXNativeTarget "WaveAnimationView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAB199E02A36785D2BF4FFD7BFF47BFE /* Debug */,
+				C832B18A5846DCE76791314427F08E90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

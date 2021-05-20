@@ -1,0 +1,6 @@
+framework module Pods_VibrarelaxTests {
+  umbrella header "Pods-VibrarelaxTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Nunito-Bold.ttf">
+            <string>Nunito-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_splash_background" translatesAutoresizingMaskIntoConstraints="NO" id="azX-GB-nsu">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Загрузка..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="17u-rh-baw">
+                                <rect key="frame" x="165.5" y="809" width="83" height="19"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="19" id="bbr-AQ-BL6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="16"/>
+                                <color key="textColor" red="0.77647058820000003" green="0.63529411759999999" blue="0.59215686270000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_splash" translatesAutoresizingMaskIntoConstraints="NO" id="7Ow-i5-JGt">
+                                <rect key="frame" x="17" y="44" width="397" height="730"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.99215686270000003" green="0.90242505070000001" blue="0.85572427510000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="17u-rh-baw" firstAttribute="top" secondItem="7Ow-i5-JGt" secondAttribute="bottom" constant="35" id="7rp-iw-l3H"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="17u-rh-baw" secondAttribute="bottom" constant="34" id="7sl-vh-mWA"/>
+                            <constraint firstItem="azX-GB-nsu" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="O1w-1O-wxD"/>
+                            <constraint firstItem="7Ow-i5-JGt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="UBb-Ea-NyQ"/>
+                            <constraint firstItem="azX-GB-nsu" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="UPT-HL-2n8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7Ow-i5-JGt" secondAttribute="trailing" id="Vgv-ZR-xBh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="azX-GB-nsu" secondAttribute="trailing" id="X9Z-ek-zsG"/>
+                            <constraint firstItem="17u-rh-baw" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="mbf-hQ-YFS"/>
+                            <constraint firstAttribute="bottom" secondItem="azX-GB-nsu" secondAttribute="bottom" id="nGv-63-ayF"/>
+                            <constraint firstItem="7Ow-i5-JGt" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="17" id="peN-Jb-hH1"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_splash" width="358" height="571"/>
+        <image name="ic_splash_background" width="375" height="667"/>
+    </resources>
+</document>

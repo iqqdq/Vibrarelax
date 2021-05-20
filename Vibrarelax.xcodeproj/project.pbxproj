@@ -1,0 +1,872 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		100AE3B7265681E4004E0C26 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100AE3B6265681E4004E0C26 /* OnboardingViewController.swift */; };
+		100AE3DB26568FE0004E0C26 /* Nunito-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 100AE3CC26568FDE004E0C26 /* Nunito-Italic.ttf */; };
+		100AE3DC26568FE0004E0C26 /* Nunito-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 100AE3CD26568FDE004E0C26 /* Nunito-ExtraLightItalic.ttf */; };
+		100AE3DD26568FE0004E0C26 /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 100AE3CE26568FDF004E0C26 /* Nunito-Regular.ttf */; };
+		100AE3DE26568FE0004E0C26 /* Nunito-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 100AE3CF26568FDF004E0C26 /* Nunito-Light.ttf */; };
+		100AE3DF26568FE0004E0C26 /* Nunito-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 100AE3D026568FDF004E0C26 /* Nunito-SemiBoldItalic.ttf */; };
+		100AE3E026568FE0004E0C26 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 100AE3D126568FDF004E0C26 /* OFL.txt */; };
+		100AE3E126568FE0004E0C26 /* Nunito-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 100AE3D226568FDF004E0C26 /* Nunito-Bold.ttf */; };
+		100AE3E226568FE0004E0C26 /* Nunito-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 100AE3D326568FDF004E0C26 /* Nunito-ExtraLight.ttf */; };
+		100AE3E326568FE0004E0C26 /* Nunito-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 100AE3D426568FDF004E0C26 /* Nunito-LightItalic.ttf */; };
+		100AE3E426568FE0004E0C26 /* Nunito-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 100AE3D526568FDF004E0C26 /* Nunito-SemiBold.ttf */; };
+		100AE3E526568FE0004E0C26 /* Nunito-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 100AE3D626568FDF004E0C26 /* Nunito-Black.ttf */; };
+		100AE3E626568FE0004E0C26 /* Nunito-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 100AE3D726568FDF004E0C26 /* Nunito-ExtraBold.ttf */; };
+		100AE3E726568FE0004E0C26 /* Nunito-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 100AE3D826568FDF004E0C26 /* Nunito-BlackItalic.ttf */; };
+		100AE3E826568FE0004E0C26 /* Nunito-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 100AE3D926568FDF004E0C26 /* Nunito-BoldItalic.ttf */; };
+		100AE3E926568FE0004E0C26 /* Nunito-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 100AE3DA26568FE0004E0C26 /* Nunito-ExtraBoldItalic.ttf */; };
+		1029EE222656968B00BD9230 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1029EE212656968B00BD9230 /* OnboardingCollectionViewCell.swift */; };
+		1070E561265678720059CAD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1070E560265678720059CAD0 /* AppDelegate.swift */; };
+		1070E568265678720059CAD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1070E566265678720059CAD0 /* Main.storyboard */; };
+		1070E56A265678720059CAD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1070E569265678720059CAD0 /* Assets.xcassets */; };
+		1070E56D265678720059CAD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1070E56B265678720059CAD0 /* LaunchScreen.storyboard */; };
+		1070E578265678730059CAD0 /* VibrarelaxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1070E577265678730059CAD0 /* VibrarelaxTests.swift */; };
+		1070E583265678730059CAD0 /* VibrarelaxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1070E582265678730059CAD0 /* VibrarelaxUITests.swift */; };
+		10C31E652656A553005BCF4A /* BottomNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C31E642656A553005BCF4A /* BottomNavigationViewController.swift */; };
+		2294459611190EA79144B172 /* Pods_VibrarelaxTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43039D56605110E36F769242 /* Pods_VibrarelaxTests.framework */; };
+		8C5422B96F04D143E34D0C07 /* Pods_Vibrarelax_VibrarelaxUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D30E5EBACA153EE98254A4D /* Pods_Vibrarelax_VibrarelaxUITests.framework */; };
+		98D33D2320610680C6A58171 /* Pods_Vibrarelax.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 093F0A6E83DB6D166FD2BFE1 /* Pods_Vibrarelax.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1070E574265678730059CAD0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1070E555265678720059CAD0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1070E55C265678720059CAD0;
+			remoteInfo = Vibrarelax;
+		};
+		1070E57F265678730059CAD0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1070E555265678720059CAD0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1070E55C265678720059CAD0;
+			remoteInfo = Vibrarelax;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		093F0A6E83DB6D166FD2BFE1 /* Pods_Vibrarelax.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vibrarelax.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		100AE3B6265681E4004E0C26 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		100AE3CC26568FDE004E0C26 /* Nunito-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Italic.ttf"; sourceTree = "<group>"; };
+		100AE3CD26568FDE004E0C26 /* Nunito-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		100AE3CE26568FDF004E0C26 /* Nunito-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Regular.ttf"; sourceTree = "<group>"; };
+		100AE3CF26568FDF004E0C26 /* Nunito-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Light.ttf"; sourceTree = "<group>"; };
+		100AE3D026568FDF004E0C26 /* Nunito-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		100AE3D126568FDF004E0C26 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		100AE3D226568FDF004E0C26 /* Nunito-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Bold.ttf"; sourceTree = "<group>"; };
+		100AE3D326568FDF004E0C26 /* Nunito-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-ExtraLight.ttf"; sourceTree = "<group>"; };
+		100AE3D426568FDF004E0C26 /* Nunito-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-LightItalic.ttf"; sourceTree = "<group>"; };
+		100AE3D526568FDF004E0C26 /* Nunito-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-SemiBold.ttf"; sourceTree = "<group>"; };
+		100AE3D626568FDF004E0C26 /* Nunito-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Black.ttf"; sourceTree = "<group>"; };
+		100AE3D726568FDF004E0C26 /* Nunito-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-ExtraBold.ttf"; sourceTree = "<group>"; };
+		100AE3D826568FDF004E0C26 /* Nunito-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-BlackItalic.ttf"; sourceTree = "<group>"; };
+		100AE3D926568FDF004E0C26 /* Nunito-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-BoldItalic.ttf"; sourceTree = "<group>"; };
+		100AE3DA26568FE0004E0C26 /* Nunito-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		1029EE212656968B00BD9230 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
+		1070E55D265678720059CAD0 /* Vibrarelax.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vibrarelax.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1070E560265678720059CAD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1070E567265678720059CAD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1070E569265678720059CAD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1070E56C265678720059CAD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1070E56E265678720059CAD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1070E573265678730059CAD0 /* VibrarelaxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VibrarelaxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1070E577265678730059CAD0 /* VibrarelaxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibrarelaxTests.swift; sourceTree = "<group>"; };
+		1070E579265678730059CAD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1070E57E265678730059CAD0 /* VibrarelaxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VibrarelaxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1070E582265678730059CAD0 /* VibrarelaxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibrarelaxUITests.swift; sourceTree = "<group>"; };
+		1070E584265678730059CAD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10C31E642656A553005BCF4A /* BottomNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomNavigationViewController.swift; sourceTree = "<group>"; };
+		31673E743844F4516907F3F3 /* Pods-Vibrarelax.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vibrarelax.release.xcconfig"; path = "Target Support Files/Pods-Vibrarelax/Pods-Vibrarelax.release.xcconfig"; sourceTree = "<group>"; };
+		3D26612F0A88C7C78A027DFC /* Pods-VibrarelaxTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VibrarelaxTests.debug.xcconfig"; path = "Target Support Files/Pods-VibrarelaxTests/Pods-VibrarelaxTests.debug.xcconfig"; sourceTree = "<group>"; };
+		43039D56605110E36F769242 /* Pods_VibrarelaxTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VibrarelaxTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D30E5EBACA153EE98254A4D /* Pods_Vibrarelax_VibrarelaxUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vibrarelax_VibrarelaxUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D286AA816AB9491A6EC0DEFE /* Pods-Vibrarelax-VibrarelaxUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vibrarelax-VibrarelaxUITests.debug.xcconfig"; path = "Target Support Files/Pods-Vibrarelax-VibrarelaxUITests/Pods-Vibrarelax-VibrarelaxUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DC7C8B7591BA6997DA222EF2 /* Pods-Vibrarelax.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vibrarelax.debug.xcconfig"; path = "Target Support Files/Pods-Vibrarelax/Pods-Vibrarelax.debug.xcconfig"; sourceTree = "<group>"; };
+		E4521370A5DADF666D35FB86 /* Pods-Vibrarelax-VibrarelaxUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vibrarelax-VibrarelaxUITests.release.xcconfig"; path = "Target Support Files/Pods-Vibrarelax-VibrarelaxUITests/Pods-Vibrarelax-VibrarelaxUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FD099056A116454D257CE8FF /* Pods-VibrarelaxTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VibrarelaxTests.release.xcconfig"; path = "Target Support Files/Pods-VibrarelaxTests/Pods-VibrarelaxTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1070E55A265678720059CAD0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98D33D2320610680C6A58171 /* Pods_Vibrarelax.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1070E570265678730059CAD0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2294459611190EA79144B172 /* Pods_VibrarelaxTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1070E57B265678730059CAD0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C5422B96F04D143E34D0C07 /* Pods_Vibrarelax_VibrarelaxUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		100845D7265679DD0064794A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				100845FD26567AA80064794A /* Fonts */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		100845FD26567AA80064794A /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				100AE3D626568FDF004E0C26 /* Nunito-Black.ttf */,
+				100AE3D826568FDF004E0C26 /* Nunito-BlackItalic.ttf */,
+				100AE3D226568FDF004E0C26 /* Nunito-Bold.ttf */,
+				100AE3D926568FDF004E0C26 /* Nunito-BoldItalic.ttf */,
+				100AE3D726568FDF004E0C26 /* Nunito-ExtraBold.ttf */,
+				100AE3DA26568FE0004E0C26 /* Nunito-ExtraBoldItalic.ttf */,
+				100AE3D326568FDF004E0C26 /* Nunito-ExtraLight.ttf */,
+				100AE3CD26568FDE004E0C26 /* Nunito-ExtraLightItalic.ttf */,
+				100AE3CC26568FDE004E0C26 /* Nunito-Italic.ttf */,
+				100AE3CF26568FDF004E0C26 /* Nunito-Light.ttf */,
+				100AE3D426568FDF004E0C26 /* Nunito-LightItalic.ttf */,
+				100AE3CE26568FDF004E0C26 /* Nunito-Regular.ttf */,
+				100AE3D526568FDF004E0C26 /* Nunito-SemiBold.ttf */,
+				100AE3D026568FDF004E0C26 /* Nunito-SemiBoldItalic.ttf */,
+				100AE3D126568FDF004E0C26 /* OFL.txt */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		1029EE102656963800BD9230 /* OnboardingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				100AE3B6265681E4004E0C26 /* OnboardingViewController.swift */,
+				1029EE112656964200BD9230 /* Cells */,
+			);
+			path = OnboardingViewController;
+			sourceTree = "<group>";
+		};
+		1029EE112656964200BD9230 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1029EE1A2656965900BD9230 /* OnboardingCollectionViewCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		1029EE1A2656965900BD9230 /* OnboardingCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				1029EE212656968B00BD9230 /* OnboardingCollectionViewCell.swift */,
+			);
+			path = OnboardingCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		1070E554265678720059CAD0 = {
+			isa = PBXGroup;
+			children = (
+				10DB4A1526567EB9005ED0DB /* ViewControllers */,
+				100845D7265679DD0064794A /* Components */,
+				1070E55F265678720059CAD0 /* Vibrarelax */,
+				1070E576265678730059CAD0 /* VibrarelaxTests */,
+				1070E581265678730059CAD0 /* VibrarelaxUITests */,
+				1070E55E265678720059CAD0 /* Products */,
+				F9E34558464CF3B410872BA8 /* Pods */,
+				2EEC830967CD4BE44E77EA0F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1070E55E265678720059CAD0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1070E55D265678720059CAD0 /* Vibrarelax.app */,
+				1070E573265678730059CAD0 /* VibrarelaxTests.xctest */,
+				1070E57E265678730059CAD0 /* VibrarelaxUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1070E55F265678720059CAD0 /* Vibrarelax */ = {
+			isa = PBXGroup;
+			children = (
+				1070E560265678720059CAD0 /* AppDelegate.swift */,
+				1070E566265678720059CAD0 /* Main.storyboard */,
+				1070E569265678720059CAD0 /* Assets.xcassets */,
+				1070E56B265678720059CAD0 /* LaunchScreen.storyboard */,
+				1070E56E265678720059CAD0 /* Info.plist */,
+			);
+			path = Vibrarelax;
+			sourceTree = "<group>";
+		};
+		1070E576265678730059CAD0 /* VibrarelaxTests */ = {
+			isa = PBXGroup;
+			children = (
+				1070E577265678730059CAD0 /* VibrarelaxTests.swift */,
+				1070E579265678730059CAD0 /* Info.plist */,
+			);
+			path = VibrarelaxTests;
+			sourceTree = "<group>";
+		};
+		1070E581265678730059CAD0 /* VibrarelaxUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1070E582265678730059CAD0 /* VibrarelaxUITests.swift */,
+				1070E584265678730059CAD0 /* Info.plist */,
+			);
+			path = VibrarelaxUITests;
+			sourceTree = "<group>";
+		};
+		10C31E632656A534005BCF4A /* BottomNavigationViewController */ = {
+			isa = PBXGroup;
+			children = (
+				10C31E642656A553005BCF4A /* BottomNavigationViewController.swift */,
+			);
+			path = BottomNavigationViewController;
+			sourceTree = "<group>";
+		};
+		10DB4A1526567EB9005ED0DB /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				10C31E632656A534005BCF4A /* BottomNavigationViewController */,
+				1029EE102656963800BD9230 /* OnboardingViewController */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		2EEC830967CD4BE44E77EA0F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				093F0A6E83DB6D166FD2BFE1 /* Pods_Vibrarelax.framework */,
+				4D30E5EBACA153EE98254A4D /* Pods_Vibrarelax_VibrarelaxUITests.framework */,
+				43039D56605110E36F769242 /* Pods_VibrarelaxTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F9E34558464CF3B410872BA8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DC7C8B7591BA6997DA222EF2 /* Pods-Vibrarelax.debug.xcconfig */,
+				31673E743844F4516907F3F3 /* Pods-Vibrarelax.release.xcconfig */,
+				D286AA816AB9491A6EC0DEFE /* Pods-Vibrarelax-VibrarelaxUITests.debug.xcconfig */,
+				E4521370A5DADF666D35FB86 /* Pods-Vibrarelax-VibrarelaxUITests.release.xcconfig */,
+				3D26612F0A88C7C78A027DFC /* Pods-VibrarelaxTests.debug.xcconfig */,
+				FD099056A116454D257CE8FF /* Pods-VibrarelaxTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1070E55C265678720059CAD0 /* Vibrarelax */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1070E587265678730059CAD0 /* Build configuration list for PBXNativeTarget "Vibrarelax" */;
+			buildPhases = (
+				6C75D89623B87E312A2E5114 /* [CP] Check Pods Manifest.lock */,
+				1070E559265678720059CAD0 /* Sources */,
+				1070E55A265678720059CAD0 /* Frameworks */,
+				1070E55B265678720059CAD0 /* Resources */,
+				2988AAD9AA0AAE6F7A1263BA /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Vibrarelax;
+			productName = Vibrarelax;
+			productReference = 1070E55D265678720059CAD0 /* Vibrarelax.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1070E572265678730059CAD0 /* VibrarelaxTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1070E58A265678730059CAD0 /* Build configuration list for PBXNativeTarget "VibrarelaxTests" */;
+			buildPhases = (
+				72D13FE7704399EEE8972737 /* [CP] Check Pods Manifest.lock */,
+				1070E56F265678730059CAD0 /* Sources */,
+				1070E570265678730059CAD0 /* Frameworks */,
+				1070E571265678730059CAD0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1070E575265678730059CAD0 /* PBXTargetDependency */,
+			);
+			name = VibrarelaxTests;
+			productName = VibrarelaxTests;
+			productReference = 1070E573265678730059CAD0 /* VibrarelaxTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1070E57D265678730059CAD0 /* VibrarelaxUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1070E58D265678730059CAD0 /* Build configuration list for PBXNativeTarget "VibrarelaxUITests" */;
+			buildPhases = (
+				C98A94CC93D595ABEF3E671C /* [CP] Check Pods Manifest.lock */,
+				1070E57A265678730059CAD0 /* Sources */,
+				1070E57B265678730059CAD0 /* Frameworks */,
+				1070E57C265678730059CAD0 /* Resources */,
+				0222F459886870E548AD21B3 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1070E580265678730059CAD0 /* PBXTargetDependency */,
+			);
+			name = VibrarelaxUITests;
+			productName = VibrarelaxUITests;
+			productReference = 1070E57E265678730059CAD0 /* VibrarelaxUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1070E555265678720059CAD0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					1070E55C265678720059CAD0 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					1070E572265678730059CAD0 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 1070E55C265678720059CAD0;
+					};
+					1070E57D265678730059CAD0 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 1070E55C265678720059CAD0;
+					};
+				};
+			};
+			buildConfigurationList = 1070E558265678720059CAD0 /* Build configuration list for PBXProject "Vibrarelax" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1070E554265678720059CAD0;
+			productRefGroup = 1070E55E265678720059CAD0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1070E55C265678720059CAD0 /* Vibrarelax */,
+				1070E572265678730059CAD0 /* VibrarelaxTests */,
+				1070E57D265678730059CAD0 /* VibrarelaxUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1070E55B265678720059CAD0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				100AE3E426568FE0004E0C26 /* Nunito-SemiBold.ttf in Resources */,
+				100AE3E526568FE0004E0C26 /* Nunito-Black.ttf in Resources */,
+				100AE3DD26568FE0004E0C26 /* Nunito-Regular.ttf in Resources */,
+				100AE3DE26568FE0004E0C26 /* Nunito-Light.ttf in Resources */,
+				1070E56D265678720059CAD0 /* LaunchScreen.storyboard in Resources */,
+				100AE3E026568FE0004E0C26 /* OFL.txt in Resources */,
+				100AE3E226568FE0004E0C26 /* Nunito-ExtraLight.ttf in Resources */,
+				100AE3E826568FE0004E0C26 /* Nunito-BoldItalic.ttf in Resources */,
+				100AE3DC26568FE0004E0C26 /* Nunito-ExtraLightItalic.ttf in Resources */,
+				100AE3DF26568FE0004E0C26 /* Nunito-SemiBoldItalic.ttf in Resources */,
+				100AE3E126568FE0004E0C26 /* Nunito-Bold.ttf in Resources */,
+				100AE3DB26568FE0004E0C26 /* Nunito-Italic.ttf in Resources */,
+				1070E56A265678720059CAD0 /* Assets.xcassets in Resources */,
+				100AE3E626568FE0004E0C26 /* Nunito-ExtraBold.ttf in Resources */,
+				100AE3E326568FE0004E0C26 /* Nunito-LightItalic.ttf in Resources */,
+				1070E568265678720059CAD0 /* Main.storyboard in Resources */,
+				100AE3E726568FE0004E0C26 /* Nunito-BlackItalic.ttf in Resources */,
+				100AE3E926568FE0004E0C26 /* Nunito-ExtraBoldItalic.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1070E571265678730059CAD0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1070E57C265678730059CAD0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0222F459886870E548AD21B3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Vibrarelax-VibrarelaxUITests/Pods-Vibrarelax-VibrarelaxUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Vibrarelax-VibrarelaxUITests/Pods-Vibrarelax-VibrarelaxUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Vibrarelax-VibrarelaxUITests/Pods-Vibrarelax-VibrarelaxUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2988AAD9AA0AAE6F7A1263BA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Vibrarelax/Pods-Vibrarelax-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Vibrarelax/Pods-Vibrarelax-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Vibrarelax/Pods-Vibrarelax-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C75D89623B87E312A2E5114 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Vibrarelax-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72D13FE7704399EEE8972737 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VibrarelaxTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C98A94CC93D595ABEF3E671C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Vibrarelax-VibrarelaxUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1070E559265678720059CAD0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				100AE3B7265681E4004E0C26 /* OnboardingViewController.swift in Sources */,
+				1070E561265678720059CAD0 /* AppDelegate.swift in Sources */,
+				1029EE222656968B00BD9230 /* OnboardingCollectionViewCell.swift in Sources */,
+				10C31E652656A553005BCF4A /* BottomNavigationViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1070E56F265678730059CAD0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1070E578265678730059CAD0 /* VibrarelaxTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1070E57A265678730059CAD0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1070E583265678730059CAD0 /* VibrarelaxUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1070E575265678730059CAD0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1070E55C265678720059CAD0 /* Vibrarelax */;
+			targetProxy = 1070E574265678730059CAD0 /* PBXContainerItemProxy */;
+		};
+		1070E580265678730059CAD0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1070E55C265678720059CAD0 /* Vibrarelax */;
+			targetProxy = 1070E57F265678730059CAD0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1070E566265678720059CAD0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1070E567265678720059CAD0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1070E56B265678720059CAD0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1070E56C265678720059CAD0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1070E585265678730059CAD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1070E586265678730059CAD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1070E588265678730059CAD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC7C8B7591BA6997DA222EF2 /* Pods-Vibrarelax.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ABKB45MRY5;
+				INFOPLIST_FILE = Vibrarelax/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = iddqzn.Vibrarelax;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		1070E589265678730059CAD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31673E743844F4516907F3F3 /* Pods-Vibrarelax.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ABKB45MRY5;
+				INFOPLIST_FILE = Vibrarelax/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = iddqzn.Vibrarelax;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		1070E58B265678730059CAD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D26612F0A88C7C78A027DFC /* Pods-VibrarelaxTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ABKB45MRY5;
+				INFOPLIST_FILE = VibrarelaxTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = iddqzn.VibrarelaxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vibrarelax.app/Vibrarelax";
+			};
+			name = Debug;
+		};
+		1070E58C265678730059CAD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD099056A116454D257CE8FF /* Pods-VibrarelaxTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ABKB45MRY5;
+				INFOPLIST_FILE = VibrarelaxTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = iddqzn.VibrarelaxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vibrarelax.app/Vibrarelax";
+			};
+			name = Release;
+		};
+		1070E58E265678730059CAD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D286AA816AB9491A6EC0DEFE /* Pods-Vibrarelax-VibrarelaxUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ABKB45MRY5;
+				INFOPLIST_FILE = VibrarelaxUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = iddqzn.VibrarelaxUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Vibrarelax;
+			};
+			name = Debug;
+		};
+		1070E58F265678730059CAD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4521370A5DADF666D35FB86 /* Pods-Vibrarelax-VibrarelaxUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ABKB45MRY5;
+				INFOPLIST_FILE = VibrarelaxUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = iddqzn.VibrarelaxUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Vibrarelax;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1070E558265678720059CAD0 /* Build configuration list for PBXProject "Vibrarelax" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1070E585265678730059CAD0 /* Debug */,
+				1070E586265678730059CAD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1070E587265678730059CAD0 /* Build configuration list for PBXNativeTarget "Vibrarelax" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1070E588265678730059CAD0 /* Debug */,
+				1070E589265678730059CAD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1070E58A265678730059CAD0 /* Build configuration list for PBXNativeTarget "VibrarelaxTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1070E58B265678730059CAD0 /* Debug */,
+				1070E58C265678730059CAD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1070E58D265678730059CAD0 /* Build configuration list for PBXNativeTarget "VibrarelaxUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1070E58E265678730059CAD0 /* Debug */,
+				1070E58F265678730059CAD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1070E555265678720059CAD0 /* Project object */;
+}
