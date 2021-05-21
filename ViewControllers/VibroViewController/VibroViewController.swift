@@ -55,6 +55,10 @@ class VibroViewController: UIViewController {
         NotificationCenter.default.post(name: Notification.Name("lockscreen"), object: nil)
     }
     
+    @IBAction func noVibroButtonAction(_ sender: UIButton) {
+        showSheetController(viewController: UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier:  "VibroSheetViewController"), sizes: [.fixed(UIScreen.main.bounds.height / 1.5)])
+    }
+    
     // MARK: -
     // MARK: - FUNCTIONS
     

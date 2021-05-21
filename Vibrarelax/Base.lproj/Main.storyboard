@@ -770,19 +770,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="В О Д О П А Д" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FQh-da-ggI">
-                                <rect key="frame" x="40" y="64" width="334" height="27"/>
+                                <rect key="frame" x="40" y="64" width="334" height="31.5"/>
                                 <fontDescription key="fontDescription" name="Nunito-ExtraBold" family="Nunito" pointSize="23"/>
                                 <color key="textColor" red="0.73660141229999998" green="0.5965700746" blue="0.52831161019999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Нажмите кнопку для  начала массажа" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BM2-MQ-6J8">
-                                <rect key="frame" x="126.5" y="308.5" width="161" height="37.5"/>
-                                <fontDescription key="fontDescription" name="Nunito-ExtraBold" family="Nunito" pointSize="16"/>
-                                <color key="textColor" red="0.73660141229999998" green="0.5965700746" blue="0.52831161019999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Не вибрирует?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bmy-n3-N4C">
-                                <rect key="frame" x="40" y="570" width="334" height="19"/>
+                                <rect key="frame" x="121" y="302" width="172.5" height="44"/>
                                 <fontDescription key="fontDescription" name="Nunito-ExtraBold" family="Nunito" pointSize="16"/>
                                 <color key="textColor" red="0.73660141229999998" green="0.5965700746" blue="0.52831161019999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -851,7 +845,7 @@
                                 </connections>
                             </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7gI-Dh-081">
-                                <rect key="frame" x="57" y="103" width="300" height="94"/>
+                                <rect key="frame" x="57" y="107.5" width="300" height="94"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="94" id="NNM-t7-vci"/>
@@ -907,6 +901,16 @@
                                     <outlet property="delegate" destination="czY-1o-rZF" id="xhl-qZ-jc4"/>
                                 </connections>
                             </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W9a-5P-Ygm">
+                                <rect key="frame" x="148" y="570" width="118" height="34"/>
+                                <fontDescription key="fontDescription" name="Nunito-ExtraBold" family="Nunito" pointSize="16"/>
+                                <state key="normal" title="Не вибрирует?">
+                                    <color key="titleColor" red="0.73338896040000001" green="0.55745238070000003" blue="0.46762168409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="noVibroButtonAction:" destination="czY-1o-rZF" eventType="touchUpInside" id="2Ti-4k-QfR"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="VNO-hZ-eMO"/>
                         <color key="backgroundColor" red="0.95263582469999997" green="0.80061370129999998" blue="0.72397714849999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -914,19 +918,17 @@
                             <constraint firstItem="FQh-da-ggI" firstAttribute="leading" secondItem="VNO-hZ-eMO" secondAttribute="leading" constant="40" id="4ZM-4s-1JW"/>
                             <constraint firstItem="AwJ-1f-mGl" firstAttribute="top" secondItem="BM2-MQ-6J8" secondAttribute="bottom" constant="13" id="6sk-dg-zCV"/>
                             <constraint firstItem="VNO-hZ-eMO" firstAttribute="trailing" secondItem="zs0-WJ-o0j" secondAttribute="trailing" constant="20" id="8aB-YY-2Az"/>
+                            <constraint firstItem="W9a-5P-Ygm" firstAttribute="top" secondItem="AwJ-1f-mGl" secondAttribute="bottom" constant="33" id="96D-c0-rfh"/>
                             <constraint firstItem="VNO-hZ-eMO" firstAttribute="bottom" secondItem="zs0-WJ-o0j" secondAttribute="bottom" constant="180" id="Awg-iE-9fT"/>
                             <constraint firstItem="AwJ-1f-mGl" firstAttribute="centerX" secondItem="hhp-RJ-8Hi" secondAttribute="centerX" id="Cf9-dH-ZzJ"/>
                             <constraint firstItem="BM2-MQ-6J8" firstAttribute="centerX" secondItem="hhp-RJ-8Hi" secondAttribute="centerX" id="DkD-4D-suI"/>
                             <constraint firstItem="FQh-da-ggI" firstAttribute="centerX" secondItem="hhp-RJ-8Hi" secondAttribute="centerX" id="FRE-Nm-p2c"/>
-                            <constraint firstItem="VNO-hZ-eMO" firstAttribute="trailing" secondItem="bmy-n3-N4C" secondAttribute="trailing" constant="40" id="ZfY-9r-w7Y"/>
+                            <constraint firstItem="W9a-5P-Ygm" firstAttribute="centerX" secondItem="hhp-RJ-8Hi" secondAttribute="centerX" id="abV-1P-Jh2"/>
                             <constraint firstItem="AwJ-1f-mGl" firstAttribute="centerY" secondItem="hhp-RJ-8Hi" secondAttribute="centerY" id="dgP-GR-WvE"/>
                             <constraint firstItem="FQh-da-ggI" firstAttribute="top" secondItem="VNO-hZ-eMO" secondAttribute="top" constant="20" id="eFM-dK-6GB"/>
                             <constraint firstItem="VNO-hZ-eMO" firstAttribute="trailing" secondItem="FQh-da-ggI" secondAttribute="trailing" constant="40" id="fzf-yi-nrS"/>
                             <constraint firstItem="7gI-Dh-081" firstAttribute="centerX" secondItem="hhp-RJ-8Hi" secondAttribute="centerX" id="nHg-3S-tRL"/>
-                            <constraint firstItem="bmy-n3-N4C" firstAttribute="centerX" secondItem="hhp-RJ-8Hi" secondAttribute="centerX" id="y4r-wv-DY5"/>
-                            <constraint firstItem="bmy-n3-N4C" firstAttribute="leading" secondItem="VNO-hZ-eMO" secondAttribute="leading" constant="40" id="yKY-AG-ofc"/>
                             <constraint firstItem="7gI-Dh-081" firstAttribute="top" secondItem="FQh-da-ggI" secondAttribute="bottom" constant="12" id="yPT-T7-5Eb"/>
-                            <constraint firstItem="bmy-n3-N4C" firstAttribute="top" secondItem="AwJ-1f-mGl" secondAttribute="bottom" constant="33" id="z2U-rs-ub7"/>
                         </constraints>
                     </view>
                     <connections>
