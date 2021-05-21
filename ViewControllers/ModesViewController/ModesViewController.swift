@@ -31,6 +31,15 @@ class ModesViewController: UIViewController {
         levelImageView.image = levelImageView.image?.withRenderingMode(.alwaysTemplate)
         levelImageView.tintColor = #colorLiteral(red: 0.7411764706, green: 0.5960784314, blue: 0.5254901961, alpha: 0.7)
     }
+    
+    // MARK: -
+    // MARK: - ACTIONS
+    
+    @IBAction func sliderValueChanged(sender: UISlider) {
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "slider_did_change_value"),
+                                        object: nil,
+                                        userInfo: ["slider_value": sender.value])
+    }
 }
 
 extension ModesViewController: UICollectionViewDataSource {

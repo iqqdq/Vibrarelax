@@ -12,7 +12,6 @@ class SettingsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
     
     // MARK: -
@@ -23,9 +22,11 @@ class SettingsViewController: UIViewController {
     }
     
     @IBAction func rateButtonAction(_ sender: UIButton) {
+        
     }
     
     @IBAction func reviewButtonAction(_ sender: UIButton) {
+        
     }
     
     @IBAction func shareButtonAction(_ sender: UIButton) {
@@ -33,6 +34,6 @@ class SettingsViewController: UIViewController {
     }
     
     @IBAction func openSeasonsButtonAction(_ sender: UIButton) {
+        showSheetController(viewController: UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier:  "OfferViewController"), sizes: [.fullscreen])
     }
-    
 }

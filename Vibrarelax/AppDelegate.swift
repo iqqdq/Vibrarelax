@@ -14,8 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Setup Window
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: UserDefaults.standard.bool(forKey: "onboarding") ? "BottomNavigationViewController" : "OnboardingViewController")
-//        window?.rootViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier:  "NavigationController")
+        window?.rootViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: UserDefaults.standard.bool(forKey: "onboarding") ? "BottomNavigationViewController" : "NavigationController")
         window?.makeKeyAndVisible()
             
         // Localization
