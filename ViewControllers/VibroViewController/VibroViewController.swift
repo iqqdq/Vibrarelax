@@ -13,8 +13,9 @@ class VibroViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     
     var timer: Timer?
-    var interval: Float = 0.3
+    var interval: Float = 0.5
     var isAnimate: Bool = false
+    var isFirstAppereance: Bool = true
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,6 +36,8 @@ class VibroViewController: UIViewController {
     // MARK: - ACTIONS
 
     @IBAction func switchButtonAction(_ sender: UIButton) {
+        isFirstAppereance = false
+        
         if sender.isSelected {
             sender.isSelected = false
             isAnimate = false
@@ -123,10 +126,12 @@ extension VibroViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let vibroCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "VibroCollectionViewCell", for: indexPath as IndexPath) as! VibroCollectionViewCell
         
-        if isAnimate {
-            vibroCollectionViewCell.setTimer(duration: Double((indexPath.row + 1)) * 0.050)
-        } else {
-            vibroCollectionViewCell.reload()
+        if !isFirstAppereance {
+            if isAnimate {
+                vibroCollectionViewCell.setTimer(duration: Double(indexPath.row) * 0.05)
+            } else {
+                vibroCollectionViewCell.reload()
+            }
         }
         
         return vibroCollectionViewCell
@@ -135,6 +140,6 @@ extension VibroViewController: UICollectionViewDataSource {
 
 extension VibroViewController: UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 30.0, height: collectionView.frame.height)
+        return CGSize(width: 26.0, height: collectionView.frame.height)
     }
 }

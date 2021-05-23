@@ -57,6 +57,45 @@ extension ModesViewController: UICollectionViewDataSource {
             modeCollectionViewCell.modeImageView.image = UIImage.init(named: value)
         }
         
+        switch indexPath.row {
+        case 1:
+            modeCollectionViewCell.widthConstraint.constant = 32.0
+            modeCollectionViewCell.heightConstraint.constant = 28.0
+        case 2:
+            modeCollectionViewCell.widthConstraint.constant = 40.0
+            modeCollectionViewCell.heightConstraint.constant = 30.0
+        case 3:
+            modeCollectionViewCell.widthConstraint.constant = 42.0
+            modeCollectionViewCell.heightConstraint.constant = 42.0
+        case 4:
+            modeCollectionViewCell.widthConstraint.constant = 40.0
+            modeCollectionViewCell.heightConstraint.constant = 50.0
+        case 5:
+            modeCollectionViewCell.widthConstraint.constant = 34.0
+            modeCollectionViewCell.heightConstraint.constant = 34.0
+        case 6:
+            modeCollectionViewCell.widthConstraint.constant = 31.0
+            modeCollectionViewCell.heightConstraint.constant = 34.0
+        case 7:
+            modeCollectionViewCell.widthConstraint.constant = 32.0
+            modeCollectionViewCell.heightConstraint.constant = 32.0
+        case 8:
+            modeCollectionViewCell.widthConstraint.constant = 32.0
+            modeCollectionViewCell.heightConstraint.constant = 32.0
+        case 9:
+            modeCollectionViewCell.widthConstraint.constant = 42.0
+            modeCollectionViewCell.heightConstraint.constant = 45.0
+        case 10:
+            modeCollectionViewCell.widthConstraint.constant = 32.0
+            modeCollectionViewCell.heightConstraint.constant = 38.0
+        case 11:
+            modeCollectionViewCell.widthConstraint.constant = 38.0
+            modeCollectionViewCell.heightConstraint.constant = 36.0
+        default:
+            modeCollectionViewCell.widthConstraint.constant = 38.0
+            modeCollectionViewCell.heightConstraint.constant = 32.0
+        }
+        
         if selectedIndexes.contains(indexPath.row) {
             modeCollectionViewCell.containerView.startColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
             modeCollectionViewCell.containerView.endColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)

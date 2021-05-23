@@ -121,9 +121,9 @@ class BottomNavigationViewController: UIViewController {
     }
     
     func setupLockView() {
-        visualEffectView = UIVisualEffectView(effect: UIBlurEffect(style: .dark))
+        visualEffectView = UIVisualEffectView(effect: UIBlurEffect(style: .regular))
         visualEffectView?.frame = UIScreen.main.bounds
-        visualEffectView?.blur.radius = 5.0
+        visualEffectView?.blur.radius = 10.0
         visualEffectView?.blur.tintColor = .clear
         visualEffectView?.alpha = 0.0
     }

@@ -91,7 +91,7 @@ extension OfferViewController: UICollectionViewDelegate, UICollectionViewDelegat
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width = (UIScreen.main.bounds.width - 30.0 - 44.0) / 3
+        let width = (UIScreen.main.bounds.width - 20.0 - 44.0) / 3
         return CGSize(width: width, height: collectionView.frame.height)
     }
 }

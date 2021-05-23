@@ -12,4 +12,6 @@ class ModeCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var modeImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var containerView: GRView!
+    @IBOutlet weak var heightConstraint: NSLayoutConstraint!
+    @IBOutlet weak var widthConstraint: NSLayoutConstraint!
 }
