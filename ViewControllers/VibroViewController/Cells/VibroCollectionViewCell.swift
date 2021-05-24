@@ -26,15 +26,12 @@ class VibroCollectionViewCell: UICollectionViewCell {
     }
     
     func reload() {
-        timer?.invalidate()
-        
-        indicatorView.startColor = #colorLiteral(red: 0.9529411765, green: 0.7960784314, blue: 0.7294117647, alpha: 1)
-        indicatorView.endColor = #colorLiteral(red: 0.7607843137, green: 0.6274509804, blue: 0.5882352941, alpha: 1)
-        
-        UIView.animate(withDuration: 0.3) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+            self.timer?.invalidate()
+            self.indicatorView.startColor = #colorLiteral(red: 0.9529411765, green: 0.7960784314, blue: 0.7294117647, alpha: 1)
+            self.indicatorView.endColor = #colorLiteral(red: 0.7607843137, green: 0.6274509804, blue: 0.5882352941, alpha: 1)
             self.topConstraint.constant = 25.0
             self.bottomConstraint.constant = 25.0
-            self.layoutIfNeeded()
         }
     }
     

@@ -9,6 +9,7 @@ import UIKit
 import GRView
 
 class VibroViewController: UIViewController {
+    @IBOutlet weak var switchBackgroundView: GRView!
     @IBOutlet weak var switchButton: GRButton!
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -20,7 +21,9 @@ class VibroViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        switchButton.setImage(#imageLiteral(resourceName: "ic_switch_off"), for: .selected)
+        switchButton.setImage(#imageLiteral(resourceName: "ic_switch_on"), for: .selected)
+        switchButton.cornerRadius = switchButton.frame.height / 2
+        switchBackgroundView.cornerRadius = switchButton.cornerRadius
         
         NotificationCenter.default.addObserver(self, selector: #selector(sliderDidChangeValue), name: Notification.Name("slider_did_change_value"), object: nil)
     }
@@ -40,26 +43,25 @@ class VibroViewController: UIViewController {
         
         if sender.isSelected {
             sender.isSelected = false
-            isAnimate = false
-            timer?.invalidate()
+            self.isAnimate = false
+            self.timer?.invalidate()
         } else {
             sender.isSelected = true
-            isAnimate = true
-            timer = Timer.scheduledTimer(timeInterval: TimeInterval(interval), target: self, selector: #selector(vibrate), userInfo: nil, repeats: true)
+            self.isAnimate = true
+            self.timer = Timer.scheduledTimer(timeInterval: TimeInterval(self.interval), target: self, selector: #selector(self.vibrate), userInfo: nil, repeats: true)
         }
         
-        switchButton.startColor = sender.isSelected ? #colorLiteral(red: 1, green: 0.462745098, blue: 0.5490196078, alpha: 1) : #colorLiteral(red: 0.937254902, green: 0.2901960784, blue: 0.3960784314, alpha: 1)
-        switchButton.endColor = sender.isSelected ? #colorLiteral(red: 0.937254902, green: 0.2901960784, blue: 0.3960784314, alpha: 1) : #colorLiteral(red: 1, green: 0.462745098, blue: 0.5490196078, alpha: 1)
-        
-        collectionView.reloadData()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+            self.collectionView.reloadData()
+        }
     }
     
     @IBAction func lockButtonAction(_ sender: UIButton) {
         NotificationCenter.default.post(name: Notification.Name("lockscreen"), object: nil)
     }
     
-    @IBAction func noVibroButtonAction(_ sender: UIButton) {
-        showSheetController(viewController: UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier:  "VibroSheetViewController"), sizes: [.fixed(UIScreen.main.bounds.height / 1.5)])
+    @IBAction func noVibroButtonAction(_ sender: UIButton) {        
+        NotificationCenter.default.post(name: Notification.Name("no_vibro"), object: nil)
     }
     
     // MARK: -

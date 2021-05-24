@@ -6,15 +6,32 @@
 //
 
 import UIKit
+import GRView
 
 class OfferViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var privacyViewBottomConstraint: NSLayoutConstraint!
+    @IBOutlet weak var policyView: GRView!
     
+    var visualEffectView = UIVisualEffectView(effect: UIBlurEffect(style: .light))
     var selectedIndex: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        setupBlurView()
+    }
+    
+    // MARK: -
+    // MARK: - FUNCTIONS
+    
+    func setupBlurView() {
+        visualEffectView.frame = UIScreen.main.bounds
+        visualEffectView.blur.radius = 4.0
+        visualEffectView.backgroundColor = UIColor(white: 1.0, alpha: 0.0)
+        visualEffectView.alpha = 0.0
+        view.addSubview(visualEffectView)
+        view.bringSubviewToFront(policyView)
     }
     
     // MARK: -
@@ -25,10 +42,23 @@ class OfferViewController: UIViewController {
     }
     
     @IBAction func continueButtonAction(_ sender: UIButton) {
+        
     }
     
     @IBAction func privacyButtonAction(_ sender: UIButton) {
-        showSheetController(viewController: UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier:  "PrivacySheetViewController"), sizes: [.fixed(UIScreen.main.bounds.height / 1.5)])
+        UIView.animate(withDuration: 0.3) {
+            self.visualEffectView.alpha = 1.0
+            self.privacyViewBottomConstraint.constant = 0.0
+            self.view.layoutIfNeeded()
+        }
+    }
+    
+    @IBAction func closePrivacyButtonAction(_ sender: UIButton) {
+        UIView.animate(withDuration: 0.5) {
+            self.visualEffectView.alpha = 0.0
+            self.privacyViewBottomConstraint.constant = -1000.0
+            self.view.layoutIfNeeded()
+        }
     }
 }
 

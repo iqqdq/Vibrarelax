@@ -7,9 +7,8 @@ target 'Vibrarelax' do
 
   # Pods for Vibrarelax
 	pod 'GRView'
-	pod 'WaveAnimationView'
-	pod 'FittedSheets'
 	pod 'Blurberry'
+	pod 'FittedSheets'
 
   target 'VibrarelaxTests' do
     inherit! :search_paths

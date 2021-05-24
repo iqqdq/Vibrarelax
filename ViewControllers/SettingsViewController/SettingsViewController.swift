@@ -18,7 +18,7 @@ class SettingsViewController: UIViewController {
     // MARK: - ACTIONS
     
     @IBAction func noVibroButtonAction(_ sender: UIButton) {
-        showSheetController(viewController: UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier:  "VibroSheetViewController"), sizes: [.fixed(UIScreen.main.bounds.height / 1.5)])
+        NotificationCenter.default.post(name: Notification.Name("no_vibro"), object: nil)
     }
     
     @IBAction func rateButtonAction(_ sender: UIButton) {
@@ -34,6 +34,6 @@ class SettingsViewController: UIViewController {
     }
     
     @IBAction func openSeasonsButtonAction(_ sender: UIButton) {
-        showSheetController(viewController: UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier:  "OfferViewController"), sizes: [.fullscreen])
+        present(UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier:  "OfferViewController"), animated: true, completion: nil)
     }
 }

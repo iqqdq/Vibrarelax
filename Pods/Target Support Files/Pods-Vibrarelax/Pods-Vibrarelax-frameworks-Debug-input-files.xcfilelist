@@ -2,4 +2,3 @@ ${PODS_ROOT}/Target Support Files/Pods-Vibrarelax/Pods-Vibrarelax-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/Blurberry/Blurberry.framework
 ${BUILT_PRODUCTS_DIR}/FittedSheets/FittedSheets.framework
 ${BUILT_PRODUCTS_DIR}/GRView/GRView.framework
-${BUILT_PRODUCTS_DIR}/WaveAnimationView/WaveAnimationView.framework

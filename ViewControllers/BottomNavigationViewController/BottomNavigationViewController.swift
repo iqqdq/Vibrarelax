@@ -20,28 +20,33 @@ class BottomNavigationViewController: UIViewController {
     @IBOutlet weak var thirdTabButton: UIButton!
     @IBOutlet weak var offerView: UIView!
     @IBOutlet weak var offerBackgroundView: UIView!
-    @IBOutlet weak var countdownLabelView: UIView!
+    @IBOutlet weak var countdouwnLabel: UILabel!
     @IBOutlet weak var offerViewBottomConstraint: NSLayoutConstraint!
+    @IBOutlet weak var openSeasonsButton: GRButton!
+    @IBOutlet weak var unlockImageView: UIImageView!
+    @IBOutlet weak var noVibroView: GRView!
+    @IBOutlet weak var noVibroBottomConstraint: NSLayoutConstraint!
     
     var pageController: UIPageViewController!
     let modesViewConroller = ModesViewController()
     var viewControllers = [UIViewController]()
     var index = Int()
-    var visualEffectView: UIVisualEffectView?
-    var timer: Timer?
+    var visualEffectView = UIVisualEffectView(effect: UIBlurEffect(style: .light))
+    var lockTimer: Timer?
     var isLocked: Bool = false
+    var countdownTimer: Timer?
+    var count: Int = 59
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         NotificationCenter.default.addObserver(self, selector: #selector(lockScreen), name: Notification.Name("lockscreen"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(showNoVibroView), name: Notification.Name("no_vibro"), object: nil)
         
-        setupLockView()
         createPageViewController()
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-            self.showOfferView()
-        }
+        setupBlur()
+        showOfferView()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -49,12 +54,13 @@ class BottomNavigationViewController: UIViewController {
         navigationController?.setNavigationBarHidden(true, animated: true)
         
         DispatchQueue.main.async {
+            self.offerViewBottomConstraint.constant = -1000.0
             self.offerBackgroundView.roundCorners([.topLeft, .topRight], radius: 40.0)
         }
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        navigationController?.interactivePopGestureRecognizer?.isEnabled = false
+        navigationController?.interactivePopGestureRecognizer?.isEnabled = false  
     }
     
     override func viewDidDisappear(_ animated: Bool) {
@@ -64,42 +70,59 @@ class BottomNavigationViewController: UIViewController {
     // MARK: -
     // MARK: - ACTIONS
     
+    @IBAction func openSeasonsButtonAction(_ sender: UIButton) {
+        
+    }
+    
     @IBAction func tabButtonAction(_ sender: UIButton) {
         selectTab(index: sender.tag)
     }
     
     @IBAction func lockButtonTouchDownAction(_ sender: UIButton) {
         if isLocked {
-            timer = Timer.scheduledTimer(timeInterval: TimeInterval(1.75), target: self, selector: #selector(unlockScreen), userInfo: nil, repeats: false)
+            lockTimer = Timer.scheduledTimer(timeInterval: TimeInterval(1.75), target: self, selector: #selector(unlockScreen), userInfo: nil, repeats: false)
         } else {
             UIView.animate(withDuration: 0.3) {
                 self.lockButton.alpha = 0.0
                 self.blockView.alpha = 0.0
-                self.visualEffectView?.alpha = 0.0
+                self.visualEffectView.alpha = 0.0
             }
         }
     }
     
     @IBAction func lockButtonTouchUpInsideAction(_ sender: UIButton) {
-        timer?.invalidate()
+        lockTimer?.invalidate()
     }
+    
     @IBAction func lockButtonTouchUpOutsideAction(_ sender: UIButton) {
-        timer?.invalidate()
+        lockTimer?.invalidate()
     }
     
     @IBAction func offerButtonAction(_ sender: UIButton) {
         UIView.animate(withDuration: 0.3) {
-            self.offerViewBottomConstraint.constant = -600.0
-            self.view.layoutSubviews()
+            self.visualEffectView.alpha = 0.0
+            self.offerViewBottomConstraint.constant = -1000.0
+            self.view.layoutIfNeeded()
         } completion: { (finish) in
-            self.showSheetController(viewController: UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier:  "OfferViewController"), sizes: [.fullscreen])
+            self.present(UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier:  "OfferViewController"), animated: true, completion: nil)
         }
     }
     
     @IBAction func closeOfferButtonAction(_ sender: UIButton) {
+        UIView.animate(withDuration: 0.5) {
+            self.visualEffectView.alpha = 0.0
+            self.offerViewBottomConstraint.constant = -1000.0
+            self.view.layoutIfNeeded()
+        } completion: { (finish) in
+            self.countdownTimer?.invalidate()
+        }
+    }
+    
+    @IBAction func closeNoVibroButtonAction(_ sender: UIButton) {
         UIView.animate(withDuration: 0.3) {
-            self.offerViewBottomConstraint.constant = -600.0
-            self.view.layoutSubviews()
+            self.visualEffectView.alpha = 0.0
+            self.noVibroBottomConstraint.constant = -1000
+            self.view.layoutIfNeeded()
         }
     }
     
@@ -107,6 +130,9 @@ class BottomNavigationViewController: UIViewController {
     // MARK: - FUNCTIONS
     
     func selectTab(index: Int) {
+        openSeasonsButton.isHidden = index == 0 ? false : true
+        unlockImageView.isHidden = index == 0 ? false : true
+        
         for subview in buttonStackView.subviews {
             if let button = subview as? UIButton {
                 if button.tag == index {
@@ -120,34 +146,42 @@ class BottomNavigationViewController: UIViewController {
         }
     }
     
-    func setupLockView() {
-        visualEffectView = UIVisualEffectView(effect: UIBlurEffect(style: .regular))
-        visualEffectView?.frame = UIScreen.main.bounds
-        visualEffectView?.blur.radius = 10.0
-        visualEffectView?.blur.tintColor = .clear
-        visualEffectView?.alpha = 0.0
+    func setupBlur() {
+        visualEffectView.frame = UIScreen.main.bounds
+        visualEffectView.blur.radius = 4.0
+        visualEffectView.backgroundColor = UIColor(white: 1.0, alpha: 0.0)
+        visualEffectView.alpha = 0.0
+        view.bringSubviewToFront(visualEffectView)
     }
     
     func showOfferView() {
-        let countdownLabel = CountdownLabel(frame: CGRect(x: (UIScreen.main.bounds.width / 2 - 150.0), y: 0.0, width: UIScreen.main.bounds.width - 80.0, height: 44.0), minutes: 60*60)
-        countdownLabel.animationType = .Evaporate
-        countdownLabel.timeFormat = "hh:mm:ss"
-        countdownLabel.font = UIFont.init(name: "Nunito-SemiBold", size: 52.0)
-        countdownLabel.textColor = #colorLiteral(red: 0.937254902, green: 0.2901960784, blue: 0.3960784314, alpha: 1)
-        countdownLabelView.addSubview(countdownLabel)
-        countdownLabel.start()
+        countdownTimer = Timer.scheduledTimer(timeInterval: TimeInterval(1.0), target: self, selector: #selector(countdouwn), userInfo: nil, repeats: true)
+        
+        view.bringSubviewToFront(offerView)
+      
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+            UIView.animate(withDuration: 0.5) {
+                self.visualEffectView.alpha = 1.0
+                self.offerViewBottomConstraint.constant = 0.0
+                self.view.layoutIfNeeded()
+            }
+        }
+    }
+    
+    @objc func showNoVibroView() {
+        view.bringSubviewToFront(noVibroView)
         
         UIView.animate(withDuration: 0.3) {
-            self.offerViewBottomConstraint.constant = 0.0
+            self.visualEffectView.alpha = 1.0
+            self.noVibroBottomConstraint.constant = 0.0
             self.view.layoutIfNeeded()
-            self.view.layoutSubviews()
         }
     }
     
     @objc func lockScreen() {
         UIView.animate(withDuration: 0.3) {
-            self.visualEffectView?.alpha = 1.0
-            self.view.bringSubviewToFront(self.visualEffectView!)
+            self.visualEffectView.alpha = 1.0
+            self.view.bringSubviewToFront(self.visualEffectView)
             
             self.blockView.alpha = 1.0
             self.view.bringSubviewToFront(self.blockView)
@@ -161,11 +195,27 @@ class BottomNavigationViewController: UIViewController {
     
     @objc func unlockScreen() {
         UIView.animate(withDuration: 0.3) {
-            self.visualEffectView?.alpha = 0.0
+            self.visualEffectView.alpha = 0.0
             self.blockView.alpha = 0.0
             self.lockButton.alpha = 0.0
         } completion: { (finish) in
             self.isLocked = true
+        }
+    }
+    
+    @objc func countdouwn() {
+        count -= 1
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+            self.countdouwnLabel.text = String(self.count).count > 1 ? "\(self.count)" : "0\(self.count)"
+        }
+        
+        if count == 0 {
+            countdownTimer?.invalidate()
+            UIView.animate(withDuration: 0.3) {
+                self.visualEffectView.alpha = 0.0
+                self.offerViewBottomConstraint.constant = -600.0
+                self.view.layoutIfNeeded()
+            }
         }
     }
 
@@ -190,6 +240,8 @@ class BottomNavigationViewController: UIViewController {
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
             self.pageController.view.frame = self.view.frame
+            self.view.bringSubviewToFront(self.unlockImageView)
+            self.view.bringSubviewToFront(self.openSeasonsButton)
             self.view.bringSubviewToFront(self.navigationBarView)
             self.view.bringSubviewToFront(self.offerView)
         }
@@ -211,11 +263,10 @@ class BottomNavigationViewController: UIViewController {
             }
         }
         
-        view.addSubview(visualEffectView!)
-        view.bringSubviewToFront(visualEffectView!)
+        view.addSubview(visualEffectView)
+        view.bringSubviewToFront(visualEffectView)
         view.bringSubviewToFront(blockView)
         view.bringSubviewToFront(lockButton)
-        view.bringSubviewToFront(countdownLabelView)
         
         selectTab(index: 0)
     }
