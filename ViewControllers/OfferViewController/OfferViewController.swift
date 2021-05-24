@@ -12,6 +12,8 @@ class OfferViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var privacyViewBottomConstraint: NSLayoutConstraint!
     @IBOutlet weak var policyView: GRView!
+    @IBOutlet weak var lipsImageViewTopConstraint: NSLayoutConstraint!
+    @IBOutlet weak var collectionViewTopConstraint: NSLayoutConstraint!
     
     var visualEffectView = UIVisualEffectView(effect: UIBlurEffect(style: .light))
     var selectedIndex: Int = 0
@@ -108,6 +110,17 @@ extension OfferViewController: UICollectionViewDataSource {
             offerCollectionViewCell.bottomView.endColor = #colorLiteral(red: 0.9882352941, green: 0.9019607843, blue: 0.8588235294, alpha: 1)
             
             offerCollectionViewCell.titleLabel.textColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        }
+        
+        if UIDevice().userInterfaceIdiom == .phone {
+            switch UIScreen.main.nativeBounds.height {
+                case 1334:
+                print("iPhone 6/6S/7/8")
+                lipsImageViewTopConstraint.constant = 0.0
+                collectionViewTopConstraint.constant = 0.0
+            default:
+                print("")
+            }
         }
         
         return offerCollectionViewCell

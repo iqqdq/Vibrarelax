@@ -10,9 +10,12 @@ import GRView
 
 class VibroViewController: UIViewController {
     @IBOutlet weak var switchBackgroundView: GRView!
+    @IBOutlet weak var switchShadowView: GRView!
     @IBOutlet weak var switchButton: GRButton!
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var pressButtonLabel: UILabel!
+    @IBOutlet weak var switchButtonYConstraint: NSLayoutConstraint!
+    @IBOutlet weak var titleLabel: UILabel!
     
     var timer: Timer?
     var interval: Float = 0.7
@@ -25,8 +28,31 @@ class VibroViewController: UIViewController {
         switchButton.setImage(#imageLiteral(resourceName: "ic_switch_on"), for: .selected)
         switchButton.cornerRadius = switchButton.frame.height / 2
         switchBackgroundView.cornerRadius = switchButton.cornerRadius
+        switchShadowView.cornerRadius = switchButton.cornerRadius
         
         NotificationCenter.default.addObserver(self, selector: #selector(sliderDidChangeValue), name: Notification.Name("slider_did_change_value"), object: nil)
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        if UIDevice().userInterfaceIdiom == .phone {
+            switch UIScreen.main.nativeBounds.height {
+                case 1136:
+                    print("iPhone 5 or 5S or 5C")
+                    switchButtonYConstraint.constant = 0.0
+                case 1334:
+                    print("iPhone 6/6S/7/8")
+                    switchButtonYConstraint.constant = 0.0
+                default:
+                    print("SMALL IPHONE")
+            }
+        }
+        
+        switch UserDefaults.standard.integer(forKey: "mode_id") {
+        case 1:
+            titleLabel.text = "W A T E R F A L L"
+        default:
+            titleLabel.text = "H E A R T"
+        }
     }
     
     override func viewWillDisappear(_ animated: Bool) {

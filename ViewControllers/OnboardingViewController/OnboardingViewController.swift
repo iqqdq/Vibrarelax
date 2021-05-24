@@ -19,7 +19,7 @@ class OnboardingViewController: UIViewController {
     
     let items: [[String : String]] = [["Welcome\nto Vibrarelax" : "The massage is relaxing. 60 minutes of good massage has the same effect on your body as 7-8 hours of good sleep."],
                                       ["Enjoy strong\nvibration" : "Did you know that there are approximately 5 million receptors on our skin, with only 3000 on one fingertip?"],
-                                      ["Try with\nall modes PRO" : "9 vibration modes, 5 speed modes, no ads, weekly content update for $ 9 / week."]]
+                                      ["Try with\nall modes PRO" : "9 vibration modes, 5 speed modes, no ads, weekly content\nupdate for $ 9 / week."]]
     let images: [String] = ["ic_onboarding_first", "ic_onboarding_second", "ic_onboarding_third"]
     var timer: Timer?
  
@@ -103,8 +103,8 @@ class OnboardingViewController: UIViewController {
     
     @objc func showRestoreButton() {
         UIView.animate(withDuration: 0.3) {
-            self.closeButton.alpha = 1.0
-            self.restoreButton.alpha = 1.0
+            self.closeButton.alpha = 0.8
+            self.restoreButton.alpha = 0.8
             self.view.layoutIfNeeded()
         }
     }
@@ -137,10 +137,48 @@ extension OnboardingViewController: UICollectionViewDataSource {
             onboardingCollectionViewCell.descriptionLabel.text = value
         }
         
+        if UIDevice().userInterfaceIdiom == .phone {
+            switch UIScreen.main.nativeBounds.height {
+                case 1334:
+                    print("iPhone 6/6S/7/8")
+                    if indexPath.row != 2 {
+                        onboardingCollectionViewCell.topImageView.contentMode = .scaleAspectFill
+                    }
+                default:
+                    print("Unknown")
+                }
+            }
+        
         if indexPath.row == 2 {
-            onboardingCollectionViewCell.topImageView.transform = CGAffineTransform(scaleX: 1.25, y: 1.25)
+            if UIDevice().userInterfaceIdiom == .phone {
+                switch UIScreen.main.nativeBounds.height {
+                    case 1334:
+                    print("iPhone 6/6S/7/8")
+                        onboardingCollectionViewCell.topImageView.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
+                    case 2436:
+                        print("iPhone X/XS/11 Pro")
+                        onboardingCollectionViewCell.topImageView.transform = CGAffineTransform(scaleX: 1.25, y: 1.25)
+                    case 2688:
+                        print("iPhone XS Max/11 Pro Max")
+                        onboardingCollectionViewCell.topImageView.transform = CGAffineTransform(scaleX: 1.25, y: 1.25)
+                    case 1792:
+                        print("iPhone XR/ 11 ")
+                        onboardingCollectionViewCell.topImageView.transform = CGAffineTransform(scaleX: 1.25, y: 1.25)
+                    default:
+                        print("SMALL IPHONE")
+                    }
+                }
         } else {
             onboardingCollectionViewCell.topImageView.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
+            
+            if UIDevice().userInterfaceIdiom == .phone {
+                switch UIScreen.main.nativeBounds.height {
+                    case 1334:
+                        onboardingCollectionViewCell.topImageView.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
+                default:
+                    print("")
+                }
+            }
         }
 
         return onboardingCollectionViewCell

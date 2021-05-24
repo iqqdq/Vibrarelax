@@ -9,10 +9,26 @@ import UIKit
 import MessageUI
 
 class SettingsViewController: UIViewController {
-
+    @IBOutlet weak var settingsViewYConstraint: NSLayoutConstraint!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        if UIDevice().userInterfaceIdiom == .phone {
+            switch UIScreen.main.nativeBounds.height {
+                case 1136:
+                    print("iPhone 5 or 5S or 5C")
+                    settingsViewYConstraint.constant = -40.0
+                case 1334:
+                    print("iPhone 6/6S/7/8")
+                    settingsViewYConstraint.constant = -40.0
+                default:
+                    print("SMALL IPHONE")
+                }
+            }
     }
     
     // MARK: -
