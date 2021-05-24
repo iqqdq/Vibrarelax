@@ -31,7 +31,7 @@ class BottomNavigationViewController: UIViewController {
     let modesViewConroller = ModesViewController()
     var viewControllers = [UIViewController]()
     var index = Int()
-    var visualEffectView = UIVisualEffectView(effect: UIBlurEffect(style: .light))
+    var visualEffectView = UIVisualEffectView(effect: UIBlurEffect(style: .dark))
     var lockTimer: Timer?
     var isLocked: Bool = false
     var countdownTimer: Timer?
@@ -148,7 +148,7 @@ class BottomNavigationViewController: UIViewController {
     
     func setupBlur() {
         visualEffectView.frame = UIScreen.main.bounds
-        visualEffectView.blur.radius = 4.0
+        visualEffectView.blur.radius = 15.0
         visualEffectView.backgroundColor = UIColor(white: 1.0, alpha: 0.0)
         visualEffectView.alpha = 0.0
         view.bringSubviewToFront(visualEffectView)

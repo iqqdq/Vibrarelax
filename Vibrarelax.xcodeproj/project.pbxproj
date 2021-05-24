@@ -29,7 +29,6 @@
 		103D6A27265BEF3300D94FA5 /* Wave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103D6A26265BEF3300D94FA5 /* Wave.swift */; };
 		103E642026570F4700E12B68 /* VibroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103E641F26570F4700E12B68 /* VibroViewController.swift */; };
 		103F4FF22657247600C6D7CB /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103F4FF12657247600C6D7CB /* SettingsViewController.swift */; };
-		103F4FF82657280600C6D7CB /* VibroSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103F4FF72657280600C6D7CB /* VibroSheetViewController.swift */; };
 		1070E561265678720059CAD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1070E560265678720059CAD0 /* AppDelegate.swift */; };
 		1070E568265678720059CAD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1070E566265678720059CAD0 /* Main.storyboard */; };
 		1070E56A265678720059CAD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1070E569265678720059CAD0 /* Assets.xcassets */; };
@@ -89,7 +88,6 @@
 		103D6A26265BEF3300D94FA5 /* Wave.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wave.swift; sourceTree = "<group>"; };
 		103E641F26570F4700E12B68 /* VibroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibroViewController.swift; sourceTree = "<group>"; };
 		103F4FF12657247600C6D7CB /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		103F4FF72657280600C6D7CB /* VibroSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibroSheetViewController.swift; sourceTree = "<group>"; };
 		1070E55D265678720059CAD0 /* Vibrarelax.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vibrarelax.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1070E560265678720059CAD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1070E567265678720059CAD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -230,14 +228,6 @@
 			path = SettingsViewController;
 			sourceTree = "<group>";
 		};
-		103F4FF6265727E300C6D7CB /* VibroSheetViewController */ = {
-			isa = PBXGroup;
-			children = (
-				103F4FF72657280600C6D7CB /* VibroSheetViewController.swift */,
-			);
-			path = VibroSheetViewController;
-			sourceTree = "<group>";
-		};
 		1070E554265678720059CAD0 = {
 			isa = PBXGroup;
 			children = (
@@ -347,7 +337,6 @@
 			isa = PBXGroup;
 			children = (
 				10C00429265866DE0044FAF5 /* OfferViewController */,
-				103F4FF6265727E300C6D7CB /* VibroSheetViewController */,
 				103F4FF02657246000C6D7CB /* SettingsViewController */,
 				103E641E26570F2700E12B68 /* VibroViewController */,
 				1075FF002656ADF9007BC81D /* ModesViewController */,
@@ -641,7 +630,6 @@
 				103D6A27265BEF3300D94FA5 /* Wave.swift in Sources */,
 				1029EE222656968B00BD9230 /* OnboardingCollectionViewCell.swift in Sources */,
 				1091EEF72657294B00B09D43 /* Extensions.swift in Sources */,
-				103F4FF82657280600C6D7CB /* VibroSheetViewController.swift in Sources */,
 				1075FF022656AE21007BC81D /* ModesViewController.swift in Sources */,
 				10C31E652656A553005BCF4A /* BottomNavigationViewController.swift in Sources */,
 				10C0042B265866FC0044FAF5 /* OfferViewController.swift in Sources */,

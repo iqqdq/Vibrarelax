@@ -11,19 +11,20 @@ class ModesViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var levelImageView: UIImageView!
     
-    let items: [[String : String]] = [["Бриз" : "ic_breeze"],
-                                      ["Сердце" : "ic_heart"],
-                                      ["Импульс" : "ic_impulse"],
-                                      ["Вселенная" : "ic_hurricane"],
-                                      ["Вулкан" : "ic_volcano"],
-                                      ["Дождь" : "ic_rain"],
-                                      ["Торнадо" : "ic_tornado"],
-                                      ["Цунами" : "ic_tsunami"],
-                                      ["Водопад" : "ic_waterfall"],
-                                      ["Бит" : "ic_bit"],
-                                      ["Глубина" : "ic_depth"],
-                                      ["Камикатдзе" : "ic_kamikaze"]]
-    var selectedIndexes: [Int] = [0]
+    let items: [[String : String]] = [["Breeze" : "ic_breeze"],
+                                      ["Heart" : "ic_heart"],
+                                      ["Pulse" : "ic_impulse"],
+                                      ["Universe" : "ic_hurricane"],
+                                      ["Volcano" : "ic_volcano"],
+                                      ["Rain" : "ic_rain"],
+                                      ["Tornado" : "ic_tornado"],
+                                      ["Tsunami" : "ic_tsunami"],
+                                      ["Waterfall" : "ic_waterfall"],
+                                      ["Bit" : "ic_bit"],
+                                      ["Depth" : "ic_depth"],
+                                      ["Kamikaze" : "ic_kamikaze"]]
+    var selectedIndexes: [Int] = [0, 1]
+    var selectedIndex: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,9 +37,14 @@ class ModesViewController: UIViewController {
     // MARK: - ACTIONS
     
     @IBAction func sliderValueChanged(sender: UISlider) {
-        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "slider_did_change_value"),
-                                        object: nil,
-                                        userInfo: ["slider_value": sender.value])
+        if sender.value >= 0.3 {
+            sender.value = 0.3
+            present(UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier:  "OfferViewController"), animated: true, completion: nil)
+        } else {
+            NotificationCenter.default.post(name: NSNotification.Name(rawValue: "slider_did_change_value"),
+                                            object: nil,
+                                            userInfo: ["slider_value": sender.value])
+        }
     }
 }
 
@@ -96,11 +102,17 @@ extension ModesViewController: UICollectionViewDataSource {
             modeCollectionViewCell.heightConstraint.constant = 32.0
         }
         
+        if selectedIndex == indexPath.row {
+            modeCollectionViewCell.containerView.borderWidth = 2.0
+            modeCollectionViewCell.containerView.borderColor = #colorLiteral(red: 0.9294117647, green: 0.5176470588, blue: 0.5843137255, alpha: 1)
+        } else {
+            modeCollectionViewCell.containerView.borderWidth = 0.0
+        }
+        
         if selectedIndexes.contains(indexPath.row) {
             modeCollectionViewCell.containerView.startColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
             modeCollectionViewCell.containerView.endColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
-            modeCollectionViewCell.containerView.borderWidth = 2.0
-            modeCollectionViewCell.containerView.borderColor = #colorLiteral(red: 0.9294117647, green: 0.5176470588, blue: 0.5843137255, alpha: 1)
+            
             modeCollectionViewCell.containerView.shadowColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.1)
             modeCollectionViewCell.containerView.shadowRadius = 8.0
             modeCollectionViewCell.containerView.shadowOffset = CGSize(width: 5.0, height: 5.0)
@@ -122,12 +134,10 @@ extension ModesViewController: UICollectionViewDataSource {
 extension ModesViewController: UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if selectedIndexes.contains(indexPath.row) {
-            selectedIndexes = selectedIndexes.filter { $0 != indexPath.row }
-        } else {
-            selectedIndexes.append(indexPath.row)
+            UserDefaults.standard.setValue(indexPath.row, forKey: "mode_id")
+            selectedIndex = indexPath.row
+            collectionView.reloadData()
         }
-        
-        collectionView.reloadData()
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

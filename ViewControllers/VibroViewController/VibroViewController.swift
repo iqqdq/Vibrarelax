@@ -12,9 +12,10 @@ class VibroViewController: UIViewController {
     @IBOutlet weak var switchBackgroundView: GRView!
     @IBOutlet weak var switchButton: GRButton!
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var pressButtonLabel: UILabel!
     
     var timer: Timer?
-    var interval: Float = 0.5
+    var interval: Float = 0.7
     var isAnimate: Bool = false
     var isFirstAppereance: Bool = true
     
@@ -43,10 +44,12 @@ class VibroViewController: UIViewController {
         
         if sender.isSelected {
             sender.isSelected = false
+            pressButtonLabel.text = "Press the button\nto start massage"
             self.isAnimate = false
             self.timer?.invalidate()
         } else {
             sender.isSelected = true
+            pressButtonLabel.text = "Press the button\nto stop the massage"
             self.isAnimate = true
             self.timer = Timer.scheduledTimer(timeInterval: TimeInterval(self.interval), target: self, selector: #selector(self.vibrate), userInfo: nil, repeats: true)
         }
@@ -68,7 +71,11 @@ class VibroViewController: UIViewController {
     // MARK: - FUNCTIONS
     
     @objc func vibrate() {
-        Vibration.success.vibrate()
+        if UserDefaults.standard.integer(forKey: "mode_id") == 1 {
+            Vibration.heavy.vibrate()
+        } else {
+            Vibration.warning.vibrate()
+        }
     }
     
     @objc func sliderDidChangeValue(notification: NSNotification) {

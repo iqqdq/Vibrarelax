@@ -21,6 +21,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Localization
         UserDefaults.standard.setValue(["ru"], forKey: "AppleLanguages")
         UserDefaults.standard.synchronize()
+        
+        // Set Deafult Mode
+        UserDefaults.standard.setValue(0, forKey: "mode_id")
             
         return true
     }

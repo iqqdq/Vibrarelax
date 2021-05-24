@@ -73,17 +73,17 @@ extension OfferViewController: UICollectionViewDataSource {
         
         switch indexPath.row {
         case 1:
-            offerCollectionViewCell.topLabel.text = "35% СКИДКА"
-            offerCollectionViewCell.titleLabel.text = "Каждый\nмесяц"
-            offerCollectionViewCell.priceLabel.text = "1550 ₽ / \nеженедельно"
+            offerCollectionViewCell.topLabel.text = "35% DISCOUNT"
+            offerCollectionViewCell.titleLabel.text = "Every\nmonth"
+            offerCollectionViewCell.priceLabel.text = "1550 ₽ / \nmonthly"
         case 2:
-            offerCollectionViewCell.topLabel.text = "ЛУЧШАЯ ЦЕНА"
-            offerCollectionViewCell.titleLabel.text = "Каждый\nгод"
-            offerCollectionViewCell.priceLabel.text = "3990 ₽ / \nеженедельно"
+            offerCollectionViewCell.topLabel.text = "BEST PRICE"
+            offerCollectionViewCell.titleLabel.text = "Every\nyear"
+            offerCollectionViewCell.priceLabel.text = "3990 ₽ / \nannually"
         default:
-            offerCollectionViewCell.topLabel.text = "ПОПУЛЯРНЫЙ"
-            offerCollectionViewCell.titleLabel.text =  "Каждую\nнеделю"
-            offerCollectionViewCell.priceLabel.text = "499 ₽ / \nеженедельно"
+            offerCollectionViewCell.topLabel.text = "POPULAR"
+            offerCollectionViewCell.titleLabel.text =  "Every\nweek"
+            offerCollectionViewCell.priceLabel.text = "499 ₽ / \nweekly"
         }
         
         if indexPath.row == selectedIndex {

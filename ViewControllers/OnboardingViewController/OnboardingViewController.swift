@@ -17,9 +17,9 @@ class OnboardingViewController: UIViewController {
     @IBOutlet weak var restoreButton: UIButton!
     @IBOutlet weak var closeButton: UIButton!
     
-    let items: [[String : String]] = [["Добро пожаловать в Vibrarelax" : "Массаж расслабляет. 60 минут хорошего массажа оказывают такое же воздействие на ваш организм, как 7-8 часов хорошего сна."],
-                                      ["Наслаждайтесь сильной вибрацией" : "Знаетели Вы, что на нашей коже приблизительно 5 миллионов рецепторов, причем только 3000 на одном кончике языка"],
-                                      ["Попробуй со всеми режимами PRO" : "9 режимов вибраций, 5 режимов скорости, никакой рекламы, еженедельное обновление контента за 459 ₽ / еженедельно."]]
+    let items: [[String : String]] = [["Welcome\nto Vibrarelax" : "The massage is relaxing. 60 minutes of good massage has the same effect on your body as 7-8 hours of good sleep."],
+                                      ["Enjoy strong\nvibration" : "Did you know that there are approximately 5 million receptors on our skin, with only 3000 on one fingertip?"],
+                                      ["Try with\nall modes PRO" : "9 vibration modes, 5 speed modes, no ads, weekly content update for $ 9 / week."]]
     let images: [String] = ["ic_onboarding_first", "ic_onboarding_second", "ic_onboarding_third"]
     var timer: Timer?
  
@@ -66,7 +66,7 @@ class OnboardingViewController: UIViewController {
         topWave.waveHeight = 100
         topWave.waveTop    = 0.5
         topWave.variance   = 50
-        topWave.fps        = 60
+        topWave.fps        = 80
         topWave.fillColor = #colorLiteral(red: 0.9294117647, green: 0.2666666667, blue: 0.3647058824, alpha: 1)
         topWave.backgroundColor = .clear
         topWave.waveWidth  = UIScreen.main.bounds.width * 1.5
@@ -78,7 +78,7 @@ class OnboardingViewController: UIViewController {
         botWave.waveHeight = 100
         botWave.waveTop    = 0.5
         botWave.variance   = 50
-        botWave.fps        = 60
+        botWave.fps        = 80
         botWave.fillColor = #colorLiteral(red: 0.8705882353, green: 0.7294117647, blue: 0.6666666667, alpha: 1)
         botWave.backgroundColor = .clear
         botWave.waveWidth  = UIScreen.main.bounds.width * 1.5
