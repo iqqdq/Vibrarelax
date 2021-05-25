@@ -10,6 +10,7 @@ import UIKit
 class ModesViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var levelImageView: UIImageView!
+    @IBOutlet weak var collectionViewBottomConstraint: NSLayoutConstraint!
     
     let items: [[String : String]] = [["Breeze" : "ic_breeze"],
                                       ["Heart" : "ic_heart"],
@@ -25,6 +26,7 @@ class ModesViewController: UIViewController {
                                       ["Kamikaze" : "ic_kamikaze"]]
     var selectedIndexes: [Int] = [0, 1]
     var selectedIndex: Int = 0
+    var isIphone8: Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,12 +35,27 @@ class ModesViewController: UIViewController {
         levelImageView.tintColor = #colorLiteral(red: 0.7411764706, green: 0.5960784314, blue: 0.5254901961, alpha: 0.7)
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        if UIDevice().userInterfaceIdiom == .phone {
+            switch UIScreen.main.nativeBounds.height {
+            case 1334:
+                print("iPhone 6/6S/7/8")
+                isIphone8 = true
+                collectionViewBottomConstraint.constant = 60.0
+                collectionView.isScrollEnabled = true
+                collectionView.alwaysBounceVertical = true
+            default:
+                print("Unknown")
+            }
+        }
+    }
+    
     // MARK: -
     // MARK: - ACTIONS
     
     @IBAction func sliderValueChanged(sender: UISlider) {
-        if sender.value >= 0.3 {
-            sender.value = 0.3
+        if sender.value >= 0.5 {
+            sender.value = 0.5
             present(UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier:  "OfferViewController"), animated: true, completion: nil)
         } else {
             NotificationCenter.default.post(name: NSNotification.Name(rawValue: "slider_did_change_value"),
@@ -50,17 +67,24 @@ class ModesViewController: UIViewController {
 
 extension ModesViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return items.count
+        return isIphone8 ? items.count + 1 : items.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let modeCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "ModeCollectionViewCell", for: indexPath as IndexPath) as! ModeCollectionViewCell
         modeCollectionViewCell.backgroundView?.layer.cornerRadius = modeCollectionViewCell.containerView.frame.height / 2
         
+        if isIphone8 && indexPath.row == items.count {
+            modeCollectionViewCell.containerView.isHidden = true
+            modeCollectionViewCell.titleLabel.isHidden = true
+            return modeCollectionViewCell
+        }
+        
         let item = items[indexPath.row];
         for (key, value) in item {
             modeCollectionViewCell.titleLabel.text = key
             modeCollectionViewCell.modeImageView.image = UIImage.init(named: value)
+            modeCollectionViewCell.containerView.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
         }
         
         switch indexPath.row {
@@ -126,6 +150,10 @@ extension ModesViewController: UICollectionViewDataSource {
             modeCollectionViewCell.modeImageView.image = modeCollectionViewCell.modeImageView.image?.withRenderingMode(.alwaysTemplate)
             modeCollectionViewCell.modeImageView.tintColor = #colorLiteral(red: 0.7607843137, green: 0.6274509804, blue: 0.5882352941, alpha: 1)
         }
+        
+        if isIphone8 {
+            modeCollectionViewCell.titleLabel.font = UIFont.init(name: "Nunito-SemiBold", size: 14.0)
+        }
 
         return modeCollectionViewCell
     }
@@ -141,6 +169,6 @@ extension ModesViewController: UICollectionViewDelegate, UICollectionViewDelegat
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.frame.width / 3, height: collectionView.frame.height / 4)
+        return CGSize(width: collectionView.frame.width / 3, height: isIphone8 && indexPath.row == items.count ?  collectionView.frame.height / 6  : collectionView.frame.height / 4)
     }
 }

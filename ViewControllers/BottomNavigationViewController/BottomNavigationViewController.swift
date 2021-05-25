@@ -26,6 +26,7 @@ class BottomNavigationViewController: UIViewController {
     @IBOutlet weak var unlockImageView: UIImageView!
     @IBOutlet weak var noVibroView: GRView!
     @IBOutlet weak var noVibroBottomConstraint: NSLayoutConstraint!
+    @IBOutlet weak var unlockImageHeightConstraint: NSLayoutConstraint!
     
     var pageController: UIPageViewController!
     let modesViewConroller = ModesViewController()
@@ -57,6 +58,16 @@ class BottomNavigationViewController: UIViewController {
             self.offerViewBottomConstraint.constant = -1000.0
             self.offerBackgroundView.roundCorners([.topLeft, .topRight], radius: 40.0)
         }
+        
+        if UIDevice().userInterfaceIdiom == .phone {
+            switch UIScreen.main.nativeBounds.height {
+                case 1334:
+                    print("iPhone 6/6S/7/8")
+                    self.unlockImageHeightConstraint.constant = 350.0
+                default:
+                    print("SMALL IPHONE")
+            }
+        }
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -71,7 +82,7 @@ class BottomNavigationViewController: UIViewController {
     // MARK: - ACTIONS
     
     @IBAction func openSeasonsButtonAction(_ sender: UIButton) {
-        
+        present(UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier:  "OfferViewController"), animated: true, completion: nil)
     }
     
     @IBAction func tabButtonAction(_ sender: UIButton) {

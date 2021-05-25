@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Rectangle 16.png",
+      "filename" : "ic_onboarding_diamod.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Rectangle 16@2x.png",
+      "filename" : "ic_onboarding_diamod@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Rectangle 16@3x.png",
+      "filename" : "ic_onboarding_diamod@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

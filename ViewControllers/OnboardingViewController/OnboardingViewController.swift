@@ -19,8 +19,8 @@ class OnboardingViewController: UIViewController {
     
     let items: [[String : String]] = [["Welcome\nto Vibrarelax" : "The massage is relaxing. 60 minutes of good massage has the same effect on your body as 7-8 hours of good sleep."],
                                       ["Enjoy strong\nvibration" : "Did you know that there are approximately 5 million receptors on our skin, with only 3000 on one fingertip?"],
-                                      ["Try with\nall modes PRO" : "9 vibration modes, 5 speed modes, no ads, weekly content\nupdate for $ 9 / week."]]
-    let images: [String] = ["ic_onboarding_first", "ic_onboarding_second", "ic_onboarding_third"]
+                                      ["Try with\nall modes PRO" : "12 vibration modes, 5 speed modes, no ads, screen lock, weekly content update for $ 9 / week."]]
+    let images: [String] = ["ic_onboarding_first", "ic_onboarding_second", "ic_onboarding_diamond"]
     var timer: Timer?
  
     override func viewDidLoad() {
@@ -68,6 +68,7 @@ class OnboardingViewController: UIViewController {
         topWave.variance   = 50
         topWave.fps        = 80
         topWave.fillColor = #colorLiteral(red: 0.9294117647, green: 0.2666666667, blue: 0.3647058824, alpha: 1)
+        topWave.stokeColor = #colorLiteral(red: 0.9294117647, green: 0.2666666667, blue: 0.3647058824, alpha: 1)
         topWave.backgroundColor = .clear
         topWave.waveWidth  = UIScreen.main.bounds.width * 1.5
         topWave.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
@@ -80,6 +81,7 @@ class OnboardingViewController: UIViewController {
         botWave.variance   = 50
         botWave.fps        = 80
         botWave.fillColor = #colorLiteral(red: 0.8705882353, green: 0.7294117647, blue: 0.6666666667, alpha: 1)
+        botWave.stokeColor = #colorLiteral(red: 0.8705882353, green: 0.7294117647, blue: 0.6666666667, alpha: 1)
         botWave.backgroundColor = .clear
         botWave.waveWidth  = UIScreen.main.bounds.width * 1.5
         view.addSubview(botWave)
@@ -139,46 +141,29 @@ extension OnboardingViewController: UICollectionViewDataSource {
         
         if UIDevice().userInterfaceIdiom == .phone {
             switch UIScreen.main.nativeBounds.height {
-                case 1334:
-                    print("iPhone 6/6S/7/8")
-                    if indexPath.row != 2 {
-                        onboardingCollectionViewCell.topImageView.contentMode = .scaleAspectFill
-                    }
-                default:
-                    print("Unknown")
+            case 1334:
+                print("iPhone 6/6S/7/8")
+                if indexPath.row == 2 {
+                    onboardingCollectionViewCell.topImageView.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
                 }
+            default:
+                onboardingCollectionViewCell.titleLabelYConstraint.constant = 20.0
             }
+        }
         
-        if indexPath.row == 2 {
-            if UIDevice().userInterfaceIdiom == .phone {
-                switch UIScreen.main.nativeBounds.height {
-                    case 1334:
-                    print("iPhone 6/6S/7/8")
-                        onboardingCollectionViewCell.topImageView.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
-                    case 2436:
-                        print("iPhone X/XS/11 Pro")
-                        onboardingCollectionViewCell.topImageView.transform = CGAffineTransform(scaleX: 1.25, y: 1.25)
-                    case 2688:
-                        print("iPhone XS Max/11 Pro Max")
-                        onboardingCollectionViewCell.topImageView.transform = CGAffineTransform(scaleX: 1.25, y: 1.25)
-                    case 1792:
-                        print("iPhone XR/ 11 ")
-                        onboardingCollectionViewCell.topImageView.transform = CGAffineTransform(scaleX: 1.25, y: 1.25)
-                    default:
-                        print("SMALL IPHONE")
-                    }
-                }
-        } else {
-            onboardingCollectionViewCell.topImageView.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
-            
-            if UIDevice().userInterfaceIdiom == .phone {
-                switch UIScreen.main.nativeBounds.height {
-                    case 1334:
-                        onboardingCollectionViewCell.topImageView.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
-                default:
-                    print("")
-                }
-            }
+        switch indexPath.row {
+        case 1:
+            onboardingCollectionViewCell.widthConstraint.constant = 167.0
+            onboardingCollectionViewCell.heightConstraint.constant = 146.0
+            onboardingCollectionViewCell.imageViewYConstraint.constant = -124.0
+        case 2:
+            onboardingCollectionViewCell.widthConstraint.constant = 202.0
+            onboardingCollectionViewCell.heightConstraint.constant = 221.0
+            onboardingCollectionViewCell.imageViewYConstraint.constant = -104.0
+        default:
+            onboardingCollectionViewCell.widthConstraint.constant = 154.0
+            onboardingCollectionViewCell.heightConstraint.constant = 140.0
+            onboardingCollectionViewCell.imageViewYConstraint.constant = -124.0
         }
 
         return onboardingCollectionViewCell

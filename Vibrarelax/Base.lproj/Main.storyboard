@@ -49,6 +49,13 @@
                                             <rect key="frame" x="0.0" y="0.0" width="370" height="454"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1lG-iq-P3B">
+                                                    <rect key="frame" x="101.5" y="42" width="167" height="146"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="146" id="SlT-Id-G8S"/>
+                                                        <constraint firstAttribute="width" constant="167" id="jpK-Tc-0Sm"/>
+                                                    </constraints>
+                                                </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ntx-i4-Nt9">
                                                     <rect key="frame" x="60" y="271.5" width="250" height="22"/>
                                                     <fontDescription key="fontDescription" name="Nunito-SemiBold" family="Nunito" pointSize="16"/>
@@ -61,19 +68,12 @@
                                                     <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1lG-iq-P3B">
-                                                    <rect key="frame" x="101.5" y="32.5" width="167" height="146"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="146" id="SlT-Id-G8S"/>
-                                                        <constraint firstAttribute="width" constant="167" id="jpK-Tc-0Sm"/>
-                                                    </constraints>
-                                                </imageView>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="Ntx-i4-Nt9" secondAttribute="trailing" constant="60" id="29i-2H-Y1p"/>
-                                                <constraint firstItem="jWw-yW-0Ul" firstAttribute="top" secondItem="1lG-iq-P3B" secondAttribute="bottom" constant="30" id="C6U-3m-vQ3"/>
                                                 <constraint firstItem="jWw-yW-0Ul" firstAttribute="centerY" secondItem="u2h-pL-GsZ" secondAttribute="centerY" id="J86-W7-jyt"/>
+                                                <constraint firstItem="1lG-iq-P3B" firstAttribute="centerY" secondItem="u2h-pL-GsZ" secondAttribute="centerY" constant="-112" id="Lai-TO-qJc"/>
                                                 <constraint firstItem="Ntx-i4-Nt9" firstAttribute="leading" secondItem="u2h-pL-GsZ" secondAttribute="leading" constant="60" id="MqV-kJ-4OG"/>
                                                 <constraint firstItem="Ntx-i4-Nt9" firstAttribute="centerX" secondItem="u2h-pL-GsZ" secondAttribute="centerX" id="TTX-mK-SpF"/>
                                                 <constraint firstItem="jWw-yW-0Ul" firstAttribute="leading" secondItem="u2h-pL-GsZ" secondAttribute="leading" constant="40" id="ffc-8L-sRp"/>
@@ -86,8 +86,12 @@
                                         <size key="customSize" width="370" height="454"/>
                                         <connections>
                                             <outlet property="descriptionLabel" destination="Ntx-i4-Nt9" id="MfB-cy-FNK"/>
+                                            <outlet property="heightConstraint" destination="SlT-Id-G8S" id="X7w-U8-p2k"/>
+                                            <outlet property="imageViewYConstraint" destination="Lai-TO-qJc" id="81h-Iu-0Sd"/>
                                             <outlet property="titleLabel" destination="jWw-yW-0Ul" id="hhT-KL-k2E"/>
+                                            <outlet property="titleLabelYConstraint" destination="J86-W7-jyt" id="9w0-2m-nkD"/>
                                             <outlet property="topImageView" destination="1lG-iq-P3B" id="Exq-uB-mxU"/>
+                                            <outlet property="widthConstraint" destination="jpK-Tc-0Sm" id="dTi-Jz-yxs"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -280,7 +284,7 @@
                                     <constraint firstAttribute="height" constant="380" id="Bsf-DS-36z"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MRe-LM-gdr" customClass="GRButton" customModule="GRView">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MRe-LM-gdr" customClass="GRButton" customModule="GRView">
                                 <rect key="frame" x="67" y="622" width="280" height="90"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="280" id="a2A-E9-x88"/>
@@ -316,10 +320,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="continueButtonAction:" destination="yJK-Wf-y87" eventType="touchUpInside" id="fLi-az-WCK"/>
-                                    <action selector="offerButtonAction:" destination="xwi-Aa-AUl" eventType="touchUpInside" id="kiu-kl-h6q"/>
                                     <action selector="openSeasonsButtonAction:" destination="xwi-Aa-AUl" eventType="touchUpInside" id="1Xh-vV-iVB"/>
-                                    <action selector="openSeasonsButtonAction:" destination="E0N-Va-ahO" eventType="touchUpInside" id="Y5u-r8-vHt"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Acv-QG-tkQ" customClass="GRView" customModule="GRView">
@@ -576,7 +577,7 @@ offer</string>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Xw-jb-yDj">
                                         <rect key="frame" x="110" y="78.5" width="194.5" height="49.5"/>
-                                        <string key="text">Lifetime access. 
+                                        <string key="text">Lifetime access
 One-time purchase 19$</string>
                                         <fontDescription key="fontDescription" name="Nunito-SemiBold" family="Nunito" pointSize="18"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
@@ -616,7 +617,6 @@ One-time purchase 19$</string>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="continueButtonAction:" destination="yJK-Wf-y87" eventType="touchUpInside" id="goS-UC-N54"/>
                                             <action selector="offerButtonAction:" destination="xwi-Aa-AUl" eventType="touchUpInside" id="TBE-NY-DEg"/>
                                         </connections>
                                     </button>
@@ -675,11 +675,11 @@ One-time purchase 19$</string>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="BHQ-Lr-ef7">
                                         <rect key="frame" x="30" y="102" width="354" height="351"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <string key="text">Убедитесь, что вибрации и хаптик включены в настройках вашего девайса:  1) Откройте [Настройки  &gt; Звуки, тактильные сигналы] (на поддерживаемых моделях) или «Звуки» (на других моделях iPhone).
+                                        <string key="text">Make sure vibrations and haptics are enabled in your device settings:
 
-Чтобы установить уровень громкости для всех звуков, перетяните бегунок в разделе «Звонок и предупреждения».
+1. [Settings -&gt; Sounds, tactile signals] and enable vibration "During a call", "In silent mode" and "System tactile".
 
-2) [Настройки &gt; Универальный доступ &gt;  Касание} и ключите “Вибрация”</string>
+2. [Settings -&gt; Accessibility -&gt; Touch] and turn on "Vibration".</string>
                                         <color key="textColor" systemColor="labelColor"/>
                                         <fontDescription key="fontDescription" name="Nunito-SemiBold" family="Nunito" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -763,6 +763,7 @@ One-time purchase 19$</string>
                         <outlet property="openSeasonsButton" destination="MRe-LM-gdr" id="8qb-UL-AAX"/>
                         <outlet property="secondTabButton" destination="FH3-sa-Prf" id="OLD-to-aDv"/>
                         <outlet property="thirdTabButton" destination="PsM-ZF-vwJ" id="d3H-dm-v5T"/>
+                        <outlet property="unlockImageHeightConstraint" destination="Bsf-DS-36z" id="w2w-Lz-49t"/>
                         <outlet property="unlockImageView" destination="aSg-U9-Ltn" id="TTY-uR-1gU"/>
                     </connections>
                 </viewController>
@@ -800,7 +801,7 @@ One-time purchase 19$</string>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="Sz7-7E-f36">
                                     <size key="itemSize" width="176" height="167"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="50" height="50"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
@@ -842,7 +843,7 @@ One-time purchase 19$</string>
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H2o-aM-dpa">
-                                                    <rect key="frame" x="68.5" y="82" width="39.5" height="19"/>
+                                                    <rect key="frame" x="68" y="82" width="40.5" height="22"/>
                                                     <fontDescription key="fontDescription" name="Nunito-SemiBold" family="Nunito" pointSize="16"/>
                                                     <color key="textColor" red="0.73660141229999998" green="0.5965700746" blue="0.52831161019999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -861,10 +862,15 @@ One-time purchase 19$</string>
                                             <outlet property="heightConstraint" destination="nF1-4s-HhQ" id="40O-JF-RgF"/>
                                             <outlet property="modeImageView" destination="pCS-Ce-ZlY" id="of9-Ji-JtS"/>
                                             <outlet property="titleLabel" destination="H2o-aM-dpa" id="kia-jk-HvF"/>
+                                            <outlet property="titleTopConstraint" destination="PPp-Vq-LOq" id="BCE-ZM-EHg"/>
                                             <outlet property="widthConstraint" destination="gnV-Kb-dg1" id="k5W-PG-RjA"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Mx0-AJ-OWJ">
+                                    <rect key="frame" x="0.0" y="167" width="334" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </collectionReusableView>
                                 <connections>
                                     <outlet property="dataSource" destination="KRQ-1s-uyQ" id="y5r-XS-PEd"/>
                                     <outlet property="delegate" destination="KRQ-1s-uyQ" id="15c-9F-mak"/>
@@ -885,7 +891,7 @@ One-time purchase 19$</string>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Intensity" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cwl-Ye-7vL">
-                                <rect key="frame" x="180.5" y="73.5" width="53" height="16.5"/>
+                                <rect key="frame" x="179" y="70.5" width="56.5" height="19.5"/>
                                 <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="14"/>
                                 <color key="textColor" red="0.73660141229999998" green="0.5965700746" blue="0.52831161019999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -934,6 +940,7 @@ One-time purchase 19$</string>
                     <navigationItem key="navigationItem" id="3qS-tO-aRt"/>
                     <connections>
                         <outlet property="collectionView" destination="3LU-18-6Au" id="7Xu-bl-cGM"/>
+                        <outlet property="collectionViewBottomConstraint" destination="KwS-gU-eQY" id="9dN-qE-kJU"/>
                         <outlet property="levelImageView" destination="a3Z-0X-2hm" id="W5r-ih-m0J"/>
                     </connections>
                 </viewController>
@@ -1184,6 +1191,7 @@ One-time purchase 19$</string>
                         <outlet property="switchButtonYConstraint" destination="dgP-GR-WvE" id="HUA-QI-dwx"/>
                         <outlet property="switchShadowView" destination="uvA-Zl-9c8" id="IdK-sO-ujW"/>
                         <outlet property="titleLabel" destination="FQh-da-ggI" id="GhW-l1-HCh"/>
+                        <outlet property="waveView" destination="OWe-ja-OD4" id="nO0-am-Ow6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wC2-zM-r05" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1513,19 +1521,19 @@ One-time purchase 19$</string>
                                 </state>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="V I B R O R E L A X" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ukq-6Y-pLf">
-                                <rect key="frame" x="30" y="117" width="145" height="22"/>
+                                <rect key="frame" x="30" y="124" width="145" height="22"/>
                                 <fontDescription key="fontDescription" name="Nunito-ExtraBold" family="Nunito" pointSize="16"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PRO" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iRs-xW-7e1">
-                                <rect key="frame" x="26" y="119" width="159.5" height="101"/>
+                                <rect key="frame" x="26" y="126" width="159.5" height="101"/>
                                 <fontDescription key="fontDescription" name="Nunito-ExtraBold" family="Nunito" pointSize="74"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gbV-yc-i3f">
-                                <rect key="frame" x="54" y="217" width="73" height="38.5"/>
+                                <rect key="frame" x="54" y="224" width="73" height="38.5"/>
                                 <string key="text">All modes
 of massage</string>
                                 <fontDescription key="fontDescription" name="Nunito-SemiBold" family="Nunito" pointSize="14"/>
@@ -1533,14 +1541,14 @@ of massage</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_done_pink" translatesAutoresizingMaskIntoConstraints="NO" id="NbX-3u-yOR">
-                                <rect key="frame" x="30" y="220" width="13" height="13"/>
+                                <rect key="frame" x="30" y="227" width="13" height="13"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="13" id="7ys-zv-EpM"/>
                                     <constraint firstAttribute="height" constant="13" id="Sdz-Qz-YHI"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rkM-gC-8MH">
-                                <rect key="frame" x="54" y="266.5" width="65.5" height="38.5"/>
+                                <rect key="frame" x="54" y="273.5" width="65.5" height="38.5"/>
                                 <string key="text">All modes
 of speed</string>
                                 <fontDescription key="fontDescription" name="Nunito-SemiBold" family="Nunito" pointSize="14"/>
@@ -1548,20 +1556,20 @@ of speed</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_done_pink" translatesAutoresizingMaskIntoConstraints="NO" id="4zK-4y-lbo">
-                                <rect key="frame" x="30" y="269.5" width="13" height="13"/>
+                                <rect key="frame" x="30" y="276.5" width="13" height="13"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="13" id="71j-vj-sQ4"/>
                                     <constraint firstAttribute="height" constant="13" id="D4d-T3-SzM"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No ads" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0nP-3i-H80">
-                                <rect key="frame" x="54" y="316" width="45" height="19.5"/>
+                                <rect key="frame" x="54" y="323" width="45" height="19.5"/>
                                 <fontDescription key="fontDescription" name="Nunito-SemiBold" family="Nunito" pointSize="14"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_done_pink" translatesAutoresizingMaskIntoConstraints="NO" id="aFF-2H-L8u">
-                                <rect key="frame" x="30" y="319" width="13" height="13"/>
+                                <rect key="frame" x="30" y="326" width="13" height="13"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="13" id="BZj-af-6eM"/>
                                     <constraint firstAttribute="height" constant="13" id="P4H-LU-aeo"/>
@@ -1578,6 +1586,9 @@ of speed</string>
                                 <state key="normal" title="Terms of use">
                                     <color key="titleColor" red="0.76400274040000005" green="0.62809830899999997" blue="0.55152934789999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="termsButtonAction:" destination="sn0-wX-f5B" eventType="touchUpInside" id="dOc-2J-7kf"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OIT-Zs-Z3d">
                                 <rect key="frame" x="217.5" y="829" width="100" height="30"/>
@@ -1661,7 +1672,7 @@ of speed</string>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XjC-gD-GDK">
                                                                             <rect key="frame" x="11" y="112.5" width="74" height="27.5"/>
                                                                             <string key="text" base64-UTF8="YES">
-NDk5IC8gCgPQtdC20LXQvdC10LTQtdC70YzQvdC+IOKCvQ
+NDk5IC8gCgPQtdC20LXQvdC10LTQtdC70YzQvdC+ICQ
 </string>
                                                                             <fontDescription key="fontDescription" name="Nunito-SemiBold" family="Nunito" pointSize="10"/>
                                                                             <color key="textColor" red="0.75814133880000001" green="0.70614069700000004" blue="0.68061894180000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1826,6 +1837,420 @@ NDk5IC8gCgPQtdC20LXQvdC10LTQtdC70YzQvdC+IOKCvQ
                                     <action selector="offerButtonAction:" destination="xwi-Aa-AUl" eventType="touchUpInside" id="6TA-JG-TPX"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xp8-1V-pJs" customClass="GRView" customModule="GRView">
+                                <rect key="frame" x="0.0" y="1089.5" width="414" height="806.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terms &amp; Conditions" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1uE-1Y-cTs">
+                                        <rect key="frame" x="30" y="30" width="354" height="44"/>
+                                        <fontDescription key="fontDescription" name="Nunito-ExtraBold" family="Nunito" pointSize="32"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zi2-pC-SwX">
+                                        <rect key="frame" x="30" y="102" width="354" height="586.5"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Terms &amp; Conditions">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.21176" green="0.21176" blue="0.21176" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="16" name="Times-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+Cgo
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.21176" green="0.21176" blue="0.21176" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="12" name="Times-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">By downloading or using the app, these terms will automatically apply to you – you should make sure therefore that you read them carefully before using the app. You’re not allowed to copy, or modify the app, any part of the app, or our trademarks in any way. You’re not allowed to attempt to extract the source code of the app, and you also shouldn’t try to translate the app into other languages, or make derivative versions. The app itself, and all the trade marks, copyright, database rights and other intellectual property rights related to it, still belong to Nikita Dolya.
+Nikita Dolya is committed to ensuring that the app is as useful and efficient as possible. For that reason, we reserve the right to make changes to the app or to charge for its services, at any time and for any reason. We will never charge you for the app or its services without making it very clear to you exactly what you’re paying for.
+The Vibrarelax app stores and processes personal data that you have provided to us, in order to provide my Service. It’s your responsibility to keep your phone and access to the app secure. We therefore recommend that you do not jailbreak or root your phone, which is the process of removing software restrictions and limitations imposed by the official operating system of your device. It could make your phone vulnerable to malware/viruses/malicious programs, compromise your phone’s security features and it could mean that the Vibrarelax app won’t work properly or at all.
+The app does use third party services that declare their own Terms and Conditions.
+Link to Terms and Conditions of third party service providers used by the app</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.29020000000000001" green="0.29020000000000001" blue="0.29020000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="15" name="Times-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.29020000000000001" green="0.29020000000000001" blue="0.29020000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="12" name="Times-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">	•	</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.19608" green="0.45097999999999999" blue="0.86275000000000002" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="14" name="Times-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacing="7.5" paragraphSpacingBefore="7.5" headIndent="36" tailIndent="424.5" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops>
+                                                            <textTab alignment="left" location="11">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="natural" location="36">
+                                                                <options/>
+                                                            </textTab>
+                                                        </tabStops>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">Google Play Services
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.19608" green="0.45097999999999999" blue="0.86275000000000002" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="14" name="Times-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacing="7.5" paragraphSpacingBefore="7.5" headIndent="36" tailIndent="424.5" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops>
+                                                            <textTab alignment="left" location="11">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="natural" location="36">
+                                                                <options/>
+                                                            </textTab>
+                                                        </tabStops>
+                                                    </paragraphStyle>
+                                                    <integer key="NSUnderline" value="1"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">	•	</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.19608" green="0.45097999999999999" blue="0.86275000000000002" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="14" name="Times-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacing="7.5" paragraphSpacingBefore="7.5" headIndent="36" tailIndent="424.5" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops>
+                                                            <textTab alignment="left" location="11">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="natural" location="36">
+                                                                <options/>
+                                                            </textTab>
+                                                        </tabStops>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">AdMob
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.19608" green="0.45097999999999999" blue="0.86275000000000002" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="14" name="Times-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacing="7.5" paragraphSpacingBefore="7.5" headIndent="36" tailIndent="424.5" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops>
+                                                            <textTab alignment="left" location="11">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="natural" location="36">
+                                                                <options/>
+                                                            </textTab>
+                                                        </tabStops>
+                                                    </paragraphStyle>
+                                                    <integer key="NSUnderline" value="1"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">	•	</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.19608" green="0.45097999999999999" blue="0.86275000000000002" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="14" name="Times-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacing="7.5" paragraphSpacingBefore="7.5" headIndent="36" tailIndent="424.5" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops>
+                                                            <textTab alignment="left" location="11">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="natural" location="36">
+                                                                <options/>
+                                                            </textTab>
+                                                        </tabStops>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">Google Analytics for Firebase
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.19608" green="0.45097999999999999" blue="0.86275000000000002" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="14" name="Times-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacing="7.5" paragraphSpacingBefore="7.5" headIndent="36" tailIndent="424.5" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops>
+                                                            <textTab alignment="left" location="11">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="natural" location="36">
+                                                                <options/>
+                                                            </textTab>
+                                                        </tabStops>
+                                                    </paragraphStyle>
+                                                    <integer key="NSUnderline" value="1"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">	•	</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.19608" green="0.45097999999999999" blue="0.86275000000000002" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="14" name="Times-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacing="7.5" paragraphSpacingBefore="7.5" headIndent="36" tailIndent="424.5" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops>
+                                                            <textTab alignment="left" location="11">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="natural" location="36">
+                                                                <options/>
+                                                            </textTab>
+                                                        </tabStops>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">Firebase Crashlytics
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.19608" green="0.45097999999999999" blue="0.86275000000000002" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="14" name="Times-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacing="7.5" paragraphSpacingBefore="7.5" headIndent="36" tailIndent="424.5" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops>
+                                                            <textTab alignment="left" location="11">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="natural" location="36">
+                                                                <options/>
+                                                            </textTab>
+                                                        </tabStops>
+                                                    </paragraphStyle>
+                                                    <integer key="NSUnderline" value="1"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">	•	</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.19608" green="0.45097999999999999" blue="0.86275000000000002" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="14" name="Times-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacing="7.5" paragraphSpacingBefore="7.5" headIndent="36" tailIndent="424.5" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops>
+                                                            <textTab alignment="left" location="11">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="natural" location="36">
+                                                                <options/>
+                                                            </textTab>
+                                                        </tabStops>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="Facebook">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.19608" green="0.45097999999999999" blue="0.86275000000000002" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="14" name="Times-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacing="7.5" paragraphSpacingBefore="7.5" headIndent="36" tailIndent="424.5" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops>
+                                                            <textTab alignment="left" location="11">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="natural" location="36">
+                                                                <options/>
+                                                            </textTab>
+                                                        </tabStops>
+                                                    </paragraphStyle>
+                                                    <integer key="NSUnderline" value="1"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.19608" green="0.45097999999999999" blue="0.86275000000000002" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="12" name="Times-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacing="7.5" paragraphSpacingBefore="7.5" headIndent="36" tailIndent="424.5" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops>
+                                                            <textTab alignment="left" location="11">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="natural" location="36">
+                                                                <options/>
+                                                            </textTab>
+                                                        </tabStops>
+                                                    </paragraphStyle>
+                                                    <integer key="NSUnderline" value="1"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">You should be aware that there are certain things that Nikita Dolya will not take responsibility for. Certain functions of the app will require the app to have an active internet connection. The connection can be Wi-Fi, or provided by your mobile network provider, but Nikita Dolya cannot take responsibility for the app not working at full functionality if you don’t have access to Wi-Fi, and you don’t have any of your data allowance left.
+If you’re using the app outside of an area with Wi-Fi, you should remember that your terms of the agreement with your mobile network provider will still apply. As a result, you may be charged by your mobile provider for the cost of data for the duration of the connection while accessing the app, or other third party charges. In using the app, you’re accepting responsibility for any such charges, including roaming data charges if you use the app outside of your home territory (i.e. region or country) without turning off data roaming. If you are not the bill payer for the device on which you’re using the app, please be aware that we assume that you have received permission from the bill payer for using the app.
+Along the same lines, Nikita Dolya cannot always take responsibility for the way you use the app i.e. You need to make sure that your device stays charged – if it runs out of battery and you can’t turn it on to avail the Service, Nikita Dolya cannot accept responsibility.
+With respect to Nikita Dolya’s responsibility for your use of the app, when you’re using the app, it’s important to bear in mind that although we endeavour to ensure that it is updated and correct at all times, we do rely on third parties to provide information to us so that we can make it available to you. Nikita Dolya accepts no liability for any loss, direct or indirect, you experience as a result of relying wholly on this functionality of the app.
+At some point, we may wish to update the app. The app is currently available on iOS – the requirements for system(and for any additional systems we decide to extend the availability of the app to) may change, and you’ll need to download the updates if you want to keep using the app. Nikita Dolya does not promise that it will always update the app so that it is relevant to you and/or works with the iOS version that you have installed on your device. However, you promise to always accept updates to the application when offered to you, We may also wish to stop providing the app, and may terminate use of it at any time without giving notice of termination to you. Unless we tell you otherwise, upon any termination, (a) the rights and licenses granted to you in these terms will end; (b) you must stop using the app, and (if  needed) delete it from your device.</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.29020000000000001" green="0.29020000000000001" blue="0.29020000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="15" name="Times-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+CgoKA
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.29020000000000001" green="0.29020000000000001" blue="0.29020000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="12" name="Times-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="Changes to This Terms and Conditions">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.21176" green="0.21176" blue="0.21176" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="16" name="Times-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+Cgo
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.21176" green="0.21176" blue="0.21176" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="12" name="Times-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">I may update our Terms and Conditions from time to time. Thus, you are advised to review this page periodically for any changes. I will notify you of any changes by posting the new Terms and Conditions on this page.
+These terms and conditions are effective as of 2021-05-25</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.29020000000000001" green="0.29020000000000001" blue="0.29020000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="14" name="Times-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+CgoKA
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.29020000000000001" green="0.29020000000000001" blue="0.29020000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="12" name="Times-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="Contact Us">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.21176" green="0.21176" blue="0.21176" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="16" name="Times-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+Cgo
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.21176" green="0.21176" blue="0.21176" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="12" name="Times-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">If you have any questions or suggestions about my Terms and Conditions, do not hesitate to contact me at vibrarelax@gmail.com.
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.29020000000000001" green="0.29020000000000001" blue="0.29020000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="14" name="Times-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+Cgo
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.29020000000000001" green="0.29020000000000001" blue="0.29020000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="12" name="Times-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v5k-Kw-msd">
+                                        <rect key="frame" x="147" y="715.5" width="120" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="mF8-Mp-3UJ"/>
+                                        </constraints>
+                                        <inset key="titleEdgeInsets" minX="6" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="6" maxY="0.0"/>
+                                        <state key="normal" title="Close" image="ic_close">
+                                            <color key="titleColor" red="0.82745098039999998" green="0.82750314469999997" blue="0.82735145089999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="closeTermsButtonAction:" destination="sn0-wX-f5B" eventType="touchUpInside" id="kZd-Ei-Igm"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="zi2-pC-SwX" secondAttribute="trailing" constant="30" id="0he-Mq-L5b"/>
+                                    <constraint firstItem="v5k-Kw-msd" firstAttribute="top" secondItem="zi2-pC-SwX" secondAttribute="bottom" constant="27" id="Da2-HB-Efo"/>
+                                    <constraint firstItem="1uE-1Y-cTs" firstAttribute="leading" secondItem="Xp8-1V-pJs" secondAttribute="leading" constant="30" id="HQ6-Bh-RrZ"/>
+                                    <constraint firstItem="1uE-1Y-cTs" firstAttribute="top" secondItem="Xp8-1V-pJs" secondAttribute="top" constant="30" id="VEL-Uw-FQF"/>
+                                    <constraint firstAttribute="trailing" secondItem="1uE-1Y-cTs" secondAttribute="trailing" constant="30" id="bnH-zA-gKi"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="v5k-Kw-msd" secondAttribute="bottom" constant="27" id="dpD-wD-DL4"/>
+                                    <constraint firstItem="zi2-pC-SwX" firstAttribute="leading" secondItem="Xp8-1V-pJs" secondAttribute="leading" constant="30" id="kgb-6h-Txx"/>
+                                    <constraint firstItem="zi2-pC-SwX" firstAttribute="top" secondItem="1uE-1Y-cTs" secondAttribute="bottom" constant="28" id="lN8-fD-qRq"/>
+                                    <constraint firstItem="v5k-Kw-msd" firstAttribute="centerX" secondItem="Xp8-1V-pJs" secondAttribute="centerX" id="tWI-cw-fgr"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fy2-Mt-snH" customClass="GRView" customModule="GRView">
                                 <rect key="frame" x="0.0" y="1089.5" width="414" height="806.5"/>
                                 <subviews>
@@ -1835,57 +2260,707 @@ NDk5IC8gCgPQtdC20LXQvdC10LTQtdC70YzQvdC+IOKCvQ
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="re0-1C-MM3">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="re0-1C-MM3">
                                         <rect key="frame" x="30" y="102" width="354" height="586.5"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <string key="text" base64-UTF8="YES">
-0JLQsNGI0LAg0LrQvtC90YTQuNC00LXQvdGG0LjQsNC70YzQvdC+0YHRgtGMINC+0YfQtdC90Ywg0LLQ
-sNC20L3QsCDQtNC70Y8g0L3QsNGBLiDQnNGLINGF0L7RgtC40LwsINGH0YLQvtCx0Ysg0JLQsNGI0LAg
-0YDQsNCx0L7RgtCwINCyINCY0L3RgtC10YDQvdC10YIg0L/QviDQstC+0LfQvNC+0LbQvdC+0YHRgtC4
-INCx0YvQu9CwINC80LDQutGB0LjQvNCw0LvRjNC90L4g0L/RgNC40Y/RgtC90L7QuSDQuCDQv9C+0LvQ
-tdC30L3QvtC5LCDQuCDQktGLINGB0L7QstC10YDRiNC10L3QvdC+INGB0L/QvtC60L7QudC90L4g0LjR
-gdC/0L7Qu9GM0LfQvtCy0LDQu9C4INGI0LjRgNC+0YfQsNC50YjQuNC5INGB0L/QtdC60YLRgCDQuNC9
-0YTQvtGA0LzQsNGG0LjQuCwg0LjQvdGB0YLRgNGD0LzQtdC90YLQvtCyINC4INCy0L7Qt9C80L7QttC9
-0L7RgdGC0LXQuSwg0LrQvtGC0L7RgNGL0LUg0L/RgNC10LTQu9Cw0LPQsNC10YIg0JjQvdGC0LXRgNC9
-0LXRgi4DCgrQnNGLINGB0L7Qt9C00LDQu9C4INCf0L7Qu9C40YLQuNC60YMg0LrQvtC90YTQuNC00LXQ
-vdGG0LjQsNC70YzQvdC+0YHRgtC4LCDRh9GC0L7QsdGLINC/0YDQvtC00LXQvNC+0L3RgdGC0YDQuNGA
-0L7QstCw0YLRjCDRgdCy0L7RjiDQstC10YDQvdC+0YHRgtGMINC/0YDQuNC90YbQuNC/0LDQvCDQutC+
-0L3RhNC40LTQtdC90YbQuNCw0LvRjNC90L7RgdGC0Lgg0LggA9Cx0LXQt9C+0L/QsNGB0L3QvtGB0YLQ
-uC4g0JIg0J/QvtC70LjRgtC40LrQtSAD0LrQvtC90YTQuNC00LXQvdGG0LjQsNC70YzQvdC+0YHRgtC4
-INC+0L/QuNGB0LDQvdC+LCDQutCw0Log0L3QsNGI0LAg0LrQvtC80L/QsNC90LjRjyDRgdC+0LHQuNGA
-0LDQtdGCINC40L3RhNC+0YDQvNCw0YbQuNGOINC+0YLQviDQstGB0LXRhSDQutC+0L3QtdGH0L3Ri9GF
-INC/0L7Qu9GM0LfQvtCy0LDRgtC10LvQtdC5INGB0LLQvtC40YUg0JjQvdGC0LXRgNC90LXRgi3Rg9GB
-0LvRg9CzICjCq9Cj0YHQu9GD0LPCuyksINCy0LrQu9GO0YfQsNGPINC70Y7QtNC10LksINC40LzQtdGO
-0YnQuNGFINC00L7RgdGC0YPQvyDQuiDQvdC10LrQvtGC0L7RgNGL0Lwg0L3QsNGI0LjQvCDRg9GB0LvR
-g9Cz0LDQvCDQsdC10LcgA9GA0LXQs9C40YHRgtGA0LDRhtC40L7QvdC90L7QuSDQt9Cw0L/QuNGB0Lgg
-KMKr0JPQvtGB0YLQtdC5wrspLCDQsCDRgtCw0LrQttC1INC60LvQuNC10L3RgtC+0LIsINC60L7RgtC+
-0YDRi9C1INC60YPQv9C40LvQuCDQn9GA0L7QtNGD0LrRgtGLINC4L9C40LvQuCDQstC90L7RgdGP0YIg
-0LXQttC10LzQtdGB0Y/Rh9C90YPRjiDQvtC/0LvQsNGC0YMg0LfQsCDRg9GB0LvRg9Cz0LgsINGH0YLQ
-vtCx0Ysg0L/QvtC00L/QuNGB0LDRgtGM0YHRjyDQvdCwINCj0YHQu9GD0LPRgyAowqvQp9C70LXQvdGL
-wrspLgoK0J/QvtC70LjRgtC40LrQsCDRgtCw0LrQttC1INCy0LrQu9GO0YfQsNC10YIg0L7QsdGK0Y/R
-gdC90LXQvdC40LUg0L4g0YLQvtC8LCDRh9GC0L4g0LzRiyDQtNC10LvQsNC10Lwg0YEg0YHQvtCx0YDQ
-sNC90L3QvtC5INC40L3RhNC+0YDQvNCw0YbQuNC10LksCtC60L7RgtC+0YDRi9C1INC/0YDQtdC00LvQ
-sNCz0LDQtdGCINCY0L3RgtC10YDQvdC10YIuAwoK0JzRiyDRgdC+0LfQtNCw0LvQuCDQn9C+0LvQuNGC
-0LjQutGDINC60L7QvdGE0LjQtNC10L3RhtC40LDQu9GM0L3QvtGB0YLQuCwg0YfRgtC+0LHRiyDQv9GA
-0L7QtNC10LzQvtC90YHRgtGA0LjRgNC+0LLQsNGC0Ywg0YHQstC+0Y4g0LLQtdGA0L3QvtGB0YLRjCDQ
-v9GA0LjQvdGG0LjQv9Cw0Lwg0LrQvtC90YTQuNC00LXQvdGG0LjQsNC70YzQvdC+0YHRgtC4INC4IAPQ
-sdC10LfQvtC/0LDRgdC90L7RgdGC0LguINCSINCf0L7Qu9C40YLQuNC60LUgA9C60L7QvdGE0LjQtNC1
-0L3RhtC40LDQu9GM0L3QvtGB0YLQuCDQvtC/0LjRgdCw0L3Qviwg0LrQsNC6INC90LDRiNCwINC60L7Q
-vNC/0LDQvdC40Y8g0YHQvtCx0LjRgNCw0LXRgiDQuNC90YTQvtGA0LzQsNGG0LjRjiDQvtGC0L4g0LLR
-gdC10YUg0LrQvtC90LXRh9C90YvRhSDQv9C+0LvRjNC30L7QstCw0YLQtdC70LXQuSDRgdCy0L7QuNGF
-INCY0L3RgtC10YDQvdC10YIt0YPRgdC70YPQsyAowqvQo9GB0LvRg9CzwrspLCDQstC60LvRjtGH0LDR
-jyDQu9GO0LTQtdC5LCDQuNC80LXRjtGJ0LjRhSDQtNC+0YHRgtGD0L8g0Log0L3QtdC60L7RgtC+0YDR
-i9C8INC90LDRiNC40Lwg0YPRgdC70YPQs9Cw0Lwg0LHQtdC3IAPRgNC10LPQuNGB0YLRgNCw0YbQuNC+
-0L3QvdC+0Lkg0LfQsNC/0LjRgdC4ICjCq9CT0L7RgdGC0LXQucK7KSwg0LAg0YLQsNC60LbQtSDQutC7
-0LjQtdC90YLQvtCyLCDQutC+0YLQvtGA0YvQtSDQutGD0L/QuNC70Lgg0J/RgNC+0LTRg9C60YLRiyDQ
-uC/QuNC70Lgg0LLQvdC+0YHRj9GCINC10LbQtdC80LXRgdGP0YfQvdGD0Y4g0L7Qv9C70LDRgtGDINC3
-0LAg0YPRgdC70YPQs9C4LCDRh9GC0L7QsdGLINC/0L7QtNC/0LjRgdCw0YLRjNGB0Y8g0L3QsCDQo9GB
-0LvRg9Cz0YMgKMKr0KfQu9C10L3Ri8K7KS4KCtCf0L7Qu9C40YLQuNC60LAg0YLQsNC60LbQtSDQstC6
-0LvRjtGH0LDQtdGCINC+0LHRitGP0YHQvdC10L3QuNC1INC+INGC0L7QvCwg0YfRgtC+INC80Ysg0LTQ
-tdC70LDQtdC8INGBINGB0L7QsdGA0LDQvdC90L7QuSDQuNC90YTQvtGA0LzQsNGG0LjQtdC5LA
+                                        <attributedString key="attributedText">
+                                            <fragment>
+                                                <string key="content">Privacy Policy
 </string>
-                                        <color key="textColor" systemColor="labelColor"/>
-                                        <fontDescription key="fontDescription" name="Nunito-SemiBold" family="Nunito" pointSize="17"/>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.21176" green="0.21176" blue="0.21176" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="16" name="Times-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.21176" green="0.21176" blue="0.21176" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="12" name="Times-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">Nikita Dolya built the Vibrarelax app as a Free app. This SERVICE is provided by Nikita Dolya at no cost and is intended for use as is.
+This page is used to inform visitors regarding my policies with the collection, use, and disclosure of Personal Information if anyone decided to use my Service.
+If you choose to use my Service, then you agree to the collection and use of information in relation to this policy. The Personal Information that I collect is used for providing and improving the Service. I will not use or share your information with anyone except as described in this Privacy Policy.
+The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which is accessible at Vibrarelax unless otherwise defined in this Privacy Policy.</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.29020000000000001" green="0.29020000000000001" blue="0.29020000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="14" name="Times-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+CgoKA
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.29020000000000001" green="0.29020000000000001" blue="0.29020000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="12" name="Times-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="Information Collection and Use">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.21176" green="0.21176" blue="0.21176" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="16" name="Times-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+Cgo
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.21176" green="0.21176" blue="0.21176" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="12" name="Times-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">For a better experience, while using our Service, I may require you to provide us with certain personally identifiable information, including but not limited to name, email, social media profiles, date of birth, phone/mobile number, home/mailing address. The information that I request will be retained on your device and is not collected by me in any way.
+The app does use third party services that may collect information used to identify you.
+Link to privacy policy of third party service providers used by the app</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.29020000000000001" green="0.29020000000000001" blue="0.29020000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="14" name="Times-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.29020000000000001" green="0.29020000000000001" blue="0.29020000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="12" name="Times-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">	•	</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.19608" green="0.45097999999999999" blue="0.86275000000000002" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="14" name="Times-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacing="7.5" paragraphSpacingBefore="7.5" headIndent="36" tailIndent="424.5" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops>
+                                                            <textTab alignment="left" location="11">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="natural" location="36">
+                                                                <options/>
+                                                            </textTab>
+                                                        </tabStops>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">Google Play Services
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.19608" green="0.45097999999999999" blue="0.86275000000000002" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="14" name="Times-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacing="7.5" paragraphSpacingBefore="7.5" headIndent="36" tailIndent="424.5" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops>
+                                                            <textTab alignment="left" location="11">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="natural" location="36">
+                                                                <options/>
+                                                            </textTab>
+                                                        </tabStops>
+                                                    </paragraphStyle>
+                                                    <integer key="NSUnderline" value="1"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">	•	</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.19608" green="0.45097999999999999" blue="0.86275000000000002" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="14" name="Times-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacing="7.5" paragraphSpacingBefore="7.5" headIndent="36" tailIndent="424.5" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops>
+                                                            <textTab alignment="left" location="11">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="natural" location="36">
+                                                                <options/>
+                                                            </textTab>
+                                                        </tabStops>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">AdMob
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.19608" green="0.45097999999999999" blue="0.86275000000000002" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="14" name="Times-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacing="7.5" paragraphSpacingBefore="7.5" headIndent="36" tailIndent="424.5" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops>
+                                                            <textTab alignment="left" location="11">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="natural" location="36">
+                                                                <options/>
+                                                            </textTab>
+                                                        </tabStops>
+                                                    </paragraphStyle>
+                                                    <integer key="NSUnderline" value="1"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">	•	</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.19608" green="0.45097999999999999" blue="0.86275000000000002" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="14" name="Times-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacing="7.5" paragraphSpacingBefore="7.5" headIndent="36" tailIndent="424.5" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops>
+                                                            <textTab alignment="left" location="11">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="natural" location="36">
+                                                                <options/>
+                                                            </textTab>
+                                                        </tabStops>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">Google Analytics for Firebase
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.19608" green="0.45097999999999999" blue="0.86275000000000002" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="14" name="Times-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacing="7.5" paragraphSpacingBefore="7.5" headIndent="36" tailIndent="424.5" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops>
+                                                            <textTab alignment="left" location="11">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="natural" location="36">
+                                                                <options/>
+                                                            </textTab>
+                                                        </tabStops>
+                                                    </paragraphStyle>
+                                                    <integer key="NSUnderline" value="1"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">	•	</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.19608" green="0.45097999999999999" blue="0.86275000000000002" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="14" name="Times-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacing="7.5" paragraphSpacingBefore="7.5" headIndent="36" tailIndent="424.5" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops>
+                                                            <textTab alignment="left" location="11">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="natural" location="36">
+                                                                <options/>
+                                                            </textTab>
+                                                        </tabStops>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">Firebase Crashlytics
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.19608" green="0.45097999999999999" blue="0.86275000000000002" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="14" name="Times-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacing="7.5" paragraphSpacingBefore="7.5" headIndent="36" tailIndent="424.5" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops>
+                                                            <textTab alignment="left" location="11">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="natural" location="36">
+                                                                <options/>
+                                                            </textTab>
+                                                        </tabStops>
+                                                    </paragraphStyle>
+                                                    <integer key="NSUnderline" value="1"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">	•	</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.19608" green="0.45097999999999999" blue="0.86275000000000002" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="14" name="Times-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacing="7.5" paragraphSpacingBefore="7.5" headIndent="36" tailIndent="424.5" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops>
+                                                            <textTab alignment="left" location="11">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="natural" location="36">
+                                                                <options/>
+                                                            </textTab>
+                                                        </tabStops>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">Facebook
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.19608" green="0.45097999999999999" blue="0.86275000000000002" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="14" name="Times-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacing="7.5" paragraphSpacingBefore="7.5" headIndent="36" tailIndent="424.5" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops>
+                                                            <textTab alignment="left" location="11">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="natural" location="36">
+                                                                <options/>
+                                                            </textTab>
+                                                        </tabStops>
+                                                    </paragraphStyle>
+                                                    <integer key="NSUnderline" value="1"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.19608" green="0.45097999999999999" blue="0.86275000000000002" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="12" name="Times-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacing="7.5" paragraphSpacingBefore="7.5" headIndent="36" tailIndent="424.5" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops>
+                                                            <textTab alignment="left" location="11">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="natural" location="36">
+                                                                <options/>
+                                                            </textTab>
+                                                        </tabStops>
+                                                    </paragraphStyle>
+                                                    <integer key="NSUnderline" value="1"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="Log Data">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.21176" green="0.21176" blue="0.21176" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="16" name="Times-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+Cgo
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.21176" green="0.21176" blue="0.21176" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="12" name="Times-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">I want to inform you that whenever you use my Service, in a case of an error in the app I collect data and information (through third party products) on your phone called Log Data. This Log Data may include information such as your device Internet Protocol (“IP”) address, device name, operating system version, the configuration of the app when utilizing my Service, the time and date of your use of the Service, and other statistics.
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.29020000000000001" green="0.29020000000000001" blue="0.29020000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="14" name="Times-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+Cgo
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.29020000000000001" green="0.29020000000000001" blue="0.29020000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="12" name="Times-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="Cookies">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.21176" green="0.21176" blue="0.21176" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="16" name="Times-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+Cgo
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.21176" green="0.21176" blue="0.21176" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="12" name="Times-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">Cookies are files with a small amount of data that are commonly used as anonymous unique identifiers. These are sent to your browser from the websites that you visit and are stored on your device's internal memory.
+This Service does not use these “cookies” explicitly. However, the app may use third party code and libraries that use “cookies” to collect information and improve their services. You have the option to either accept or refuse these cookies and know when a cookie is being sent to your device. If you choose to refuse our cookies, you may not be able to use some portions of this Service.
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.29020000000000001" green="0.29020000000000001" blue="0.29020000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="14" name="Times-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+Cgo
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.29020000000000001" green="0.29020000000000001" blue="0.29020000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="12" name="Times-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="Service Providers">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.21176" green="0.21176" blue="0.21176" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="16" name="Times-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+Cgo
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.21176" green="0.21176" blue="0.21176" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="12" name="Times-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">I may employ third-party companies and individuals due to the following reasons:
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.29020000000000001" green="0.29020000000000001" blue="0.29020000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="14" name="Times-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">	•	To facilitate our Service;
+	•	To provide the Service on our behalf;
+	•	To perform Service-related services; or
+	•	To assist us in analyzing how our Service is used.
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.29020000000000001" green="0.29020000000000001" blue="0.29020000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="14" name="Times-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacing="7.5" paragraphSpacingBefore="7.5" headIndent="36" tailIndent="424.5" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops>
+                                                            <textTab alignment="left" location="11">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="natural" location="36">
+                                                                <options/>
+                                                            </textTab>
+                                                        </tabStops>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">I want to inform users of this Service that these third parties have access to your Personal Information. The reason is to perform the tasks assigned to them on our behalf. However, they are obligated not to disclose or use the information for any other purpose.</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.29020000000000001" green="0.29020000000000001" blue="0.29020000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="14" name="Times-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+CgoKA
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.29020000000000001" green="0.29020000000000001" blue="0.29020000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="12" name="Times-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="Security">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.21176" green="0.21176" blue="0.21176" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="16" name="Times-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+Cgo
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.21176" green="0.21176" blue="0.21176" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="12" name="Times-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">I value your trust in providing us your Personal Information, thus we are striving to use commercially acceptable means of protecting it. But remember that no method of transmission over the internet, or method of electronic storage is 100% secure and reliable, and I cannot guarantee its absolute security.</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.29020000000000001" green="0.29020000000000001" blue="0.29020000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="14" name="Times-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+CgoKA
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.29020000000000001" green="0.29020000000000001" blue="0.29020000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="12" name="Times-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="Links to Other Sites">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.21176" green="0.21176" blue="0.21176" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="16" name="Times-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+Cgo
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.21176" green="0.21176" blue="0.21176" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="12" name="Times-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">This Service may contain links to other sites. If you click on a third-party link, you will be directed to that site. Note that these external sites are not operated by me. Therefore, I strongly advise you to review the Privacy Policy of these websites. I have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services.</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.29020000000000001" green="0.29020000000000001" blue="0.29020000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="14" name="Times-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.29020000000000001" green="0.29020000000000001" blue="0.29020000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="12" name="Times-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+Cgo
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.21176" green="0.21176" blue="0.21176" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="12" name="Times-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="Children’s Privacy">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.21176" green="0.21176" blue="0.21176" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="16" name="Times-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+Cgo
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.21176" green="0.21176" blue="0.21176" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="12" name="Times-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">These Services do not address anyone under the age of 13. I do not knowingly collect personally identifiable information from children under 13 years of age. In the case I discover that a child under 13 has provided me with personal information, I immediately delete this from our servers. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact me so that I will be able to do necessary actions.</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.29020000000000001" green="0.29020000000000001" blue="0.29020000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="14" name="Times-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.29020000000000001" green="0.29020000000000001" blue="0.29020000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="12" name="Times-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+Cgo
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.21176" green="0.21176" blue="0.21176" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="12" name="Times-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="Changes to This Privacy Policy">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.21176" green="0.21176" blue="0.21176" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="16" name="Times-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+Cgo
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.21176" green="0.21176" blue="0.21176" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="12" name="Times-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">I may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. I will notify you of any changes by posting the new Privacy Policy on this page.
+This policy is effective as of 2021-05-25</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.29020000000000001" green="0.29020000000000001" blue="0.29020000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="14" name="Times-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.29020000000000001" green="0.29020000000000001" blue="0.29020000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="12" name="Times-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+Cgo
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.21176" green="0.21176" blue="0.21176" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="12" name="Times-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="Contact Us">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.21176" green="0.21176" blue="0.21176" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="16" name="Times-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+Cgo
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.21176" green="0.21176" blue="0.21176" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="12" name="Times-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="If you have any questions or suggestions about my Privacy Policy, do not hesitate to contact me at vibrarelax@gmail.com.">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.29020000000000001" green="0.29020000000000001" blue="0.29020000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="14" name="Times-Roman"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q6s-W5-KQJ">
@@ -1942,6 +3017,7 @@ tdC70LDQtdC8INGBINGB0L7QsdGA0LDQvdC90L7QuSDQuNC90YTQvtGA0LzQsNGG0LjQtdC5LA
                             <constraint firstItem="OIT-Zs-Z3d" firstAttribute="leading" secondItem="FIX-h5-vha" secondAttribute="trailing" constant="10" id="GcG-Pv-Lve"/>
                             <constraint firstItem="NbX-3u-yOR" firstAttribute="top" secondItem="iRs-xW-7e1" secondAttribute="bottom" id="H5P-0h-dou"/>
                             <constraint firstItem="uCz-0i-jer" firstAttribute="trailing" secondItem="USl-hb-0SF" secondAttribute="trailing" id="I4T-e4-dci"/>
+                            <constraint firstAttribute="bottom" secondItem="Xp8-1V-pJs" secondAttribute="bottom" constant="-1000" id="JG4-3C-Raf"/>
                             <constraint firstItem="NbX-3u-yOR" firstAttribute="leading" secondItem="rGY-hA-KhC" secondAttribute="leading" constant="30" id="JzY-4o-57l"/>
                             <constraint firstItem="gbV-yc-i3f" firstAttribute="top" secondItem="NbX-3u-yOR" secondAttribute="top" constant="-3" id="LvL-aR-bY1"/>
                             <constraint firstItem="rkM-gC-8MH" firstAttribute="top" secondItem="gbV-yc-i3f" secondAttribute="bottom" constant="11" id="NPP-jY-Qxu"/>
@@ -1949,7 +3025,7 @@ tdC70LDQtdC8INGBINGB0L7QsdGA0LDQvdC90L7QuSDQuNC90YTQvtGA0LzQsNGG0LjQtdC5LA
                             <constraint firstItem="4zK-4y-lbo" firstAttribute="leading" secondItem="uCz-0i-jer" secondAttribute="leading" constant="30" id="RrQ-yf-5dt"/>
                             <constraint firstItem="HyP-e3-y8g" firstAttribute="centerY" secondItem="hx8-mY-KFG" secondAttribute="centerY" id="WOs-cx-yOz"/>
                             <constraint firstItem="b8x-fL-Xvl" firstAttribute="top" secondItem="USl-hb-0SF" secondAttribute="bottom" id="WQu-qk-AdX"/>
-                            <constraint firstItem="ukq-6Y-pLf" firstAttribute="top" secondItem="HyP-e3-y8g" secondAttribute="bottom" constant="30" id="We0-5L-4GO"/>
+                            <constraint firstItem="Xp8-1V-pJs" firstAttribute="leading" secondItem="uCz-0i-jer" secondAttribute="leading" id="Xgy-u5-bHM"/>
                             <constraint firstItem="P8h-0f-5jJ" firstAttribute="centerY" secondItem="FIX-h5-vha" secondAttribute="centerY" id="cAl-di-Lvb"/>
                             <constraint firstItem="HyP-e3-y8g" firstAttribute="leading" secondItem="uCz-0i-jer" secondAttribute="leading" constant="20" id="eAH-w3-Dub"/>
                             <constraint firstItem="Jaa-EX-Znd" firstAttribute="top" secondItem="hx8-mY-KFG" secondAttribute="bottom" constant="16" id="f8K-fM-qO3"/>
@@ -1959,25 +3035,30 @@ tdC70LDQtdC8INGBINGB0L7QsdGA0LDQvdC90L7QuSDQuNC90YTQvtGA0LzQsNGG0LjQtdC5LA
                             <constraint firstItem="OIT-Zs-Z3d" firstAttribute="centerY" secondItem="FIX-h5-vha" secondAttribute="centerY" id="hhb-Lb-cBE"/>
                             <constraint firstAttribute="trailing" secondItem="Fy2-Mt-snH" secondAttribute="trailing" id="k99-wR-0LW"/>
                             <constraint firstItem="iRs-xW-7e1" firstAttribute="leading" secondItem="ukq-6Y-pLf" secondAttribute="leading" constant="-4" id="kW3-CZ-Gp4"/>
+                            <constraint firstItem="ukq-6Y-pLf" firstAttribute="top" secondItem="Jaa-EX-Znd" secondAttribute="top" constant="20" id="kaz-QM-g2x"/>
                             <constraint firstItem="USl-hb-0SF" firstAttribute="top" secondItem="Jaa-EX-Znd" secondAttribute="bottom" id="mmn-X4-a5C"/>
                             <constraint firstAttribute="bottom" secondItem="Fy2-Mt-snH" secondAttribute="bottom" constant="-1000" id="mzT-iW-EwI"/>
                             <constraint firstItem="uCz-0i-jer" firstAttribute="trailing" secondItem="hx8-mY-KFG" secondAttribute="trailing" constant="20" id="oTR-9i-QcX"/>
                             <constraint firstItem="0nP-3i-H80" firstAttribute="top" secondItem="aFF-2H-L8u" secondAttribute="top" constant="-3" id="rqs-cb-XVB"/>
                             <constraint firstItem="0nP-3i-H80" firstAttribute="top" secondItem="rkM-gC-8MH" secondAttribute="bottom" constant="11" id="sZV-SQ-tdr"/>
+                            <constraint firstItem="Xp8-1V-pJs" firstAttribute="trailing" secondItem="uCz-0i-jer" secondAttribute="trailing" id="tyX-YG-dtV"/>
                             <constraint firstItem="Fy2-Mt-snH" firstAttribute="height" secondItem="rGY-hA-KhC" secondAttribute="height" multiplier="0.9" id="uZ0-1B-CJt"/>
                             <constraint firstItem="FIX-h5-vha" firstAttribute="centerX" secondItem="rGY-hA-KhC" secondAttribute="centerX" id="w5p-XX-YuH"/>
                             <constraint firstItem="uCz-0i-jer" firstAttribute="trailing" secondItem="Jaa-EX-Znd" secondAttribute="trailing" id="w6V-HK-zfA"/>
                             <constraint firstItem="USl-hb-0SF" firstAttribute="leading" secondItem="uCz-0i-jer" secondAttribute="leading" id="wca-gl-8gg"/>
                             <constraint firstItem="FIX-h5-vha" firstAttribute="leading" secondItem="P8h-0f-5jJ" secondAttribute="trailing" constant="10" id="xlS-3V-qFk"/>
                             <constraint firstItem="rkM-gC-8MH" firstAttribute="top" secondItem="4zK-4y-lbo" secondAttribute="top" constant="-3" id="yGY-M3-B6o"/>
+                            <constraint firstItem="Xp8-1V-pJs" firstAttribute="height" secondItem="rGY-hA-KhC" secondAttribute="height" multiplier="0.9" id="yck-GM-2GC"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="ivK-se-hqN" id="ABo-EL-DnO"/>
                         <outlet property="collectionViewTopConstraint" destination="mdl-Mo-N2B" id="r4F-NK-ZHj"/>
                         <outlet property="lipsImageViewTopConstraint" destination="f8K-fM-qO3" id="XYs-L9-BgO"/>
-                        <outlet property="policyView" destination="Fy2-Mt-snH" id="Ua4-FW-IkO"/>
+                        <outlet property="policyView" destination="Fy2-Mt-snH" id="4px-fn-een"/>
                         <outlet property="privacyViewBottomConstraint" destination="mzT-iW-EwI" id="n7o-j1-axC"/>
+                        <outlet property="termsView" destination="Xp8-1V-pJs" id="4iM-Nz-9GT"/>
+                        <outlet property="termsViewBottomConstraint" destination="JG4-3C-Raf" id="WWR-7c-Fu7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7BE-Yu-rus" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

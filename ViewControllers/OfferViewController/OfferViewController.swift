@@ -10,8 +10,10 @@ import GRView
 
 class OfferViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
-    @IBOutlet weak var privacyViewBottomConstraint: NSLayoutConstraint!
     @IBOutlet weak var policyView: GRView!
+    @IBOutlet weak var termsView: GRView!
+    @IBOutlet weak var privacyViewBottomConstraint: NSLayoutConstraint!
+    @IBOutlet weak var termsViewBottomConstraint: NSLayoutConstraint!
     @IBOutlet weak var lipsImageViewTopConstraint: NSLayoutConstraint!
     @IBOutlet weak var collectionViewTopConstraint: NSLayoutConstraint!
     
@@ -34,6 +36,7 @@ class OfferViewController: UIViewController {
         visualEffectView.alpha = 0.0
         view.addSubview(visualEffectView)
         view.bringSubviewToFront(policyView)
+        view.bringSubviewToFront(termsView)
     }
     
     // MARK: -
@@ -55,10 +58,26 @@ class OfferViewController: UIViewController {
         }
     }
     
+    @IBAction func termsButtonAction(_ sender: UIButton) {
+        UIView.animate(withDuration: 0.3) {
+            self.visualEffectView.alpha = 1.0
+            self.termsViewBottomConstraint.constant = 0.0
+            self.view.layoutIfNeeded()
+        }
+    }
+    
     @IBAction func closePrivacyButtonAction(_ sender: UIButton) {
         UIView.animate(withDuration: 0.5) {
             self.visualEffectView.alpha = 0.0
             self.privacyViewBottomConstraint.constant = -1000.0
+            self.view.layoutIfNeeded()
+        }
+    }
+    
+    @IBAction func closeTermsButtonAction(_ sender: UIButton) {
+        UIView.animate(withDuration: 0.5) {
+            self.visualEffectView.alpha = 0.0
+            self.termsViewBottomConstraint.constant = -1000.0
             self.view.layoutIfNeeded()
         }
     }
@@ -77,15 +96,15 @@ extension OfferViewController: UICollectionViewDataSource {
         case 1:
             offerCollectionViewCell.topLabel.text = "35% DISCOUNT"
             offerCollectionViewCell.titleLabel.text = "Every\nmonth"
-            offerCollectionViewCell.priceLabel.text = "1550 ₽ / \nmonthly"
+            offerCollectionViewCell.priceLabel.text = "25 $ / \nmonthly"
         case 2:
             offerCollectionViewCell.topLabel.text = "BEST PRICE"
             offerCollectionViewCell.titleLabel.text = "Every\nyear"
-            offerCollectionViewCell.priceLabel.text = "3990 ₽ / \nannually"
+            offerCollectionViewCell.priceLabel.text = "79 $ / \nannually"
         default:
             offerCollectionViewCell.topLabel.text = "POPULAR"
             offerCollectionViewCell.titleLabel.text =  "Every\nweek"
-            offerCollectionViewCell.priceLabel.text = "499 ₽ / \nweekly"
+            offerCollectionViewCell.priceLabel.text = "9 $ / \nweekly"
         }
         
         if indexPath.row == selectedIndex {
@@ -116,8 +135,8 @@ extension OfferViewController: UICollectionViewDataSource {
             switch UIScreen.main.nativeBounds.height {
                 case 1334:
                 print("iPhone 6/6S/7/8")
-                lipsImageViewTopConstraint.constant = 0.0
-                collectionViewTopConstraint.constant = 0.0
+                lipsImageViewTopConstraint.constant = -8.0
+                collectionViewTopConstraint.constant = 12.0
             default:
                 print("")
             }

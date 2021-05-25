@@ -16,6 +16,7 @@ class VibroViewController: UIViewController {
     @IBOutlet weak var pressButtonLabel: UILabel!
     @IBOutlet weak var switchButtonYConstraint: NSLayoutConstraint!
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var waveView: UIView!
     
     var timer: Timer?
     var interval: Float = 0.7
@@ -41,7 +42,11 @@ class VibroViewController: UIViewController {
                     switchButtonYConstraint.constant = 0.0
                 case 1334:
                     print("iPhone 6/6S/7/8")
-                    switchButtonYConstraint.constant = 0.0
+                    switchButtonYConstraint.constant = 10.0
+                    waveView.transform = CGAffineTransform(scaleX: 0.85, y: 0.85)
+                    switchButton.transform = CGAffineTransform(scaleX: 0.85, y: 0.85)
+                    switchBackgroundView.transform = CGAffineTransform(scaleX: 0.85, y: 0.85)
+                    switchShadowView.transform = CGAffineTransform(scaleX: 0.85, y: 0.85)
                 default:
                     print("SMALL IPHONE")
             }
@@ -49,9 +54,9 @@ class VibroViewController: UIViewController {
         
         switch UserDefaults.standard.integer(forKey: "mode_id") {
         case 1:
-            titleLabel.text = "W A T E R F A L L"
-        default:
             titleLabel.text = "H E A R T"
+        default:
+            titleLabel.text = "B R E E Z E"
         }
     }
     
