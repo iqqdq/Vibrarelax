@@ -33,7 +33,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="tBV-CE-YjT">
-                                <rect key="frame" x="0.0" y="143" width="414" height="585"/>
+                                <rect key="frame" x="0.0" y="140" width="414" height="588"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="2uc-qw-R2q">
                                     <size key="itemSize" width="370" height="454"/>
@@ -43,7 +43,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="OnboardingCollectionViewCell" id="fYm-V4-KED" customClass="OnboardingCollectionViewCell" customModule="Vibrarelax" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="65.5" width="370" height="454"/>
+                                        <rect key="frame" x="0.0" y="67" width="370" height="454"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="u2h-pL-GsZ">
                                             <rect key="frame" x="0.0" y="0.0" width="370" height="454"/>
@@ -57,13 +57,13 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ntx-i4-Nt9">
-                                                    <rect key="frame" x="60" y="265.5" width="250" height="22"/>
+                                                    <rect key="frame" x="60" y="263" width="250" height="19"/>
                                                     <fontDescription key="fontDescription" name="Nunito-SemiBold" family="Nunito" pointSize="16"/>
                                                     <color key="textColor" red="0.73660141229999998" green="0.5965700746" blue="0.52831161019999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jWw-yW-0Ul">
-                                                    <rect key="frame" x="40" y="208.5" width="290" height="37"/>
+                                                    <rect key="frame" x="40" y="211.5" width="290" height="31.5"/>
                                                     <fontDescription key="fontDescription" name="Nunito-ExtraBold" family="Nunito" pointSize="27"/>
                                                     <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -101,7 +101,7 @@
                                 </connections>
                             </collectionView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pFi-d6-7mU">
-                                <rect key="frame" x="57" y="102" width="300" height="6"/>
+                                <rect key="frame" x="57" y="99" width="300" height="6"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bY7-Kq-nBa">
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="6"/>
@@ -217,7 +217,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Jt-BF-Obu">
-                                <rect key="frame" x="244" y="58" width="140" height="32"/>
+                                <rect key="frame" x="244" y="58" width="140" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="140" id="JnM-jO-LOu"/>
                                 </constraints>
@@ -462,14 +462,14 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_lock_black" translatesAutoresizingMaskIntoConstraints="NO" id="d8N-Yp-4DO">
-                                        <rect key="frame" x="191" y="312" width="32" height="46"/>
+                                        <rect key="frame" x="191" y="317.5" width="32" height="46"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="32" id="kGq-Gh-ihU"/>
                                             <constraint firstAttribute="height" constant="46" id="msP-L7-WvE"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KE8-Nf-VLa">
-                                        <rect key="frame" x="40" y="471" width="334" height="44"/>
+                                        <rect key="frame" x="40" y="465.5" width="334" height="37.5"/>
                                         <string key="text">Hold the button 
 to unlock</string>
                                         <fontDescription key="fontDescription" name="Nunito-ExtraBold" family="Nunito" pointSize="16"/>
@@ -477,7 +477,7 @@ to unlock</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Syj-Ic-rpI">
-                                        <rect key="frame" x="145.5" y="381" width="123" height="74"/>
+                                        <rect key="frame" x="147.5" y="386.5" width="119" height="63"/>
                                         <string key="text">Massager
 locked</string>
                                         <fontDescription key="fontDescription" name="Nunito-ExtraBold" family="Nunito" pointSize="27"/>
@@ -531,7 +531,7 @@ locked</string>
                                         <rect key="frame" x="0.0" y="-77" width="414" height="480"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="miS-ph-uMi">
-                                                <rect key="frame" x="73" y="219" width="268" height="60"/>
+                                                <rect key="frame" x="73" y="199" width="268" height="60"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00 : 00 : " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DQA-8C-AGl">
                                                         <rect key="frame" x="0.0" y="0.0" width="201" height="60"/>
@@ -568,7 +568,7 @@ locked</string>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9mM-Pu-2P6">
-                                        <rect key="frame" x="152" y="-21" width="110" height="87.5"/>
+                                        <rect key="frame" x="154.5" y="-21" width="105.5" height="75"/>
                                         <string key="text">Special
 offer</string>
                                         <fontDescription key="fontDescription" name="Nunito-ExtraBold" family="Nunito" pointSize="32"/>
@@ -576,7 +576,7 @@ offer</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Xw-jb-yDj">
-                                        <rect key="frame" x="110" y="78.5" width="194.5" height="49.5"/>
+                                        <rect key="frame" x="112.5" y="66" width="189.5" height="42"/>
                                         <string key="text">Lifetime access
 One-time purchase 19$</string>
                                         <fontDescription key="fontDescription" name="Nunito-SemiBold" family="Nunito" pointSize="18"/>
@@ -584,7 +584,7 @@ One-time purchase 19$</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hej-8p-THA" customClass="GRButton" customModule="GRView">
-                                        <rect key="frame" x="67" y="222" width="280" height="90"/>
+                                        <rect key="frame" x="67" y="202" width="280" height="90"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="280" id="XWc-IP-7kZ"/>
                                             <constraint firstAttribute="height" constant="90" id="dr4-4y-nxT"/>
@@ -621,7 +621,7 @@ One-time purchase 19$</string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bfF-QE-nfV">
-                                        <rect key="frame" x="147" y="332" width="120" height="20"/>
+                                        <rect key="frame" x="147" y="312" width="120" height="17"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="120" id="Tvd-Kh-3q7"/>
                                         </constraints>
@@ -673,7 +673,7 @@ One-time purchase 19$</string>
                                         </connections>
                                     </button>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="BHQ-Lr-ef7">
-                                        <rect key="frame" x="30" y="102" width="354" height="351"/>
+                                        <rect key="frame" x="30" y="95.5" width="354" height="357.5"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <string key="text">Make sure vibrations and haptics are enabled in your device settings:
 
@@ -685,7 +685,7 @@ One-time purchase 19$</string>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Doesn't vibrate?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VbC-hg-9Pf">
-                                        <rect key="frame" x="30" y="30" width="354" height="44"/>
+                                        <rect key="frame" x="30" y="30" width="354" height="37.5"/>
                                         <fontDescription key="fontDescription" name="Nunito-ExtraBold" family="Nunito" pointSize="32"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -815,6 +815,9 @@ One-time purchase 19$</string>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p8h-bM-iEn" customClass="GRView" customModule="GRView">
                                                     <rect key="frame" x="52" y="0.0" width="72" height="72"/>
                                                     <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_mode_background" translatesAutoresizingMaskIntoConstraints="NO" id="raV-6y-hZn">
+                                                            <rect key="frame" x="0.0" y="0.0" width="72" height="72"/>
+                                                        </imageView>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pCS-Ce-ZlY">
                                                             <rect key="frame" x="10" y="10" width="52" height="52"/>
                                                             <constraints>
@@ -825,7 +828,11 @@ One-time purchase 19$</string>
                                                     </subviews>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <constraints>
+                                                        <constraint firstItem="raV-6y-hZn" firstAttribute="height" secondItem="p8h-bM-iEn" secondAttribute="height" id="3Bh-Ih-K8g"/>
+                                                        <constraint firstItem="raV-6y-hZn" firstAttribute="width" secondItem="p8h-bM-iEn" secondAttribute="width" id="Dgt-Uk-qWX"/>
+                                                        <constraint firstItem="raV-6y-hZn" firstAttribute="centerX" secondItem="p8h-bM-iEn" secondAttribute="centerX" id="HoZ-CV-0Nr"/>
                                                         <constraint firstAttribute="width" constant="72" id="Pn5-Wd-sDh"/>
+                                                        <constraint firstItem="raV-6y-hZn" firstAttribute="centerY" secondItem="p8h-bM-iEn" secondAttribute="centerY" id="WyZ-Vp-tb8"/>
                                                         <constraint firstItem="pCS-Ce-ZlY" firstAttribute="centerX" secondItem="p8h-bM-iEn" secondAttribute="centerX" id="ba2-cX-D4w"/>
                                                         <constraint firstItem="pCS-Ce-ZlY" firstAttribute="centerY" secondItem="p8h-bM-iEn" secondAttribute="centerY" id="cW2-bz-jXv"/>
                                                         <constraint firstAttribute="height" constant="72" id="cZj-zy-pif"/>
@@ -835,10 +842,10 @@ One-time purchase 19$</string>
                                                             <real key="value" value="36"/>
                                                         </userDefinedRuntimeAttribute>
                                                         <userDefinedRuntimeAttribute type="color" keyPath="startColor">
-                                                            <color key="value" red="0.76078431369999999" green="0.62745098040000002" blue="0.58823529409999997" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </userDefinedRuntimeAttribute>
                                                         <userDefinedRuntimeAttribute type="color" keyPath="endColor">
-                                                            <color key="value" red="0.83529411760000005" green="0.61960784310000006" blue="0.5450980392" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
@@ -860,7 +867,9 @@ One-time purchase 19$</string>
                                         <connections>
                                             <outlet property="containerView" destination="p8h-bM-iEn" id="lGu-2Q-bmJ"/>
                                             <outlet property="heightConstraint" destination="nF1-4s-HhQ" id="40O-JF-RgF"/>
+                                            <outlet property="modeBackgroundImageView" destination="raV-6y-hZn" id="4AG-hg-itw"/>
                                             <outlet property="modeImageView" destination="pCS-Ce-ZlY" id="of9-Ji-JtS"/>
+                                            <outlet property="modeImageViewYConstraint" destination="cW2-bz-jXv" id="m2H-qv-YFh"/>
                                             <outlet property="titleLabel" destination="H2o-aM-dpa" id="kia-jk-HvF"/>
                                             <outlet property="titleTopConstraint" destination="PPp-Vq-LOq" id="BCE-ZM-EHg"/>
                                             <outlet property="widthConstraint" destination="gnV-Kb-dg1" id="k5W-PG-RjA"/>
@@ -958,13 +967,13 @@ One-time purchase 19$</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="W A T E R F A L L" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FQh-da-ggI">
-                                <rect key="frame" x="40" y="64" width="334" height="31.5"/>
+                                <rect key="frame" x="40" y="64" width="334" height="27"/>
                                 <fontDescription key="fontDescription" name="Nunito-ExtraBold" family="Nunito" pointSize="23"/>
                                 <color key="textColor" red="0.73660141229999998" green="0.5965700746" blue="0.52831161019999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Press the button  to start massage" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BM2-MQ-6J8">
-                                <rect key="frame" x="141.5" y="307" width="131.5" height="44"/>
+                                <rect key="frame" x="145.5" y="313.5" width="123.5" height="37.5"/>
                                 <fontDescription key="fontDescription" name="Nunito-ExtraBold" family="Nunito" pointSize="16"/>
                                 <color key="textColor" red="0.73660141229999998" green="0.5965700746" blue="0.52831161019999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1077,7 +1086,7 @@ One-time purchase 19$</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W9a-5P-Ygm">
-                                <rect key="frame" x="143" y="645" width="128" height="34"/>
+                                <rect key="frame" x="146" y="645" width="122" height="31"/>
                                 <fontDescription key="fontDescription" name="Nunito-ExtraBold" family="Nunito" pointSize="16"/>
                                 <state key="normal" title="Doesn't vibrate? ">
                                     <color key="titleColor" red="0.73338896040000001" green="0.55745238070000003" blue="0.46762168409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1087,10 +1096,10 @@ One-time purchase 19$</string>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OWe-ja-OD4">
-                                <rect key="frame" x="0.0" y="95.5" width="414" height="211.5"/>
+                                <rect key="frame" x="0.0" y="91" width="414" height="222.5"/>
                                 <subviews>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7gI-Dh-081">
-                                        <rect key="frame" x="77" y="72.5" width="260" height="66"/>
+                                        <rect key="frame" x="77" y="78" width="260" height="66"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="66" id="NNM-t7-vci"/>
@@ -1496,10 +1505,10 @@ One-time purchase 19$</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_lips" translatesAutoresizingMaskIntoConstraints="NO" id="Jaa-EX-Znd">
-                                <rect key="frame" x="242" y="104" width="172" height="248"/>
+                                <rect key="frame" x="242" y="101" width="172" height="248"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HyP-e3-y8g">
-                                <rect key="frame" x="20" y="57" width="30" height="30"/>
+                                <rect key="frame" x="20" y="55.5" width="30" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="ebg-on-3gg"/>
                                     <constraint firstAttribute="width" constant="30" id="zip-4V-jXW"/>
@@ -1510,7 +1519,7 @@ One-time purchase 19$</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hx8-mY-KFG">
-                                <rect key="frame" x="314" y="56" width="80" height="32"/>
+                                <rect key="frame" x="314" y="56" width="80" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="pVT-fl-LpD"/>
                                 </constraints>
@@ -1522,19 +1531,19 @@ One-time purchase 19$</string>
                                 </state>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="V I B R O R E L A X" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ukq-6Y-pLf">
-                                <rect key="frame" x="30" y="124" width="145" height="22"/>
+                                <rect key="frame" x="30" y="121" width="138" height="19"/>
                                 <fontDescription key="fontDescription" name="Nunito-ExtraBold" family="Nunito" pointSize="16"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PRO" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iRs-xW-7e1">
-                                <rect key="frame" x="26" y="126" width="159.5" height="101"/>
+                                <rect key="frame" x="26" y="120" width="155" height="86.5"/>
                                 <fontDescription key="fontDescription" name="Nunito-ExtraBold" family="Nunito" pointSize="74"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gbV-yc-i3f">
-                                <rect key="frame" x="54" y="224" width="73" height="38.5"/>
+                                <rect key="frame" x="54" y="203.5" width="73" height="33"/>
                                 <string key="text">All modes
 of massage</string>
                                 <fontDescription key="fontDescription" name="Nunito-SemiBold" family="Nunito" pointSize="14"/>
@@ -1542,14 +1551,14 @@ of massage</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_done_pink" translatesAutoresizingMaskIntoConstraints="NO" id="NbX-3u-yOR">
-                                <rect key="frame" x="30" y="227" width="13" height="13"/>
+                                <rect key="frame" x="30" y="206.5" width="13" height="13"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="13" id="7ys-zv-EpM"/>
                                     <constraint firstAttribute="height" constant="13" id="Sdz-Qz-YHI"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rkM-gC-8MH">
-                                <rect key="frame" x="54" y="273.5" width="65.5" height="38.5"/>
+                                <rect key="frame" x="54" y="247.5" width="62" height="33"/>
                                 <string key="text">All modes
 of speed</string>
                                 <fontDescription key="fontDescription" name="Nunito-SemiBold" family="Nunito" pointSize="14"/>
@@ -1557,27 +1566,27 @@ of speed</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_done_pink" translatesAutoresizingMaskIntoConstraints="NO" id="4zK-4y-lbo">
-                                <rect key="frame" x="30" y="276.5" width="13" height="13"/>
+                                <rect key="frame" x="30" y="250.5" width="13" height="13"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="13" id="71j-vj-sQ4"/>
                                     <constraint firstAttribute="height" constant="13" id="D4d-T3-SzM"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No ads" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0nP-3i-H80">
-                                <rect key="frame" x="54" y="323" width="45" height="19.5"/>
+                                <rect key="frame" x="54" y="291.5" width="45" height="16.5"/>
                                 <fontDescription key="fontDescription" name="Nunito-SemiBold" family="Nunito" pointSize="14"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_done_pink" translatesAutoresizingMaskIntoConstraints="NO" id="aFF-2H-L8u">
-                                <rect key="frame" x="30" y="326" width="13" height="13"/>
+                                <rect key="frame" x="30" y="294.5" width="13" height="13"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="13" id="BZj-af-6eM"/>
                                     <constraint firstAttribute="height" constant="13" id="P4H-LU-aeo"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P8h-0f-5jJ">
-                                <rect key="frame" x="96.5" y="829" width="100" height="30"/>
+                                <rect key="frame" x="96.5" y="830" width="100" height="28"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="abc-pS-eHT"/>
                                 </constraints>
@@ -1592,7 +1601,7 @@ of speed</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OIT-Zs-Z3d">
-                                <rect key="frame" x="217.5" y="829" width="100" height="30"/>
+                                <rect key="frame" x="217.5" y="830" width="100" height="28"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="7Zt-lU-Wlu"/>
                                 </constraints>
@@ -1615,10 +1624,10 @@ of speed</string>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="USl-hb-0SF">
-                                <rect key="frame" x="0.0" y="352" width="414" height="359"/>
+                                <rect key="frame" x="0.0" y="349" width="414" height="363"/>
                                 <subviews>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ivK-se-hqN">
-                                        <rect key="frame" x="0.0" y="20" width="414" height="309"/>
+                                        <rect key="frame" x="0.0" y="20" width="414" height="313"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="cxd-h6-uZL">
                                             <size key="itemSize" width="104" height="176"/>
@@ -1628,7 +1637,7 @@ of speed</string>
                                         </collectionViewFlowLayout>
                                         <cells>
                                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="OfferCollectionViewCell" id="DTE-Qf-44C" customClass="OfferCollectionViewCell" customModule="Vibrarelax" customModuleProvider="target">
-                                                <rect key="frame" x="22" y="66.5" width="104" height="176"/>
+                                                <rect key="frame" x="22" y="68.5" width="104" height="176"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="VTn-p1-zLh">
                                                     <rect key="frame" x="0.0" y="0.0" width="104" height="176"/>
@@ -1656,14 +1665,14 @@ of speed</string>
                                                                     <rect key="frame" x="4" y="4" width="96" height="152"/>
                                                                     <subviews>
                                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_done_bronze" translatesAutoresizingMaskIntoConstraints="NO" id="xjS-lP-SiN">
-                                                                            <rect key="frame" x="36.5" y="19" width="23" height="23"/>
+                                                                            <rect key="frame" x="36.5" y="21.5" width="23" height="23"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="width" constant="23" id="M75-Gr-kgk"/>
                                                                                 <constraint firstAttribute="height" constant="23" id="vAk-ZL-haw"/>
                                                                             </constraints>
                                                                         </imageView>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZEZ-m7-gbr">
-                                                                            <rect key="frame" x="17" y="52" width="62" height="38.5"/>
+                                                                            <rect key="frame" x="19" y="54.5" width="58" height="33"/>
                                                                             <string key="text">Каждую 
 неделю</string>
                                                                             <fontDescription key="fontDescription" name="Nunito-ExtraBold" family="Nunito" pointSize="14"/>
@@ -1671,7 +1680,7 @@ of speed</string>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XjC-gD-GDK">
-                                                                            <rect key="frame" x="11" y="112.5" width="74" height="27.5"/>
+                                                                            <rect key="frame" x="12.5" y="114.5" width="71.5" height="23.5"/>
                                                                             <string key="text" base64-UTF8="YES">
 NDk5IC8gCgPQtdC20LXQvdC10LTQtdC70YzQvdC+ICQ
 </string>
@@ -1798,7 +1807,7 @@ NDk5IC8gCgPQtdC20LXQvdC10LTQtdC70YzQvdC+ICQ
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b8x-fL-Xvl" customClass="GRButton" customModule="GRView">
-                                <rect key="frame" x="67" y="711" width="280" height="90"/>
+                                <rect key="frame" x="67" y="712" width="280" height="90"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="90" id="UTk-lM-i0e"/>
                                     <constraint firstAttribute="width" constant="280" id="zOf-T3-iOJ"/>
@@ -1842,13 +1851,13 @@ NDk5IC8gCgPQtdC20LXQvdC10LTQtdC70YzQvdC+ICQ
                                 <rect key="frame" x="0.0" y="1089.5" width="414" height="806.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terms &amp; Conditions" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1uE-1Y-cTs">
-                                        <rect key="frame" x="30" y="30" width="354" height="44"/>
+                                        <rect key="frame" x="30" y="30" width="354" height="37.5"/>
                                         <fontDescription key="fontDescription" name="Nunito-ExtraBold" family="Nunito" pointSize="32"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zi2-pC-SwX">
-                                        <rect key="frame" x="30" y="84" width="354" height="604.5"/>
+                                        <rect key="frame" x="30" y="77.5" width="354" height="611"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <attributedString key="attributedText">
                                             <fragment>
@@ -2232,13 +2241,13 @@ Cgo
                                 <rect key="frame" x="0.0" y="1089.5" width="414" height="806.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Privacy policy " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cO7-GF-4Gd">
-                                        <rect key="frame" x="30" y="30" width="354" height="44"/>
+                                        <rect key="frame" x="30" y="30" width="354" height="37.5"/>
                                         <fontDescription key="fontDescription" name="Nunito-ExtraBold" family="Nunito" pointSize="32"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="re0-1C-MM3">
-                                        <rect key="frame" x="30" y="84" width="354" height="604.5"/>
+                                        <rect key="frame" x="30" y="77.5" width="354" height="611"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <attributedString key="attributedText">
                                             <fragment>
@@ -3066,6 +3075,7 @@ Cgo
         <image name="ic_lock_button" width="65" height="65"/>
         <image name="ic_lock_red" width="16" height="23"/>
         <image name="ic_lock_white" width="17" height="25"/>
+        <image name="ic_mode_background" width="81" height="81"/>
         <image name="ic_question" width="22" height="22"/>
         <image name="ic_review" width="20" height="20"/>
         <image name="ic_right_arrow" width="7" height="12"/>

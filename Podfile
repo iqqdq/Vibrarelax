@@ -10,6 +10,7 @@ target 'Vibrarelax' do
 	pod 'Blurberry'
 	pod 'FittedSheets'
   pod 'GoogleAnalytics'
+  pod 'Firebase/Analytics'
 
   target 'VibrarelaxTests' do
     inherit! :search_paths

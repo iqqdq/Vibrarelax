@@ -37,17 +37,18 @@ class BottomNavigationViewController: UIViewController {
     var isLocked: Bool = false
     var countdownTimer: Timer?
     var count: Int = 59
-    
+    var isOfferShown: Bool = false
+    var offerTimer: Timer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         NotificationCenter.default.addObserver(self, selector: #selector(lockScreen), name: Notification.Name("lockscreen"), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(showNoVibroView), name: Notification.Name("no_vibro"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(showOfferView), name: Notification.Name("offer"), object: nil)
         
         createPageViewController()
         setupBlur()
-        showOfferView()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -169,16 +170,21 @@ class BottomNavigationViewController: UIViewController {
         view.bringSubviewToFront(visualEffectView)
     }
     
-    func showOfferView() {
-        countdownTimer = Timer.scheduledTimer(timeInterval: TimeInterval(1.0), target: self, selector: #selector(countdouwn), userInfo: nil, repeats: true)
-        
-        view.bringSubviewToFront(offerView)
-      
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
-            UIView.animate(withDuration: 0.5) {
-                self.visualEffectView.alpha = 1.0
-                self.offerViewBottomConstraint.constant = 0.0
-                self.view.layoutIfNeeded()
+    @objc func showOfferView() {
+        if !isOfferShown {
+            isOfferShown = true
+            offerTimer = Timer.scheduledTimer(timeInterval: TimeInterval(60.0), target: self, selector: #selector(setOfferViewVisible), userInfo: nil, repeats: false)
+            
+            countdownTimer = Timer.scheduledTimer(timeInterval: TimeInterval(1.0), target: self, selector: #selector(countdouwn), userInfo: nil, repeats: true)
+            
+            view.bringSubviewToFront(offerView)
+          
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+                UIView.animate(withDuration: 0.5) {
+                    self.visualEffectView.alpha = 1.0
+                    self.offerViewBottomConstraint.constant = 0.0
+                    self.view.layoutIfNeeded()
+                }
             }
         }
     }
@@ -233,6 +239,10 @@ class BottomNavigationViewController: UIViewController {
             }
         }
     }
+    
+    @objc func setOfferViewVisible() {
+        isOfferShown = false
+    }
 
     // MARK: -
     // MARK: - CREATE PAGE CONTROLLER
@@ -283,7 +293,7 @@ class BottomNavigationViewController: UIViewController {
         view.bringSubviewToFront(blockView)
         view.bringSubviewToFront(lockButton)
         
-        selectTab(index: 0)
+        selectTab(index: 1)
     }
 }
 

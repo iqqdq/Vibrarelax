@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -37,6 +37,10 @@
 		1070E583265678730059CAD0 /* VibrarelaxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1070E582265678730059CAD0 /* VibrarelaxUITests.swift */; };
 		1075FF022656AE21007BC81D /* ModesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1075FF012656AE21007BC81D /* ModesViewController.swift */; };
 		1075FF082656AF96007BC81D /* ModeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1075FF072656AF96007BC81D /* ModeCollectionViewCell.swift */; };
+		107D1DB5265E9BB700E77212 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 107D1DB4265E9BB700E77212 /* AdSupport.framework */; };
+		107D1DBE265E9F6100E77212 /* FacebookShare in Frameworks */ = {isa = PBXBuildFile; productRef = 107D1DBD265E9F6100E77212 /* FacebookShare */; };
+		107D1DC0265E9F6100E77212 /* FacebookCore in Frameworks */ = {isa = PBXBuildFile; productRef = 107D1DBF265E9F6100E77212 /* FacebookCore */; };
+		107D1DCE265EAC1600E77212 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 107D1DCD265EAC1600E77212 /* GoogleService-Info.plist */; };
 		1091EEF72657294B00B09D43 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1091EEF62657294B00B09D43 /* Extensions.swift */; };
 		10C0042B265866FC0044FAF5 /* OfferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C0042A265866FC0044FAF5 /* OfferViewController.swift */; };
 		10C00434265867980044FAF5 /* OfferCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C00433265867980044FAF5 /* OfferCollectionViewCell.swift */; };
@@ -102,6 +106,8 @@
 		1070E584265678730059CAD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1075FF012656AE21007BC81D /* ModesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModesViewController.swift; sourceTree = "<group>"; };
 		1075FF072656AF96007BC81D /* ModeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeCollectionViewCell.swift; sourceTree = "<group>"; };
+		107D1DB4265E9BB700E77212 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		107D1DCD265EAC1600E77212 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1091EEF62657294B00B09D43 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		10C0042A265866FC0044FAF5 /* OfferViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferViewController.swift; sourceTree = "<group>"; };
 		10C00433265867980044FAF5 /* OfferCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -123,6 +129,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				98D33D2320610680C6A58171 /* Pods_Vibrarelax.framework in Frameworks */,
+				107D1DB5265E9BB700E77212 /* AdSupport.framework in Frameworks */,
+				107D1DBE265E9F6100E77212 /* FacebookShare in Frameworks */,
+				107D1DC0265E9F6100E77212 /* FacebookCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +264,7 @@
 		1070E55F265678720059CAD0 /* Vibrarelax */ = {
 			isa = PBXGroup;
 			children = (
+				107D1DCD265EAC1600E77212 /* GoogleService-Info.plist */,
 				1070E560265678720059CAD0 /* AppDelegate.swift */,
 				1070E566265678720059CAD0 /* Main.storyboard */,
 				1070E569265678720059CAD0 /* Assets.xcassets */,
@@ -349,6 +359,7 @@
 		2EEC830967CD4BE44E77EA0F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				107D1DB4265E9BB700E77212 /* AdSupport.framework */,
 				093F0A6E83DB6D166FD2BFE1 /* Pods_Vibrarelax.framework */,
 				4D30E5EBACA153EE98254A4D /* Pods_Vibrarelax_VibrarelaxUITests.framework */,
 				43039D56605110E36F769242 /* Pods_VibrarelaxTests.framework */,
@@ -387,6 +398,10 @@
 			dependencies = (
 			);
 			name = Vibrarelax;
+			packageProductDependencies = (
+				107D1DBD265E9F6100E77212 /* FacebookShare */,
+				107D1DBF265E9F6100E77212 /* FacebookCore */,
+			);
 			productName = Vibrarelax;
 			productReference = 1070E55D265678720059CAD0 /* Vibrarelax.app */;
 			productType = "com.apple.product-type.application";
@@ -461,6 +476,9 @@
 				Base,
 			);
 			mainGroup = 1070E554265678720059CAD0;
+			packageReferences = (
+				107D1DBC265E9F6100E77212 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
+			);
 			productRefGroup = 1070E55E265678720059CAD0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -488,6 +506,7 @@
 				100AE3DC26568FE0004E0C26 /* Nunito-ExtraLightItalic.ttf in Resources */,
 				100AE3DF26568FE0004E0C26 /* Nunito-SemiBoldItalic.ttf in Resources */,
 				100AE3E126568FE0004E0C26 /* Nunito-Bold.ttf in Resources */,
+				107D1DCE265EAC1600E77212 /* GoogleService-Info.plist in Resources */,
 				100AE3DB26568FE0004E0C26 /* Nunito-Italic.ttf in Resources */,
 				1070E56A265678720059CAD0 /* Assets.xcassets in Resources */,
 				100AE3E626568FE0004E0C26 /* Nunito-ExtraBold.ttf in Resources */,
@@ -814,13 +833,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ABKB45MRY5;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = 29A8SJ4U8R;
 				INFOPLIST_FILE = Vibrarelax/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = iddqzn.Vibrarelax;
+				MARKETING_VERSION = 1.0.2;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.app.vibrarelax;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -834,13 +855,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ABKB45MRY5;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = 29A8SJ4U8R;
 				INFOPLIST_FILE = Vibrarelax/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = iddqzn.Vibrarelax;
+				MARKETING_VERSION = 1.0.2;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.app.vibrarelax;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -975,6 +998,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		107D1DBC265E9F6100E77212 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/facebook/facebook-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		107D1DBD265E9F6100E77212 /* FacebookShare */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 107D1DBC265E9F6100E77212 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookShare;
+		};
+		107D1DBF265E9F6100E77212 /* FacebookCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 107D1DBC265E9F6100E77212 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookCore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1070E555265678720059CAD0 /* Project object */;
 }

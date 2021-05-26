@@ -22,6 +22,7 @@ class VibroViewController: UIViewController {
     var interval: Float = 0.7
     var isAnimate: Bool = false
     var isFirstAppereance: Bool = true
+    var vibroTickCount: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -75,14 +76,15 @@ class VibroViewController: UIViewController {
         
         if sender.isSelected {
             sender.isSelected = false
+            vibroTickCount = 0
             pressButtonLabel.text = "Press the button\nto start massage"
-            self.isAnimate = false
-            self.timer?.invalidate()
+            isAnimate = false
+            timer?.invalidate()
         } else {
             sender.isSelected = true
             pressButtonLabel.text = "Press the button\nto stop the massage"
-            self.isAnimate = true
-            self.timer = Timer.scheduledTimer(timeInterval: TimeInterval(self.interval), target: self, selector: #selector(self.vibrate), userInfo: nil, repeats: true)
+            isAnimate = true
+            timer = Timer.scheduledTimer(timeInterval: TimeInterval(self.interval), target: self, selector: #selector(self.vibrate), userInfo: nil, repeats: true)
         }
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
@@ -103,10 +105,26 @@ class VibroViewController: UIViewController {
     
     @objc func vibrate() {
         if UserDefaults.standard.integer(forKey: "mode_id") == 1 {
-            Vibration.heavy.vibrate()
+            switch vibroTickCount {
+            case 1:
+                Vibration.heavy.vibrate()
+            case 3:
+                Vibration.heavy.vibrate()
+                vibroTickCount = -1
+            default:
+                Vibration.oldSchool.vibrate()
+            }
         } else {
-            Vibration.warning.vibrate()
+            switch vibroTickCount {
+            case 3:
+                Vibration.oldSchool.vibrate()
+                vibroTickCount = -1
+            default:
+                Vibration.error.vibrate()
+            }
         }
+        
+        vibroTickCount += 1
     }
     
     @objc func sliderDidChangeValue(notification: NSNotification) {

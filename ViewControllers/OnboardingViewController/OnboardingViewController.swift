@@ -99,7 +99,7 @@ class OnboardingViewController: UIViewController {
         thirdIndicatorView.backgroundColor = continueButton.tag > 1 ? #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0) : #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.2)
         
         if continueButton.tag == 2 {
-            self.timer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(self.showRestoreButton), userInfo: nil, repeats: false)
+            self.timer = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(self.showRestoreButton), userInfo: nil, repeats: false)
         }
     }
     

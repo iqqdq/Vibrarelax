@@ -18,7 +18,7 @@ class OfferViewController: UIViewController {
     @IBOutlet weak var collectionViewTopConstraint: NSLayoutConstraint!
     
     var visualEffectView = UIVisualEffectView(effect: UIBlurEffect(style: .light))
-    var selectedIndex: Int = 0
+    var selectedIndex: Int = 1
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,6 +35,7 @@ class OfferViewController: UIViewController {
     
     override func viewWillDisappear(_ animated: Bool) {
         NotificationCenter.default.post(name: Notification.Name("default_slider_value"), object: nil)
+        NotificationCenter.default.post(name: Notification.Name("offer"), object: nil)
     }
     
     // MARK: -

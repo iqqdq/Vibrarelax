@@ -64,8 +64,8 @@ class ModesViewController: UIViewController {
     // MARK: - ACTIONS
     
     @IBAction func sliderValueChanged(sender: UISlider) {
-        if sender.value > 0.5 {
-            sender.value = 0.5
+        if sender.value > 0.4 {
+            sender.value = 0.4
             present(UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier:  "OfferViewController"), animated: true, completion: nil)
         } else {
             NotificationCenter.default.post(name: NSNotification.Name(rawValue: "slider_did_change_value"),
@@ -98,9 +98,11 @@ extension ModesViewController: UICollectionViewDataSource {
         
         switch indexPath.row {
         case 1:
-            modeCollectionViewCell.widthConstraint.constant = 32.0
-            modeCollectionViewCell.heightConstraint.constant = 28.0
+            modeCollectionViewCell.modeImageViewYConstraint.constant = 3.0
+            modeCollectionViewCell.widthConstraint.constant = 34.0
+            modeCollectionViewCell.heightConstraint.constant = 30.0
         case 2:
+            modeCollectionViewCell.modeImageViewYConstraint.constant = -1.0
             modeCollectionViewCell.widthConstraint.constant = 40.0
             modeCollectionViewCell.heightConstraint.constant = 30.0
         case 3:
@@ -143,17 +145,14 @@ extension ModesViewController: UICollectionViewDataSource {
         }
         
         if selectedIndexes.contains(indexPath.row) {
-            modeCollectionViewCell.containerView.startColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
-            modeCollectionViewCell.containerView.endColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
-            
+            modeCollectionViewCell.modeBackgroundImageView.isHidden = true
             modeCollectionViewCell.containerView.shadowColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.1)
             modeCollectionViewCell.containerView.shadowRadius = 8.0
             modeCollectionViewCell.containerView.shadowOffset = CGSize(width: 5.0, height: 5.0)
             modeCollectionViewCell.containerView.shadowOpacity = 1.0
             modeCollectionViewCell.modeImageView.image = modeCollectionViewCell.modeImageView.image?.withRenderingMode(.alwaysOriginal)
         } else {
-            modeCollectionViewCell.containerView.startColor = #colorLiteral(red: 0.8466313481, green: 0.6986467838, blue: 0.6219901443, alpha: 1)
-            modeCollectionViewCell.containerView.endColor = #colorLiteral(red: 0.9058823529, green: 0.7960784314, blue: 0.7529411765, alpha: 1)
+            modeCollectionViewCell.modeBackgroundImageView.isHidden = false
             modeCollectionViewCell.containerView.borderWidth = 0.0
             modeCollectionViewCell.containerView.shadowOpacity = 0.0
             modeCollectionViewCell.modeImageView.image = modeCollectionViewCell.modeImageView.image?.withRenderingMode(.alwaysTemplate)

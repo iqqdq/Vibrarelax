@@ -53,7 +53,7 @@ class SettingsViewController: UIViewController {
     
     @IBAction func shareButtonAction(_ sender: UIButton) {
         let firstActivityItem = "Vibrarelax"
-        let secondActivityItem: NSURL = NSURL(string: "http://your-url.com/")!
+        let secondActivityItem: NSURL = NSURL(string: "vibrarelax@gmail.com")!
         let activityViewController : UIActivityViewController = UIActivityViewController(
             activityItems: [firstActivityItem, secondActivityItem, UIImage()], applicationActivities: nil)
         
