@@ -64,6 +64,10 @@ class BottomNavigationViewController: UIViewController {
                 case 1334:
                     print("iPhone 6/6S/7/8")
                     self.unlockImageHeightConstraint.constant = 330.0
+                case 1920, 2208:
+                    print("iPhone 6+/6S+/7+/8+")
+                    self.unlockImageHeightConstraint.constant = 346.0
+                    self.unlockImageView.contentMode = .scaleToFill
                 default:
                     print("SMALL IPHONE")
             }

@@ -54,7 +54,7 @@ class ModesViewController: UIViewController {
     // MARK: - ACTIONS
     
     @IBAction func sliderValueChanged(sender: UISlider) {
-        if sender.value >= 0.5 {
+        if sender.value > 0.5 {
             sender.value = 0.5
             present(UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier:  "OfferViewController"), animated: true, completion: nil)
         } else {
