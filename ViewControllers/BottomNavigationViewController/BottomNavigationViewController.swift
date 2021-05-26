@@ -63,7 +63,7 @@ class BottomNavigationViewController: UIViewController {
             switch UIScreen.main.nativeBounds.height {
                 case 1334:
                     print("iPhone 6/6S/7/8")
-                    self.unlockImageHeightConstraint.constant = 350.0
+                    self.unlockImageHeightConstraint.constant = 330.0
                 default:
                     print("SMALL IPHONE")
             }

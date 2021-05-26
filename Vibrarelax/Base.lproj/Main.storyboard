@@ -57,7 +57,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ntx-i4-Nt9">
-                                                    <rect key="frame" x="60" y="271.5" width="250" height="22"/>
+                                                    <rect key="frame" x="60" y="265.5" width="250" height="22"/>
                                                     <fontDescription key="fontDescription" name="Nunito-SemiBold" family="Nunito" pointSize="16"/>
                                                     <color key="textColor" red="0.73660141229999998" green="0.5965700746" blue="0.52831161019999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -77,7 +77,7 @@
                                                 <constraint firstItem="Ntx-i4-Nt9" firstAttribute="leading" secondItem="u2h-pL-GsZ" secondAttribute="leading" constant="60" id="MqV-kJ-4OG"/>
                                                 <constraint firstItem="Ntx-i4-Nt9" firstAttribute="centerX" secondItem="u2h-pL-GsZ" secondAttribute="centerX" id="TTX-mK-SpF"/>
                                                 <constraint firstItem="jWw-yW-0Ul" firstAttribute="leading" secondItem="u2h-pL-GsZ" secondAttribute="leading" constant="40" id="ffc-8L-sRp"/>
-                                                <constraint firstItem="Ntx-i4-Nt9" firstAttribute="top" secondItem="jWw-yW-0Ul" secondAttribute="bottom" constant="26" id="iA9-5L-kSo"/>
+                                                <constraint firstItem="Ntx-i4-Nt9" firstAttribute="top" secondItem="jWw-yW-0Ul" secondAttribute="bottom" constant="20" id="iA9-5L-kSo"/>
                                                 <constraint firstAttribute="trailing" secondItem="jWw-yW-0Ul" secondAttribute="trailing" constant="40" id="l8R-Rc-uBm"/>
                                                 <constraint firstItem="1lG-iq-P3B" firstAttribute="centerX" secondItem="jWw-yW-0Ul" secondAttribute="centerX" id="vXt-nJ-dW6"/>
                                             </constraints>
@@ -1847,38 +1847,17 @@ NDk5IC8gCgPQtdC20LXQvdC10LTQtdC70YzQvdC+ICQ
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zi2-pC-SwX">
-                                        <rect key="frame" x="30" y="102" width="354" height="586.5"/>
+                                        <rect key="frame" x="30" y="84" width="354" height="604.5"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <attributedString key="attributedText">
-                                            <fragment content="Terms &amp; Conditions">
-                                                <attributes>
-                                                    <color key="NSColor" red="0.21176" green="0.21176" blue="0.21176" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                                    <font key="NSFont" size="16" name="Times-Bold"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                        <tabStops/>
-                                                    </paragraphStyle>
-                                                </attributes>
-                                            </fragment>
                                             <fragment>
-                                                <string key="content" base64-UTF8="YES">
-Cgo
-</string>
-                                                <attributes>
-                                                    <color key="NSColor" red="0.21176" green="0.21176" blue="0.21176" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                                    <font key="NSFont" size="12" name="Times-Bold"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                        <tabStops/>
-                                                    </paragraphStyle>
-                                                </attributes>
-                                            </fragment>
-                                            <fragment>
-                                                <string key="content">By downloading or using the app, these terms will automatically apply to you – you should make sure therefore that you read them carefully before using the app. You’re not allowed to copy, or modify the app, any part of the app, or our trademarks in any way. You’re not allowed to attempt to extract the source code of the app, and you also shouldn’t try to translate the app into other languages, or make derivative versions. The app itself, and all the trade marks, copyright, database rights and other intellectual property rights related to it, still belong to Nikita Dolya.
+                                                <mutableString key="content">By downloading or using the app, these terms will automatically apply to you – you should make sure therefore that you read them carefully before using the app. You’re not allowed to copy, or modify the app, any part of the app, or our trademarks in any way. You’re not allowed to attempt to extract the source code of the app, and you also shouldn’t try to translate the app into other languages, or make derivative versions. The app itself, and all the trade marks, copyright, database rights and other intellectual property rights related to it, still belong to Nikita Dolya.
 Nikita Dolya is committed to ensuring that the app is as useful and efficient as possible. For that reason, we reserve the right to make changes to the app or to charge for its services, at any time and for any reason. We will never charge you for the app or its services without making it very clear to you exactly what you’re paying for.
 The Vibrarelax app stores and processes personal data that you have provided to us, in order to provide my Service. It’s your responsibility to keep your phone and access to the app secure. We therefore recommend that you do not jailbreak or root your phone, which is the process of removing software restrictions and limitations imposed by the official operating system of your device. It could make your phone vulnerable to malware/viruses/malicious programs, compromise your phone’s security features and it could mean that the Vibrarelax app won’t work properly or at all.
 The app does use third party services that declare their own Terms and Conditions.
-Link to Terms and Conditions of third party service providers used by the app</string>
+Link to Terms and Conditions of third party service providers used by the app</mutableString>
                                                 <attributes>
-                                                    <color key="NSColor" red="0.29020000000000001" green="0.29020000000000001" blue="0.29020000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                     <font key="NSFont" size="15" name="Times-Roman"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                         <tabStops/>
@@ -1890,7 +1869,7 @@ Link to Terms and Conditions of third party service providers used by the app</s
 Cg
 </string>
                                                 <attributes>
-                                                    <color key="NSColor" red="0.29020000000000001" green="0.29020000000000001" blue="0.29020000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                     <font key="NSFont" size="12" name="Times-Roman"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                         <tabStops/>
@@ -1900,7 +1879,7 @@ Cg
                                             <fragment>
                                                 <string key="content">	•	</string>
                                                 <attributes>
-                                                    <color key="NSColor" red="0.19608" green="0.45097999999999999" blue="0.86275000000000002" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                     <font key="NSFont" size="14" name="Times-Roman"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacing="7.5" paragraphSpacingBefore="7.5" headIndent="36" tailIndent="424.5" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                         <tabStops>
@@ -1918,7 +1897,7 @@ Cg
                                                 <string key="content">Google Play Services
 </string>
                                                 <attributes>
-                                                    <color key="NSColor" red="0.19608" green="0.45097999999999999" blue="0.86275000000000002" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                     <font key="NSFont" size="14" name="Times-Roman"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacing="7.5" paragraphSpacingBefore="7.5" headIndent="36" tailIndent="424.5" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                         <tabStops>
@@ -1936,7 +1915,7 @@ Cg
                                             <fragment>
                                                 <string key="content">	•	</string>
                                                 <attributes>
-                                                    <color key="NSColor" red="0.19608" green="0.45097999999999999" blue="0.86275000000000002" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                     <font key="NSFont" size="14" name="Times-Roman"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacing="7.5" paragraphSpacingBefore="7.5" headIndent="36" tailIndent="424.5" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                         <tabStops>
@@ -1954,7 +1933,7 @@ Cg
                                                 <string key="content">AdMob
 </string>
                                                 <attributes>
-                                                    <color key="NSColor" red="0.19608" green="0.45097999999999999" blue="0.86275000000000002" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                     <font key="NSFont" size="14" name="Times-Roman"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacing="7.5" paragraphSpacingBefore="7.5" headIndent="36" tailIndent="424.5" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                         <tabStops>
@@ -1972,7 +1951,7 @@ Cg
                                             <fragment>
                                                 <string key="content">	•	</string>
                                                 <attributes>
-                                                    <color key="NSColor" red="0.19608" green="0.45097999999999999" blue="0.86275000000000002" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                     <font key="NSFont" size="14" name="Times-Roman"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacing="7.5" paragraphSpacingBefore="7.5" headIndent="36" tailIndent="424.5" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                         <tabStops>
@@ -1990,7 +1969,7 @@ Cg
                                                 <string key="content">Google Analytics for Firebase
 </string>
                                                 <attributes>
-                                                    <color key="NSColor" red="0.19608" green="0.45097999999999999" blue="0.86275000000000002" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                     <font key="NSFont" size="14" name="Times-Roman"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacing="7.5" paragraphSpacingBefore="7.5" headIndent="36" tailIndent="424.5" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                         <tabStops>
@@ -2008,7 +1987,7 @@ Cg
                                             <fragment>
                                                 <string key="content">	•	</string>
                                                 <attributes>
-                                                    <color key="NSColor" red="0.19608" green="0.45097999999999999" blue="0.86275000000000002" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                     <font key="NSFont" size="14" name="Times-Roman"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacing="7.5" paragraphSpacingBefore="7.5" headIndent="36" tailIndent="424.5" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                         <tabStops>
@@ -2026,7 +2005,7 @@ Cg
                                                 <string key="content">Firebase Crashlytics
 </string>
                                                 <attributes>
-                                                    <color key="NSColor" red="0.19608" green="0.45097999999999999" blue="0.86275000000000002" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                     <font key="NSFont" size="14" name="Times-Roman"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacing="7.5" paragraphSpacingBefore="7.5" headIndent="36" tailIndent="424.5" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                         <tabStops>
@@ -2044,7 +2023,7 @@ Cg
                                             <fragment>
                                                 <string key="content">	•	</string>
                                                 <attributes>
-                                                    <color key="NSColor" red="0.19608" green="0.45097999999999999" blue="0.86275000000000002" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                     <font key="NSFont" size="14" name="Times-Roman"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacing="7.5" paragraphSpacingBefore="7.5" headIndent="36" tailIndent="424.5" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                         <tabStops>
@@ -2060,7 +2039,7 @@ Cg
                                             </fragment>
                                             <fragment content="Facebook">
                                                 <attributes>
-                                                    <color key="NSColor" red="0.19608" green="0.45097999999999999" blue="0.86275000000000002" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                     <font key="NSFont" size="14" name="Times-Roman"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacing="7.5" paragraphSpacingBefore="7.5" headIndent="36" tailIndent="424.5" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                         <tabStops>
@@ -2080,7 +2059,7 @@ Cg
 Cg
 </string>
                                                 <attributes>
-                                                    <color key="NSColor" red="0.19608" green="0.45097999999999999" blue="0.86275000000000002" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                     <font key="NSFont" size="12" name="Times-Roman"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacing="7.5" paragraphSpacingBefore="7.5" headIndent="36" tailIndent="424.5" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                         <tabStops>
@@ -2096,13 +2075,13 @@ Cg
                                                 </attributes>
                                             </fragment>
                                             <fragment>
-                                                <string key="content">You should be aware that there are certain things that Nikita Dolya will not take responsibility for. Certain functions of the app will require the app to have an active internet connection. The connection can be Wi-Fi, or provided by your mobile network provider, but Nikita Dolya cannot take responsibility for the app not working at full functionality if you don’t have access to Wi-Fi, and you don’t have any of your data allowance left.
+                                                <mutableString key="content">You should be aware that there are certain things that Nikita Dolya will not take responsibility for. Certain functions of the app will require the app to have an active internet connection. The connection can be Wi-Fi, or provided by your mobile network provider, but Nikita Dolya cannot take responsibility for the app not working at full functionality if you don’t have access to Wi-Fi, and you don’t have any of your data allowance left.
 If you’re using the app outside of an area with Wi-Fi, you should remember that your terms of the agreement with your mobile network provider will still apply. As a result, you may be charged by your mobile provider for the cost of data for the duration of the connection while accessing the app, or other third party charges. In using the app, you’re accepting responsibility for any such charges, including roaming data charges if you use the app outside of your home territory (i.e. region or country) without turning off data roaming. If you are not the bill payer for the device on which you’re using the app, please be aware that we assume that you have received permission from the bill payer for using the app.
 Along the same lines, Nikita Dolya cannot always take responsibility for the way you use the app i.e. You need to make sure that your device stays charged – if it runs out of battery and you can’t turn it on to avail the Service, Nikita Dolya cannot accept responsibility.
 With respect to Nikita Dolya’s responsibility for your use of the app, when you’re using the app, it’s important to bear in mind that although we endeavour to ensure that it is updated and correct at all times, we do rely on third parties to provide information to us so that we can make it available to you. Nikita Dolya accepts no liability for any loss, direct or indirect, you experience as a result of relying wholly on this functionality of the app.
-At some point, we may wish to update the app. The app is currently available on iOS – the requirements for system(and for any additional systems we decide to extend the availability of the app to) may change, and you’ll need to download the updates if you want to keep using the app. Nikita Dolya does not promise that it will always update the app so that it is relevant to you and/or works with the iOS version that you have installed on your device. However, you promise to always accept updates to the application when offered to you, We may also wish to stop providing the app, and may terminate use of it at any time without giving notice of termination to you. Unless we tell you otherwise, upon any termination, (a) the rights and licenses granted to you in these terms will end; (b) you must stop using the app, and (if  needed) delete it from your device.</string>
+At some point, we may wish to update the app. The app is currently available on iOS – the requirements for system(and for any additional systems we decide to extend the availability of the app to) may change, and you’ll need to download the updates if you want to keep using the app. Nikita Dolya does not promise that it will always update the app so that it is relevant to you and/or works with the iOS version that you have installed on your device. However, you promise to always accept updates to the application when offered to you, We may also wish to stop providing the app, and may terminate use of it at any time without giving notice of termination to you. Unless we tell you otherwise, upon any termination, (a) the rights and licenses granted to you in these terms will end; (b) you must stop using the app, and (if  needed) delete it from your device.</mutableString>
                                                 <attributes>
-                                                    <color key="NSColor" red="0.29020000000000001" green="0.29020000000000001" blue="0.29020000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                     <font key="NSFont" size="15" name="Times-Roman"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                         <tabStops/>
@@ -2114,7 +2093,7 @@ At some point, we may wish to update the app. The app is currently available on 
 CgoKA
 </string>
                                                 <attributes>
-                                                    <color key="NSColor" red="0.29020000000000001" green="0.29020000000000001" blue="0.29020000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                     <font key="NSFont" size="12" name="Times-Roman"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                         <tabStops/>
@@ -2123,7 +2102,7 @@ CgoKA
                                             </fragment>
                                             <fragment content="Changes to This Terms and Conditions">
                                                 <attributes>
-                                                    <color key="NSColor" red="0.21176" green="0.21176" blue="0.21176" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                     <font key="NSFont" size="16" name="Times-Bold"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                         <tabStops/>
@@ -2135,7 +2114,7 @@ CgoKA
 Cgo
 </string>
                                                 <attributes>
-                                                    <color key="NSColor" red="0.21176" green="0.21176" blue="0.21176" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                     <font key="NSFont" size="12" name="Times-Bold"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                         <tabStops/>
@@ -2146,7 +2125,7 @@ Cgo
                                                 <string key="content">I may update our Terms and Conditions from time to time. Thus, you are advised to review this page periodically for any changes. I will notify you of any changes by posting the new Terms and Conditions on this page.
 These terms and conditions are effective as of 2021-05-25</string>
                                                 <attributes>
-                                                    <color key="NSColor" red="0.29020000000000001" green="0.29020000000000001" blue="0.29020000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                     <font key="NSFont" size="14" name="Times-Roman"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                         <tabStops/>
@@ -2158,7 +2137,7 @@ These terms and conditions are effective as of 2021-05-25</string>
 CgoKA
 </string>
                                                 <attributes>
-                                                    <color key="NSColor" red="0.29020000000000001" green="0.29020000000000001" blue="0.29020000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                     <font key="NSFont" size="12" name="Times-Roman"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                         <tabStops/>
@@ -2167,7 +2146,7 @@ CgoKA
                                             </fragment>
                                             <fragment content="Contact Us">
                                                 <attributes>
-                                                    <color key="NSColor" red="0.21176" green="0.21176" blue="0.21176" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                     <font key="NSFont" size="16" name="Times-Bold"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                         <tabStops/>
@@ -2179,7 +2158,7 @@ CgoKA
 Cgo
 </string>
                                                 <attributes>
-                                                    <color key="NSColor" red="0.21176" green="0.21176" blue="0.21176" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                     <font key="NSFont" size="12" name="Times-Bold"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                         <tabStops/>
@@ -2190,7 +2169,7 @@ Cgo
                                                 <string key="content">If you have any questions or suggestions about my Terms and Conditions, do not hesitate to contact me at vibrarelax@gmail.com.
 </string>
                                                 <attributes>
-                                                    <color key="NSColor" red="0.29020000000000001" green="0.29020000000000001" blue="0.29020000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                     <font key="NSFont" size="14" name="Times-Roman"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                         <tabStops/>
@@ -2202,7 +2181,7 @@ Cgo
 Cgo
 </string>
                                                 <attributes>
-                                                    <color key="NSColor" red="0.29020000000000001" green="0.29020000000000001" blue="0.29020000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                     <font key="NSFont" size="12" name="Times-Roman"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                         <tabStops/>
@@ -2236,7 +2215,7 @@ Cgo
                                     <constraint firstAttribute="trailing" secondItem="1uE-1Y-cTs" secondAttribute="trailing" constant="30" id="bnH-zA-gKi"/>
                                     <constraint firstAttribute="bottomMargin" secondItem="v5k-Kw-msd" secondAttribute="bottom" constant="27" id="dpD-wD-DL4"/>
                                     <constraint firstItem="zi2-pC-SwX" firstAttribute="leading" secondItem="Xp8-1V-pJs" secondAttribute="leading" constant="30" id="kgb-6h-Txx"/>
-                                    <constraint firstItem="zi2-pC-SwX" firstAttribute="top" secondItem="1uE-1Y-cTs" secondAttribute="bottom" constant="28" id="lN8-fD-qRq"/>
+                                    <constraint firstItem="zi2-pC-SwX" firstAttribute="top" secondItem="1uE-1Y-cTs" secondAttribute="bottom" constant="10" id="lN8-fD-qRq"/>
                                     <constraint firstItem="v5k-Kw-msd" firstAttribute="centerX" secondItem="Xp8-1V-pJs" secondAttribute="centerX" id="tWI-cw-fgr"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
@@ -2245,9 +2224,6 @@ Cgo
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="endColor">
                                         <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="30"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -2261,37 +2237,14 @@ Cgo
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="re0-1C-MM3">
-                                        <rect key="frame" x="30" y="102" width="354" height="586.5"/>
+                                        <rect key="frame" x="30" y="84" width="354" height="604.5"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <attributedString key="attributedText">
                                             <fragment>
-                                                <string key="content">Privacy Policy
-</string>
-                                                <attributes>
-                                                    <color key="NSColor" red="0.21176" green="0.21176" blue="0.21176" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                                    <font key="NSFont" size="16" name="Times-Bold"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                        <tabStops/>
-                                                    </paragraphStyle>
-                                                </attributes>
-                                            </fragment>
-                                            <fragment>
-                                                <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                                <attributes>
-                                                    <color key="NSColor" red="0.21176" green="0.21176" blue="0.21176" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                                    <font key="NSFont" size="12" name="Times-Bold"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                        <tabStops/>
-                                                    </paragraphStyle>
-                                                </attributes>
-                                            </fragment>
-                                            <fragment>
-                                                <string key="content">Nikita Dolya built the Vibrarelax app as a Free app. This SERVICE is provided by Nikita Dolya at no cost and is intended for use as is.
+                                                <mutableString key="content">Nikita Dolya built the Vibrarelax app as a Free app. This SERVICE is provided by Nikita Dolya at no cost and is intended for use as is.
 This page is used to inform visitors regarding my policies with the collection, use, and disclosure of Personal Information if anyone decided to use my Service.
 If you choose to use my Service, then you agree to the collection and use of information in relation to this policy. The Personal Information that I collect is used for providing and improving the Service. I will not use or share your information with anyone except as described in this Privacy Policy.
-The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which is accessible at Vibrarelax unless otherwise defined in this Privacy Policy.</string>
+The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which is accessible at Vibrarelax unless otherwise defined in this Privacy Policy.</mutableString>
                                                 <attributes>
                                                     <color key="NSColor" red="0.29020000000000001" green="0.29020000000000001" blue="0.29020000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                     <font key="NSFont" size="14" name="Times-Roman"/>
@@ -2334,9 +2287,9 @@ Cgo
                                                 </attributes>
                                             </fragment>
                                             <fragment>
-                                                <string key="content">For a better experience, while using our Service, I may require you to provide us with certain personally identifiable information, including but not limited to name, email, social media profiles, date of birth, phone/mobile number, home/mailing address. The information that I request will be retained on your device and is not collected by me in any way.
+                                                <mutableString key="content">For a better experience, while using our Service, I may require you to provide us with certain personally identifiable information, including but not limited to name, email, social media profiles, date of birth, phone/mobile number, home/mailing address. The information that I request will be retained on your device and is not collected by me in any way.
 The app does use third party services that may collect information used to identify you.
-Link to privacy policy of third party service providers used by the app</string>
+Link to privacy policy of third party service providers used by the app</mutableString>
                                                 <attributes>
                                                     <color key="NSColor" red="0.29020000000000001" green="0.29020000000000001" blue="0.29020000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                     <font key="NSFont" size="14" name="Times-Roman"/>
@@ -2623,9 +2576,9 @@ Cgo
                                                 </attributes>
                                             </fragment>
                                             <fragment>
-                                                <string key="content">Cookies are files with a small amount of data that are commonly used as anonymous unique identifiers. These are sent to your browser from the websites that you visit and are stored on your device's internal memory.
+                                                <mutableString key="content">Cookies are files with a small amount of data that are commonly used as anonymous unique identifiers. These are sent to your browser from the websites that you visit and are stored on your device's internal memory.
 This Service does not use these “cookies” explicitly. However, the app may use third party code and libraries that use “cookies” to collect information and improve their services. You have the option to either accept or refuse these cookies and know when a cookie is being sent to your device. If you choose to refuse our cookies, you may not be able to use some portions of this Service.
-</string>
+</mutableString>
                                                 <attributes>
                                                     <color key="NSColor" red="0.29020000000000001" green="0.29020000000000001" blue="0.29020000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                     <font key="NSFont" size="14" name="Times-Roman"/>
@@ -2985,7 +2938,7 @@ Cgo
                                     <constraint firstItem="Q6s-W5-KQJ" firstAttribute="top" secondItem="re0-1C-MM3" secondAttribute="bottom" constant="27" id="Mtg-wC-fMa"/>
                                     <constraint firstItem="Q6s-W5-KQJ" firstAttribute="centerX" secondItem="Fy2-Mt-snH" secondAttribute="centerX" id="QL8-mN-wcc"/>
                                     <constraint firstAttribute="trailing" secondItem="re0-1C-MM3" secondAttribute="trailing" constant="30" id="Re6-bq-GSk"/>
-                                    <constraint firstItem="re0-1C-MM3" firstAttribute="top" secondItem="cO7-GF-4Gd" secondAttribute="bottom" constant="28" id="aI3-Bn-1bO"/>
+                                    <constraint firstItem="re0-1C-MM3" firstAttribute="top" secondItem="cO7-GF-4Gd" secondAttribute="bottom" constant="10" id="aI3-Bn-1bO"/>
                                     <constraint firstItem="cO7-GF-4Gd" firstAttribute="leading" secondItem="Fy2-Mt-snH" secondAttribute="leading" constant="30" id="aZc-bh-6YR"/>
                                     <constraint firstAttribute="trailing" secondItem="cO7-GF-4Gd" secondAttribute="trailing" constant="30" id="iZG-5m-dKG"/>
                                     <constraint firstAttribute="bottomMargin" secondItem="Q6s-W5-KQJ" secondAttribute="bottom" constant="27" id="umd-hi-QFQ"/>
@@ -2996,9 +2949,6 @@ Cgo
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="endColor">
                                         <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="30"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>

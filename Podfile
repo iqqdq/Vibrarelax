@@ -9,6 +9,7 @@ target 'Vibrarelax' do
 	pod 'GRView'
 	pod 'Blurberry'
 	pod 'FittedSheets'
+  pod 'GoogleAnalytics'
 
   target 'VibrarelaxTests' do
     inherit! :search_paths

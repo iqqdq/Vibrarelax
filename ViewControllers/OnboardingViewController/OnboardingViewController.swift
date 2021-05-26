@@ -139,31 +139,28 @@ extension OnboardingViewController: UICollectionViewDataSource {
             onboardingCollectionViewCell.descriptionLabel.text = value
         }
         
-        if UIDevice().userInterfaceIdiom == .phone {
-            switch UIScreen.main.nativeBounds.height {
-            case 1334:
-                print("iPhone 6/6S/7/8")
-                if indexPath.row == 2 {
-                    onboardingCollectionViewCell.topImageView.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
-                }
-            default:
-                onboardingCollectionViewCell.titleLabelYConstraint.constant = 20.0
-            }
-        }
-        
         switch indexPath.row {
         case 1:
             onboardingCollectionViewCell.widthConstraint.constant = 167.0
             onboardingCollectionViewCell.heightConstraint.constant = 146.0
-            onboardingCollectionViewCell.imageViewYConstraint.constant = -124.0
         case 2:
-            onboardingCollectionViewCell.widthConstraint.constant = 202.0
-            onboardingCollectionViewCell.heightConstraint.constant = 221.0
-            onboardingCollectionViewCell.imageViewYConstraint.constant = -104.0
+            onboardingCollectionViewCell.widthConstraint.constant = 178.0
+            onboardingCollectionViewCell.heightConstraint.constant = 154.0
         default:
             onboardingCollectionViewCell.widthConstraint.constant = 154.0
             onboardingCollectionViewCell.heightConstraint.constant = 140.0
-            onboardingCollectionViewCell.imageViewYConstraint.constant = -124.0
+        }
+        
+        onboardingCollectionViewCell.imageViewYConstraint.constant = -124.0
+        
+        if UIDevice().userInterfaceIdiom == .phone {
+            switch UIScreen.main.nativeBounds.height {
+            case 1334:
+                print("iPhone 6/6S/7/8")
+                onboardingCollectionViewCell.topImageView.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
+            default:
+                onboardingCollectionViewCell.topImageView.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
+            }
         }
 
         return onboardingCollectionViewCell

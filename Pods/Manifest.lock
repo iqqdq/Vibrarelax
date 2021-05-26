@@ -1,24 +1,28 @@
 PODS:
   - Blurberry (0.1.0)
   - FittedSheets (2.4.0)
+  - GoogleAnalytics (3.17.0)
   - GRView (1.0.0)
 
 DEPENDENCIES:
   - Blurberry
   - FittedSheets
+  - GoogleAnalytics
   - GRView
 
 SPEC REPOS:
   trunk:
     - Blurberry
     - FittedSheets
+    - GoogleAnalytics
     - GRView
 
 SPEC CHECKSUMS:
   Blurberry: 361c1a4778ea0c46da25716b03d1344a4cf8fe01
   FittedSheets: 470a7740a083156d711ab6ccd37d1d539005e6aa
+  GoogleAnalytics: f42cc53a87a51fe94334821868d9c8481ff47a7b
   GRView: a88cee402471baec1780eece92cd8646b43ffe02
 
-PODFILE CHECKSUM: a91fc46b41897e445a8f90552940b2fd2fe239af
+PODFILE CHECKSUM: 7ffa2e1a58941f9d24a34eb8afb1235ff6730091
 
 COCOAPODS: 1.10.1

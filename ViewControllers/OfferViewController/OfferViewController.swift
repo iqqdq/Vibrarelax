@@ -26,6 +26,13 @@ class OfferViewController: UIViewController {
         setupBlurView()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        DispatchQueue.main.async {
+            self.policyView.roundCorners([.topLeft, .topRight], radius: 30.0)
+            self.termsView.roundCorners([.topLeft, .topRight], radius: 30.0)
+        }
+    }
+    
     // MARK: -
     // MARK: - FUNCTIONS
     

@@ -2,9 +2,10 @@ ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
 CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
 FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Blurberry" "${PODS_CONFIGURATION_BUILD_DIR}/FittedSheets" "${PODS_CONFIGURATION_BUILD_DIR}/GRView"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Blurberry/Blurberry.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/FittedSheets/FittedSheets.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/GRView/GRView.framework/Headers"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Blurberry/Blurberry.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/FittedSheets/FittedSheets.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/GRView/GRView.framework/Headers" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/GoogleAnalytics"
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-OTHER_LDFLAGS = $(inherited) -framework "Blurberry" -framework "FittedSheets" -framework "GRView"
+LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/GoogleAnalytics/Libraries"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"GoogleAnalytics" -l"sqlite3" -l"z" -framework "Blurberry" -framework "CoreData" -framework "FittedSheets" -framework "GRView" -framework "SystemConfiguration"
 OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)

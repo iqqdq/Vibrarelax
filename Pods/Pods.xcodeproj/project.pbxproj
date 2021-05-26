@@ -6,177 +6,216 @@
 	objectVersion = 51;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		968D06ADB152B8D9FA77D570E2335002 /* GoogleAnalytics */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = FF1D5B6DF1B08E65E07E827B139A9266 /* Build configuration list for PBXAggregateTarget "GoogleAnalytics" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = GoogleAnalytics;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
-		09E9E8E8D296FE076F99C5DC023FC571 /* Blurberry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98AC69DDC4C0E8C75AE3D13AE4325FBE /* Blurberry.swift */; };
+		06F8CF25C06CDC651848C6CA1B921908 /* Pods-Vibrarelax-VibrarelaxUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF50238ACB090A5CFAF1A6A98B7768F /* Pods-Vibrarelax-VibrarelaxUITests-dummy.m */; };
+		08E31227DAE21542D15582F3A78E1FFC /* Pods-Vibrarelax-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F5BF95F5221D2A274DB4C0CC2BC29250 /* Pods-Vibrarelax-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		09E9E8E8D296FE076F99C5DC023FC571 /* Blurberry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3659AD3E6925EC48C09199CC6716C1 /* Blurberry.swift */; };
 		1132EBC586B02982ACFCCBBB83A0EEE3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		11D817B6A282C2D60B1CF78CA9FFB628 /* Yalta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364073CD62CC2CBC3D84FF7948ECBD68 /* Yalta.swift */; };
-		136D4451BD94ED473CE229F04A638A55 /* SheetContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C6875283C7D492C1A0D9E8D8369476 /* SheetContentViewController.swift */; };
-		1B0E91472FC90CFFC86697E1E3D54FF8 /* Blurberry-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 60BF0685862E1EAEF0A8299808881977 /* Blurberry-dummy.m */; };
-		26760843DDB86C34C81772E573284E23 /* SheetSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED8DCED09F9FABBE18DBEF9131B2B0E /* SheetSize.swift */; };
-		28EC8DF515BA8EA5251A9D5806F003F4 /* SheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A633D6632F518FEDE1B00EA468C01306 /* SheetViewController.swift */; };
-		3BEF28CFE23B1EEFBF0C49793BCA1223 /* SheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AC0C20FDD2E022F5EF54D538719915 /* SheetView.swift */; };
-		3CEBF7A556FF3EA599CE0F7BC819FC5C /* GRView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DEE278FC8117F0CF3802912AAE0FAF8 /* GRView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3FD59E47C22ABB6FADC0CDEA902E6927 /* GRView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D87265D2C9D290B4FF9BD6027924CCF1 /* GRView-dummy.m */; };
-		44C27C2AD182013088203CA6ED02B9B0 /* Localize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECFE8CF0F725F0AAE101711637F517B /* Localize.swift */; };
-		4844B9EAC1D5D197B1D8CE0E2E93480B /* SheetViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1B661B9B946AEAC4A0C683ABB29B1C /* SheetViewDelegate.swift */; };
+		11D817B6A282C2D60B1CF78CA9FFB628 /* Yalta.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59BD7AD05104C59F273129550D12C38 /* Yalta.swift */; };
+		136D4451BD94ED473CE229F04A638A55 /* SheetContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F0DD4913E459D728A5FF5FCFEA2F52 /* SheetContentViewController.swift */; };
+		1B0E91472FC90CFFC86697E1E3D54FF8 /* Blurberry-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D870FF837F1F1DF5165F9AEA8FE92CBB /* Blurberry-dummy.m */; };
+		1F04795A0DC00AAE0E6E52C151967264 /* Pods-Vibrarelax-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D5121A82C83ED66BF162FA6013042FA3 /* Pods-Vibrarelax-dummy.m */; };
+		26760843DDB86C34C81772E573284E23 /* SheetSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BA8BE29E80110751FDC0FAFA165BC3 /* SheetSize.swift */; };
+		28EC8DF515BA8EA5251A9D5806F003F4 /* SheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A9FB12DCA1A41CCD291B8FE79AE4F9 /* SheetViewController.swift */; };
+		3BEF28CFE23B1EEFBF0C49793BCA1223 /* SheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A6E752559C9F448099B3531DCA392C /* SheetView.swift */; };
+		3CEBF7A556FF3EA599CE0F7BC819FC5C /* GRView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 47EB1ABFB519D8ED60AEB8D8063DC9A5 /* GRView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3FD59E47C22ABB6FADC0CDEA902E6927 /* GRView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A205530BB21976A80118DAAA40DFDF10 /* GRView-dummy.m */; };
+		44C27C2AD182013088203CA6ED02B9B0 /* Localize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A881E3E2A03392A452E2F0367D9378E /* Localize.swift */; };
+		4844B9EAC1D5D197B1D8CE0E2E93480B /* SheetViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140FB5226C6F60A2B69BDE47605A3FC6 /* SheetViewDelegate.swift */; };
 		509A14D6C38DEB1EE69A0FEAEAB44B72 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		51326CA54C0581A9F3C8B16E5E078085 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		6CE5A2BD0E8978CF0F1EEE8DA94FB6E4 /* NSObject+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE8472B7540582C83C3064A3DC67419 /* NSObject+Extension.m */; };
-		701A679AFBF7AFDAF00BECCFE4C8B00D /* Pods-Vibrarelax-VibrarelaxUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF50238ACB090A5CFAF1A6A98B7768F /* Pods-Vibrarelax-VibrarelaxUITests-dummy.m */; };
-		7706C59747B5BD6CB167225A79465F3E /* Pods-Vibrarelax-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F5BF95F5221D2A274DB4C0CC2BC29250 /* Pods-Vibrarelax-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		79FE6209495B1DFDB515EB399AE5A0E1 /* VisualEffectView+Internal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9649D2692624A6F6E7052B1D01C4C8CE /* VisualEffectView+Internal.swift */; };
+		5E2D6E4D9A2E34DB02295BD1D8A6F5CF /* Pods-Vibrarelax-VibrarelaxUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B722E03B79EB5654358BA54996F520FE /* Pods-Vibrarelax-VibrarelaxUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6CE5A2BD0E8978CF0F1EEE8DA94FB6E4 /* NSObject+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8711EA5DBED3B10B9A7FFFABDB1CDB78 /* NSObject+Extension.m */; };
+		79FE6209495B1DFDB515EB399AE5A0E1 /* VisualEffectView+Internal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C566B5ECFACE26DE092814F856A530F5 /* VisualEffectView+Internal.swift */; };
 		80329703B2E80C51A98F80D4481AA612 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		92CF8346F1812D173F93CB02AE44254E /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725277F0944C9EE65A8AA6282DF8BBBA /* UIViewControllerExtension.swift */; };
-		A276A9C8230EA918BA27B4E5B569EF32 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E115519A18EDD33BDF681F454FB4E8 /* UIColorExtension.swift */; };
-		AA2F862DE1854CE0B286BFB507057BC6 /* FittedSheets-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EB0FB94007E9860DA6CB90438444F46 /* FittedSheets-dummy.m */; };
+		92CF8346F1812D173F93CB02AE44254E /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43683475532A58FF4E9AD604583B577E /* UIViewControllerExtension.swift */; };
+		965282F41C9E8CD94B8AEA6A6833A3A1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		A276A9C8230EA918BA27B4E5B569EF32 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BA41493D2115016DD601E2B619690F /* UIColorExtension.swift */; };
+		AA2F862DE1854CE0B286BFB507057BC6 /* FittedSheets-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B59429F141D887D9C09B3C8807A40D84 /* FittedSheets-dummy.m */; };
+		AC8BFB87ED3A7D9F2F30BFD5C41C3E92 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		BF96FAF65759393BAC8C853CAE38224F /* Pods-VibrarelaxTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E1AABC29F23518FC9202A68957A2CB01 /* Pods-VibrarelaxTests-dummy.m */; };
-		C43ABC58247ABB64A97532ABFEE0EC3A /* SheetOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C8271ED278E584D9FD9BAED639BE9A /* SheetOptions.swift */; };
-		C43C78703C6D02E6D1D9128BBCC5DAA8 /* Blurberry.h in Headers */ = {isa = PBXBuildFile; fileRef = F40054BDA545984BEBB31D8497024935 /* Blurberry.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D1C977371C0D7540F25538763A0E8612 /* SheetContentViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6390517CC1BB707C8506DBB83CF61900 /* SheetContentViewDelegate.swift */; };
-		D68D466E8071A60D28996D53BDC516FC /* GRView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A801C0C3CA84573F45E2FAB0209F5671 /* GRView.swift */; };
-		D9E1C00EE40F26DDE7FF9F3041F002B5 /* FittedSheets-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 76973FF4306A36217747115210AC0122 /* FittedSheets-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C43ABC58247ABB64A97532ABFEE0EC3A /* SheetOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98544F83B6E0D2D717F8A8C35E092E5 /* SheetOptions.swift */; };
+		C43C78703C6D02E6D1D9128BBCC5DAA8 /* Blurberry.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DFA9A0CF6230E53F84CA840606BC38F /* Blurberry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1C977371C0D7540F25538763A0E8612 /* SheetContentViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F53A03F215B00E7CC5F98572E14D30 /* SheetContentViewDelegate.swift */; };
+		D68D466E8071A60D28996D53BDC516FC /* GRView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299D2F3E63A24CB916DEF8CACE883546 /* GRView.swift */; };
+		D9E1C00EE40F26DDE7FF9F3041F002B5 /* FittedSheets-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DB431DFADD37C06E094AA3EC1B026C1 /* FittedSheets-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DA6FE25A1021BFE704BC9481541BA7BE /* Pods-VibrarelaxTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 587415A450769BD2673A0AD7C45943EC /* Pods-VibrarelaxTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DB10671B89E83FB23E4BE6C47E246867 /* Blurberry-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A438609DE3239287205BBDE23A178F6 /* Blurberry-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DFA9593D87FC1C9760A214C769490D02 /* NSObject+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = 2132FB09910063D3E40712C24BAE5B7C /* NSObject+Extension.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E7CE15CB2E9B5E409EE999C247BF7D15 /* GRButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C54E07D9B0F749DC625C6B8CEA9C00 /* GRButton.swift */; };
-		EB3FF3A9781FF93567B72C9D280C7C5E /* Pods-Vibrarelax-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D5121A82C83ED66BF162FA6013042FA3 /* Pods-Vibrarelax-dummy.m */; };
-		EF3F041CCB00E37FD88C30E8DEEE7508 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		F059FC9E88435CCA534220D2C6B387CF /* SheetTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F3241D9933AF94A336AEFE1D81CF56 /* SheetTransition.swift */; };
-		F63C95205CDCF8EE29A55ED6FBDBC2F1 /* Pods-Vibrarelax-VibrarelaxUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B722E03B79EB5654358BA54996F520FE /* Pods-Vibrarelax-VibrarelaxUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F759B7531C094A29CF2CA5B26F3111D9 /* VisualEffectView+Public.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F281183A1439977591ACD22E066B4A /* VisualEffectView+Public.swift */; };
+		DB10671B89E83FB23E4BE6C47E246867 /* Blurberry-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E1938963061CFCE69C22C2DB0D800BE6 /* Blurberry-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DFA9593D87FC1C9760A214C769490D02 /* NSObject+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = C9A66A49CCE4227E763F5EA00896FE67 /* NSObject+Extension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E7CE15CB2E9B5E409EE999C247BF7D15 /* GRButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BDC73DA642EA90F5B74D8EB4619C58 /* GRButton.swift */; };
+		F059FC9E88435CCA534220D2C6B387CF /* SheetTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4C0A6FE7331D2F7BE0D5176B429CB1 /* SheetTransition.swift */; };
+		F759B7531C094A29CF2CA5B26F3111D9 /* VisualEffectView+Public.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373B2410ABD453C75243C982D675F3AF /* VisualEffectView+Public.swift */; };
 		F861F9F6D69F0B7F233ACA9CCE05B546 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		FAF784E7B390407144EBA9436373CAF0 /* InitialTouchPanGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BC79E398A041BB677DCE3E560D2EC8 /* InitialTouchPanGestureRecognizer.swift */; };
+		FAF784E7B390407144EBA9436373CAF0 /* InitialTouchPanGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D83D0BEE668E7FD79A2375CC287054 /* InitialTouchPanGestureRecognizer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		033DC5B6CEEB72DA1292886A33590DCE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C8E64EB1CF11A61804ADD6D990751811;
-			remoteInfo = GRView;
-		};
-		11DBED44C2DDFFF1915A9656EB2218B6 /* PBXContainerItemProxy */ = {
+		01E4E6721168039B1B966DA0FED84EA1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = C6C3C67C7439DD1659D9BFC58236BFA4;
 			remoteInfo = Blurberry;
 		};
-		5A7CC43EE04B9E3F115862E134B1048C /* PBXContainerItemProxy */ = {
+		34390E836EC8BA27B90E8045A41F4910 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = C6C3C67C7439DD1659D9BFC58236BFA4;
 			remoteInfo = Blurberry;
 		};
-		825226BE3BE365280F80BFF0D7278A9F /* PBXContainerItemProxy */ = {
+		34B6DF79C22584D4DB475498D33D23D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 968D06ADB152B8D9FA77D570E2335002;
+			remoteInfo = GoogleAnalytics;
+		};
+		4AABD3478524F66AAF873435E902F5DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B71C614CBF9B1B690FE941C4DF44D040;
+			remoteInfo = FittedSheets;
+		};
+		5F65FCD9424C9CBBDEC8F2462C1B0C2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 968D06ADB152B8D9FA77D570E2335002;
+			remoteInfo = GoogleAnalytics;
+		};
+		82C5795F0FF584700C2BDCEE2DA49AC0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = C8E64EB1CF11A61804ADD6D990751811;
 			remoteInfo = GRView;
 		};
-		90E28AD012716A5D4D47036E690E2267 /* PBXContainerItemProxy */ = {
+		CCE8AFF7DBED7E2124FD803A909DEB59 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = B71C614CBF9B1B690FE941C4DF44D040;
 			remoteInfo = FittedSheets;
 		};
-		9E87F9A24397A5CDC3E101EF6AB4962A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B71C614CBF9B1B690FE941C4DF44D040;
-			remoteInfo = FittedSheets;
-		};
-		E2272B69D9D6BA99A3045F3C5CF604B5 /* PBXContainerItemProxy */ = {
+		D490DD9BFD7857208A2EE2023BAA8894 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 8A7F25C591290F4B1DD089EA22A154FA;
 			remoteInfo = "Pods-Vibrarelax";
 		};
+		E4362A715BF65BEBF4F49262241A87DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C8E64EB1CF11A61804ADD6D990751811;
+			remoteInfo = GRView;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0ECFE8CF0F725F0AAE101711637F517B /* Localize.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Localize.swift; path = FittedSheets/Localization/Localize.swift; sourceTree = "<group>"; };
+		00F53A03F215B00E7CC5F98572E14D30 /* SheetContentViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SheetContentViewDelegate.swift; path = FittedSheets/SheetContentViewDelegate.swift; sourceTree = "<group>"; };
+		01262EA036890036F3EA045A21CDDAE2 /* Blurberry.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Blurberry.release.xcconfig; sourceTree = "<group>"; };
+		0556BC5B7EFD396B7E7F1E8B64A07FF3 /* GRView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GRView-prefix.pch"; sourceTree = "<group>"; };
 		0FC021AB72AEEE15AEA2ED2A3638AAD3 /* Pods-Vibrarelax-VibrarelaxUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Vibrarelax-VibrarelaxUITests.release.xcconfig"; sourceTree = "<group>"; };
-		102E2489C64B224F25E20F7121A9A43C /* GRView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GRView.debug.xcconfig; sourceTree = "<group>"; };
-		10C54E07D9B0F749DC625C6B8CEA9C00 /* GRButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GRButton.swift; path = GradientView/GRButton.swift; sourceTree = "<group>"; };
-		1A438609DE3239287205BBDE23A178F6 /* Blurberry-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Blurberry-umbrella.h"; sourceTree = "<group>"; };
-		2132FB09910063D3E40712C24BAE5B7C /* NSObject+Extension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+Extension.h"; path = "Sources/Extensions/NSObject+Extension.h"; sourceTree = "<group>"; };
+		10961EB76157FEC26D9DA88E3FEF85D4 /* libGoogleAnalytics.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGoogleAnalytics.a; path = Libraries/libGoogleAnalytics.a; sourceTree = "<group>"; };
+		11D83D0BEE668E7FD79A2375CC287054 /* InitialTouchPanGestureRecognizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InitialTouchPanGestureRecognizer.swift; path = FittedSheets/InitialTouchPanGestureRecognizer.swift; sourceTree = "<group>"; };
+		140FB5226C6F60A2B69BDE47605A3FC6 /* SheetViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SheetViewDelegate.swift; path = FittedSheets/SheetViewDelegate.swift; sourceTree = "<group>"; };
+		19F0DD4913E459D728A5FF5FCFEA2F52 /* SheetContentViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SheetContentViewController.swift; path = FittedSheets/SheetContentViewController.swift; sourceTree = "<group>"; };
+		1A881E3E2A03392A452E2F0367D9378E /* Localize.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Localize.swift; path = FittedSheets/Localization/Localize.swift; sourceTree = "<group>"; };
 		21AAE79511133937606E376EE52BED4F /* FittedSheets.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FittedSheets.framework; path = FittedSheets.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2673F7E875DD4413E327ACDB12A8FF3E /* GAIFields.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAIFields.h; path = Sources/GAIFields.h; sourceTree = "<group>"; };
+		299D2F3E63A24CB916DEF8CACE883546 /* GRView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GRView.swift; path = GradientView/GRView.swift; sourceTree = "<group>"; };
 		2B1DE43D1254383FE97F8D0814BF2866 /* Pods_Vibrarelax.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Vibrarelax.framework; path = "Pods-Vibrarelax.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DB431DFADD37C06E094AA3EC1B026C1 /* FittedSheets-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FittedSheets-umbrella.h"; sourceTree = "<group>"; };
+		2DD139A218AFEC02354E2699D2C7F7C8 /* GoogleAnalytics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleAnalytics.release.xcconfig; sourceTree = "<group>"; };
 		319FF37D99306F5A43BD760577FD71E8 /* Pods-Vibrarelax-VibrarelaxUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Vibrarelax-VibrarelaxUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		364073CD62CC2CBC3D84FF7948ECBD68 /* Yalta.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Yalta.swift; path = FittedSheets/Yalta.swift; sourceTree = "<group>"; };
-		3AFF75BABB33710BD3214EC4B69D0900 /* GRView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GRView.release.xcconfig; sourceTree = "<group>"; };
-		3EB0FB94007E9860DA6CB90438444F46 /* FittedSheets-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FittedSheets-dummy.m"; sourceTree = "<group>"; };
-		3ED8DCED09F9FABBE18DBEF9131B2B0E /* SheetSize.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SheetSize.swift; path = FittedSheets/SheetSize.swift; sourceTree = "<group>"; };
+		373B2410ABD453C75243C982D675F3AF /* VisualEffectView+Public.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "VisualEffectView+Public.swift"; path = "Sources/Views/VisualEffectView+Public.swift"; sourceTree = "<group>"; };
+		3D3659AD3E6925EC48C09199CC6716C1 /* Blurberry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Blurberry.swift; path = Sources/General/Blurberry.swift; sourceTree = "<group>"; };
 		3EF50238ACB090A5CFAF1A6A98B7768F /* Pods-Vibrarelax-VibrarelaxUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Vibrarelax-VibrarelaxUITests-dummy.m"; sourceTree = "<group>"; };
 		409D56D35A39A4B8F1C3288B7C29161D /* Pods-Vibrarelax-VibrarelaxUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Vibrarelax-VibrarelaxUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		41FCCD9AB55FE6D12F48FFB95FBE129E /* Pods_VibrarelaxTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_VibrarelaxTests.framework; path = "Pods-VibrarelaxTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		43683475532A58FF4E9AD604583B577E /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIViewControllerExtension.swift; path = FittedSheets/UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		43B1D2F576A88387770B95213072694E /* Pods-Vibrarelax-VibrarelaxUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Vibrarelax-VibrarelaxUITests.modulemap"; sourceTree = "<group>"; };
+		450615B6B4ED16D273D4A0AC278B3A59 /* FittedSheets-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FittedSheets-Info.plist"; sourceTree = "<group>"; };
+		47376177949DC426C6A38BEFC28B0C09 /* GAITrackedViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAITrackedViewController.h; path = Sources/GAITrackedViewController.h; sourceTree = "<group>"; };
+		474AF55B96D5E2F5A65125FCF5A4D5A0 /* Blurberry-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Blurberry-Info.plist"; sourceTree = "<group>"; };
 		476398E4DE4CC0D9C3333375379D4952 /* Pods-Vibrarelax.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Vibrarelax.release.xcconfig"; sourceTree = "<group>"; };
+		47BA8BE29E80110751FDC0FAFA165BC3 /* SheetSize.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SheetSize.swift; path = FittedSheets/SheetSize.swift; sourceTree = "<group>"; };
+		47EB1ABFB519D8ED60AEB8D8063DC9A5 /* GRView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GRView-umbrella.h"; sourceTree = "<group>"; };
 		49B635906A031134E29926D4793F7AEE /* GRView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GRView.framework; path = GRView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5260DE59E9955DC7292B7D2618419809 /* GAI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAI.h; path = Sources/GAI.h; sourceTree = "<group>"; };
 		547234A159B1B89151F1D87BD1E10A62 /* Pods-VibrarelaxTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VibrarelaxTests-Info.plist"; sourceTree = "<group>"; };
 		587415A450769BD2673A0AD7C45943EC /* Pods-VibrarelaxTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VibrarelaxTests-umbrella.h"; sourceTree = "<group>"; };
-		58AC0C20FDD2E022F5EF54D538719915 /* SheetView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SheetView.swift; path = FittedSheets/SheetView.swift; sourceTree = "<group>"; };
-		5A1B661B9B946AEAC4A0C683ABB29B1C /* SheetViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SheetViewDelegate.swift; path = FittedSheets/SheetViewDelegate.swift; sourceTree = "<group>"; };
+		58BDC73DA642EA90F5B74D8EB4619C58 /* GRButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GRButton.swift; path = GradientView/GRButton.swift; sourceTree = "<group>"; };
 		5FE2566A19D27A993CADA9E09E1D90AA /* Pods-Vibrarelax-VibrarelaxUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Vibrarelax-VibrarelaxUITests-Info.plist"; sourceTree = "<group>"; };
-		60BF0685862E1EAEF0A8299808881977 /* Blurberry-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Blurberry-dummy.m"; sourceTree = "<group>"; };
-		6390517CC1BB707C8506DBB83CF61900 /* SheetContentViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SheetContentViewDelegate.swift; path = FittedSheets/SheetContentViewDelegate.swift; sourceTree = "<group>"; };
-		65C8271ED278E584D9FD9BAED639BE9A /* SheetOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SheetOptions.swift; path = FittedSheets/SheetOptions.swift; sourceTree = "<group>"; };
-		6DEE278FC8117F0CF3802912AAE0FAF8 /* GRView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GRView-umbrella.h"; sourceTree = "<group>"; };
-		70BC79E398A041BB677DCE3E560D2EC8 /* InitialTouchPanGestureRecognizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InitialTouchPanGestureRecognizer.swift; path = FittedSheets/InitialTouchPanGestureRecognizer.swift; sourceTree = "<group>"; };
-		718F852D87F2F67A49ECDA3DDB342730 /* Blurberry-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Blurberry-Info.plist"; sourceTree = "<group>"; };
-		7206423FC84EFFBF7D6E2D01F700D4D7 /* FittedSheets.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FittedSheets.release.xcconfig; sourceTree = "<group>"; };
-		725277F0944C9EE65A8AA6282DF8BBBA /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIViewControllerExtension.swift; path = FittedSheets/UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		663A7D1795397A82FC4C95C297545BE1 /* GAIEcommerceFields.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAIEcommerceFields.h; path = Sources/GAIEcommerceFields.h; sourceTree = "<group>"; };
+		6C50196CA97395DC691B96796CC8BFCA /* GAIDictionaryBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAIDictionaryBuilder.h; path = Sources/GAIDictionaryBuilder.h; sourceTree = "<group>"; };
+		6DFA9A0CF6230E53F84CA840606BC38F /* Blurberry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Blurberry.h; path = Sources/Blurberry.h; sourceTree = "<group>"; };
 		729B97BA912C4FAF300CA46BDD84A80A /* Pods-VibrarelaxTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VibrarelaxTests.debug.xcconfig"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		73FE07D4E58F1AD3125C30A2D756BF24 /* Blurberry.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Blurberry.modulemap; sourceTree = "<group>"; };
-		76973FF4306A36217747115210AC0122 /* FittedSheets-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FittedSheets-umbrella.h"; sourceTree = "<group>"; };
-		8AC4C71391F8BFB322F5E94A3162CAFB /* FittedSheets.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FittedSheets.debug.xcconfig; sourceTree = "<group>"; };
+		79C0A27CB7DB50E15A32D389B4EC7373 /* GRView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "GRView-Info.plist"; sourceTree = "<group>"; };
+		7F378F521720A10FB8F17181D62B1283 /* GAILogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAILogger.h; path = Sources/GAILogger.h; sourceTree = "<group>"; };
+		8711EA5DBED3B10B9A7FFFABDB1CDB78 /* NSObject+Extension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+Extension.m"; path = "Sources/Extensions/NSObject+Extension.m"; sourceTree = "<group>"; };
+		87A9FB12DCA1A41CCD291B8FE79AE4F9 /* SheetViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SheetViewController.swift; path = FittedSheets/SheetViewController.swift; sourceTree = "<group>"; };
 		8E8804AFA087180AB75DF904210DBA90 /* Pods-VibrarelaxTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VibrarelaxTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		9649D2692624A6F6E7052B1D01C4C8CE /* VisualEffectView+Internal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "VisualEffectView+Internal.swift"; path = "Sources/Views/VisualEffectView+Internal.swift"; sourceTree = "<group>"; };
-		98AC69DDC4C0E8C75AE3D13AE4325FBE /* Blurberry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Blurberry.swift; path = Sources/General/Blurberry.swift; sourceTree = "<group>"; };
+		8EEE7CCAED37A865671E073046B0235D /* FittedSheets.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FittedSheets.release.xcconfig; sourceTree = "<group>"; };
+		99C245C9C77DAA3FEF592472D5FA650D /* Blurberry.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Blurberry.modulemap; sourceTree = "<group>"; };
 		9B40C6051297B58D14690B279B8992E2 /* Pods-Vibrarelax-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Vibrarelax-Info.plist"; sourceTree = "<group>"; };
+		9C617FE834E1E224EB105E96A395948E /* GRView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GRView.release.xcconfig; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9DF816AD399A873DC9F1D914A452BBD5 /* FittedSheets.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FittedSheets.modulemap; sourceTree = "<group>"; };
-		A0626D8E9CB1AB2351E4E54D5146BA5E /* GRView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GRView-prefix.pch"; sourceTree = "<group>"; };
-		A41FDBCB41229B4A9224525F5B02B5FD /* GRView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "GRView-Info.plist"; sourceTree = "<group>"; };
-		A633D6632F518FEDE1B00EA468C01306 /* SheetViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SheetViewController.swift; path = FittedSheets/SheetViewController.swift; sourceTree = "<group>"; };
-		A6F3241D9933AF94A336AEFE1D81CF56 /* SheetTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SheetTransition.swift; path = FittedSheets/SheetTransition.swift; sourceTree = "<group>"; };
-		A801C0C3CA84573F45E2FAB0209F5671 /* GRView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GRView.swift; path = GradientView/GRView.swift; sourceTree = "<group>"; };
+		A205530BB21976A80118DAAA40DFDF10 /* GRView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GRView-dummy.m"; sourceTree = "<group>"; };
+		A46FB0CAB08D26439C7321A9056075F3 /* GRView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GRView.modulemap; sourceTree = "<group>"; };
 		A9C03A8A056DB26A1F4C37E5BD28CA6E /* Pods-Vibrarelax-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Vibrarelax-acknowledgements.plist"; sourceTree = "<group>"; };
-		ACDD3A2C7E64DFFDF4587DD6F1F6DE7A /* FittedSheets-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FittedSheets-Info.plist"; sourceTree = "<group>"; };
+		AB4FDADF53F084D8E633FC37DF11E495 /* GoogleAnalytics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleAnalytics.debug.xcconfig; sourceTree = "<group>"; };
+		AE96ADADB3A7F3A140C61637CF5FD772 /* Blurberry.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Blurberry.debug.xcconfig; sourceTree = "<group>"; };
 		B14E37B8A5C5C81C65C8D14D2CA8C25B /* Pods-Vibrarelax.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Vibrarelax.debug.xcconfig"; sourceTree = "<group>"; };
-		B5F281183A1439977591ACD22E066B4A /* VisualEffectView+Public.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "VisualEffectView+Public.swift"; path = "Sources/Views/VisualEffectView+Public.swift"; sourceTree = "<group>"; };
+		B59429F141D887D9C09B3C8807A40D84 /* FittedSheets-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FittedSheets-dummy.m"; sourceTree = "<group>"; };
 		B627F9B04ACB502E4A582D3501D8A696 /* Pods-VibrarelaxTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VibrarelaxTests.release.xcconfig"; sourceTree = "<group>"; };
 		B65F96A5F9EDD1F9929FEA14144ED23E /* Pods-Vibrarelax-VibrarelaxUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Vibrarelax-VibrarelaxUITests-frameworks.sh"; sourceTree = "<group>"; };
 		B722E03B79EB5654358BA54996F520FE /* Pods-Vibrarelax-VibrarelaxUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Vibrarelax-VibrarelaxUITests-umbrella.h"; sourceTree = "<group>"; };
 		B83D53A4B57BF22CA5EA6BD2BE0D8484 /* Pods-Vibrarelax-VibrarelaxUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Vibrarelax-VibrarelaxUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		BA22E874828577E0A4C9168D23694E39 /* Pods-VibrarelaxTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-VibrarelaxTests.modulemap"; sourceTree = "<group>"; };
-		C53CB8B8E3485B82A09BFD7B283ADC43 /* Blurberry-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Blurberry-prefix.pch"; sourceTree = "<group>"; };
+		BB4C0A6FE7331D2F7BE0D5176B429CB1 /* SheetTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SheetTransition.swift; path = FittedSheets/SheetTransition.swift; sourceTree = "<group>"; };
+		C00A4E2B19346CBB2F740FA3870BC680 /* FittedSheets.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FittedSheets.debug.xcconfig; sourceTree = "<group>"; };
+		C1C5EB83DBE70A964B4F6CD03E3139F3 /* GAIEcommerceProduct.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAIEcommerceProduct.h; path = Sources/GAIEcommerceProduct.h; sourceTree = "<group>"; };
+		C2A6E752559C9F448099B3531DCA392C /* SheetView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SheetView.swift; path = FittedSheets/SheetView.swift; sourceTree = "<group>"; };
+		C566B5ECFACE26DE092814F856A530F5 /* VisualEffectView+Internal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "VisualEffectView+Internal.swift"; path = "Sources/Views/VisualEffectView+Internal.swift"; sourceTree = "<group>"; };
 		C5E56BDE610D3B98E4ABA74F5EF23EA6 /* Blurberry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Blurberry.framework; path = Blurberry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C6E115519A18EDD33BDF681F454FB4E8 /* UIColorExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIColorExtension.swift; path = FittedSheets/UIColorExtension.swift; sourceTree = "<group>"; };
 		C96A7FCF7FA9A8D49A2397B88753B308 /* Pods_Vibrarelax_VibrarelaxUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Vibrarelax_VibrarelaxUITests.framework; path = "Pods-Vibrarelax-VibrarelaxUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D0926D296F586CB99DE83E17F4AA6FF8 /* GRView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GRView.modulemap; sourceTree = "<group>"; };
-		D1045CE9CA1D17D66398CE13FB456679 /* Blurberry.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Blurberry.release.xcconfig; sourceTree = "<group>"; };
+		C9A66A49CCE4227E763F5EA00896FE67 /* NSObject+Extension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+Extension.h"; path = "Sources/Extensions/NSObject+Extension.h"; sourceTree = "<group>"; };
+		CF6BF7B80C727BA943691F8D314F4064 /* GAIEcommerceProductAction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAIEcommerceProductAction.h; path = Sources/GAIEcommerceProductAction.h; sourceTree = "<group>"; };
+		D46D2EBEA96A6544B999726B238F4060 /* GAIEcommercePromotion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAIEcommercePromotion.h; path = Sources/GAIEcommercePromotion.h; sourceTree = "<group>"; };
 		D5121A82C83ED66BF162FA6013042FA3 /* Pods-Vibrarelax-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Vibrarelax-dummy.m"; sourceTree = "<group>"; };
-		D87265D2C9D290B4FF9BD6027924CCF1 /* GRView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GRView-dummy.m"; sourceTree = "<group>"; };
-		DB851806256B9B6286AF7C0D84E67D05 /* FittedSheets-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FittedSheets-prefix.pch"; sourceTree = "<group>"; };
+		D870FF837F1F1DF5165F9AEA8FE92CBB /* Blurberry-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Blurberry-dummy.m"; sourceTree = "<group>"; };
+		DC16BFB1485590A3229C695F4045E508 /* FittedSheets.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FittedSheets.modulemap; sourceTree = "<group>"; };
 		DFE073B527607688F3AFF2B622494DF1 /* Pods-Vibrarelax.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Vibrarelax.modulemap"; sourceTree = "<group>"; };
+		E0BA41493D2115016DD601E2B619690F /* UIColorExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIColorExtension.swift; path = FittedSheets/UIColorExtension.swift; sourceTree = "<group>"; };
+		E1938963061CFCE69C22C2DB0D800BE6 /* Blurberry-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Blurberry-umbrella.h"; sourceTree = "<group>"; };
 		E1AABC29F23518FC9202A68957A2CB01 /* Pods-VibrarelaxTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VibrarelaxTests-dummy.m"; sourceTree = "<group>"; };
-		F1B2F7CC16BE77FC907762F981C8FD8D /* Blurberry.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Blurberry.debug.xcconfig; sourceTree = "<group>"; };
-		F3C6875283C7D492C1A0D9E8D8369476 /* SheetContentViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SheetContentViewController.swift; path = FittedSheets/SheetContentViewController.swift; sourceTree = "<group>"; };
-		F40054BDA545984BEBB31D8497024935 /* Blurberry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Blurberry.h; path = Sources/Blurberry.h; sourceTree = "<group>"; };
+		E2FF0A81E449819DAB1750E0F67BF6F2 /* FittedSheets-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FittedSheets-prefix.pch"; sourceTree = "<group>"; };
+		E51D30BF9512B554D26E17C468A811BA /* GRView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GRView.debug.xcconfig; sourceTree = "<group>"; };
+		E7F66EC1D491E68642E49B6ADF6AF4E4 /* Blurberry-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Blurberry-prefix.pch"; sourceTree = "<group>"; };
+		F59BD7AD05104C59F273129550D12C38 /* Yalta.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Yalta.swift; path = FittedSheets/Yalta.swift; sourceTree = "<group>"; };
 		F5BF95F5221D2A274DB4C0CC2BC29250 /* Pods-Vibrarelax-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Vibrarelax-umbrella.h"; sourceTree = "<group>"; };
 		F89580B453D4997D9AFB6020E1C0737C /* Pods-Vibrarelax-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Vibrarelax-acknowledgements.markdown"; sourceTree = "<group>"; };
 		F8F9C26FADC7C6533098E12D37BC820B /* Pods-Vibrarelax-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Vibrarelax-frameworks.sh"; sourceTree = "<group>"; };
+		F98544F83B6E0D2D717F8A8C35E092E5 /* SheetOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SheetOptions.swift; path = FittedSheets/SheetOptions.swift; sourceTree = "<group>"; };
 		F99965D998C9497A92E777A6DFA41C7A /* Pods-VibrarelaxTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VibrarelaxTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		FCE8472B7540582C83C3064A3DC67419 /* NSObject+Extension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+Extension.m"; path = "Sources/Extensions/NSObject+Extension.m"; sourceTree = "<group>"; };
+		FEB2AD2562F7E1D60D2EA30F829B3665 /* GAITracker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAITracker.h; path = Sources/GAITracker.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,14 +243,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5B3E8E1451278C03297AFAB6B42E1C84 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				51326CA54C0581A9F3C8B16E5E078085 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		AE5D3C9D2B9EB74A3DE092F50CBD0B8B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -220,11 +251,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C9114F5D99BEC9E5E4355042D43225C5 /* Frameworks */ = {
+		D8EA9E6E7D6A9399E6FC48BEC8A1451E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF3F041CCB00E37FD88C30E8DEEE7508 /* Foundation.framework in Frameworks */,
+				AC8BFB87ED3A7D9F2F30BFD5C41C3E92 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEBDFE6FF2A9CAEA9D65212A6628302C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				965282F41C9E8CD94B8AEA6A6833A3A1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +278,21 @@
 				14520DA32FDC67B3D2A277FB6D28D553 /* Pods-VibrarelaxTests */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		05DA7EFF5E45570DFBE3048679255B50 /* Blurberry */ = {
+			isa = PBXGroup;
+			children = (
+				6DFA9A0CF6230E53F84CA840606BC38F /* Blurberry.h */,
+				3D3659AD3E6925EC48C09199CC6716C1 /* Blurberry.swift */,
+				C9A66A49CCE4227E763F5EA00896FE67 /* NSObject+Extension.h */,
+				8711EA5DBED3B10B9A7FFFABDB1CDB78 /* NSObject+Extension.m */,
+				C566B5ECFACE26DE092814F856A530F5 /* VisualEffectView+Internal.swift */,
+				373B2410ABD453C75243C982D675F3AF /* VisualEffectView+Public.swift */,
+				557AB5C3699071A30688E8026195CC36 /* Support Files */,
+			);
+			name = Blurberry;
+			path = Blurberry;
 			sourceTree = "<group>";
 		};
 		14520DA32FDC67B3D2A277FB6D28D553 /* Pods-VibrarelaxTests */ = {
@@ -270,37 +324,38 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2194C5800D467AEAF89E7E2CEC42FF95 /* GRView */ = {
+		2E5E7C673716383105873DEAE4F142B2 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				10C54E07D9B0F749DC625C6B8CEA9C00 /* GRButton.swift */,
-				A801C0C3CA84573F45E2FAB0209F5671 /* GRView.swift */,
-				67778B3BC23E658D71F60C9325909677 /* Support Files */,
+				05DA7EFF5E45570DFBE3048679255B50 /* Blurberry */,
+				5E06B0A894F1B95C10B09F0EEB264704 /* FittedSheets */,
+				DA77E94D41D8D1EECA2E3F1823CAB12E /* GoogleAnalytics */,
+				D6C7FF34E86171C0598C4C6EBF587F91 /* GRView */,
 			);
-			name = GRView;
-			path = GRView;
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		2A5AB9DE681350411CE245192A1CC45F /* FittedSheets */ = {
+		39E3EEE8894BEA1E0D2626D54BB12211 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				70BC79E398A041BB677DCE3E560D2EC8 /* InitialTouchPanGestureRecognizer.swift */,
-				0ECFE8CF0F725F0AAE101711637F517B /* Localize.swift */,
-				F3C6875283C7D492C1A0D9E8D8369476 /* SheetContentViewController.swift */,
-				6390517CC1BB707C8506DBB83CF61900 /* SheetContentViewDelegate.swift */,
-				65C8271ED278E584D9FD9BAED639BE9A /* SheetOptions.swift */,
-				3ED8DCED09F9FABBE18DBEF9131B2B0E /* SheetSize.swift */,
-				A6F3241D9933AF94A336AEFE1D81CF56 /* SheetTransition.swift */,
-				58AC0C20FDD2E022F5EF54D538719915 /* SheetView.swift */,
-				A633D6632F518FEDE1B00EA468C01306 /* SheetViewController.swift */,
-				5A1B661B9B946AEAC4A0C683ABB29B1C /* SheetViewDelegate.swift */,
-				C6E115519A18EDD33BDF681F454FB4E8 /* UIColorExtension.swift */,
-				725277F0944C9EE65A8AA6282DF8BBBA /* UIViewControllerExtension.swift */,
-				364073CD62CC2CBC3D84FF7948ECBD68 /* Yalta.swift */,
-				E6BDA97D21D74F91E1D77704DDA472E0 /* Support Files */,
+				10961EB76157FEC26D9DA88E3FEF85D4 /* libGoogleAnalytics.a */,
 			);
-			name = FittedSheets;
-			path = FittedSheets;
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		557AB5C3699071A30688E8026195CC36 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				99C245C9C77DAA3FEF592472D5FA650D /* Blurberry.modulemap */,
+				D870FF837F1F1DF5165F9AEA8FE92CBB /* Blurberry-dummy.m */,
+				474AF55B96D5E2F5A65125FCF5A4D5A0 /* Blurberry-Info.plist */,
+				E7F66EC1D491E68642E49B6ADF6AF4E4 /* Blurberry-prefix.pch */,
+				E1938963061CFCE69C22C2DB0D800BE6 /* Blurberry-umbrella.h */,
+				AE96ADADB3A7F3A140C61637CF5FD772 /* Blurberry.debug.xcconfig */,
+				01262EA036890036F3EA045A21CDDAE2 /* Blurberry.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Blurberry";
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -311,44 +366,26 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		633F153049708EE9D7BB807F93C1EB4C /* Support Files */ = {
+		5E06B0A894F1B95C10B09F0EEB264704 /* FittedSheets */ = {
 			isa = PBXGroup;
 			children = (
-				73FE07D4E58F1AD3125C30A2D756BF24 /* Blurberry.modulemap */,
-				60BF0685862E1EAEF0A8299808881977 /* Blurberry-dummy.m */,
-				718F852D87F2F67A49ECDA3DDB342730 /* Blurberry-Info.plist */,
-				C53CB8B8E3485B82A09BFD7B283ADC43 /* Blurberry-prefix.pch */,
-				1A438609DE3239287205BBDE23A178F6 /* Blurberry-umbrella.h */,
-				F1B2F7CC16BE77FC907762F981C8FD8D /* Blurberry.debug.xcconfig */,
-				D1045CE9CA1D17D66398CE13FB456679 /* Blurberry.release.xcconfig */,
+				11D83D0BEE668E7FD79A2375CC287054 /* InitialTouchPanGestureRecognizer.swift */,
+				1A881E3E2A03392A452E2F0367D9378E /* Localize.swift */,
+				19F0DD4913E459D728A5FF5FCFEA2F52 /* SheetContentViewController.swift */,
+				00F53A03F215B00E7CC5F98572E14D30 /* SheetContentViewDelegate.swift */,
+				F98544F83B6E0D2D717F8A8C35E092E5 /* SheetOptions.swift */,
+				47BA8BE29E80110751FDC0FAFA165BC3 /* SheetSize.swift */,
+				BB4C0A6FE7331D2F7BE0D5176B429CB1 /* SheetTransition.swift */,
+				C2A6E752559C9F448099B3531DCA392C /* SheetView.swift */,
+				87A9FB12DCA1A41CCD291B8FE79AE4F9 /* SheetViewController.swift */,
+				140FB5226C6F60A2B69BDE47605A3FC6 /* SheetViewDelegate.swift */,
+				E0BA41493D2115016DD601E2B619690F /* UIColorExtension.swift */,
+				43683475532A58FF4E9AD604583B577E /* UIViewControllerExtension.swift */,
+				F59BD7AD05104C59F273129550D12C38 /* Yalta.swift */,
+				A07EA9D9F77FCED0EDB61482D5092DE8 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/Blurberry";
-			sourceTree = "<group>";
-		};
-		67778B3BC23E658D71F60C9325909677 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				D0926D296F586CB99DE83E17F4AA6FF8 /* GRView.modulemap */,
-				D87265D2C9D290B4FF9BD6027924CCF1 /* GRView-dummy.m */,
-				A41FDBCB41229B4A9224525F5B02B5FD /* GRView-Info.plist */,
-				A0626D8E9CB1AB2351E4E54D5146BA5E /* GRView-prefix.pch */,
-				6DEE278FC8117F0CF3802912AAE0FAF8 /* GRView-umbrella.h */,
-				102E2489C64B224F25E20F7121A9A43C /* GRView.debug.xcconfig */,
-				3AFF75BABB33710BD3214EC4B69D0900 /* GRView.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/GRView";
-			sourceTree = "<group>";
-		};
-		692CD2F6DB273A15C32057EA74004953 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				CB136F8879D57ACCCF8AB5F9742984C6 /* Blurberry */,
-				2A5AB9DE681350411CE245192A1CC45F /* FittedSheets */,
-				2194C5800D467AEAF89E7E2CEC42FF95 /* GRView */,
-			);
-			name = Pods;
+			name = FittedSheets;
+			path = FittedSheets;
 			sourceTree = "<group>";
 		};
 		929F8CFF2841906D03AF67C1D891039B /* Pods-Vibrarelax */ = {
@@ -368,6 +405,21 @@
 			path = "Target Support Files/Pods-Vibrarelax";
 			sourceTree = "<group>";
 		};
+		A07EA9D9F77FCED0EDB61482D5092DE8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DC16BFB1485590A3229C695F4045E508 /* FittedSheets.modulemap */,
+				B59429F141D887D9C09B3C8807A40D84 /* FittedSheets-dummy.m */,
+				450615B6B4ED16D273D4A0AC278B3A59 /* FittedSheets-Info.plist */,
+				E2FF0A81E449819DAB1750E0F67BF6F2 /* FittedSheets-prefix.pch */,
+				2DB431DFADD37C06E094AA3EC1B026C1 /* FittedSheets-umbrella.h */,
+				C00A4E2B19346CBB2F740FA3870BC680 /* FittedSheets.debug.xcconfig */,
+				8EEE7CCAED37A865671E073046B0235D /* FittedSheets.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FittedSheets";
+			sourceTree = "<group>";
+		};
 		AB6024063CABF427AC1515BD92DB1B9B /* Pods-Vibrarelax-VibrarelaxUITests */ = {
 			isa = PBXGroup;
 			children = (
@@ -385,19 +437,19 @@
 			path = "Target Support Files/Pods-Vibrarelax-VibrarelaxUITests";
 			sourceTree = "<group>";
 		};
-		CB136F8879D57ACCCF8AB5F9742984C6 /* Blurberry */ = {
+		CBC5192782DD36C69D71F494B49A531B /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				F40054BDA545984BEBB31D8497024935 /* Blurberry.h */,
-				98AC69DDC4C0E8C75AE3D13AE4325FBE /* Blurberry.swift */,
-				2132FB09910063D3E40712C24BAE5B7C /* NSObject+Extension.h */,
-				FCE8472B7540582C83C3064A3DC67419 /* NSObject+Extension.m */,
-				9649D2692624A6F6E7052B1D01C4C8CE /* VisualEffectView+Internal.swift */,
-				B5F281183A1439977591ACD22E066B4A /* VisualEffectView+Public.swift */,
-				633F153049708EE9D7BB807F93C1EB4C /* Support Files */,
+				A46FB0CAB08D26439C7321A9056075F3 /* GRView.modulemap */,
+				A205530BB21976A80118DAAA40DFDF10 /* GRView-dummy.m */,
+				79C0A27CB7DB50E15A32D389B4EC7373 /* GRView-Info.plist */,
+				0556BC5B7EFD396B7E7F1E8B64A07FF3 /* GRView-prefix.pch */,
+				47EB1ABFB519D8ED60AEB8D8063DC9A5 /* GRView-umbrella.h */,
+				E51D30BF9512B554D26E17C468A811BA /* GRView.debug.xcconfig */,
+				9C617FE834E1E224EB105E96A395948E /* GRView.release.xcconfig */,
 			);
-			name = Blurberry;
-			path = Blurberry;
+			name = "Support Files";
+			path = "../Target Support Files/GRView";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -405,7 +457,7 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				692CD2F6DB273A15C32057EA74004953 /* Pods */,
+				2E5E7C673716383105873DEAE4F142B2 /* Pods */,
 				1EAC897C52109AC6A61EC3C7054060AD /* Products */,
 				019B61A32A9D70267152CCAB8E852C01 /* Targets Support Files */,
 			);
@@ -419,29 +471,55 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E6BDA97D21D74F91E1D77704DDA472E0 /* Support Files */ = {
+		D6C7FF34E86171C0598C4C6EBF587F91 /* GRView */ = {
 			isa = PBXGroup;
 			children = (
-				9DF816AD399A873DC9F1D914A452BBD5 /* FittedSheets.modulemap */,
-				3EB0FB94007E9860DA6CB90438444F46 /* FittedSheets-dummy.m */,
-				ACDD3A2C7E64DFFDF4587DD6F1F6DE7A /* FittedSheets-Info.plist */,
-				DB851806256B9B6286AF7C0D84E67D05 /* FittedSheets-prefix.pch */,
-				76973FF4306A36217747115210AC0122 /* FittedSheets-umbrella.h */,
-				8AC4C71391F8BFB322F5E94A3162CAFB /* FittedSheets.debug.xcconfig */,
-				7206423FC84EFFBF7D6E2D01F700D4D7 /* FittedSheets.release.xcconfig */,
+				58BDC73DA642EA90F5B74D8EB4619C58 /* GRButton.swift */,
+				299D2F3E63A24CB916DEF8CACE883546 /* GRView.swift */,
+				CBC5192782DD36C69D71F494B49A531B /* Support Files */,
+			);
+			name = GRView;
+			path = GRView;
+			sourceTree = "<group>";
+		};
+		DA77E94D41D8D1EECA2E3F1823CAB12E /* GoogleAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				5260DE59E9955DC7292B7D2618419809 /* GAI.h */,
+				6C50196CA97395DC691B96796CC8BFCA /* GAIDictionaryBuilder.h */,
+				663A7D1795397A82FC4C95C297545BE1 /* GAIEcommerceFields.h */,
+				C1C5EB83DBE70A964B4F6CD03E3139F3 /* GAIEcommerceProduct.h */,
+				CF6BF7B80C727BA943691F8D314F4064 /* GAIEcommerceProductAction.h */,
+				D46D2EBEA96A6544B999726B238F4060 /* GAIEcommercePromotion.h */,
+				2673F7E875DD4413E327ACDB12A8FF3E /* GAIFields.h */,
+				7F378F521720A10FB8F17181D62B1283 /* GAILogger.h */,
+				47376177949DC426C6A38BEFC28B0C09 /* GAITrackedViewController.h */,
+				FEB2AD2562F7E1D60D2EA30F829B3665 /* GAITracker.h */,
+				39E3EEE8894BEA1E0D2626D54BB12211 /* Frameworks */,
+				ED538D3E27313D21C9F320D99510AAFA /* Support Files */,
+			);
+			name = GoogleAnalytics;
+			path = GoogleAnalytics;
+			sourceTree = "<group>";
+		};
+		ED538D3E27313D21C9F320D99510AAFA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AB4FDADF53F084D8E633FC37DF11E495 /* GoogleAnalytics.debug.xcconfig */,
+				2DD139A218AFEC02354E2699D2C7F7C8 /* GoogleAnalytics.release.xcconfig */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/FittedSheets";
+			path = "../Target Support Files/GoogleAnalytics";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		150C1BACFFBD60C9146FA8E8B6684021 /* Headers */ = {
+		8319E5D65C450FFA7F10D213C4CF4ACD /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7706C59747B5BD6CB167225A79465F3E /* Pods-Vibrarelax-umbrella.h in Headers */,
+				5E2D6E4D9A2E34DB02295BD1D8A6F5CF /* Pods-Vibrarelax-VibrarelaxUITests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,14 +536,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA6FE25A1021BFE704BC9481541BA7BE /* Pods-VibrarelaxTests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CCB14523816C077BB1A26EA516A44702 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F63C95205CDCF8EE29A55ED6FBDBC2F1 /* Pods-Vibrarelax-VibrarelaxUITests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,24 +557,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FD5943B48A499973532650B55F5C7377 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08E31227DAE21542D15582F3A78E1FFC /* Pods-Vibrarelax-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		15BFB1517AC61057953E0DEC37F1F7A5 /* Pods-Vibrarelax-VibrarelaxUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 74E1553B859BD56DFDD3AC0E79C6EF21 /* Build configuration list for PBXNativeTarget "Pods-Vibrarelax-VibrarelaxUITests" */;
+			buildConfigurationList = BA35C815EDEF714FB61C18E3E95667FB /* Build configuration list for PBXNativeTarget "Pods-Vibrarelax-VibrarelaxUITests" */;
 			buildPhases = (
-				CCB14523816C077BB1A26EA516A44702 /* Headers */,
-				2903807416D4EB4520AE755182DB86B9 /* Sources */,
-				C9114F5D99BEC9E5E4355042D43225C5 /* Frameworks */,
-				4FD67F462E2CF263D452B73174D63744 /* Resources */,
+				8319E5D65C450FFA7F10D213C4CF4ACD /* Headers */,
+				AA93F1F54B5803A1D83E1103CF264C7B /* Sources */,
+				D8EA9E6E7D6A9399E6FC48BEC8A1451E /* Frameworks */,
+				010B8BDC1D5AEDCF5372ADB35091ECC7 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				FEB9DD57BAEB707EE2CC520CD500D594 /* PBXTargetDependency */,
-				DC6C2F0A14ACBB943F44DCCA31F910DB /* PBXTargetDependency */,
-				0F6FBC6629D35E4137B52704362EFFE6 /* PBXTargetDependency */,
+				09304D02A66316A81D11DB0094CEF2C1 /* PBXTargetDependency */,
+				A665F1C4899FFA7BD4E61B1B3952AD58 /* PBXTargetDependency */,
+				CA7C156A0331A6F6A8FA7B52EFFE117B /* PBXTargetDependency */,
+				E7350547A71D155730ED2A86FF633CA1 /* PBXTargetDependency */,
 			);
 			name = "Pods-Vibrarelax-VibrarelaxUITests";
 			productName = "Pods-Vibrarelax-VibrarelaxUITests";
@@ -513,19 +592,20 @@
 		};
 		8A7F25C591290F4B1DD089EA22A154FA /* Pods-Vibrarelax */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5495183BCD51FA30CD2D8C855B3AECA9 /* Build configuration list for PBXNativeTarget "Pods-Vibrarelax" */;
+			buildConfigurationList = 2D3C210DE915542E4E5ED640F040EBB0 /* Build configuration list for PBXNativeTarget "Pods-Vibrarelax" */;
 			buildPhases = (
-				150C1BACFFBD60C9146FA8E8B6684021 /* Headers */,
-				A71F1424D6F3A52AB5303FC223399F1E /* Sources */,
-				5B3E8E1451278C03297AFAB6B42E1C84 /* Frameworks */,
-				B1E8BC6DD06A4B931B01BF188D7525D5 /* Resources */,
+				FD5943B48A499973532650B55F5C7377 /* Headers */,
+				88F4621C18EC70A86AE761F39C7DC059 /* Sources */,
+				FEBDFE6FF2A9CAEA9D65212A6628302C /* Frameworks */,
+				38CB9CF99B911EA8C41335CB6BF84190 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C6803C9226CE0EDB5C136FA9256DEB09 /* PBXTargetDependency */,
-				226637638643D8D80816CE5E5EE9F969 /* PBXTargetDependency */,
-				DCD1899DF860A48739227B8C6592C586 /* PBXTargetDependency */,
+				CF4CD4361F063EDE8746DEF889412D58 /* PBXTargetDependency */,
+				8903C676D450D7BFABF56A2C8A107F6E /* PBXTargetDependency */,
+				6F4629F46A6B1D7DFC10CFD4B3E9CC2E /* PBXTargetDependency */,
+				2C7048B8FA2D155541C97A69B9F90952 /* PBXTargetDependency */,
 			);
 			name = "Pods-Vibrarelax";
 			productName = "Pods-Vibrarelax";
@@ -598,7 +678,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				3EB8D3273344DAD4D5739643C2D792DD /* PBXTargetDependency */,
+				0778A318E9473999E24A13F307F4ACFC /* PBXTargetDependency */,
 			);
 			name = "Pods-VibrarelaxTests";
 			productName = "Pods-VibrarelaxTests";
@@ -629,6 +709,7 @@
 			targets = (
 				C6C3C67C7439DD1659D9BFC58236BFA4 /* Blurberry */,
 				B71C614CBF9B1B690FE941C4DF44D040 /* FittedSheets */,
+				968D06ADB152B8D9FA77D570E2335002 /* GoogleAnalytics */,
 				C8E64EB1CF11A61804ADD6D990751811 /* GRView */,
 				8A7F25C591290F4B1DD089EA22A154FA /* Pods-Vibrarelax */,
 				15BFB1517AC61057953E0DEC37F1F7A5 /* Pods-Vibrarelax-VibrarelaxUITests */,
@@ -638,14 +719,21 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		39F50BC493B3BDAD47B8C11265588F2A /* Resources */ = {
+		010B8BDC1D5AEDCF5372ADB35091ECC7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4FD67F462E2CF263D452B73174D63744 /* Resources */ = {
+		38CB9CF99B911EA8C41335CB6BF84190 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39F50BC493B3BDAD47B8C11265588F2A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -666,13 +754,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B1E8BC6DD06A4B931B01BF188D7525D5 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		F9F5E61D4B4C98EA6F89D53A55C81AE7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -683,14 +764,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2903807416D4EB4520AE755182DB86B9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				701A679AFBF7AFDAF00BECCFE4C8B00D /* Pods-Vibrarelax-VibrarelaxUITests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		4EBA3B88CB01CBC9D701D249E4CB1FD5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -722,11 +795,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A71F1424D6F3A52AB5303FC223399F1E /* Sources */ = {
+		88F4621C18EC70A86AE761F39C7DC059 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB3FF3A9781FF93567B72C9D280C7C5E /* Pods-Vibrarelax-dummy.m in Sources */,
+				1F04795A0DC00AAE0E6E52C151967264 /* Pods-Vibrarelax-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA93F1F54B5803A1D83E1103CF264C7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06F8CF25C06CDC651848C6CA1B921908 /* Pods-Vibrarelax-VibrarelaxUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -753,54 +834,83 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0F6FBC6629D35E4137B52704362EFFE6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = GRView;
-			target = C8E64EB1CF11A61804ADD6D990751811 /* GRView */;
-			targetProxy = 825226BE3BE365280F80BFF0D7278A9F /* PBXContainerItemProxy */;
-		};
-		226637638643D8D80816CE5E5EE9F969 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = FittedSheets;
-			target = B71C614CBF9B1B690FE941C4DF44D040 /* FittedSheets */;
-			targetProxy = 9E87F9A24397A5CDC3E101EF6AB4962A /* PBXContainerItemProxy */;
-		};
-		3EB8D3273344DAD4D5739643C2D792DD /* PBXTargetDependency */ = {
+		0778A318E9473999E24A13F307F4ACFC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-Vibrarelax";
 			target = 8A7F25C591290F4B1DD089EA22A154FA /* Pods-Vibrarelax */;
-			targetProxy = E2272B69D9D6BA99A3045F3C5CF604B5 /* PBXContainerItemProxy */;
+			targetProxy = D490DD9BFD7857208A2EE2023BAA8894 /* PBXContainerItemProxy */;
 		};
-		C6803C9226CE0EDB5C136FA9256DEB09 /* PBXTargetDependency */ = {
+		09304D02A66316A81D11DB0094CEF2C1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Blurberry;
 			target = C6C3C67C7439DD1659D9BFC58236BFA4 /* Blurberry */;
-			targetProxy = 5A7CC43EE04B9E3F115862E134B1048C /* PBXContainerItemProxy */;
+			targetProxy = 34390E836EC8BA27B90E8045A41F4910 /* PBXContainerItemProxy */;
 		};
-		DC6C2F0A14ACBB943F44DCCA31F910DB /* PBXTargetDependency */ = {
+		2C7048B8FA2D155541C97A69B9F90952 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = FittedSheets;
-			target = B71C614CBF9B1B690FE941C4DF44D040 /* FittedSheets */;
-			targetProxy = 90E28AD012716A5D4D47036E690E2267 /* PBXContainerItemProxy */;
+			name = GoogleAnalytics;
+			target = 968D06ADB152B8D9FA77D570E2335002 /* GoogleAnalytics */;
+			targetProxy = 5F65FCD9424C9CBBDEC8F2462C1B0C2C /* PBXContainerItemProxy */;
 		};
-		DCD1899DF860A48739227B8C6592C586 /* PBXTargetDependency */ = {
+		6F4629F46A6B1D7DFC10CFD4B3E9CC2E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = GRView;
 			target = C8E64EB1CF11A61804ADD6D990751811 /* GRView */;
-			targetProxy = 033DC5B6CEEB72DA1292886A33590DCE /* PBXContainerItemProxy */;
+			targetProxy = 82C5795F0FF584700C2BDCEE2DA49AC0 /* PBXContainerItemProxy */;
 		};
-		FEB9DD57BAEB707EE2CC520CD500D594 /* PBXTargetDependency */ = {
+		8903C676D450D7BFABF56A2C8A107F6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FittedSheets;
+			target = B71C614CBF9B1B690FE941C4DF44D040 /* FittedSheets */;
+			targetProxy = 4AABD3478524F66AAF873435E902F5DB /* PBXContainerItemProxy */;
+		};
+		A665F1C4899FFA7BD4E61B1B3952AD58 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FittedSheets;
+			target = B71C614CBF9B1B690FE941C4DF44D040 /* FittedSheets */;
+			targetProxy = CCE8AFF7DBED7E2124FD803A909DEB59 /* PBXContainerItemProxy */;
+		};
+		CA7C156A0331A6F6A8FA7B52EFFE117B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GRView;
+			target = C8E64EB1CF11A61804ADD6D990751811 /* GRView */;
+			targetProxy = E4362A715BF65BEBF4F49262241A87DE /* PBXContainerItemProxy */;
+		};
+		CF4CD4361F063EDE8746DEF889412D58 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Blurberry;
 			target = C6C3C67C7439DD1659D9BFC58236BFA4 /* Blurberry */;
-			targetProxy = 11DBED44C2DDFFF1915A9656EB2218B6 /* PBXContainerItemProxy */;
+			targetProxy = 01E4E6721168039B1B966DA0FED84EA1 /* PBXContainerItemProxy */;
+		};
+		E7350547A71D155730ED2A86FF633CA1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GoogleAnalytics;
+			target = 968D06ADB152B8D9FA77D570E2335002 /* GoogleAnalytics */;
+			targetProxy = 34B6DF79C22584D4DB475498D33D23D8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		125C1CBDE5E81C8BF62834E526A2E74D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DD139A218AFEC02354E2699D2C7F7C8 /* GoogleAnalytics.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		1B6C02AEF7E28DF9C4FAC1F010A6D5C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 102E2489C64B224F25E20F7121A9A43C /* GRView.debug.xcconfig */;
+			baseConfigurationReference = E51D30BF9512B554D26E17C468A811BA /* GRView.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -835,7 +945,7 @@
 		};
 		22608FC039CEA0F44D5C974792A600DE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3AFF75BABB33710BD3214EC4B69D0900 /* GRView.release.xcconfig */;
+			baseConfigurationReference = 9C617FE834E1E224EB105E96A395948E /* GRView.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -869,9 +979,9 @@
 			};
 			name = Release;
 		};
-		5AE92A01607C281C72776CC73929A349 /* Release */ = {
+		437D47A16D1798E306F484C015809395 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 476398E4DE4CC0D9C3333375379D4952 /* Pods-Vibrarelax.release.xcconfig */;
+			baseConfigurationReference = 0FC021AB72AEEE15AEA2ED2A3638AAD3 /* Pods-Vibrarelax-VibrarelaxUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -883,16 +993,16 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Vibrarelax/Pods-Vibrarelax-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-Vibrarelax-VibrarelaxUITests/Pods-Vibrarelax-VibrarelaxUITests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Vibrarelax/Pods-Vibrarelax.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-Vibrarelax-VibrarelaxUITests/Pods-Vibrarelax-VibrarelaxUITests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -907,69 +1017,79 @@
 			};
 			name = Release;
 		};
-		71243899B61152433AAE34EE86456EE7 /* Release */ = {
+		86FC4E6B20553DD6B5B892AFE88DED50 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 729B97BA912C4FAF300CA46BDD84A80A /* Pods-VibrarelaxTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-VibrarelaxTests/Pods-VibrarelaxTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
 				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
-				SYMROOT = "${SRCROOT}/../build";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-VibrarelaxTests/Pods-VibrarelaxTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		75D70EEEA0A456E14F7338A7F342964E /* Debug */ = {
+		8A0C0C453ABB375891C9F1AF620EA470 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE96ADADB3A7F3A140C61637CF5FD772 /* Blurberry.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Blurberry/Blurberry-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Blurberry/Blurberry-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Blurberry/Blurberry.modulemap";
+				PRODUCT_MODULE_NAME = Blurberry;
+				PRODUCT_NAME = Blurberry;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8DE5143C03248BB6CD542DE3963D6F3A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1022,7 +1142,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1035,299 +1155,7 @@
 			};
 			name = Debug;
 		};
-		8A0C0C453ABB375891C9F1AF620EA470 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F1B2F7CC16BE77FC907762F981C8FD8D /* Blurberry.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Blurberry/Blurberry-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Blurberry/Blurberry-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/Blurberry/Blurberry.modulemap";
-				PRODUCT_MODULE_NAME = Blurberry;
-				PRODUCT_NAME = Blurberry;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		A7EF0462DD3FB64D309409C66B569AB0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0FC021AB72AEEE15AEA2ED2A3638AAD3 /* Pods-Vibrarelax-VibrarelaxUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Vibrarelax-VibrarelaxUITests/Pods-Vibrarelax-VibrarelaxUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Vibrarelax-VibrarelaxUITests/Pods-Vibrarelax-VibrarelaxUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		AF644945EF5373F7008BE983D28423F3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 729B97BA912C4FAF300CA46BDD84A80A /* Pods-VibrarelaxTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-VibrarelaxTests/Pods-VibrarelaxTests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-VibrarelaxTests/Pods-VibrarelaxTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		B19251698B349FEBDC37FFF2B3D98F2F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D1045CE9CA1D17D66398CE13FB456679 /* Blurberry.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Blurberry/Blurberry-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Blurberry/Blurberry-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/Blurberry/Blurberry.modulemap";
-				PRODUCT_MODULE_NAME = Blurberry;
-				PRODUCT_NAME = Blurberry;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		B8B748AB37F429D7531EDA29C43208C2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 409D56D35A39A4B8F1C3288B7C29161D /* Pods-Vibrarelax-VibrarelaxUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Vibrarelax-VibrarelaxUITests/Pods-Vibrarelax-VibrarelaxUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Vibrarelax-VibrarelaxUITests/Pods-Vibrarelax-VibrarelaxUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		B8C215FA6614CEFA6FFEAF24548296A2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B627F9B04ACB502E4A582D3501D8A696 /* Pods-VibrarelaxTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-VibrarelaxTests/Pods-VibrarelaxTests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-VibrarelaxTests/Pods-VibrarelaxTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		B9822CCBF14F48D0C7CDB82C668F43C6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7206423FC84EFFBF7D6E2D01F700D4D7 /* FittedSheets.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/FittedSheets/FittedSheets-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FittedSheets/FittedSheets-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/FittedSheets/FittedSheets.modulemap";
-				PRODUCT_MODULE_NAME = FittedSheets;
-				PRODUCT_NAME = FittedSheets;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		E70FE3B6F2C716A1F5ECC581EB1207AC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8AC4C71391F8BFB322F5E94A3162CAFB /* FittedSheets.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/FittedSheets/FittedSheets-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FittedSheets/FittedSheets-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/FittedSheets/FittedSheets.modulemap";
-				PRODUCT_MODULE_NAME = FittedSheets;
-				PRODUCT_NAME = FittedSheets;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		F8B277D887910804B34788D4418DA56C /* Debug */ = {
+		8FD77032D62241C5056DB02D928DF03A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B14E37B8A5C5C81C65C8D14D2CA8C25B /* Pods-Vibrarelax.debug.xcconfig */;
 			buildSettings = {
@@ -1343,7 +1171,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-Vibrarelax/Pods-Vibrarelax-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1364,6 +1192,304 @@
 			};
 			name = Debug;
 		};
+		9E39279338A2F82D2A4D4A1B888385ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB4FDADF53F084D8E633FC37DF11E495 /* GoogleAnalytics.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9E406C6AAF85E580207CD97B0044DEAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		AE1E20FA5283011F98D788B4489133E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B627F9B04ACB502E4A582D3501D8A696 /* Pods-VibrarelaxTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-VibrarelaxTests/Pods-VibrarelaxTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-VibrarelaxTests/Pods-VibrarelaxTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B19251698B349FEBDC37FFF2B3D98F2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01262EA036890036F3EA045A21CDDAE2 /* Blurberry.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Blurberry/Blurberry-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Blurberry/Blurberry-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Blurberry/Blurberry.modulemap";
+				PRODUCT_MODULE_NAME = Blurberry;
+				PRODUCT_NAME = Blurberry;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B9822CCBF14F48D0C7CDB82C668F43C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EEE7CCAED37A865671E073046B0235D /* FittedSheets.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FittedSheets/FittedSheets-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FittedSheets/FittedSheets-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/FittedSheets/FittedSheets.modulemap";
+				PRODUCT_MODULE_NAME = FittedSheets;
+				PRODUCT_NAME = FittedSheets;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BDE5D2D0DF642DFF63CA3F5E9F8E2790 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 409D56D35A39A4B8F1C3288B7C29161D /* Pods-Vibrarelax-VibrarelaxUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Vibrarelax-VibrarelaxUITests/Pods-Vibrarelax-VibrarelaxUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Vibrarelax-VibrarelaxUITests/Pods-Vibrarelax-VibrarelaxUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E70FE3B6F2C716A1F5ECC581EB1207AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C00A4E2B19346CBB2F740FA3870BC680 /* FittedSheets.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FittedSheets/FittedSheets-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FittedSheets/FittedSheets-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/FittedSheets/FittedSheets.modulemap";
+				PRODUCT_MODULE_NAME = FittedSheets;
+				PRODUCT_NAME = FittedSheets;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F9E65C4367AB2B34F0B72066931E15D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 476398E4DE4CC0D9C3333375379D4952 /* Pods-Vibrarelax.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Vibrarelax/Pods-Vibrarelax-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Vibrarelax/Pods-Vibrarelax.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1376,29 +1502,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		2D3C210DE915542E4E5ED640F040EBB0 /* Build configuration list for PBXNativeTarget "Pods-Vibrarelax" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FD77032D62241C5056DB02D928DF03A /* Debug */,
+				F9E65C4367AB2B34F0B72066931E15D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				75D70EEEA0A456E14F7338A7F342964E /* Debug */,
-				71243899B61152433AAE34EE86456EE7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5495183BCD51FA30CD2D8C855B3AECA9 /* Build configuration list for PBXNativeTarget "Pods-Vibrarelax" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F8B277D887910804B34788D4418DA56C /* Debug */,
-				5AE92A01607C281C72776CC73929A349 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		74E1553B859BD56DFDD3AC0E79C6EF21 /* Build configuration list for PBXNativeTarget "Pods-Vibrarelax-VibrarelaxUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B8B748AB37F429D7531EDA29C43208C2 /* Debug */,
-				A7EF0462DD3FB64D309409C66B569AB0 /* Release */,
+				8DE5143C03248BB6CD542DE3963D6F3A /* Debug */,
+				9E406C6AAF85E580207CD97B0044DEAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1408,6 +1525,15 @@
 			buildConfigurations = (
 				8A0C0C453ABB375891C9F1AF620EA470 /* Debug */,
 				B19251698B349FEBDC37FFF2B3D98F2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA35C815EDEF714FB61C18E3E95667FB /* Build configuration list for PBXNativeTarget "Pods-Vibrarelax-VibrarelaxUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDE5D2D0DF642DFF63CA3F5E9F8E2790 /* Debug */,
+				437D47A16D1798E306F484C015809395 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1424,8 +1550,17 @@
 		DED817F814727700EAA264BA01256A53 /* Build configuration list for PBXNativeTarget "Pods-VibrarelaxTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AF644945EF5373F7008BE983D28423F3 /* Debug */,
-				B8C215FA6614CEFA6FFEAF24548296A2 /* Release */,
+				86FC4E6B20553DD6B5B892AFE88DED50 /* Debug */,
+				AE1E20FA5283011F98D788B4489133E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF1D5B6DF1B08E65E07E827B139A9266 /* Build configuration list for PBXAggregateTarget "GoogleAnalytics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E39279338A2F82D2A4D4A1B888385ED /* Debug */,
+				125C1CBDE5E81C8BF62834E526A2E74D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
