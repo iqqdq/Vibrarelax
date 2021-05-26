@@ -796,7 +796,7 @@ One-time purchase 19$</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="3LU-18-6Au">
-                                <rect key="frame" x="40" y="193" width="334" height="519"/>
+                                <rect key="frame" x="30" y="193" width="354" height="519"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="Sz7-7E-f36">
                                     <size key="itemSize" width="176" height="167"/>
@@ -806,7 +806,7 @@ One-time purchase 19$</string>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ModeCollectionViewCell" id="e5c-pu-lkg" customClass="ModeCollectionViewCell" customModule="Vibrarelax" customModuleProvider="target">
-                                        <rect key="frame" x="79" y="0.0" width="176" height="167"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="176" height="167"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Zwb-EW-n6J">
                                             <rect key="frame" x="0.0" y="0.0" width="176" height="167"/>
@@ -843,15 +843,15 @@ One-time purchase 19$</string>
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H2o-aM-dpa">
-                                                    <rect key="frame" x="68" y="82" width="40.5" height="22"/>
+                                                    <rect key="frame" x="68" y="78" width="40.5" height="22"/>
                                                     <fontDescription key="fontDescription" name="Nunito-SemiBold" family="Nunito" pointSize="16"/>
-                                                    <color key="textColor" red="0.73660141229999998" green="0.5965700746" blue="0.52831161019999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="textColor" red="0.55294117647058827" green="0.45098039215686275" blue="0.41960784313725491" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="p8h-bM-iEn" firstAttribute="top" secondItem="Zwb-EW-n6J" secondAttribute="top" id="5kN-k9-fWh"/>
-                                                <constraint firstItem="H2o-aM-dpa" firstAttribute="top" secondItem="p8h-bM-iEn" secondAttribute="bottom" constant="10" id="PPp-Vq-LOq"/>
+                                                <constraint firstItem="H2o-aM-dpa" firstAttribute="top" secondItem="p8h-bM-iEn" secondAttribute="bottom" constant="6" id="PPp-Vq-LOq"/>
                                                 <constraint firstItem="p8h-bM-iEn" firstAttribute="centerX" secondItem="Zwb-EW-n6J" secondAttribute="centerX" id="k7S-Pa-jGc"/>
                                                 <constraint firstItem="H2o-aM-dpa" firstAttribute="centerX" secondItem="Zwb-EW-n6J" secondAttribute="centerX" id="u2D-VT-enV"/>
                                             </constraints>
@@ -868,7 +868,7 @@ One-time purchase 19$</string>
                                     </collectionViewCell>
                                 </cells>
                                 <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Mx0-AJ-OWJ">
-                                    <rect key="frame" x="0.0" y="167" width="334" height="50"/>
+                                    <rect key="frame" x="0.0" y="167" width="354" height="50"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </collectionReusableView>
                                 <connections>
@@ -913,34 +913,35 @@ One-time purchase 19$</string>
                                 </connections>
                             </slider>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_level" translatesAutoresizingMaskIntoConstraints="NO" id="a3Z-0X-2hm">
-                                <rect key="frame" x="40" y="146" width="334" height="23"/>
+                                <rect key="frame" x="47.5" y="146" width="319" height="23"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Eqe-SU-u0P"/>
                         <color key="backgroundColor" red="0.98039215686274506" green="0.8784313725490196" blue="0.82352941176470584" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Eqe-SU-u0P" firstAttribute="trailing" secondItem="XRG-Kd-mGf" secondAttribute="trailing" constant="40" id="2a5-0c-SwG"/>
-                            <constraint firstItem="3LU-18-6Au" firstAttribute="leading" secondItem="Eqe-SU-u0P" secondAttribute="leading" constant="40" id="2hr-ef-1yD"/>
+                            <constraint firstItem="3LU-18-6Au" firstAttribute="leading" secondItem="Eqe-SU-u0P" secondAttribute="leading" constant="30" id="2hr-ef-1yD"/>
                             <constraint firstItem="a3Z-0X-2hm" firstAttribute="top" secondItem="XRG-Kd-mGf" secondAttribute="bottom" constant="16" id="3yt-Ix-u98"/>
-                            <constraint firstItem="Eqe-SU-u0P" firstAttribute="trailing" secondItem="3LU-18-6Au" secondAttribute="trailing" constant="40" id="9Jl-qe-GY9"/>
+                            <constraint firstItem="Eqe-SU-u0P" firstAttribute="trailing" secondItem="3LU-18-6Au" secondAttribute="trailing" constant="30" id="9Jl-qe-GY9"/>
+                            <constraint firstItem="a3Z-0X-2hm" firstAttribute="centerX" secondItem="qJD-JF-5ty" secondAttribute="centerX" id="Cuv-Qn-NTd"/>
                             <constraint firstItem="Eqe-SU-u0P" firstAttribute="bottom" secondItem="3LU-18-6Au" secondAttribute="bottom" constant="150" id="KwS-gU-eQY"/>
                             <constraint firstItem="fcE-4U-ocu" firstAttribute="top" secondItem="Eqe-SU-u0P" secondAttribute="top" constant="24" id="N4R-GS-faf"/>
                             <constraint firstItem="Cwl-Ye-7vL" firstAttribute="centerX" secondItem="qJD-JF-5ty" secondAttribute="centerX" id="PKU-Kp-Jro"/>
-                            <constraint firstItem="Eqe-SU-u0P" firstAttribute="trailing" secondItem="a3Z-0X-2hm" secondAttribute="trailing" constant="40" id="U6y-WZ-dF9"/>
-                            <constraint firstItem="XRG-Kd-mGf" firstAttribute="leading" secondItem="Eqe-SU-u0P" secondAttribute="leading" constant="40" id="Ul7-zE-p2M"/>
+                            <constraint firstItem="soo-49-C4C" firstAttribute="trailing" secondItem="XRG-Kd-mGf" secondAttribute="trailing" id="aLT-9I-wBr"/>
+                            <constraint firstItem="a3Z-0X-2hm" firstAttribute="width" secondItem="3LU-18-6Au" secondAttribute="width" multiplier="0.9" id="cE2-yR-VIm"/>
                             <constraint firstItem="3LU-18-6Au" firstAttribute="top" secondItem="a3Z-0X-2hm" secondAttribute="bottom" constant="24" id="dqQ-gd-X6y"/>
                             <constraint firstItem="XRG-Kd-mGf" firstAttribute="top" secondItem="Cwl-Ye-7vL" secondAttribute="bottom" constant="6" id="ftp-yt-V3N"/>
                             <constraint firstItem="soo-49-C4C" firstAttribute="top" secondItem="Eqe-SU-u0P" secondAttribute="top" constant="12" id="hkE-vv-gjM"/>
+                            <constraint firstItem="XRG-Kd-mGf" firstAttribute="centerX" secondItem="qJD-JF-5ty" secondAttribute="centerX" id="lKL-od-a4r"/>
+                            <constraint firstItem="XRG-Kd-mGf" firstAttribute="width" secondItem="a3Z-0X-2hm" secondAttribute="width" multiplier="1.04702" id="ldB-3W-GnA"/>
                             <constraint firstItem="Cwl-Ye-7vL" firstAttribute="bottom" secondItem="soo-49-C4C" secondAttribute="bottom" id="qCo-Pv-3hb"/>
-                            <constraint firstItem="fcE-4U-ocu" firstAttribute="leading" secondItem="Eqe-SU-u0P" secondAttribute="leading" constant="40" id="wFZ-JJ-RJR"/>
-                            <constraint firstItem="Eqe-SU-u0P" firstAttribute="trailing" secondItem="soo-49-C4C" secondAttribute="trailing" constant="40" id="wpb-KA-6zU"/>
-                            <constraint firstItem="a3Z-0X-2hm" firstAttribute="leading" secondItem="Eqe-SU-u0P" secondAttribute="leading" constant="40" id="ybl-V3-SyQ"/>
+                            <constraint firstItem="fcE-4U-ocu" firstAttribute="leading" secondItem="XRG-Kd-mGf" secondAttribute="leading" id="zFy-bA-E8d"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="3qS-tO-aRt"/>
                     <connections>
                         <outlet property="collectionView" destination="3LU-18-6Au" id="7Xu-bl-cGM"/>
                         <outlet property="collectionViewBottomConstraint" destination="KwS-gU-eQY" id="9dN-qE-kJU"/>
+                        <outlet property="designableSlider" destination="XRG-Kd-mGf" id="NJP-et-bA2"/>
                         <outlet property="levelImageView" destination="a3Z-0X-2hm" id="W5r-ih-m0J"/>
                     </connections>
                 </viewController>
@@ -1207,7 +1208,7 @@ One-time purchase 19$</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="S E T T I N G S" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Usb-Ck-fFW">
-                                <rect key="frame" x="40" y="64" width="334" height="31.5"/>
+                                <rect key="frame" x="40" y="64" width="334" height="27"/>
                                 <fontDescription key="fontDescription" name="Nunito-ExtraBold" family="Nunito" pointSize="23"/>
                                 <color key="textColor" red="0.73660141229999998" green="0.5965700746" blue="0.52831161019999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1223,7 +1224,7 @@ One-time purchase 19$</string>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Doesn't vibrate?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9I0-OW-rZb">
-                                        <rect key="frame" x="50" y="23" width="124" height="22"/>
+                                        <rect key="frame" x="50" y="24.5" width="117.5" height="19"/>
                                         <fontDescription key="fontDescription" name="Nunito-ExtraBold" family="Nunito" pointSize="16"/>
                                         <color key="textColor" red="0.55294117647058827" green="0.45098039215686275" blue="0.41960784313725491" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -1293,7 +1294,7 @@ One-time purchase 19$</string>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VNY-23-hCr">
-                                        <rect key="frame" x="50" y="25" width="57" height="22"/>
+                                        <rect key="frame" x="50" y="26.5" width="55" height="19"/>
                                         <string key="text">Rate us 
 </string>
                                         <fontDescription key="fontDescription" name="Nunito-ExtraBold" family="Nunito" pointSize="16"/>
@@ -1315,7 +1316,7 @@ One-time purchase 19$</string>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j8d-vu-fyA">
-                                        <rect key="frame" x="50" y="94" width="62.5" height="22"/>
+                                        <rect key="frame" x="50" y="95.5" width="58" height="19"/>
                                         <string key="text">Support
 </string>
                                         <fontDescription key="fontDescription" name="Nunito-ExtraBold" family="Nunito" pointSize="16"/>
@@ -1337,7 +1338,7 @@ One-time purchase 19$</string>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Share" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f9N-gZ-SH4">
-                                        <rect key="frame" x="50" y="163" width="44" height="22"/>
+                                        <rect key="frame" x="50" y="164.5" width="41.5" height="19"/>
                                         <fontDescription key="fontDescription" name="Nunito-ExtraBold" family="Nunito" pointSize="16"/>
                                         <color key="textColor" red="0.55294117649999996" green="0.45098039220000002" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -1851,11 +1852,11 @@ NDk5IC8gCgPQtdC20LXQvdC10LTQtdC70YzQvdC+ICQ
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <attributedString key="attributedText">
                                             <fragment>
-                                                <mutableString key="content">By downloading or using the app, these terms will automatically apply to you – you should make sure therefore that you read them carefully before using the app. You’re not allowed to copy, or modify the app, any part of the app, or our trademarks in any way. You’re not allowed to attempt to extract the source code of the app, and you also shouldn’t try to translate the app into other languages, or make derivative versions. The app itself, and all the trade marks, copyright, database rights and other intellectual property rights related to it, still belong to Nikita Dolya.
+                                                <string key="content">By downloading or using the app, these terms will automatically apply to you – you should make sure therefore that you read them carefully before using the app. You’re not allowed to copy, or modify the app, any part of the app, or our trademarks in any way. You’re not allowed to attempt to extract the source code of the app, and you also shouldn’t try to translate the app into other languages, or make derivative versions. The app itself, and all the trade marks, copyright, database rights and other intellectual property rights related to it, still belong to Nikita Dolya.
 Nikita Dolya is committed to ensuring that the app is as useful and efficient as possible. For that reason, we reserve the right to make changes to the app or to charge for its services, at any time and for any reason. We will never charge you for the app or its services without making it very clear to you exactly what you’re paying for.
 The Vibrarelax app stores and processes personal data that you have provided to us, in order to provide my Service. It’s your responsibility to keep your phone and access to the app secure. We therefore recommend that you do not jailbreak or root your phone, which is the process of removing software restrictions and limitations imposed by the official operating system of your device. It could make your phone vulnerable to malware/viruses/malicious programs, compromise your phone’s security features and it could mean that the Vibrarelax app won’t work properly or at all.
 The app does use third party services that declare their own Terms and Conditions.
-Link to Terms and Conditions of third party service providers used by the app</mutableString>
+Link to Terms and Conditions of third party service providers used by the app</string>
                                                 <attributes>
                                                     <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                     <font key="NSFont" size="15" name="Times-Roman"/>
@@ -2075,11 +2076,11 @@ Cg
                                                 </attributes>
                                             </fragment>
                                             <fragment>
-                                                <mutableString key="content">You should be aware that there are certain things that Nikita Dolya will not take responsibility for. Certain functions of the app will require the app to have an active internet connection. The connection can be Wi-Fi, or provided by your mobile network provider, but Nikita Dolya cannot take responsibility for the app not working at full functionality if you don’t have access to Wi-Fi, and you don’t have any of your data allowance left.
+                                                <string key="content">You should be aware that there are certain things that Nikita Dolya will not take responsibility for. Certain functions of the app will require the app to have an active internet connection. The connection can be Wi-Fi, or provided by your mobile network provider, but Nikita Dolya cannot take responsibility for the app not working at full functionality if you don’t have access to Wi-Fi, and you don’t have any of your data allowance left.
 If you’re using the app outside of an area with Wi-Fi, you should remember that your terms of the agreement with your mobile network provider will still apply. As a result, you may be charged by your mobile provider for the cost of data for the duration of the connection while accessing the app, or other third party charges. In using the app, you’re accepting responsibility for any such charges, including roaming data charges if you use the app outside of your home territory (i.e. region or country) without turning off data roaming. If you are not the bill payer for the device on which you’re using the app, please be aware that we assume that you have received permission from the bill payer for using the app.
 Along the same lines, Nikita Dolya cannot always take responsibility for the way you use the app i.e. You need to make sure that your device stays charged – if it runs out of battery and you can’t turn it on to avail the Service, Nikita Dolya cannot accept responsibility.
 With respect to Nikita Dolya’s responsibility for your use of the app, when you’re using the app, it’s important to bear in mind that although we endeavour to ensure that it is updated and correct at all times, we do rely on third parties to provide information to us so that we can make it available to you. Nikita Dolya accepts no liability for any loss, direct or indirect, you experience as a result of relying wholly on this functionality of the app.
-At some point, we may wish to update the app. The app is currently available on iOS – the requirements for system(and for any additional systems we decide to extend the availability of the app to) may change, and you’ll need to download the updates if you want to keep using the app. Nikita Dolya does not promise that it will always update the app so that it is relevant to you and/or works with the iOS version that you have installed on your device. However, you promise to always accept updates to the application when offered to you, We may also wish to stop providing the app, and may terminate use of it at any time without giving notice of termination to you. Unless we tell you otherwise, upon any termination, (a) the rights and licenses granted to you in these terms will end; (b) you must stop using the app, and (if  needed) delete it from your device.</mutableString>
+At some point, we may wish to update the app. The app is currently available on iOS – the requirements for system(and for any additional systems we decide to extend the availability of the app to) may change, and you’ll need to download the updates if you want to keep using the app. Nikita Dolya does not promise that it will always update the app so that it is relevant to you and/or works with the iOS version that you have installed on your device. However, you promise to always accept updates to the application when offered to you, We may also wish to stop providing the app, and may terminate use of it at any time without giving notice of termination to you. Unless we tell you otherwise, upon any termination, (a) the rights and licenses granted to you in these terms will end; (b) you must stop using the app, and (if  needed) delete it from your device.</string>
                                                 <attributes>
                                                     <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                     <font key="NSFont" size="15" name="Times-Roman"/>
@@ -2241,10 +2242,10 @@ Cgo
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <attributedString key="attributedText">
                                             <fragment>
-                                                <mutableString key="content">Nikita Dolya built the Vibrarelax app as a Free app. This SERVICE is provided by Nikita Dolya at no cost and is intended for use as is.
+                                                <string key="content">Nikita Dolya built the Vibrarelax app as a Free app. This SERVICE is provided by Nikita Dolya at no cost and is intended for use as is.
 This page is used to inform visitors regarding my policies with the collection, use, and disclosure of Personal Information if anyone decided to use my Service.
 If you choose to use my Service, then you agree to the collection and use of information in relation to this policy. The Personal Information that I collect is used for providing and improving the Service. I will not use or share your information with anyone except as described in this Privacy Policy.
-The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which is accessible at Vibrarelax unless otherwise defined in this Privacy Policy.</mutableString>
+The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which is accessible at Vibrarelax unless otherwise defined in this Privacy Policy.</string>
                                                 <attributes>
                                                     <color key="NSColor" red="0.29020000000000001" green="0.29020000000000001" blue="0.29020000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                     <font key="NSFont" size="14" name="Times-Roman"/>
@@ -2287,9 +2288,9 @@ Cgo
                                                 </attributes>
                                             </fragment>
                                             <fragment>
-                                                <mutableString key="content">For a better experience, while using our Service, I may require you to provide us with certain personally identifiable information, including but not limited to name, email, social media profiles, date of birth, phone/mobile number, home/mailing address. The information that I request will be retained on your device and is not collected by me in any way.
+                                                <string key="content">For a better experience, while using our Service, I may require you to provide us with certain personally identifiable information, including but not limited to name, email, social media profiles, date of birth, phone/mobile number, home/mailing address. The information that I request will be retained on your device and is not collected by me in any way.
 The app does use third party services that may collect information used to identify you.
-Link to privacy policy of third party service providers used by the app</mutableString>
+Link to privacy policy of third party service providers used by the app</string>
                                                 <attributes>
                                                     <color key="NSColor" red="0.29020000000000001" green="0.29020000000000001" blue="0.29020000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                     <font key="NSFont" size="14" name="Times-Roman"/>
@@ -2576,9 +2577,9 @@ Cgo
                                                 </attributes>
                                             </fragment>
                                             <fragment>
-                                                <mutableString key="content">Cookies are files with a small amount of data that are commonly used as anonymous unique identifiers. These are sent to your browser from the websites that you visit and are stored on your device's internal memory.
+                                                <string key="content">Cookies are files with a small amount of data that are commonly used as anonymous unique identifiers. These are sent to your browser from the websites that you visit and are stored on your device's internal memory.
 This Service does not use these “cookies” explicitly. However, the app may use third party code and libraries that use “cookies” to collect information and improve their services. You have the option to either accept or refuse these cookies and know when a cookie is being sent to your device. If you choose to refuse our cookies, you may not be able to use some portions of this Service.
-</mutableString>
+</string>
                                                 <attributes>
                                                     <color key="NSColor" red="0.29020000000000001" green="0.29020000000000001" blue="0.29020000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                     <font key="NSFont" size="14" name="Times-Roman"/>

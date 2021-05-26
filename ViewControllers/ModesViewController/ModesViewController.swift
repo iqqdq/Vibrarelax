@@ -10,6 +10,7 @@ import UIKit
 class ModesViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var levelImageView: UIImageView!
+    @IBOutlet weak var designableSlider: DesignableSlider!
     @IBOutlet weak var collectionViewBottomConstraint: NSLayoutConstraint!
     
     let items: [[String : String]] = [["Breeze" : "ic_breeze"],
@@ -33,6 +34,8 @@ class ModesViewController: UIViewController {
 
         levelImageView.image = levelImageView.image?.withRenderingMode(.alwaysTemplate)
         levelImageView.tintColor = #colorLiteral(red: 0.7411764706, green: 0.5960784314, blue: 0.5254901961, alpha: 0.7)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(setDefaultSliderValue), name: Notification.Name("default_slider_value"), object: nil)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -48,6 +51,13 @@ class ModesViewController: UIViewController {
                 print("Unknown")
             }
         }
+    }
+    
+    // MARK: -
+    // MARK: - FUNCTIONS
+    
+    @objc func setDefaultSliderValue() {
+        designableSlider.value = 0.3
     }
     
     // MARK: -
@@ -84,7 +94,6 @@ extension ModesViewController: UICollectionViewDataSource {
         for (key, value) in item {
             modeCollectionViewCell.titleLabel.text = key
             modeCollectionViewCell.modeImageView.image = UIImage.init(named: value)
-            modeCollectionViewCell.containerView.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
         }
         
         switch indexPath.row {

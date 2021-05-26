@@ -33,6 +33,10 @@ class OfferViewController: UIViewController {
         }
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        NotificationCenter.default.post(name: Notification.Name("default_slider_value"), object: nil)
+    }
+    
     // MARK: -
     // MARK: - FUNCTIONS
     
@@ -115,6 +119,8 @@ extension OfferViewController: UICollectionViewDataSource {
         }
         
         if indexPath.row == selectedIndex {
+            offerCollectionViewCell.centerImageView.image = #imageLiteral(resourceName: "ic_done_white")
+            
             offerCollectionViewCell.containerView.startColor = #colorLiteral(red: 0.9882352941, green: 0.3333333333, blue: 0.431372549, alpha: 1)
             offerCollectionViewCell.containerView.endColor = #colorLiteral(red: 0.9882352941, green: 0.3333333333, blue: 0.431372549, alpha: 1)
             
@@ -126,6 +132,8 @@ extension OfferViewController: UICollectionViewDataSource {
             
             offerCollectionViewCell.titleLabel.textColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         } else {
+            offerCollectionViewCell.centerImageView.image = #imageLiteral(resourceName: "ic_done_bronze")
+            
             offerCollectionViewCell.containerView.startColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
             offerCollectionViewCell.containerView.endColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
             

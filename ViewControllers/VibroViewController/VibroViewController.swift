@@ -37,20 +37,20 @@ class VibroViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         if UIDevice().userInterfaceIdiom == .phone {
             switch UIScreen.main.nativeBounds.height {
-                case 1136:
-                    print("iPhone 5 or 5S or 5C")
-                    switchButtonYConstraint.constant = 0.0
                 case 1334:
                     print("iPhone 6/6S/7/8")
                     switchButtonYConstraint.constant = 10.0
-                    waveView.transform = CGAffineTransform(scaleX: 0.85, y: 0.85)
-                    switchButton.transform = CGAffineTransform(scaleX: 0.85, y: 0.85)
-                    switchBackgroundView.transform = CGAffineTransform(scaleX: 0.85, y: 0.85)
-                    switchShadowView.transform = CGAffineTransform(scaleX: 0.85, y: 0.85)
                 default:
-                    print("SMALL IPHONE")
+                    print("LARGE IPHONE")
+                    switchButtonYConstraint.constant = 30.0
+                    
             }
         }
+        
+        waveView.transform = CGAffineTransform(scaleX: 0.85, y: 0.85)
+        switchButton.transform = CGAffineTransform(scaleX: 0.85, y: 0.85)
+        switchBackgroundView.transform = CGAffineTransform(scaleX: 0.85, y: 0.85)
+        switchShadowView.transform = CGAffineTransform(scaleX: 0.85, y: 0.85)
         
         switch UserDefaults.standard.integer(forKey: "mode_id") {
         case 1:
