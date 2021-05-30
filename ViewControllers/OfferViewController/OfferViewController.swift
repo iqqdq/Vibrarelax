@@ -7,6 +7,7 @@
 
 import UIKit
 import GRView
+import StoreKit
 
 class OfferViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
@@ -17,12 +18,18 @@ class OfferViewController: UIViewController {
     @IBOutlet weak var lipsImageViewTopConstraint: NSLayoutConstraint!
     @IBOutlet weak var collectionViewTopConstraint: NSLayoutConstraint!
     
+    let subscriptionsIDs = ["weekly_sub", "monthly_sub", "annually_sub"]
+    var products: [String: SKProduct] = [:]
+    
     var visualEffectView = UIVisualEffectView(effect: UIBlurEffect(style: .light))
     var selectedIndex: Int = 1
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        NotificationCenter.default.addObserver(self, selector: #selector(closeOffer), name: Notification.Name("close_offer"), object: nil)
+        
+        fetchProducts()
         setupBlurView()
     }
     
@@ -34,8 +41,36 @@ class OfferViewController: UIViewController {
     }
     
     override func viewWillDisappear(_ animated: Bool) {
-        NotificationCenter.default.post(name: Notification.Name("default_slider_value"), object: nil)
-        NotificationCenter.default.post(name: Notification.Name("offer"), object: nil)
+        if UserDefaults.standard.bool(forKey: "is_subscribed") == false {
+            NotificationCenter.default.post(name: Notification.Name("default_slider_value"), object: nil)
+            NotificationCenter.default.post(name: Notification.Name("offer"), object: nil)
+        }
+    }
+    
+    // MARK: -
+    // MARK: - PAYMENT SUBSCRIPTION METHODS
+    
+    func fetchProducts() {
+        let productIDs = Set([subscriptionsIDs[0], subscriptionsIDs[1], subscriptionsIDs[2]])
+        let request = SKProductsRequest(productIdentifiers: productIDs)
+        request.delegate = self
+        request.start()
+    }
+    
+    func purchase(productID: String) {
+        guard SKPaymentQueue.canMakePayments() else {
+            return
+        }
+        guard SKPaymentQueue.default().transactions.last?.transactionState != .purchasing else {
+            return
+        }
+        
+        if products.count > 0 {
+            if let product = products[productID] {
+                let payment = SKPayment(product: product)
+                SKPaymentQueue.default().add(payment)
+            }
+        }
     }
     
     // MARK: -
@@ -51,15 +86,23 @@ class OfferViewController: UIViewController {
         view.bringSubviewToFront(termsView)
     }
     
+    @objc func closeOffer() {
+        dismiss(animated: true, completion: nil)
+    }
+    
     // MARK: -
     // MARK: - ACTIONS
-
+    
+    @IBAction func restoreButtonAction(_ sender: UIButton) {
+        SKPaymentQueue.default().restoreCompletedTransactions()
+    }
+    
     @IBAction func closeButtonAction(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
     }
     
     @IBAction func continueButtonAction(_ sender: UIButton) {
-        
+        purchase(productID: subscriptionsIDs[selectedIndex])
     }
     
     @IBAction func privacyButtonAction(_ sender: UIButton) {
@@ -95,6 +138,23 @@ class OfferViewController: UIViewController {
     }
 }
 
+extension OfferViewController: SKProductsRequestDelegate {
+    func productsRequest(_ request: SKProductsRequest, didReceive response: SKProductsResponse) {
+        response.invalidProductIdentifiers.forEach { product in
+            print("Invalid: \(product)")
+        }
+        
+        response.products.forEach { product in
+            print("Valid: \(product)")
+            products[product.productIdentifier] = product
+        }
+    }
+    
+    func request(_ request: SKRequest, didFailWithError error: Error) {
+        print("Error for request: \(error.localizedDescription)")
+    }
+}
+
 extension OfferViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 3
@@ -108,15 +168,15 @@ extension OfferViewController: UICollectionViewDataSource {
         case 1:
             offerCollectionViewCell.topLabel.text = "35% DISCOUNT"
             offerCollectionViewCell.titleLabel.text = "Every\nmonth"
-            offerCollectionViewCell.priceLabel.text = "25 $ / \nmonthly"
+            offerCollectionViewCell.priceLabel.text = "24.99 $ / \nmonthly"
         case 2:
             offerCollectionViewCell.topLabel.text = "BEST PRICE"
             offerCollectionViewCell.titleLabel.text = "Every\nyear"
-            offerCollectionViewCell.priceLabel.text = "79 $ / \nannually"
+            offerCollectionViewCell.priceLabel.text = "79.99 $ / \nannually"
         default:
             offerCollectionViewCell.topLabel.text = "POPULAR"
             offerCollectionViewCell.titleLabel.text =  "Every\nweek"
-            offerCollectionViewCell.priceLabel.text = "9 $ / \nweekly"
+            offerCollectionViewCell.priceLabel.text = "8.99 $ / \nweekly"
         }
         
         if indexPath.row == selectedIndex {

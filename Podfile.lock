@@ -68,6 +68,9 @@ PODS:
   - nanopb/decode (2.30908.0)
   - nanopb/encode (2.30908.0)
   - PromisesObjC (1.2.12)
+  - Purchases (3.11.1):
+    - PurchasesCoreSwift (= 3.11.1)
+  - PurchasesCoreSwift (3.11.1)
 
 DEPENDENCIES:
   - Blurberry
@@ -75,6 +78,7 @@ DEPENDENCIES:
   - FittedSheets
   - GoogleAnalytics
   - GRView
+  - Purchases
 
 SPEC REPOS:
   trunk:
@@ -92,6 +96,8 @@ SPEC REPOS:
     - GRView
     - nanopb
     - PromisesObjC
+    - Purchases
+    - PurchasesCoreSwift
 
 SPEC CHECKSUMS:
   Blurberry: 361c1a4778ea0c46da25716b03d1344a4cf8fe01
@@ -108,7 +114,9 @@ SPEC CHECKSUMS:
   GRView: a88cee402471baec1780eece92cd8646b43ffe02
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
+  Purchases: 6351f9ff6bd514e5ec5aa0f989ea181effa94bf5
+  PurchasesCoreSwift: ee857e4c21e6254b09d7e303a756fcf2b9164408
 
-PODFILE CHECKSUM: 005bf2a4ddef2f24b8a619609950a9f774cd57e1
+PODFILE CHECKSUM: 50cffd320f65b353717ffaec0f56a2fa7e282225
 
 COCOAPODS: 1.10.1

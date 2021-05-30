@@ -8,4 +8,6 @@ ${BUILT_PRODUCTS_DIR}/GRView/GRView.framework
 ${BUILT_PRODUCTS_DIR}/GoogleDataTransport/GoogleDataTransport.framework
 ${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework
 ${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework
+${BUILT_PRODUCTS_DIR}/Purchases/Purchases.framework
+${BUILT_PRODUCTS_DIR}/PurchasesCoreSwift/PurchasesCoreSwift.framework
 ${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework

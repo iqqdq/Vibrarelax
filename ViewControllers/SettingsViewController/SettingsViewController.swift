@@ -6,10 +6,12 @@
 //
 
 import UIKit
+import GRView
 import MessageUI
 
 class SettingsViewController: UIViewController {
     @IBOutlet weak var settingsViewYConstraint: NSLayoutConstraint!
+    @IBOutlet weak var openModesButton: GRButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +31,10 @@ class SettingsViewController: UIViewController {
                     print("SMALL IPHONE")
                 }
             }
+        
+        if UserDefaults.standard.bool(forKey: "is_subscribed") == true {
+            openModesButton.isHidden = true
+        }
     }
     
     // MARK: -

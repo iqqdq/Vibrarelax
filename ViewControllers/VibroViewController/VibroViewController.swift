@@ -104,22 +104,121 @@ class VibroViewController: UIViewController {
     // MARK: - FUNCTIONS
     
     @objc func vibrate() {
-        if UserDefaults.standard.integer(forKey: "mode_id") == 1 {
+        switch UserDefaults.standard.integer(forKey: "mode_id") {
+        // HEART
+        case 1:
+            switch vibroTickCount {
+            case 2:
+                Vibration.oldSchool.vibrate()
+                vibroTickCount = -1
+            default:
+                Vibration.heavy.vibrate()
+            }
+        // PULSE
+        case 2:
             switch vibroTickCount {
             case 1:
-                Vibration.heavy.vibrate()
-            case 3:
+                Vibration.medium.vibrate()
+            case 2:
                 Vibration.heavy.vibrate()
                 vibroTickCount = -1
             default:
-                Vibration.oldSchool.vibrate()
+                Vibration.light.vibrate()
             }
-        } else {
+        // UNIVERSE
+        case 3:
+            switch vibroTickCount {
+            case 2:
+                Vibration.success.vibrate()
+            case 4:
+                Vibration.success.vibrate()
+            case 5:
+                Vibration.rigid.vibrate()
+                vibroTickCount = -1
+            default:
+                Vibration.error.vibrate()
+            }
+        // VOLCANO
+        case 4:
             switch vibroTickCount {
             case 3:
                 Vibration.oldSchool.vibrate()
                 vibroTickCount = -1
             default:
+                Vibration.light.vibrate()
+            }
+        // RAIN
+        case 5:
+            switch vibroTickCount {
+            case 2:
+                Vibration.error.vibrate()
+                vibroTickCount = -1
+            default:
+                Vibration.warning.vibrate()
+            }
+        // TORNADO
+        case 6:
+            Vibration.oldSchool.vibrate()
+            Vibration.oldSchool.vibrate()
+        // TSUNAMI
+        case 7:
+            switch vibroTickCount {
+            case 1,3,5:
+                Vibration.warning.vibrate()
+            case 7:
+                Vibration.oldSchool.vibrate()
+                vibroTickCount = -1
+            default:
+                Vibration.error.vibrate()
+            }
+        // WATERFALL
+        case 8:
+            switch vibroTickCount {
+            case 2,6:
+                Vibration.soft.vibrate()
+                vibroTickCount = -1
+            default:
+                Vibration.error.vibrate()
+            }
+        // BIT
+        case 9:
+            switch vibroTickCount {
+            case 2, 4:
+                Vibration.oldSchool.vibrate()
+            case 6:
+                Vibration.soft.vibrate()
+                vibroTickCount = -1
+            default:
+                Vibration.error.vibrate()
+            }
+        // DEPTH
+        case 10:
+            switch vibroTickCount {
+            case 2:
+                Vibration.oldSchool.vibrate()
+            case 4:
+                Vibration.success.vibrate()
+                vibroTickCount = -1
+            default:
+                Vibration.soft.vibrate()
+            }
+        // KAMIKAZE
+        case 11:
+            switch vibroTickCount {
+            case 4:
+                Vibration.oldSchool.vibrate()
+                vibroTickCount = -1
+            default:
+                Vibration.error.vibrate()
+            }
+        // BREEZE
+        default:
+            switch vibroTickCount {
+            case 3:
+                Vibration.oldSchool.vibrate()
+                vibroTickCount = -1
+            default:
+                Vibration.error.vibrate()
                 Vibration.error.vibrate()
             }
         }

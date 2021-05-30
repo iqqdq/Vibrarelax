@@ -9,6 +9,7 @@ import UIKit
 import FittedSheets
 import GRView
 import Blurberry
+import StoreKit
 
 class BottomNavigationViewController: UIViewController {
     @IBOutlet weak var navigationBarView: GRView!
@@ -39,6 +40,7 @@ class BottomNavigationViewController: UIViewController {
     var count: Int = 59
     var isOfferShown: Bool = false
     var offerTimer: Timer?
+    var products: [String: SKProduct] = [:]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,7 +48,9 @@ class BottomNavigationViewController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(lockScreen), name: Notification.Name("lockscreen"), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(showNoVibroView), name: Notification.Name("no_vibro"), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(showOfferView), name: Notification.Name("offer"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(hideUnlockImageView), name: Notification.Name("show_all_modes"), object: nil)
         
+        fetchProducts()
         createPageViewController()
         setupBlur()
     }
@@ -120,7 +124,7 @@ class BottomNavigationViewController: UIViewController {
             self.offerViewBottomConstraint.constant = -1000.0
             self.view.layoutIfNeeded()
         } completion: { (finish) in
-            self.present(UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier:  "OfferViewController"), animated: true, completion: nil)
+            self.purchase()
         }
     }
     
@@ -146,8 +150,13 @@ class BottomNavigationViewController: UIViewController {
     // MARK: - FUNCTIONS
     
     func selectTab(index: Int) {
-        openSeasonsButton.isHidden = index == 0 ? false : true
-        unlockImageView.isHidden = index == 0 ? false : true
+        if UserDefaults.standard.bool(forKey: "is_subscribed") == true {
+            openSeasonsButton.isHidden = true
+            unlockImageView.isHidden = true
+        } else {
+            openSeasonsButton.isHidden = index == 0 ? false : true
+            unlockImageView.isHidden =  index == 0 ? false : true
+        }
         
         for subview in buttonStackView.subviews {
             if let button = subview as? UIButton {
@@ -187,6 +196,11 @@ class BottomNavigationViewController: UIViewController {
                 }
             }
         }
+    }
+    
+    @objc func hideUnlockImageView() {
+        openSeasonsButton.isHidden =  true
+        unlockImageView.isHidden = true
     }
     
     @objc func showNoVibroView() {
@@ -243,6 +257,32 @@ class BottomNavigationViewController: UIViewController {
     @objc func setOfferViewVisible() {
         isOfferShown = false
     }
+    
+    // MARK: -
+    // MARK: - PURCHASING
+    
+    func fetchProducts() {
+        let productIDs = Set(["lifetime_sub"])
+        let request = SKProductsRequest(productIdentifiers: productIDs)
+        request.delegate = self
+        request.start()
+    }
+    
+    func purchase() {
+        guard SKPaymentQueue.canMakePayments() else {
+            return
+        }
+        guard SKPaymentQueue.default().transactions.last?.transactionState != .purchasing else {
+            return
+        }
+        
+        if products.count > 0 {
+            if let product = products["lifetime_sub"] {
+                let payment = SKPayment(product: product)
+                SKPaymentQueue.default().add(payment)
+            }
+        }
+    }
 
     // MARK: -
     // MARK: - CREATE PAGE CONTROLLER
@@ -294,6 +334,23 @@ class BottomNavigationViewController: UIViewController {
         view.bringSubviewToFront(lockButton)
         
         selectTab(index: 1)
+    }
+}
+
+extension BottomNavigationViewController: SKProductsRequestDelegate {
+    func productsRequest(_ request: SKProductsRequest, didReceive response: SKProductsResponse) {
+        response.invalidProductIdentifiers.forEach { product in
+            print("Invalid: \(product)")
+        }
+        
+        response.products.forEach { product in
+            print("Valid: \(product)")
+            products[product.productIdentifier] = product
+        }
+    }
+    
+    func request(_ request: SKRequest, didFailWithError error: Error) {
+        print("Error for request: \(error.localizedDescription)")
     }
 }
 

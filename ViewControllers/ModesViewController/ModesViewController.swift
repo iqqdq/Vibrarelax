@@ -36,6 +36,7 @@ class ModesViewController: UIViewController {
         levelImageView.tintColor = #colorLiteral(red: 0.7411764706, green: 0.5960784314, blue: 0.5254901961, alpha: 0.7)
         
         NotificationCenter.default.addObserver(self, selector: #selector(setDefaultSliderValue), name: Notification.Name("default_slider_value"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(unlockModes), name: Notification.Name("show_all_modes"), object: nil)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -60,17 +61,36 @@ class ModesViewController: UIViewController {
         designableSlider.value = 0.3
     }
     
+    @objc func unlockModes() {
+        selectedIndexes.removeAll()
+        
+        var index = 0
+        for _ in items {
+            selectedIndexes.append(index)
+            index += 1
+        }
+        
+        print("ALLOWED MODES INDEXES: \(selectedIndexes)")
+        collectionView.reloadData()
+    }
+    
     // MARK: -
     // MARK: - ACTIONS
     
     @IBAction func sliderValueChanged(sender: UISlider) {
-        if sender.value > 0.4 {
-            sender.value = 0.4
-            present(UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier:  "OfferViewController"), animated: true, completion: nil)
-        } else {
+        if UserDefaults.standard.bool(forKey: "is_subscribed") == true {
             NotificationCenter.default.post(name: NSNotification.Name(rawValue: "slider_did_change_value"),
                                             object: nil,
                                             userInfo: ["slider_value": sender.value])
+        } else {
+            if sender.value > 0.4 {
+                sender.value = 0.4
+                present(UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier:  "OfferViewController"), animated: true, completion: nil)
+            } else {
+                NotificationCenter.default.post(name: NSNotification.Name(rawValue: "slider_did_change_value"),
+                                                object: nil,
+                                                userInfo: ["slider_value": sender.value])
+            }
         }
     }
 }
