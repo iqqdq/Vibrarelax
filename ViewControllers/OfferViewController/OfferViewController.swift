@@ -41,9 +41,15 @@ class OfferViewController: UIViewController {
     }
     
     override func viewWillDisappear(_ animated: Bool) {
-        if UserDefaults.standard.bool(forKey: "is_subscribed") == false {
-            NotificationCenter.default.post(name: Notification.Name("default_slider_value"), object: nil)
-            NotificationCenter.default.post(name: Notification.Name("offer"), object: nil)
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd"
+        formatter.locale = Locale(identifier: "ru_RU")
+        if let startDate = formatter.date(from: "2021-06-08") {
+            if Date() >= startDate {
+                if UserDefaults.standard.bool(forKey: "is_subscribed") == false {
+                    NotificationCenter.default.post(name: Notification.Name("default_slider_value"), object: nil)
+                }
+            }
         }
     }
     
@@ -69,6 +75,7 @@ class OfferViewController: UIViewController {
             if let product = products[productID] {
                 let payment = SKPayment(product: product)
                 SKPaymentQueue.default().add(payment)
+                IndicatorView().show()
             }
         }
     }
@@ -78,7 +85,7 @@ class OfferViewController: UIViewController {
     
     func setupBlurView() {
         visualEffectView.frame = UIScreen.main.bounds
-        visualEffectView.blur.radius = 4.0
+        visualEffectView.blur.radius = 10.0
         visualEffectView.backgroundColor = UIColor(white: 1.0, alpha: 0.0)
         visualEffectView.alpha = 0.0
         view.addSubview(visualEffectView)
@@ -94,6 +101,7 @@ class OfferViewController: UIViewController {
     // MARK: - ACTIONS
     
     @IBAction func restoreButtonAction(_ sender: UIButton) {
+//        IndicatorView().show()
         SKPaymentQueue.default().restoreCompletedTransactions()
     }
     

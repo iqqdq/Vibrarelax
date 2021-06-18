@@ -20,26 +20,31 @@ class BottomNavigationViewController: UIViewController {
     @IBOutlet weak var secondTabButton: UIButton!
     @IBOutlet weak var thirdTabButton: UIButton!
     @IBOutlet weak var offerView: UIView!
-    @IBOutlet weak var offerBackgroundView: UIView!
-    @IBOutlet weak var countdouwnLabel: UILabel!
+    @IBOutlet weak var offerRoundCornerView: UIView!
+    @IBOutlet weak var minutesLabel: UILabel!
+    @IBOutlet weak var secondsLabel: UILabel!
     @IBOutlet weak var offerViewBottomConstraint: NSLayoutConstraint!
     @IBOutlet weak var openSeasonsButton: GRButton!
     @IBOutlet weak var unlockImageView: UIImageView!
     @IBOutlet weak var noVibroView: GRView!
     @IBOutlet weak var noVibroBottomConstraint: NSLayoutConstraint!
     @IBOutlet weak var unlockImageHeightConstraint: NSLayoutConstraint!
+    @IBOutlet weak var closeOfferButton: UIButton!
+    @IBOutlet weak var termsView: GRView!
+    @IBOutlet weak var privacyView: GRView!
+    @IBOutlet weak var privacyViewBottomConstraint: NSLayoutConstraint!
+    @IBOutlet weak var termsViewBottomConstraint: NSLayoutConstraint!
     
     var pageController: UIPageViewController!
     let modesViewConroller = ModesViewController()
     var viewControllers = [UIViewController]()
     var index = Int()
     var visualEffectView = UIVisualEffectView(effect: UIBlurEffect(style: .dark))
-    var lockTimer: Timer?
     var isLocked: Bool = false
+    var lockTimer: Timer?
     var countdownTimer: Timer?
-    var count: Int = 59
-    var isOfferShown: Bool = false
-    var offerTimer: Timer?
+    var minutes: Int = 19
+    var seconds: Int = 59
     var products: [String: SKProduct] = [:]
     
     override func viewDidLoad() {
@@ -47,21 +52,24 @@ class BottomNavigationViewController: UIViewController {
         
         NotificationCenter.default.addObserver(self, selector: #selector(lockScreen), name: Notification.Name("lockscreen"), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(showNoVibroView), name: Notification.Name("no_vibro"), object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(showOfferView), name: Notification.Name("offer"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(showOfferView), name: Notification.Name("special_offer"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(closeOfferView), name: Notification.Name("hide_special_offer"), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(hideUnlockImageView), name: Notification.Name("show_all_modes"), object: nil)
         
         fetchProducts()
         createPageViewController()
-        setupBlur()
+        setupLayout()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         title = String()
         navigationController?.setNavigationBarHidden(true, animated: true)
-        
+
         DispatchQueue.main.async {
             self.offerViewBottomConstraint.constant = -1000.0
-            self.offerBackgroundView.roundCorners([.topLeft, .topRight], radius: 40.0)
+            self.offerRoundCornerView.roundCorners([.topLeft, .topRight], radius: 40.0)
+            self.privacyView.roundCorners([.topLeft, .topRight], radius: 30.0)
+            self.termsView.roundCorners([.topLeft, .topRight], radius: 30.0)
         }
         
         if UIDevice().userInterfaceIdiom == .phone {
@@ -74,7 +82,7 @@ class BottomNavigationViewController: UIViewController {
                     self.unlockImageHeightConstraint.constant = 346.0
                     self.unlockImageView.contentMode = .scaleToFill
                 default:
-                    print("SMALL IPHONE")
+                    print("LARGE IPHONE")
             }
         }
     }
@@ -84,6 +92,7 @@ class BottomNavigationViewController: UIViewController {
     }
     
     override func viewDidDisappear(_ animated: Bool) {
+        countdownTimer = nil
         navigationController?.interactivePopGestureRecognizer?.isEnabled = true
     }
     
@@ -100,6 +109,7 @@ class BottomNavigationViewController: UIViewController {
     
     @IBAction func lockButtonTouchDownAction(_ sender: UIButton) {
         if isLocked {
+            isLocked = true
             lockTimer = Timer.scheduledTimer(timeInterval: TimeInterval(1.75), target: self, selector: #selector(unlockScreen), userInfo: nil, repeats: false)
         } else {
             UIView.animate(withDuration: 0.3) {
@@ -125,6 +135,7 @@ class BottomNavigationViewController: UIViewController {
             self.view.layoutIfNeeded()
         } completion: { (finish) in
             self.purchase()
+            self.countdownTimer?.invalidate()
         }
     }
     
@@ -144,6 +155,63 @@ class BottomNavigationViewController: UIViewController {
             self.noVibroBottomConstraint.constant = -1000
             self.view.layoutIfNeeded()
         }
+    }
+    
+    @IBAction func privacyButtonAction(_ sender: UIButton) {
+        view.bringSubviewToFront(privacyView)
+        
+        UIView.animate(withDuration: 0.3) {
+            self.offerViewBottomConstraint.constant = -1000.0
+            self.view.layoutIfNeeded()
+        } completion: { finish in
+            UIView.animate(withDuration: 0.3) {
+                self.privacyViewBottomConstraint.constant = 0.0
+                self.view.layoutIfNeeded()
+            }
+        }
+    }
+    
+    @IBAction func termsButtonAction(_ sender: UIButton) {
+        view.bringSubviewToFront(termsView)
+        
+        UIView.animate(withDuration: 0.3) {
+            self.offerViewBottomConstraint.constant = -1000.0
+            self.view.layoutIfNeeded()
+        } completion: { finish in
+            UIView.animate(withDuration: 0.3) {
+                self.termsViewBottomConstraint.constant = 0.0
+                self.view.layoutIfNeeded()
+            }
+        }
+    }
+    
+    @IBAction func closeTermsButtonAction(_ sender: UIButton) {
+        UIView.animate(withDuration: 0.3) {
+            self.termsViewBottomConstraint.constant = -1000.0
+            self.view.layoutIfNeeded()
+        } completion: { finish in
+            UIView.animate(withDuration: 0.3) {
+                self.offerViewBottomConstraint.constant = 0.0
+                self.view.layoutIfNeeded()
+            }
+        }
+    }
+    
+    @IBAction func closePrivacyButtonAction(_ sender: UIButton) {
+        UIView.animate(withDuration: 0.3) {
+            self.privacyViewBottomConstraint.constant = -1000.0
+            self.view.layoutIfNeeded()
+        } completion: { finish in
+            UIView.animate(withDuration: 0.3) {
+                self.offerViewBottomConstraint.constant = 0.0
+                self.view.layoutIfNeeded()
+            }
+        }
+    }
+    
+    @IBAction func restoreButtonAction(_ sender: UIButton) {
+        countdownTimer?.invalidate()
+        SKPaymentQueue.default().restoreCompletedTransactions()
     }
     
     // MARK: -
@@ -171,31 +239,12 @@ class BottomNavigationViewController: UIViewController {
         }
     }
     
-    func setupBlur() {
+    func setupLayout() {
+        // Blur View
         visualEffectView.frame = UIScreen.main.bounds
-        visualEffectView.blur.radius = 15.0
+        visualEffectView.blur.radius = 10.0
         visualEffectView.backgroundColor = UIColor(white: 1.0, alpha: 0.0)
         visualEffectView.alpha = 0.0
-        view.bringSubviewToFront(visualEffectView)
-    }
-    
-    @objc func showOfferView() {
-        if !isOfferShown {
-            isOfferShown = true
-            offerTimer = Timer.scheduledTimer(timeInterval: TimeInterval(60.0), target: self, selector: #selector(setOfferViewVisible), userInfo: nil, repeats: false)
-            
-            countdownTimer = Timer.scheduledTimer(timeInterval: TimeInterval(1.0), target: self, selector: #selector(countdouwn), userInfo: nil, repeats: true)
-            
-            view.bringSubviewToFront(offerView)
-          
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
-                UIView.animate(withDuration: 0.5) {
-                    self.visualEffectView.alpha = 1.0
-                    self.offerViewBottomConstraint.constant = 0.0
-                    self.view.layoutIfNeeded()
-                }
-            }
-        }
     }
     
     @objc func hideUnlockImageView() {
@@ -205,7 +254,6 @@ class BottomNavigationViewController: UIViewController {
     
     @objc func showNoVibroView() {
         view.bringSubviewToFront(noVibroView)
-        
         UIView.animate(withDuration: 0.3) {
             self.visualEffectView.alpha = 1.0
             self.noVibroBottomConstraint.constant = 0.0
@@ -239,30 +287,52 @@ class BottomNavigationViewController: UIViewController {
     }
     
     @objc func countdouwn() {
-        count -= 1
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
-            self.countdouwnLabel.text = String(self.count).count > 1 ? "\(self.count)" : "0\(self.count)"
+        if minutes == 0 && seconds == 0 {
+            minutes = 19
+            seconds = 59
+        } else {
+            seconds = seconds == 0 ? 59 : seconds - 1
         }
         
-        if count == 0 {
-            countdownTimer?.invalidate()
-            UIView.animate(withDuration: 0.3) {
-                self.visualEffectView.alpha = 0.0
-                self.offerViewBottomConstraint.constant = -600.0
-                self.view.layoutIfNeeded()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+            self.minutesLabel.textColor = self.minutes == 0 ? #colorLiteral(red: 0.9254901961, green: 0.831372549, blue: 0.7882352941, alpha: 1) : #colorLiteral(red: 0.9764705882, green: 0.3450980392, blue: 0.4352941176, alpha: 1)
+            self.minutesLabel.text = self.minutes == 0 ? "00" : String(self.minutes).count > 1 ? "\(self.minutes)" : "0\(self.minutes)"
+            self.secondsLabel.text = String(self.seconds).count > 1 ? "\(self.seconds)" : "0\(self.seconds)"
+        }
+    }
+    
+    @objc func showOfferView() {
+        countdownTimer = Timer.scheduledTimer(timeInterval: TimeInterval(1.0), target: self, selector: #selector(countdouwn), userInfo: nil, repeats: true)
+           
+        view.bringSubviewToFront(offerView)
+          
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.15) {
+            UIView.animate(withDuration: 0.15) {
+                self.visualEffectView.alpha = 1.0
+            } completion: { finish in
+                UIView.animate(withDuration: 0.15) {
+                    self.offerViewBottomConstraint.constant = 0.0
+                    self.view.layoutIfNeeded()
+                }
             }
         }
     }
     
-    @objc func setOfferViewVisible() {
-        isOfferShown = false
+    @objc func closeOfferView() {
+        UIView.animate(withDuration: 0.5) {
+            self.visualEffectView.alpha = 0.0
+            self.offerViewBottomConstraint.constant = -1000.0
+            self.view.layoutIfNeeded()
+        } completion: { (finish) in
+            self.countdownTimer?.invalidate()
+        }
     }
     
     // MARK: -
     // MARK: - PURCHASING
     
     func fetchProducts() {
-        let productIDs = Set(["lifetime_sub"])
+        let productIDs = Set(["weekly_sub"])
         let request = SKProductsRequest(productIdentifiers: productIDs)
         request.delegate = self
         request.start()
@@ -277,7 +347,7 @@ class BottomNavigationViewController: UIViewController {
         }
         
         if products.count > 0 {
-            if let product = products["lifetime_sub"] {
+            if let product = products["weekly_sub"] {
                 let payment = SKPayment(product: product)
                 SKPaymentQueue.default().add(payment)
             }
@@ -308,7 +378,7 @@ class BottomNavigationViewController: UIViewController {
             self.view.bringSubviewToFront(self.unlockImageView)
             self.view.bringSubviewToFront(self.openSeasonsButton)
             self.view.bringSubviewToFront(self.navigationBarView)
-            self.view.bringSubviewToFront(self.offerView)
+            self.view.bringSubviewToFront(self.visualEffectView)
         }
         
         viewControllers = [UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier:  "ModesViewController"),

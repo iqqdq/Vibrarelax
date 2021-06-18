@@ -1,0 +1,131 @@
+{
+  "identifier" : "B670AC86",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+
+  ],
+  "settings" : {
+
+  },
+  "subscriptionGroups" : [
+    {
+      "id" : "02C1C087",
+      "localizations" : [
+
+      ],
+      "name" : "Auto-renewable subscriptions",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [
+            {
+              "displayPrice" : "79.99",
+              "internalID" : "F6A4D650",
+              "offerID" : "1570026663",
+              "paymentMode" : "payUpFront",
+              "referenceName" : "Annually Auto-Renewable Subscription",
+              "subscriptionPeriod" : "P1Y"
+            }
+          ],
+          "displayPrice" : "79.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "B3909C73",
+          "introductoryOffer" : {
+            "displayPrice" : "79.99",
+            "internalID" : "DF390A6C",
+            "paymentMode" : "payUpFront",
+            "subscriptionPeriod" : "P1Y"
+          },
+          "localizations" : [
+            {
+              "description" : "Allows you to use all modes during one year.",
+              "displayName" : "Annually Subscription",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "annually_sub",
+          "recurringSubscriptionPeriod" : "P1Y",
+          "referenceName" : "Annually Auto-Renewable Subscription",
+          "subscriptionGroupID" : "02C1C087",
+          "type" : "RecurringSubscription"
+        },
+        {
+          "adHocOffers" : [
+            {
+              "displayPrice" : "24.99",
+              "internalID" : "1D48119E",
+              "numberOfPeriods" : 1,
+              "offerID" : "1570026440",
+              "paymentMode" : "payUpFront",
+              "referenceName" : "Monthly Auto-Renewable Subscription",
+              "subscriptionPeriod" : "P1M"
+            }
+          ],
+          "displayPrice" : "24.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "7A7234C4",
+          "introductoryOffer" : {
+            "displayPrice" : "24.99",
+            "internalID" : "CEF0D2C4",
+            "numberOfPeriods" : 1,
+            "paymentMode" : "payUpFront",
+            "subscriptionPeriod" : "P1M"
+          },
+          "localizations" : [
+            {
+              "description" : "Allow you to use all modes during one month.",
+              "displayName" : "Monthly Subscription",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "monthly_sub",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "Monthly Auto-Renewable Subscription",
+          "subscriptionGroupID" : "02C1C087",
+          "type" : "RecurringSubscription"
+        },
+        {
+          "adHocOffers" : [
+            {
+              "displayPrice" : "8.99",
+              "internalID" : "090B6612",
+              "offerID" : "1570025923",
+              "paymentMode" : "payUpFront",
+              "referenceName" : "Weekly Auto-Renewable Subscription",
+              "subscriptionPeriod" : "P1M"
+            }
+          ],
+          "displayPrice" : "8.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "9C0C1F2A",
+          "introductoryOffer" : {
+            "displayPrice" : "8.99",
+            "internalID" : "D5B9C6D4",
+            "paymentMode" : "payUpFront",
+            "subscriptionPeriod" : "P1M"
+          },
+          "localizations" : [
+            {
+              "description" : "Allow you to use all modes during one week.",
+              "displayName" : "Weekly Subscription",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "weekly_sub",
+          "recurringSubscriptionPeriod" : "P1W",
+          "referenceName" : "Weekly Auto-Renewable Subscription",
+          "subscriptionGroupID" : "02C1C087",
+          "type" : "RecurringSubscription"
+        }
+      ]
+    }
+  ],
+  "version" : {
+    "major" : 1,
+    "minor" : 1
+  }
+}

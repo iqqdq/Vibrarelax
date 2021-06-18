@@ -8,6 +8,7 @@
 import UIKit
 import GRView
 import MessageUI
+import StoreKit
 
 class SettingsViewController: UIViewController {
     @IBOutlet weak var settingsViewYConstraint: NSLayoutConstraint!
@@ -16,6 +17,7 @@ class SettingsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        NotificationCenter.default.addObserver(self, selector: #selector(hideOpenModesButton), name: Notification.Name("hide_open_modes_button"), object: nil)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -28,13 +30,20 @@ class SettingsViewController: UIViewController {
                     print("iPhone 6/6S/7/8")
                     settingsViewYConstraint.constant = -40.0
                 default:
-                    print("SMALL IPHONE")
+                    print("LARGE IPHONE")
                 }
             }
         
         if UserDefaults.standard.bool(forKey: "is_subscribed") == true {
             openModesButton.isHidden = true
         }
+    }
+    
+    // MARK: -
+    // MARK: - FUNCTIONS
+    
+    @objc func hideOpenModesButton() {
+        openModesButton.isHidden = true
     }
     
     // MARK: -
@@ -45,7 +54,15 @@ class SettingsViewController: UIViewController {
     }
     
     @IBAction func rateButtonAction(_ sender: UIButton) {
-        
+        if #available(iOS 10.3, *) {
+            SKStoreReviewController.requestReview()
+        } else if let url = URL(string: "itms-apps://itunes.apple.com/app/" + "1567966383") {
+            if #available(iOS 10, *) {
+                UIApplication.shared.open(url, options: [:], completionHandler: nil)
+            } else {
+                UIApplication.shared.openURL(url)
+            }
+        }
     }
     
     @IBAction func reviewButtonAction(_ sender: UIButton) {

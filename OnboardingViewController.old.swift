@@ -13,47 +13,27 @@ class OnboardingViewController: UIViewController {
     @IBOutlet weak var indicatorView: UIView!
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var continueButton: GRButton!
-    @IBOutlet weak var firstIndicatorView: UIView!
     @IBOutlet weak var secondIndicatorView: UIView!
     @IBOutlet weak var thirdIndicatorView: UIView!
     @IBOutlet weak var restoreButton: UIButton!
     @IBOutlet weak var closeButton: UIButton!
-    @IBOutlet weak var privacyViewBottomConstraint: NSLayoutConstraint!
-    @IBOutlet weak var termsViewBottomConstraint: NSLayoutConstraint!
-    @IBOutlet weak var termsView: GRView!
-    @IBOutlet weak var privacyView: GRView!
-    @IBOutlet weak var termsButton: UIButton!
-    @IBOutlet weak var privacyButton: UIButton!
-    @IBOutlet weak var separatorView: UIView!
     
-    let items: [[String : String]] = [["Welcome\nto Vibrarelax" : "The massage is relaxing. Our application will help you to relax, rest, improve your well-being at any time without any help."], ["Take a break from worries" : "Did you know that there are approximately 5 million receptors on our skin, with only 3000 on one fingertip?"], ["Try with\nall modes PRO" : "12 vibration modes, 5 speed modes, no ads, screen lock, weekly content update for $ 8.99 / week."]]
-    let images: [String] = ["ic_onboarding_first", "ic_onboarding_second", "ic_onboarding_third"]
+    let items: [[String : String]] = [["Welcome\nto Vibrarelax" : "The massage is relaxing. 60 minutes of good massage has the same effect on your body as 7-8 hours of good sleep."],
+                                      ["Enjoy strong\nvibration" : "Did you know that there are approximately 5 million receptors on our skin, with only 3000 on one fingertip?"],
+                                      ["Try with\nall modes PRO" : "12 vibration modes, 5 speed modes, no ads, screen lock, weekly content update for $ 9 / week."]]
+    let images: [String] = ["ic_onboarding_first", "ic_onboarding_second", "ic_onboarding_lips"]
     var timer: Timer?
-    var products: [String: SKProduct] = [:]
-    var visualEffectView = UIVisualEffectView(effect: UIBlurEffect(style: .dark))
-    
+ 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        NotificationCenter.default.addObserver(self, selector: #selector(closeOnboarding), name: Notification.Name("close_onboarding"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(closeOffer), name: Notification.Name("close_offer"), object: nil)
         
         setupWaveAnimations()
-        setupLayout()
-        fetchProducts()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         navigationController?.setNavigationBarHidden(true, animated: false)
-        
-        DispatchQueue.main.async {
-            self.privacyView.roundCorners([.topLeft, .topRight], radius: 30.0)
-            self.termsView.roundCorners([.topLeft, .topRight], radius: 30.0)
-        }
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
-            self.privacyView.roundCorners([.topLeft, .topRight], radius: 30.0)
-            self.termsView.roundCorners([.topLeft, .topRight], radius: 30.0)
-        }
     }
     
     // MARK: -
@@ -61,7 +41,9 @@ class OnboardingViewController: UIViewController {
     
     @IBAction func continueButtonAction(_ sender: UIButton) {
         if sender.tag == 2 {
-            purchase()
+            dismiss(animated: true) {
+                UserDefaults.standard.setValue(true, forKey: "onboarding")
+            }
         } else {
             collectionView.scrollToItem(at: IndexPath(item: sender.tag + 1, section: 0), at: .centeredHorizontally, animated: true)
             sender.tag += 1
@@ -71,50 +53,21 @@ class OnboardingViewController: UIViewController {
     }
     
     @IBAction func restoreButtonAction(_ sender: UIButton) {
-//        IndicatorView().show()
+        IndicatorView().show()
         SKPaymentQueue.default().restoreCompletedTransactions()
     }
-        
+    
     @IBAction func closeButtonAction(_ sender: UIButton) {
-        dismiss(animated: true) {
-            UserDefaults.standard.setValue(true, forKey: "onboarding")
-        }
-    }
-    
-    @IBAction func privacyButtonAction(_ sender: UIButton) {
-        UIView.animate(withDuration: 0.3) {
-            self.visualEffectView.alpha = 1.0
-            self.privacyViewBottomConstraint.constant = 0.0
-            self.view.layoutIfNeeded()
-        }
-    }
-    
-    @IBAction func termsButtonAction(_ sender: UIButton) {
-        UIView.animate(withDuration: 0.3) {
-            self.visualEffectView.alpha = 1.0
-            self.termsViewBottomConstraint.constant = 0.0
-            self.view.layoutIfNeeded()
-        }
-    }
-    
-    @IBAction func closeTermsButtonAction(_ sender: UIButton) {
-        UIView.animate(withDuration: 0.3) {
-            self.visualEffectView.alpha = 0.0
-            self.termsViewBottomConstraint.constant = -1000.0
-            self.view.layoutIfNeeded()
-        }
-    }
-    
-    @IBAction func closePrivacyButtonAction(_ sender: UIButton) {
-        UIView.animate(withDuration: 0.3) {
-            self.visualEffectView.alpha = 0.0
-            self.privacyViewBottomConstraint.constant = -1000.0
-            self.view.layoutIfNeeded()
-        }
+        UserDefaults.standard.setValue(true, forKey: "onboarding")
+        navigationController?.pushViewController(UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier:  "BottomNavigationViewController"), animated: true)
     }
     
     // MARK: -
     // MARK: - FUNCTIONS
+    
+    @objc func closeOffer() {
+        dismiss(animated: true, completion: nil)
+    }
     
     func setupWaveAnimations() {
         let topWave = Wave(frame: CGRect.init(x: 0.0, y: 0.0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height / 2))
@@ -145,58 +98,25 @@ class OnboardingViewController: UIViewController {
         view.bringSubviewToFront(indicatorView)
         view.bringSubviewToFront(collectionView)
         view.bringSubviewToFront(continueButton)
+        
         view.bringSubviewToFront(closeButton)
         view.bringSubviewToFront(restoreButton)
-        view.bringSubviewToFront(termsButton)
-        view.bringSubviewToFront(privacyButton)
-        view.bringSubviewToFront(separatorView)
-        view.addSubview(visualEffectView)
-        view.bringSubviewToFront(privacyView)
-        view.bringSubviewToFront(termsView)
-    }
-    
-    func setupLayout() {
-        // Blur View
-        visualEffectView.frame = UIScreen.main.bounds
-        visualEffectView.blur.radius = 10.0
-        visualEffectView.backgroundColor = UIColor(white: 1.0, alpha: 0.0)
-        visualEffectView.alpha = 0.0
     }
     
     func updateIndicator() {
         secondIndicatorView.backgroundColor = continueButton.tag >= 1 ? #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0) : #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.2)
         thirdIndicatorView.backgroundColor = continueButton.tag > 1 ? #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0) : #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.2)
-        closeButton.isHidden = continueButton.tag == 2 ? false : true
-        restoreButton.isHidden = continueButton.tag == 2 ? false : true
-        print(continueButton.tag)
-    }
-    
-    func fetchProducts() {
-        let productIDs = Set(["weekly_sub"])
-        let request = SKProductsRequest(productIdentifiers: productIDs)
-        request.delegate = self
-        request.start()
-    }
-    
-    func purchase() {
-        guard SKPaymentQueue.canMakePayments() else {
-            return
-        }
-        guard SKPaymentQueue.default().transactions.last?.transactionState != .purchasing else {
-            return
-        }
         
-        if products.count > 0 {
-            if let product = products["weekly_sub"] {
-                let payment = SKPayment(product: product)
-                SKPaymentQueue.default().add(payment)
-            }
+        if continueButton.tag == 2 {
+            self.timer = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(self.showRestoreButton), userInfo: nil, repeats: false)
         }
     }
     
-    @objc func closeOnboarding() {
-        dismiss(animated: true) {
-            UserDefaults.standard.setValue(true, forKey: "onboarding")
+    @objc func showRestoreButton() {
+        UIView.animate(withDuration: 0.3) {
+            self.closeButton.alpha = 0.8
+            self.restoreButton.alpha = 0.8
+            self.view.layoutIfNeeded()
         }
     }
 }
@@ -253,23 +173,6 @@ extension OnboardingViewController: UICollectionViewDataSource {
         }
 
         return onboardingCollectionViewCell
-    }
-}
-
-extension OnboardingViewController: SKProductsRequestDelegate {
-    func productsRequest(_ request: SKProductsRequest, didReceive response: SKProductsResponse) {
-        response.invalidProductIdentifiers.forEach { product in
-            print("Invalid: \(product)")
-        }
-        
-        response.products.forEach { product in
-            print("Valid: \(product)")
-            products[product.productIdentifier] = product
-        }
-    }
-    
-    func request(_ request: SKRequest, didFailWithError error: Error) {
-        print("Error for request: \(error.localizedDescription)")
     }
 }
 

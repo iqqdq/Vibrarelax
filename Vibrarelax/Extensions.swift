@@ -30,6 +30,14 @@ extension UIViewController {
 }
 
 extension UIView {
+    func shake() {
+        let animation = CAKeyframeAnimation(keyPath: "transform.translation.x")
+        animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.linear)
+        animation.duration = 1.0
+        animation.values = [-4.0, 4.0, -4.0, 4.0, -1.5, 1.5, -1.5, 0.0]
+        layer.add(animation, forKey: "shake")
+    }
+    
     func roundCorners(_ corners: UIRectCorner, radius: CGFloat) {
          let path = UIBezierPath(roundedRect: self.bounds, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
          let mask = CAShapeLayer()

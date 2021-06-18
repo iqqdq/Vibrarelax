@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1007B9A7267C0A3E00522017 /* NotificationContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1007B9A6267C0A3E00522017 /* NotificationContent.swift */; };
 		100AE3B7265681E4004E0C26 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100AE3B6265681E4004E0C26 /* OnboardingViewController.swift */; };
 		100AE3DB26568FE0004E0C26 /* Nunito-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 100AE3CC26568FDE004E0C26 /* Nunito-Italic.ttf */; };
 		100AE3DC26568FE0004E0C26 /* Nunito-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 100AE3CD26568FDE004E0C26 /* Nunito-ExtraLightItalic.ttf */; };
@@ -40,7 +41,9 @@
 		107D1DB5265E9BB700E77212 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 107D1DB4265E9BB700E77212 /* AdSupport.framework */; };
 		107D1DBE265E9F6100E77212 /* FacebookShare in Frameworks */ = {isa = PBXBuildFile; productRef = 107D1DBD265E9F6100E77212 /* FacebookShare */; };
 		107D1DC0265E9F6100E77212 /* FacebookCore in Frameworks */ = {isa = PBXBuildFile; productRef = 107D1DBF265E9F6100E77212 /* FacebookCore */; };
-		107D1DCE265EAC1600E77212 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 107D1DCD265EAC1600E77212 /* GoogleService-Info.plist */; };
+		107D6E0A266E5CFC0049F32E /* IndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107D6E08266E5CFC0049F32E /* IndicatorView.swift */; };
+		107D6E0B266E5CFC0049F32E /* InstagramActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107D6E09266E5CFC0049F32E /* InstagramActivityIndicator.swift */; };
+		107DF7B0266FC9370097DCEB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 107DF7AF266FC9370097DCEB /* GoogleService-Info.plist */; };
 		1091EEF72657294B00B09D43 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1091EEF62657294B00B09D43 /* Extensions.swift */; };
 		10C0042B265866FC0044FAF5 /* OfferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C0042A265866FC0044FAF5 /* OfferViewController.swift */; };
 		10C00434265867980044FAF5 /* OfferCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C00433265867980044FAF5 /* OfferCollectionViewCell.swift */; };
@@ -70,6 +73,7 @@
 
 /* Begin PBXFileReference section */
 		093F0A6E83DB6D166FD2BFE1 /* Pods_Vibrarelax.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vibrarelax.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1007B9A6267C0A3E00522017 /* NotificationContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationContent.swift; sourceTree = "<group>"; };
 		100AE3B6265681E4004E0C26 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		100AE3CC26568FDE004E0C26 /* Nunito-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Italic.ttf"; sourceTree = "<group>"; };
 		100AE3CD26568FDE004E0C26 /* Nunito-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
@@ -107,12 +111,15 @@
 		1075FF012656AE21007BC81D /* ModesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModesViewController.swift; sourceTree = "<group>"; };
 		1075FF072656AF96007BC81D /* ModeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeCollectionViewCell.swift; sourceTree = "<group>"; };
 		107D1DB4265E9BB700E77212 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
-		107D1DCD265EAC1600E77212 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		107D6E08266E5CFC0049F32E /* IndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndicatorView.swift; sourceTree = "<group>"; };
+		107D6E09266E5CFC0049F32E /* InstagramActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramActivityIndicator.swift; sourceTree = "<group>"; };
+		107DF7AF266FC9370097DCEB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1091EEF62657294B00B09D43 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		10C0042A265866FC0044FAF5 /* OfferViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferViewController.swift; sourceTree = "<group>"; };
 		10C00433265867980044FAF5 /* OfferCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferCollectionViewCell.swift; sourceTree = "<group>"; };
 		10C31E642656A553005BCF4A /* BottomNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomNavigationViewController.swift; sourceTree = "<group>"; };
 		10CFAE4A2658465900D68C1F /* VibroCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibroCollectionViewCell.swift; sourceTree = "<group>"; };
+		10D0AF9D2678CBFC003C4670 /* StoreKit.Configuration.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = StoreKit.Configuration.storekit; sourceTree = "<group>"; };
 		31673E743844F4516907F3F3 /* Pods-Vibrarelax.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vibrarelax.release.xcconfig"; path = "Target Support Files/Pods-Vibrarelax/Pods-Vibrarelax.release.xcconfig"; sourceTree = "<group>"; };
 		3D26612F0A88C7C78A027DFC /* Pods-VibrarelaxTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VibrarelaxTests.debug.xcconfig"; path = "Target Support Files/Pods-VibrarelaxTests/Pods-VibrarelaxTests.debug.xcconfig"; sourceTree = "<group>"; };
 		43039D56605110E36F769242 /* Pods_VibrarelaxTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VibrarelaxTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -157,10 +164,12 @@
 		100845D7265679DD0064794A /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				107D6E07266E5CFC0049F32E /* IndicatorView */,
 				103D6A26265BEF3300D94FA5 /* Wave.swift */,
 				1028335F2657D81B00A991E2 /* Enums */,
 				100845FD26567AA80064794A /* Fonts */,
 				103D6A0D265BEAE300D94FA5 /* DesignableSlider.swift */,
+				1007B9A6267C0A3E00522017 /* NotificationContent.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -264,7 +273,8 @@
 		1070E55F265678720059CAD0 /* Vibrarelax */ = {
 			isa = PBXGroup;
 			children = (
-				107D1DCD265EAC1600E77212 /* GoogleService-Info.plist */,
+				10D0AF9D2678CBFC003C4670 /* StoreKit.Configuration.storekit */,
+				107DF7AF266FC9370097DCEB /* GoogleService-Info.plist */,
 				1070E560265678720059CAD0 /* AppDelegate.swift */,
 				1070E566265678720059CAD0 /* Main.storyboard */,
 				1070E569265678720059CAD0 /* Assets.xcassets */,
@@ -308,6 +318,15 @@
 				1075FF072656AF96007BC81D /* ModeCollectionViewCell.swift */,
 			);
 			path = ModeCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		107D6E07266E5CFC0049F32E /* IndicatorView */ = {
+			isa = PBXGroup;
+			children = (
+				107D6E08266E5CFC0049F32E /* IndicatorView.swift */,
+				107D6E09266E5CFC0049F32E /* InstagramActivityIndicator.swift */,
+			);
+			path = IndicatorView;
 			sourceTree = "<group>";
 		};
 		10C00429265866DE0044FAF5 /* OfferViewController */ = {
@@ -506,7 +525,7 @@
 				100AE3DC26568FE0004E0C26 /* Nunito-ExtraLightItalic.ttf in Resources */,
 				100AE3DF26568FE0004E0C26 /* Nunito-SemiBoldItalic.ttf in Resources */,
 				100AE3E126568FE0004E0C26 /* Nunito-Bold.ttf in Resources */,
-				107D1DCE265EAC1600E77212 /* GoogleService-Info.plist in Resources */,
+				107DF7B0266FC9370097DCEB /* GoogleService-Info.plist in Resources */,
 				100AE3DB26568FE0004E0C26 /* Nunito-Italic.ttf in Resources */,
 				1070E56A265678720059CAD0 /* Assets.xcassets in Resources */,
 				100AE3E626568FE0004E0C26 /* Nunito-ExtraBold.ttf in Resources */,
@@ -643,10 +662,13 @@
 			files = (
 				100AE3B7265681E4004E0C26 /* OnboardingViewController.swift in Sources */,
 				1070E561265678720059CAD0 /* AppDelegate.swift in Sources */,
+				107D6E0B266E5CFC0049F32E /* InstagramActivityIndicator.swift in Sources */,
 				103D6A0E265BEAE300D94FA5 /* DesignableSlider.swift in Sources */,
+				1007B9A7267C0A3E00522017 /* NotificationContent.swift in Sources */,
 				102833612657D82B00A991E2 /* Vibration.swift in Sources */,
 				10CFAE4B2658465900D68C1F /* VibroCollectionViewCell.swift in Sources */,
 				103D6A27265BEF3300D94FA5 /* Wave.swift in Sources */,
+				107D6E0A266E5CFC0049F32E /* IndicatorView.swift in Sources */,
 				1029EE222656968B00BD9230 /* OnboardingCollectionViewCell.swift in Sources */,
 				1091EEF72657294B00B09D43 /* Extensions.swift in Sources */,
 				1075FF022656AE21007BC81D /* ModesViewController.swift in Sources */,
@@ -833,14 +855,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 18;
 				DEVELOPMENT_TEAM = 29A8SJ4U8R;
 				INFOPLIST_FILE = Vibrarelax/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.4;
+				MARKETING_VERSION = 1.1.7;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.app.vibrarelax;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -855,14 +877,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 18;
 				DEVELOPMENT_TEAM = 29A8SJ4U8R;
 				INFOPLIST_FILE = Vibrarelax/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.4;
+				MARKETING_VERSION = 1.1.7;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.app.vibrarelax;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

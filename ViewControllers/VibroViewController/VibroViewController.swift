@@ -17,22 +17,38 @@ class VibroViewController: UIViewController {
     @IBOutlet weak var switchButtonYConstraint: NSLayoutConstraint!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var waveView: UIView!
+    @IBOutlet weak var giftBackgroundImageView: UIImageView!
+    @IBOutlet weak var giftImageView: UIImageView!
+    @IBOutlet weak var offerButton: UIButton!
     
+    var visualEffectView = UIVisualEffectView(effect: UIBlurEffect(style: .light))
     var timer: Timer?
     var interval: Float = 0.7
     var isAnimate: Bool = false
     var isFirstAppereance: Bool = true
     var vibroTickCount: Int = 0
+    var giftTimer: Timer?
+    
+    let items: [String] = ["B R E E Z E",
+                           "H E A R T",
+                           "P U L S E",
+                           "U N I V E R S E",
+                           "V O L C A N O",
+                           "R A I N",
+                           "T O R N A D O",
+                           "T S U N A M I",
+                           "W A T E R F A L L",
+                           "B I T",
+                           "D E P T H",
+                           "K A M I K A Z E"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        switchButton.setImage(#imageLiteral(resourceName: "ic_switch_on"), for: .selected)
-        switchButton.cornerRadius = switchButton.frame.height / 2
-        switchBackgroundView.cornerRadius = switchButton.cornerRadius
-        switchShadowView.cornerRadius = switchButton.cornerRadius
         
         NotificationCenter.default.addObserver(self, selector: #selector(sliderDidChangeValue), name: Notification.Name("slider_did_change_value"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(hideSpecialOfferButton), name: Notification.Name("hide_special_offer"), object: nil)
+        
+        setupLayout()
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -48,17 +64,13 @@ class VibroViewController: UIViewController {
             }
         }
         
-        waveView.transform = CGAffineTransform(scaleX: 0.85, y: 0.85)
-        switchButton.transform = CGAffineTransform(scaleX: 0.85, y: 0.85)
-        switchBackgroundView.transform = CGAffineTransform(scaleX: 0.85, y: 0.85)
-        switchShadowView.transform = CGAffineTransform(scaleX: 0.85, y: 0.85)
-        
-        switch UserDefaults.standard.integer(forKey: "mode_id") {
-        case 1:
-            titleLabel.text = "H E A R T"
-        default:
-            titleLabel.text = "B R E E Z E"
+        if UserDefaults.standard.bool(forKey: "is_subscribed") == true {
+            giftBackgroundImageView.isHidden = true
+            giftImageView.isHidden = true
+            offerButton.isHidden = true
         }
+        
+        titleLabel.text = items[UserDefaults.standard.integer(forKey: "mode_id")]
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -66,6 +78,9 @@ class VibroViewController: UIViewController {
             timer?.invalidate()
             timer = nil
         }
+        
+        giftTimer = nil
+        giftTimer?.invalidate()
     }
 
     // MARK: -
@@ -82,7 +97,7 @@ class VibroViewController: UIViewController {
             timer?.invalidate()
         } else {
             sender.isSelected = true
-            pressButtonLabel.text = "Press the button\nto stop the massage"
+            pressButtonLabel.text = "Press the button\nto stop massage"
             isAnimate = true
             timer = Timer.scheduledTimer(timeInterval: TimeInterval(self.interval), target: self, selector: #selector(self.vibrate), userInfo: nil, repeats: true)
         }
@@ -100,8 +115,38 @@ class VibroViewController: UIViewController {
         NotificationCenter.default.post(name: Notification.Name("no_vibro"), object: nil)
     }
     
+    @IBAction func showOfferButtonAction(_ sender: UIButton) {
+        NotificationCenter.default.post(name: Notification.Name("special_offer"), object: nil)
+    }
+    
     // MARK: -
     // MARK: - FUNCTIONS
+    
+    func setupLayout() {
+        if UserDefaults.standard.bool(forKey: "is_subscribed") == false {
+            giftBackgroundImageView.isHidden = false
+            giftImageView.isHidden = false
+            offerButton.isHidden = false
+            
+            if giftTimer == nil {
+                giftTimer = Timer.scheduledTimer(timeInterval: TimeInterval(3.0), target: self, selector: #selector(self.shakeGiftImage), userInfo: nil, repeats: true)
+            }
+        }
+        
+        waveView.transform = CGAffineTransform(scaleX: 0.85, y: 0.85)
+        switchButton.transform = CGAffineTransform(scaleX: 0.85, y: 0.85)
+        switchBackgroundView.transform = CGAffineTransform(scaleX: 0.85, y: 0.85)
+        switchShadowView.transform = CGAffineTransform(scaleX: 0.85, y: 0.85)
+        
+        switchButton.setImage(#imageLiteral(resourceName: "ic_switch_on"), for: .selected)
+//        switchButton.cornerRadius = switchButton.frame.height / 2
+        switchBackgroundView.cornerRadius = switchBackgroundView.frame.height / 2
+        switchShadowView.cornerRadius = switchShadowView.frame.height / 2
+    }
+    
+    @objc func shakeGiftImage() {
+        giftImageView.shake()
+    }
     
     @objc func vibrate() {
         switch UserDefaults.standard.integer(forKey: "mode_id") {
@@ -272,6 +317,12 @@ class VibroViewController: UIViewController {
                 }
             }
         }
+    }
+    
+    @objc func hideSpecialOfferButton() {
+        giftBackgroundImageView.isHidden = true
+        giftImageView.isHidden = true
+        offerButton.isHidden = true
     }
 }
 
