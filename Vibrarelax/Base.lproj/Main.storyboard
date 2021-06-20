@@ -1084,9 +1084,9 @@ NDk5IC8gCgPQtdC20LXQvdC10LTQtdC70YzQvdC+ICQ
                                     <constraint firstAttribute="width" constant="280" id="zOf-T3-iOJ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Nunito-ExtraBold" family="Nunito" pointSize="18"/>
-                                <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="50" maxY="0.0"/>
-                                <inset key="imageEdgeInsets" minX="218" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="Proceed" image="ic_button_arrow" backgroundImage="ic_bottom_button">
+                                <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="40" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="230" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="3-Day Free Trial" image="ic_button_arrow" backgroundImage="ic_bottom_button">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -3334,10 +3334,10 @@ locked</string>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KEe-Oe-Sxr">
-                                <rect key="frame" x="0.0" y="266" width="414" height="630"/>
+                                <rect key="frame" x="0.0" y="242" width="414" height="654"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2pk-ol-u1h">
-                                        <rect key="frame" x="0.0" y="126" width="414" height="504"/>
+                                        <rect key="frame" x="0.0" y="131" width="414" height="523"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     </view>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_gift" translatesAutoresizingMaskIntoConstraints="NO" id="WJ0-KC-lnx">
@@ -3356,16 +3356,17 @@ offer</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kq9-wE-aOG">
-                                        <rect key="frame" x="127" y="297.5" width="160.5" height="74"/>
+                                        <rect key="frame" x="136" y="301.5" width="142.5" height="87.5"/>
                                         <string key="text">12 vibration modes
 5 speed modes
-for $ 8.99 per week</string>
-                                        <fontDescription key="fontDescription" name="Nunito-SemiBold" family="Nunito" pointSize="18"/>
+for $ 8.99 per week
+3-Day Free Trial</string>
+                                        <fontDescription key="fontDescription" name="Nunito-SemiBold" family="Nunito" pointSize="16"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cme-gR-2qj">
-                                        <rect key="frame" x="73" y="389.5" width="268" height="60"/>
+                                        <rect key="frame" x="73" y="413" width="268" height="60"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2D2-aa-vcj">
                                                 <rect key="frame" x="0.0" y="0.0" width="81" height="60"/>
@@ -3411,7 +3412,7 @@ for $ 8.99 per week</string>
                                         </constraints>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z4S-Dp-5Y9" customClass="GRButton" customModule="GRView">
-                                        <rect key="frame" x="67" y="467.5" width="280" height="90"/>
+                                        <rect key="frame" x="67" y="491" width="280" height="90"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="90" id="b83-pK-xBD"/>
                                             <constraint firstAttribute="width" constant="280" id="lR4-I3-q96"/>
@@ -3480,7 +3481,7 @@ for $ 8.99 per week</string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CMY-hk-XrH">
-                                        <rect key="frame" x="96.5" y="570.5" width="100" height="30"/>
+                                        <rect key="frame" x="96.5" y="594" width="100" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="100" id="9R7-kM-kCF"/>
                                         </constraints>
@@ -3495,7 +3496,7 @@ for $ 8.99 per week</string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PDa-YG-ee6">
-                                        <rect key="frame" x="217.5" y="570.5" width="100" height="30"/>
+                                        <rect key="frame" x="217.5" y="594" width="100" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="100" id="7Vq-Sl-f28"/>
                                         </constraints>
@@ -3511,7 +3512,7 @@ for $ 8.99 per week</string>
                                         </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jkb-4y-fnp">
-                                        <rect key="frame" x="206.5" y="577.5" width="1" height="16"/>
+                                        <rect key="frame" x="206.5" y="601" width="1" height="16"/>
                                         <color key="backgroundColor" red="0.7680132985" green="0.6281402707" blue="0.54732495550000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="1" id="cCQ-pe-7wa"/>
@@ -3524,7 +3525,7 @@ for $ 8.99 per week</string>
                                     <constraint firstItem="rCL-CO-kz6" firstAttribute="top" secondItem="WJ0-KC-lnx" secondAttribute="bottom" id="23o-Qe-WpD"/>
                                     <constraint firstItem="2pk-ol-u1h" firstAttribute="height" secondItem="KEe-Oe-Sxr" secondAttribute="height" multiplier="0.8" id="31t-nm-4nS"/>
                                     <constraint firstItem="PDa-YG-ee6" firstAttribute="leading" secondItem="jkb-4y-fnp" secondAttribute="trailing" constant="10" id="4hf-tn-Gl5"/>
-                                    <constraint firstItem="Cme-gR-2qj" firstAttribute="top" secondItem="Kq9-wE-aOG" secondAttribute="bottom" constant="18" id="5W2-tT-2gA"/>
+                                    <constraint firstItem="Cme-gR-2qj" firstAttribute="top" secondItem="Kq9-wE-aOG" secondAttribute="bottom" constant="24" id="5W2-tT-2gA"/>
                                     <constraint firstItem="PDa-YG-ee6" firstAttribute="centerY" secondItem="jkb-4y-fnp" secondAttribute="centerY" id="6O2-xP-tmR"/>
                                     <constraint firstItem="Z4S-Dp-5Y9" firstAttribute="centerX" secondItem="KEe-Oe-Sxr" secondAttribute="centerX" id="8XN-Wj-hQH"/>
                                     <constraint firstAttribute="bottom" secondItem="2pk-ol-u1h" secondAttribute="bottom" id="Azc-eP-U2A"/>
@@ -3540,11 +3541,11 @@ for $ 8.99 per week</string>
                                     <constraint firstItem="oH3-Ix-rxd" firstAttribute="leading" secondItem="KEe-Oe-Sxr" secondAttribute="leading" constant="30" id="Tjk-j8-VuZ"/>
                                     <constraint firstItem="jkb-4y-fnp" firstAttribute="leading" secondItem="CMY-hk-XrH" secondAttribute="trailing" constant="10" id="VNb-40-282"/>
                                     <constraint firstItem="WJ0-KC-lnx" firstAttribute="top" secondItem="KEe-Oe-Sxr" secondAttribute="top" constant="12" id="XMc-RQ-tmH"/>
-                                    <constraint firstAttribute="height" constant="630" id="YhM-Ee-RUo"/>
+                                    <constraint firstAttribute="height" constant="654" id="YhM-Ee-RUo"/>
                                     <constraint firstItem="Cme-gR-2qj" firstAttribute="centerX" secondItem="KEe-Oe-Sxr" secondAttribute="centerX" id="cMw-QG-eNe"/>
                                     <constraint firstItem="CMY-hk-XrH" firstAttribute="centerY" secondItem="jkb-4y-fnp" secondAttribute="centerY" id="cra-K1-oul"/>
                                     <constraint firstAttribute="trailing" secondItem="2pk-ol-u1h" secondAttribute="trailing" id="j47-Mh-4sA"/>
-                                    <constraint firstItem="Kq9-wE-aOG" firstAttribute="top" secondItem="rCL-CO-kz6" secondAttribute="bottom" constant="12" id="sCO-zl-ZyX"/>
+                                    <constraint firstItem="Kq9-wE-aOG" firstAttribute="top" secondItem="rCL-CO-kz6" secondAttribute="bottom" constant="16" id="sCO-zl-ZyX"/>
                                     <constraint firstItem="Kq9-wE-aOG" firstAttribute="centerX" secondItem="KEe-Oe-Sxr" secondAttribute="centerX" id="vFv-92-Dcz"/>
                                     <constraint firstItem="jkb-4y-fnp" firstAttribute="centerX" secondItem="KEe-Oe-Sxr" secondAttribute="centerX" id="vMJ-98-tS2"/>
                                 </constraints>

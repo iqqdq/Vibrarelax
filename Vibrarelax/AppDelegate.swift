@@ -28,7 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SKPaymentTransactionObser
         window?.makeKeyAndVisible()
         
         // Localization
-        UserDefaults.standard.setValue(["ru"], forKey: "AppleLanguages")
+        UserDefaults.standard.setValue(["en"], forKey: "AppleLanguages")
         UserDefaults.standard.synchronize()
         
         // Onboarding start date
@@ -36,7 +36,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SKPaymentTransactionObser
         formatter.dateFormat = "yyyy-MM-dd"
         formatter.locale = Locale(identifier: "ru_RU")
         
-        if let startDate = formatter.date(from: "2021-06-22") {
+        if let startDate = formatter.date(from: "2021-06-19") {
             if Date() >= startDate {
                 if UserDefaults.standard.bool(forKey: "onboarding") == false {
                     onboardingViewController.modalPresentationStyle = .fullScreen

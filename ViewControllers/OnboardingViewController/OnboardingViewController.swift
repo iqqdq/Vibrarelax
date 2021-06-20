@@ -26,7 +26,7 @@ class OnboardingViewController: UIViewController {
     @IBOutlet weak var privacyButton: UIButton!
     @IBOutlet weak var separatorView: UIView!
     
-    let items: [[String : String]] = [["Welcome\nto Vibrarelax" : "The massage is relaxing. Our application will help you to relax, rest, improve your well-being at any time without any help."], ["Take a break from worries" : "Did you know that there are approximately 5 million receptors on our skin, with only 3000 on one fingertip?"], ["Try with\nall modes PRO" : "12 vibration modes, 5 speed modes, no ads, screen lock, weekly content update for $ 8.99 / week."]]
+    let items: [[String : String]] = [["Welcome\nto Vibrarelax" : "The massage is relaxing. Our application will help you to relax, rest, improve your well-being at any time without any help."], ["Take a break from worries" : "Did you know that there are approximately 5 million receptors on our skin, with only 3000 on one fingertip?"], ["Try with\nall modes PRO" : "12 vibration modes, 5 speed modes, no ads, screen lock, weekly content update for $ 8.99 / week,\n3-Day Free Trial"]]
     let images: [String] = ["ic_onboarding_first", "ic_onboarding_second", "ic_onboarding_third"]
     var timer: Timer?
     var products: [String: SKProduct] = [:]
