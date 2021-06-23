@@ -36,7 +36,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SKPaymentTransactionObser
         formatter.dateFormat = "yyyy-MM-dd"
         formatter.locale = Locale(identifier: "ru_RU")
         
-        if let startDate = formatter.date(from: "2021-06-19") {
+        if let startDate = formatter.date(from: "2021-06-25") {
             if Date() >= startDate {
                 if UserDefaults.standard.bool(forKey: "onboarding") == false {
                     onboardingViewController.modalPresentationStyle = .fullScreen
